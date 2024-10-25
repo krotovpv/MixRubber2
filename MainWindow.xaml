@@ -12,45 +12,350 @@
             <RowDefinition Height="100*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100*"/>
             <ColumnDefinition Width="1920*"/>
         </Grid.ColumnDefinitions>
 
         <Viewbox Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left">
-            <Canvas Width="1820" Height="980">
-                <Label Background="#FFAAAAAA" Content="ВЕСЫ С" Height="25" Canvas.Left="36" Canvas.Top="20" Width="220" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1,1,1,1"/>
-                <Image Source="/img/SmallSilo.png" Width="44" Canvas.Left="36" Canvas.Top="56"/>
-                <Label Content="1" Height="20" Canvas.Left="36" Canvas.Top="78" Width="44" FontSize="15" Padding="0,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
-                <Image Source="/img/SmallSilo.png" Width="44" Canvas.Left="80" Canvas.Top="56"/>
-                <Label Content="2" Height="20" Canvas.Left="80" Canvas.Top="78" Width="44" FontSize="15" Padding="0,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <Image Source="/img/SmallSilo.png" Width="44" Canvas.Left="124" Canvas.Top="56"/>
-                <Label Content="3" Height="20" Canvas.Left="124" Canvas.Top="78" Width="44" FontSize="15" Padding="0,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <Image Source="/img/SmallSiloGreen.png" Width="44" Canvas.Left="168" Canvas.Top="56"/>
-                <Label Content="4" Height="20" Canvas.Left="168" Canvas.Top="78" Width="44" FontSize="15" Padding="0,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="0.496,1.344"/>
-                <Image Source="/img/SmallSilo.png" Width="44" Canvas.Left="212" Canvas.Top="56"/>
-                <Label Content="5" Height="20" Canvas.Left="212" Canvas.Top="78" Width="44" FontSize="15" Padding="0,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <Rectangle Height="7" Canvas.Left="54" Stroke="Black" Canvas.Top="146" Width="184" HorizontalAlignment="Center" VerticalAlignment="Center" Fill="Black"/>
-                <Rectangle Height="17" Canvas.Left="138" Stroke="Black" Canvas.Top="152" Width="16" HorizontalAlignment="Center" VerticalAlignment="Top" Fill="Black"/>
-                <Image Source="/img/siloClose.png" Width="120" Canvas.Left="86" Canvas.Top="171" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Canvas Width="1940" Height="980">
+                
+                <Grid Name="Mixer" Canvas.Top="200" Canvas.Left="60">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Canvas Grid.Column="0" Grid.Row="0" Width="200" Height="550">
+                        <Image Source="/img/floatUp.png" Width="200"/>
+                    </Canvas>
+                </Grid>
 
-                
-                
-                <Label Background="#FFAAAAAA" Content="Питатель" Height="25" Canvas.Left="266" Canvas.Top="56" Width="120" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1,1,1,1"/>
-                <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="266" Canvas.Top="82" Width="28" FontSize="11" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" Padding="1,1,1,1"/>
-                <TextBlock Height="25" Canvas.Left="295" Text="0" Canvas.Top="82" Width="91" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" FontSize="18" Background="LightGray"/>
-                <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="266" Canvas.Top="108" Width="28" FontSize="11" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="1,1,1,1"/>
-                <TextBlock Height="25" Canvas.Left="295" Text="0" Canvas.Top="108" Width="91" TextAlignment="Center" FontSize="18" Background="LightGray" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="266" Canvas.Top="134" Width="28" FontSize="11" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="1,1,1,1"/>
-                <TextBlock Height="25" Canvas.Left="295" Text="0" Canvas.Top="134" Width="91" TextAlignment="Center" FontSize="18" Background="LightGray" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Grid Name="Pump" Canvas.Top="400" Canvas.Left="308">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Canvas Grid.Column="0" Grid.Row="0" Width="140" Height="210">
+                        <Image Source="/img/siloOil.png" Width="120"/>
+                        <Image Source="/img/pump.png" Width="100" Canvas.Left="40" Canvas.Top="110"/>
+                    </Canvas>
+                </Grid>
 
-                <Label Background="#FFAAAAAA" Content="Весы" Height="25" Canvas.Left="266" Canvas.Top="188" Width="120" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1,1,1,1"/>
-                <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="266" Canvas.Top="214" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1,1,1,1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <TextBlock Height="25" Canvas.Left="295" Text="0" Canvas.Top="214" Width="91" TextAlignment="Center" FontSize="18" Background="LightGray" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="266" Canvas.Top="240" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1,1,1,1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <TextBlock Height="25" Canvas.Left="295" Text="0" Canvas.Top="240" Width="91" TextAlignment="Center" FontSize="18" Background="LightGray" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="266" Canvas.Top="266" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1,1,1,1" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-                <TextBlock Height="25" Canvas.Left="295" Text="0" Canvas.Top="266" Width="91" TextAlignment="Center" FontSize="18" Background="LightGray" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                
+                <Grid Name="Transporter1" Canvas.Top="400" Canvas.Left="800">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Canvas Grid.Column="0" Grid.Row="0" Width="1100" Height="50">
+                        <Image Source="/img/transporterGreen.png" Height="50"/>
+                    </Canvas>
+                </Grid>
+
+                <Grid Name="Transporter2" Canvas.Top="800" Canvas.Left="500">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Canvas Grid.Column="0" Grid.Row="0" Width="1072" Height="50">
+                        <Image Source="/img/transporterGreen.png" Height="50"/>
+                    </Canvas>
+                </Grid>
+
+                <Grid Name="ScalesC" Canvas.Left="460" Canvas.Top="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Canvas Grid.Row="0" Grid.Column="0" Width="318" Height="338">
+                        <Label Background="#FFAAAAAA" Content="ВЕСЫ С" Height="25" Width="318" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Top="36"/>
+                        <Label Content="1" Height="20" Canvas.Top="56" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Left="40" Canvas.Top="36"/>
+                        <Label Content="2" Height="20" Canvas.Left="40" Canvas.Top="56" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Left="80" Canvas.Top="36"/>
+                        <Label Content="3" Height="20" Canvas.Left="80" Canvas.Top="56" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSiloGreen.png" Width="40" Canvas.Left="120" Canvas.Top="36"/>
+                        <Label Content="4" Height="20" Canvas.Left="120" Canvas.Top="56" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Left="160" Canvas.Top="36"/>
+                        <Label Content="5" Height="20" Canvas.Left="160" Canvas.Top="56" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Rectangle Height="8" Canvas.Left="16" Stroke="Black" Canvas.Top="118" Width="168" Fill="Black"/>
+                        <Rectangle Height="17" Canvas.Left="92" Stroke="Black" Canvas.Top="126" Width="16" Fill="Black"/>
+                        <Image Source="/img/siloClose.png" Width="120" Canvas.Left="40" Canvas.Top="146"/>
+                    
+                        <Label Background="#FFAAAAAA" Content="Питатель" Height="25" Canvas.Left="210" Canvas.Top="36" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="210" Canvas.Top="62" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="239" Text="10000.5" Canvas.Top="62" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="210" Canvas.Top="88" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="239" Text="0" Canvas.Top="88" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="210" Canvas.Top="114" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="239" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+
+                        <Label Background="#FFAAAAAA" Content="Весы" Height="25" Canvas.Left="210" Canvas.Top="178" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="210" Canvas.Top="204" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="239" Text="0" Canvas.Top="204" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="210" Canvas.Top="230" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="239" Text="0" Canvas.Top="230" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="210" Canvas.Top="256" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="239" Text="0" Canvas.Top="256" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                    </Canvas>
+                </Grid>
+
+                <Grid Name="ContainerC" Canvas.Top="400" Canvas.Left="500">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Canvas Grid.Column="0" Grid.Row="0" Width="120" Height="270">
+                        <Image Source="/img/screw.png" Width="120" Canvas.Top="0"/>
+                        <Image Source="/img/siloClose1.png" Width="120" Canvas.Top="120"/>
+                    </Canvas>
+                </Grid>
+
+                <Grid Name="ScalesJ" Canvas.Left="170" Canvas.Top="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Canvas Grid.Row="0" Grid.Column="0" Width="278" Height="338">
+                        <Label Background="#FFAAAAAA" Content="ВЕСЫ Ж" Height="25" Width="278" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Left="118" Canvas.Top="36"/>
+                        <Label Content="1" Height="20" Canvas.Top="56" Canvas.Left="118" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Left="158" Canvas.Top="36"/>
+                        <Label Content="2" Height="20" Canvas.Left="158" Canvas.Top="56" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Left="198" Canvas.Top="36"/>
+                        <Label Content="3" Height="20" Canvas.Left="198" Canvas.Top="56" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSiloGreen.png" Width="40" Canvas.Left="238" Canvas.Top="36"/>
+                        <Label Content="4" Height="20" Canvas.Left="238" Canvas.Top="56" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Rectangle Height="8" Canvas.Left="134" Stroke="Black" Canvas.Top="118" Width="128" Fill="Black"/>
+                        <Rectangle Height="17" Canvas.Left="190" Stroke="Black" Canvas.Top="126" Width="16" Fill="Black"/>
+                        <Image Source="/img/siloOpen.png" Width="120" Canvas.Left="138" Canvas.Top="146"/>
+
+                        <Label Background="#FFAAAAAA" Content="Питатель" Height="25" Canvas.Top="36" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Top="62" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="29" Text="0" Canvas.Top="62" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Top="88" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="29" Text="0" Canvas.Top="88" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Top="114" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="29" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+
+                        <Label Background="#FFAAAAAA" Content="Весы" Height="25" Canvas.Top="178" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Top="204" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="29" Text="0" Canvas.Top="204" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Top="230" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="29" Text="0" Canvas.Top="230" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Top="256" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="29" Text="0" Canvas.Top="256" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                    </Canvas>
+                </Grid>
+
+                <Grid Name="ScalesD" Canvas.Left="790" Canvas.Top="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Canvas Grid.Row="0" Grid.Column="0" Width="278" Height="338">
+                        <Label Background="#FFAAAAAA" Content="ВЕСЫ Д" Height="25" Width="278" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Top="36"/>
+                        <Label Content="1" Height="20" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Left="40" Canvas.Top="36"/>
+                        <Label Content="2" Height="20" Canvas.Left="40" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Left="80" Canvas.Top="36"/>
+                        <Label Content="3" Height="20" Canvas.Left="80" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSiloGreen.png" Width="40" Canvas.Left="120" Canvas.Top="36"/>
+                        <Label Content="4" Height="20" Canvas.Left="120" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Rectangle Height="8" Canvas.Left="16" Stroke="Black" Canvas.Top="118" Width="128" Fill="Black"/>
+                        <Rectangle Height="17" Canvas.Left="72" Stroke="Black" Canvas.Top="126" Width="16" Fill="Black"/>
+                        <Image Source="/img/siloOpenGreen.png" Width="120" Canvas.Left="20" Canvas.Top="146"/>
+
+                        <Label Background="#FFAAAAAA" Content="Питатель" Height="25" Canvas.Left="170" Canvas.Top="36" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="170" Canvas.Top="62" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="62" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="170" Canvas.Top="88" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="88" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="170" Canvas.Top="114" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+
+                        <Label Background="#FFAAAAAA" Content="Весы" Height="25" Canvas.Left="170" Canvas.Top="178" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="170" Canvas.Top="204" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="204" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="170" Canvas.Top="230" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="230" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="170" Canvas.Top="256" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="256" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                    </Canvas>
+                </Grid>
+
+                <Grid Name="ScalesE" Canvas.Left="1080" Canvas.Top="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Canvas Grid.Row="0" Grid.Column="0" Width="278" Height="338">
+                        <Label Background="#FFAAAAAA" Content="ВЕСЫ Е" Height="25" Width="278" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Top="36"/>
+                        <Label Content="1" Height="20" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Left="40" Canvas.Top="36"/>
+                        <Label Content="2" Height="20" Canvas.Left="40" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Left="80" Canvas.Top="36"/>
+                        <Label Content="3" Height="20" Canvas.Left="80" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSiloGreen.png" Width="40" Canvas.Left="120" Canvas.Top="36"/>
+                        <Label Content="4" Height="20" Canvas.Left="120" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Rectangle Height="8" Canvas.Left="16" Stroke="Black" Canvas.Top="118" Width="128" Fill="Black"/>
+                        <Rectangle Height="17" Canvas.Left="72" Stroke="Black" Canvas.Top="126" Width="16" Fill="Black"/>
+                        <Image Source="/img/siloCloseGreen.png" Width="120" Canvas.Left="20" Canvas.Top="146"/>
+
+                        <Label Background="#FFAAAAAA" Content="Питатель" Height="25" Canvas.Left="170" Canvas.Top="36" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="170" Canvas.Top="62" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="62" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="170" Canvas.Top="88" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="88" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="170" Canvas.Top="114" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+
+                        <Label Background="#FFAAAAAA" Content="Весы" Height="25" Canvas.Left="170" Canvas.Top="178" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="170" Canvas.Top="204" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="204" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="170" Canvas.Top="230" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="230" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="170" Canvas.Top="256" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="256" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                    </Canvas>
+                </Grid>
+
+                <Grid Name="ScalesSh" Canvas.Left="1370" Canvas.Top="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Canvas Grid.Row="0" Grid.Column="0" Width="278" Height="338">
+                        <Label Background="#FFAAAAAA" Content="ВЕСЫ Ш" Height="25" Width="278" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Top="36"/>
+                        <Label Content="1" Height="20" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Left="40" Canvas.Top="36"/>
+                        <Label Content="2" Height="20" Canvas.Left="40" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Left="80" Canvas.Top="36"/>
+                        <Label Content="3" Height="20" Canvas.Left="80" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSiloGreen.png" Width="40" Canvas.Left="120" Canvas.Top="36"/>
+                        <Label Content="4" Height="20" Canvas.Left="120" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Rectangle Height="8" Canvas.Left="16" Stroke="Black" Canvas.Top="118" Width="128" Fill="Black"/>
+                        <Rectangle Height="17" Canvas.Left="72" Stroke="Black" Canvas.Top="126" Width="16" Fill="Black"/>
+                        <Image Source="/img/siloClose.png" Width="120" Canvas.Left="20" Canvas.Top="146"/>
+
+                        <Label Background="#FFAAAAAA" Content="Питатель" Height="25" Canvas.Left="170" Canvas.Top="36" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="170" Canvas.Top="62" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="62" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="170" Canvas.Top="88" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="88" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="170" Canvas.Top="114" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+
+                        <Label Background="#FFAAAAAA" Content="Весы" Height="25" Canvas.Left="170" Canvas.Top="178" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="170" Canvas.Top="204" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="204" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="170" Canvas.Top="230" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="230" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="170" Canvas.Top="256" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="256" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                    </Canvas>
+                </Grid>
+
+                <Grid Name="ScalesJu" Canvas.Left="1660" Canvas.Top="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Canvas Grid.Row="0" Grid.Column="0" Width="278" Height="338">
+                        <Label Background="#FFAAAAAA" Content="ВЕСЫ Ю" Height="25" Width="278" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Top="36"/>
+                        <Label Content="1" Height="20" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Left="40" Canvas.Top="36"/>
+                        <Label Content="2" Height="20" Canvas.Left="40" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Left="80" Canvas.Top="36"/>
+                        <Label Content="3" Height="20" Canvas.Left="80" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSiloGreen.png" Width="40" Canvas.Left="120" Canvas.Top="36"/>
+                        <Label Content="4" Height="20" Canvas.Left="120" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Rectangle Height="8" Canvas.Left="16" Stroke="Black" Canvas.Top="118" Width="128" Fill="Black"/>
+                        <Rectangle Height="17" Canvas.Left="72" Stroke="Black" Canvas.Top="126" Width="16" Fill="Black"/>
+                        <Image Source="/img/siloClose.png" Width="120" Canvas.Left="20" Canvas.Top="146"/>
+
+                        <Label Background="#FFAAAAAA" Content="Питатель" Height="25" Canvas.Left="170" Canvas.Top="36" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="170" Canvas.Top="62" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="62" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="170" Canvas.Top="88" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="88" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="170" Canvas.Top="114" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+
+                        <Label Background="#FFAAAAAA" Content="Весы" Height="25" Canvas.Left="170" Canvas.Top="178" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="170" Canvas.Top="204" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="204" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="170" Canvas.Top="230" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="230" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="170" Canvas.Top="256" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="256" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                    </Canvas>
+                </Grid>
+
+                <Grid Name="ScalesY" Canvas.Left="1360" Canvas.Top="460">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Canvas Grid.Row="0" Grid.Column="0" Width="278" Height="338">
+                        <Label Background="#FFAAAAAA" Content="ВЕСЫ У" Height="25" Width="278" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Top="36"/>
+                        <Label Content="1" Height="20" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Left="40" Canvas.Top="36"/>
+                        <Label Content="2" Height="20" Canvas.Left="40" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSilo.png" Width="40" Canvas.Left="80" Canvas.Top="36"/>
+                        <Label Content="3" Height="20" Canvas.Left="80" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Image Source="/img/SmallSiloGreen.png" Width="40" Canvas.Left="120" Canvas.Top="36"/>
+                        <Label Content="4" Height="20" Canvas.Left="120" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
+                        <Rectangle Height="8" Canvas.Left="16" Stroke="Black" Canvas.Top="118" Width="128" Fill="Black"/>
+                        <Rectangle Height="17" Canvas.Left="72" Stroke="Black" Canvas.Top="126" Width="16" Fill="Black"/>
+                        <Image Source="/img/siloOpen.png" Width="120" Canvas.Left="20" Canvas.Top="146"/>
+
+                        <Label Background="#FFAAAAAA" Content="Питатель" Height="25" Canvas.Left="170" Canvas.Top="36" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="170" Canvas.Top="62" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="62" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="170" Canvas.Top="88" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="88" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="170" Canvas.Top="114" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+
+                        <Label Background="#FFAAAAAA" Content="Весы" Height="25" Canvas.Left="170" Canvas.Top="178" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="170" Canvas.Top="204" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="204" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="170" Canvas.Top="230" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="230" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="170" Canvas.Top="256" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="256" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                    </Canvas>
+                </Grid>
+
+
             </Canvas>
         </Viewbox>
     </Grid>

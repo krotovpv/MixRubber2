@@ -117,5 +117,35 @@
     <Resource Include="img\SmallSilo.png" />
     <Resource Include="img\SmallSiloGreen.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\floatUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\transporter2Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\transporterGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\siloOpen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\siloOpenGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\siloCloseGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\siloClose1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\screw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\pump.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\siloOil.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
