@@ -16,7 +16,46 @@ namespace MixRubber2
 
         public static List<Tag> AllTags = new List<Tag>()
         {
-            //new Tag("C_CurrentWeight", "Узел1.PLC110.Весы С.Тег1"),
+            new Tag("MixRubber17.PLC110-60-port504.BatchersC.BatcherC1"),
+            new Tag("MixRubber17.PLC110-60-port504.BatchersC.BatcherC2"),
+            new Tag("MixRubber17.PLC110-60-port504.BatchersC.BatcherC3"),
+            new Tag("MixRubber17.PLC110-60-port504.BatchersC.BatcherC4"),
+            new Tag("MixRubber17.PLC110-60-port504.BatchersC.BatcherC5"),
+
+            new Tag("MixRubber17.PLC110-60-port504.ScalesC_Status.IsClosed"),
+            new Tag("MixRubber17.PLC110-60-port504.ScalesC_Status.IsOpened"),
+            new Tag("MixRubber17.PLC110-60-port504.ScalesC_Status.Weighing"),
+
+            new Tag("MixRubber17.PLC100_ScalesC.CurNeed"),
+            new Tag("MixRubber17.PLC100_ScalesC.FullNeed"),
+            new Tag("MixRubber17.PLC100_ScalesC.CurReal"),
+            new Tag("MixRubber17.PLC100_ScalesC.FullReal"),
+
+            new Tag("MixRubber17.PLC110-60-port504.BatchersJ.BatcherJ1"),
+            new Tag("MixRubber17.PLC110-60-port504.BatchersJ.BatcherJ2"),
+            new Tag("MixRubber17.PLC110-60-port504.BatchersJ.BatcherJ3"),
+            new Tag("MixRubber17.PLC110-60-port504.BatchersJ.BatcherJ4"),
+
+            new Tag("MixRubber17.PLC110-60-port504.ScalesJ_Status.IsClosed"),
+            new Tag("MixRubber17.PLC110-60-port504.ScalesJ_Status.Weighing"),
+
+            new Tag("MixRubber17.PLC100_ScalesJ.CurNeed"),
+            new Tag("MixRubber17.PLC100_ScalesJ.FullNeed"),
+            new Tag("MixRubber17.PLC100_ScalesJ.CurReal"),
+            new Tag("MixRubber17.PLC100_ScalesJ.FullReal"),
+
+            new Tag("MixRubber17.PLC110-60-port504.BatchersD.BatcherD1"),
+            new Tag("MixRubber17.PLC110-60-port504.BatchersD.BatcherD2"),
+            new Tag("MixRubber17.PLC110-60-port504.BatchersD.BatcherD3"),
+            new Tag("MixRubber17.PLC110-60-port504.BatchersD.BatcherD4"),
+
+            new Tag("MixRubber17.PLC110-60-port504.ScalesD_Status.IsClosed"),
+            new Tag("MixRubber17.PLC110-60-port504.ScalesD_Status.Weighing"),
+
+            new Tag("MixRubber17.PLC100_ScalesD.CurNeed"),
+            new Tag("MixRubber17.PLC100_ScalesD.FullNeed"),
+            new Tag("MixRubber17.PLC100_ScalesD.CurReal"),
+            new Tag("MixRubber17.PLC100_ScalesD.FullReal"),
         };
 
         static OPCDA()

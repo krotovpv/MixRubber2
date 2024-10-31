@@ -130,9 +130,6 @@
     <Resource Include="img\siloOpen.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\siloOpenGreen.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="img\siloCloseGreen.png" />
   </ItemGroup>
   <ItemGroup>
