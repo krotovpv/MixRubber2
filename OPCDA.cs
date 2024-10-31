@@ -56,6 +56,55 @@ namespace MixRubber2
             new Tag("MixRubber17.PLC100_ScalesD.FullNeed"),
             new Tag("MixRubber17.PLC100_ScalesD.CurReal"),
             new Tag("MixRubber17.PLC100_ScalesD.FullReal"),
+
+            new Tag("MixRubber17.PLC110-60-port504.BatchersE.BatcherE1"),
+            new Tag("MixRubber17.PLC110-60-port504.BatchersE.BatcherE2"),
+            new Tag("MixRubber17.PLC110-60-port504.BatchersE.BatcherE3"),
+
+            new Tag("MixRubber17.PLC110-60-port504.ScalesE_Status.IsClosed"),
+            new Tag("MixRubber17.PLC110-60-port504.ScalesE_Status.Weighing"),
+
+            new Tag("MixRubber17.PLC100_ScalesE.CurNeed"),
+            new Tag("MixRubber17.PLC100_ScalesE.FullNeed"),
+            new Tag("MixRubber17.PLC100_ScalesE.CurReal"),
+            new Tag("MixRubber17.PLC100_ScalesE.FullReal"),
+
+            new Tag("MixRubber17.PLC110-60-port507.BatchersSh.BatcherSh1"),
+            new Tag("MixRubber17.PLC110-60-port507.BatchersSh.BatcherSh2"),
+            new Tag("MixRubber17.PLC110-60-port507.BatchersSh.BatcherSh3"),
+
+            new Tag("MixRubber17.PLC110-60-port507.ScalesSh_Status.IsClosed"),
+            new Tag("MixRubber17.PLC110-60-port504.ScalesSh_Status.Weighing"),
+
+            new Tag("MixRubber17.PLC100_ScalesSh.CurNeed"),
+            new Tag("MixRubber17.PLC100_ScalesSh.FullNeed"),
+            new Tag("MixRubber17.PLC100_ScalesSh.CurReal"),
+            new Tag("MixRubber17.PLC100_ScalesSh.FullReal"),
+
+            new Tag("MixRubber17.PLC110-60-port507.BatchersJu.BatcherJu1"),
+            new Tag("MixRubber17.PLC110-60-port507.BatchersJu.BatcherJu2"),
+            new Tag("MixRubber17.PLC110-60-port507.BatchersJu.BatcherJu3"),
+
+            new Tag("MixRubber17.PLC110-60-port507.ScalesJu_Status.IsClosed"),
+            new Tag("MixRubber17.PLC110-60-port504.ScalesJu_Status.Weighing"),
+
+            new Tag("MixRubber17.PLC100_ScalesJu.CurNeed"),
+            new Tag("MixRubber17.PLC100_ScalesJu.FullNeed"),
+            new Tag("MixRubber17.PLC100_ScalesJu.CurReal"),
+            new Tag("MixRubber17.PLC100_ScalesJu.FullReal"),
+
+            new Tag("MixRubber17.PLC110-60-port507.BatchersU.BatcherU1"),
+            new Tag("MixRubber17.PLC110-60-port507.BatchersU.BatcherU2"),
+            new Tag("MixRubber17.PLC110-60-port507.BatchersU.BatcherU3"),
+            new Tag("MixRubber17.PLC110-60-port507.BatchersU.BatcherU4"),
+
+            new Tag("MixRubber17.PLC110-60-port507.ScalesU_Status.IsClosed"),
+            new Tag("MixRubber17.PLC110-60-port504.ScalesU_Status.Weighing"),
+
+            new Tag("MixRubber17.PLC100_ScalesU.CurNeed"),
+            new Tag("MixRubber17.PLC100_ScalesU.FullNeed"),
+            new Tag("MixRubber17.PLC100_ScalesU.CurReal"),
+            new Tag("MixRubber17.PLC100_ScalesU.FullReal"),
         };
 
         static OPCDA()

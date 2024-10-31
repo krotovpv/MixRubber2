@@ -98,7 +98,6 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersE.BatcherE1").First().ValueChanged += ScalesE_Batcher1_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersE.BatcherE2").First().ValueChanged += ScalesE_Batcher2_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersE.BatcherE3").First().ValueChanged += ScalesE_Batcher3_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersE.BatcherE4").First().ValueChanged += ScalesE_Batcher4_ValueChanged;
 
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesE_Status.IsClosed").First().ValueChanged += ScalesE_IsClosedChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesE_Status.Weighing").First().ValueChanged += ScalesE_WeighingChanged;
@@ -108,12 +107,11 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesE.CurReal").First().ValueChanged += ScalesE_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesE.FullReal").First().ValueChanged += ScalesE_FullReal_ValueChanged;
 
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersSh.BatcherSh1").First().ValueChanged += ScalesSh_Batcher1_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersSh.BatcherSh2").First().ValueChanged += ScalesSh_Batcher2_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersSh.BatcherSh3").First().ValueChanged += ScalesSh_Batcher3_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersSh.BatcherSh4").First().ValueChanged += ScalesSh_Batcher4_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersSh.BatcherSh1").First().ValueChanged += ScalesSh_Batcher1_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersSh.BatcherSh2").First().ValueChanged += ScalesSh_Batcher2_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersSh.BatcherSh3").First().ValueChanged += ScalesSh_Batcher3_ValueChanged;
 
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesSh_Status.IsClosed").First().ValueChanged += ScalesSh_IsClosedChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.ScalesSh_Status.IsClosed").First().ValueChanged += ScalesSh_IsClosedChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesSh_Status.Weighing").First().ValueChanged += ScalesSh_WeighingChanged;
 
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesSh.CurNeed").First().ValueChanged += ScalesSh_CurNeed_ValueChanged;
@@ -121,12 +119,11 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesSh.CurReal").First().ValueChanged += ScalesSh_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesSh.FullReal").First().ValueChanged += ScalesSh_FullReal_ValueChanged;
 
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersJu.BatcherJu1").First().ValueChanged += ScalesJu_Batcher1_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersJu.BatcherJu2").First().ValueChanged += ScalesJu_Batcher2_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersJu.BatcherJu3").First().ValueChanged += ScalesJu_Batcher3_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersJu.BatcherJu4").First().ValueChanged += ScalesJu_Batcher4_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersJu.BatcherJu1").First().ValueChanged += ScalesJu_Batcher1_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersJu.BatcherJu2").First().ValueChanged += ScalesJu_Batcher2_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersJu.BatcherJu3").First().ValueChanged += ScalesJu_Batcher3_ValueChanged;
 
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesJu_Status.IsClosed").First().ValueChanged += ScalesJu_IsClosedChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.ScalesJu_Status.IsClosed").First().ValueChanged += ScalesJu_IsClosedChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesJu_Status.Weighing").First().ValueChanged += ScalesJu_WeighingChanged;
 
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesJu.CurNeed").First().ValueChanged += ScalesJu_CurNeed_ValueChanged;
@@ -134,12 +131,12 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesJu.CurReal").First().ValueChanged += ScalesJu_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesJu.FullReal").First().ValueChanged += ScalesJu_FullReal_ValueChanged;
 
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersU.BatcherU1").First().ValueChanged += ScalesU_Batcher1_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersU.BatcherU2").First().ValueChanged += ScalesU_Batcher2_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersU.BatcherU3").First().ValueChanged += ScalesU_Batcher3_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersU.BatcherU4").First().ValueChanged += ScalesU_Batcher4_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersU.BatcherU1").First().ValueChanged += ScalesU_Batcher1_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersU.BatcherU2").First().ValueChanged += ScalesU_Batcher2_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersU.BatcherU3").First().ValueChanged += ScalesU_Batcher3_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersU.BatcherU4").First().ValueChanged += ScalesU_Batcher4_ValueChanged;
 
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesU_Status.IsClosed").First().ValueChanged += ScalesU_IsClosedChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.ScalesU_Status.IsClosed").First().ValueChanged += ScalesU_IsClosedChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesU_Status.Weighing").First().ValueChanged += ScalesU_WeighingChanged;
 
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesU.CurNeed").First().ValueChanged += ScalesU_CurNeed_ValueChanged;
@@ -475,14 +472,6 @@ namespace MixRubber2
             scalesE_IsClosed = (bool)obj;
         }
 
-        private void ScalesE_Batcher4_ValueChanged(object obj)
-        {
-            if ((bool)obj)
-                imgScalesEBatcher4.Source = BI_SmallSiloGreen;
-            else
-                imgScalesEBatcher4.Source = BI_SmallSilo;
-        }
-
         private void ScalesE_Batcher3_ValueChanged(object obj)
         {
             if ((bool)obj)
@@ -562,14 +551,6 @@ namespace MixRubber2
             scalesSh_IsClosed = (bool)obj;
         }
 
-        private void ScalesSh_Batcher4_ValueChanged(object obj)
-        {
-            if ((bool)obj)
-                imgScalesShBatcher4.Source = BI_SmallSiloGreen;
-            else
-                imgScalesShBatcher4.Source = BI_SmallSilo;
-        }
-
         private void ScalesSh_Batcher3_ValueChanged(object obj)
         {
             if ((bool)obj)
@@ -647,14 +628,6 @@ namespace MixRubber2
                 imgScalesJuSilo.Source = BI_SiloOpend;
             }
             scalesJu_IsClosed = (bool)obj;
-        }
-
-        private void ScalesJu_Batcher4_ValueChanged(object obj)
-        {
-            if ((bool)obj)
-                imgScalesJuBatcher4.Source = BI_SmallSiloGreen;
-            else
-                imgScalesJuBatcher4.Source = BI_SmallSilo;
         }
 
         private void ScalesJu_Batcher3_ValueChanged(object obj)
