@@ -16,101 +16,101 @@ namespace MixRubber2
 
         public static List<Tag> AllTags = new List<Tag>()
         {
-            new Tag("MixRubber17.PLC110-60-port504.BatchersC.BatcherC1"),
-            new Tag("MixRubber17.PLC110-60-port504.BatchersC.BatcherC2"),
-            new Tag("MixRubber17.PLC110-60-port504.BatchersC.BatcherC3"),
-            new Tag("MixRubber17.PLC110-60-port504.BatchersC.BatcherC4"),
-            new Tag("MixRubber17.PLC110-60-port504.BatchersC.BatcherC5"),
+            new Tag("MixRubber17.PLC110-504.BatchersC.BatcherC1"),
+            new Tag("MixRubber17.PLC110-504.BatchersC.BatcherC2"),
+            new Tag("MixRubber17.PLC110-504.BatchersC.BatcherC3"),
+            new Tag("MixRubber17.PLC110-504.BatchersC.BatcherC4"),
+            new Tag("MixRubber17.PLC110-504.BatchersC.BatcherC5"),
 
-            new Tag("MixRubber17.PLC110-60-port504.ScalesC_Status.IsClosed"),
-            new Tag("MixRubber17.PLC110-60-port504.ScalesC_Status.IsOpened"),
-            new Tag("MixRubber17.PLC110-60-port504.ScalesC_Status.Weighing"),
+            new Tag("MixRubber17.PLC110-504.ScalesC_Status.IsClosed"),
+            new Tag("MixRubber17.PLC110-504.ScalesC_Status.IsOpened"),
+            new Tag("MixRubber17.PLC110-504.ScalesC_Status.Weighing"),
 
             new Tag("MixRubber17.PLC100_ScalesC.CurNeed"),
             new Tag("MixRubber17.PLC100_ScalesC.FullNeed"),
             new Tag("MixRubber17.PLC100_ScalesC.CurReal"),
             new Tag("MixRubber17.PLC100_ScalesC.FullReal"),
 
-            new Tag("MixRubber17.PLC110-60-port504.BatchersJ.BatcherJ1"),
-            new Tag("MixRubber17.PLC110-60-port504.BatchersJ.BatcherJ2"),
-            new Tag("MixRubber17.PLC110-60-port504.BatchersJ.BatcherJ3"),
-            new Tag("MixRubber17.PLC110-60-port504.BatchersJ.BatcherJ4"),
+            new Tag("MixRubber17.PLC110-504.BatchersJ.BatcherJ1"),
+            new Tag("MixRubber17.PLC110-504.BatchersJ.BatcherJ2"),
+            new Tag("MixRubber17.PLC110-504.BatchersJ.BatcherJ3"),
+            new Tag("MixRubber17.PLC110-504.BatchersJ.BatcherJ4"),
 
-            new Tag("MixRubber17.PLC110-60-port504.ScalesJ_Status.IsClosed"),
-            new Tag("MixRubber17.PLC110-60-port504.ScalesJ_Status.Weighing"),
+            new Tag("MixRubber17.PLC110-504.ScalesJ_Status.IsClosed"),
+            new Tag("MixRubber17.PLC110-504.ScalesJ_Status.Weighing"),
 
             new Tag("MixRubber17.PLC100_ScalesJ.CurNeed"),
             new Tag("MixRubber17.PLC100_ScalesJ.FullNeed"),
             new Tag("MixRubber17.PLC100_ScalesJ.CurReal"),
             new Tag("MixRubber17.PLC100_ScalesJ.FullReal"),
+            
+            new Tag("MixRubber17.PLC110-504.BatchersD.BatcherD1"),
+            new Tag("MixRubber17.PLC110-504.BatchersD.BatcherD2"),
+            new Tag("MixRubber17.PLC110-504.BatchersD.BatcherD3"),
+            new Tag("MixRubber17.PLC110-504.BatchersD.BatcherD4"),
 
-            new Tag("MixRubber17.PLC110-60-port504.BatchersD.BatcherD1"),
-            new Tag("MixRubber17.PLC110-60-port504.BatchersD.BatcherD2"),
-            new Tag("MixRubber17.PLC110-60-port504.BatchersD.BatcherD3"),
-            new Tag("MixRubber17.PLC110-60-port504.BatchersD.BatcherD4"),
-
-            new Tag("MixRubber17.PLC110-60-port504.ScalesD_Status.IsClosed"),
-            new Tag("MixRubber17.PLC110-60-port504.ScalesD_Status.Weighing"),
+            new Tag("MixRubber17.PLC110-504.ScalesD_Status.IsClosed"),
+            new Tag("MixRubber17.PLC110-504.ScalesD_Status.Weighing"),
 
             new Tag("MixRubber17.PLC100_ScalesD.CurNeed"),
             new Tag("MixRubber17.PLC100_ScalesD.FullNeed"),
             new Tag("MixRubber17.PLC100_ScalesD.CurReal"),
             new Tag("MixRubber17.PLC100_ScalesD.FullReal"),
+            
+            new Tag("MixRubber17.PLC110-504.BatchersE.BatcherE1"),
+            new Tag("MixRubber17.PLC110-504.BatchersE.BatcherE2"),
+            new Tag("MixRubber17.PLC110-504.BatchersE.BatcherE3"),
 
-            new Tag("MixRubber17.PLC110-60-port504.BatchersE.BatcherE1"),
-            new Tag("MixRubber17.PLC110-60-port504.BatchersE.BatcherE2"),
-            new Tag("MixRubber17.PLC110-60-port504.BatchersE.BatcherE3"),
-
-            new Tag("MixRubber17.PLC110-60-port504.ScalesE_Status.IsClosed"),
-            new Tag("MixRubber17.PLC110-60-port504.ScalesE_Status.Weighing"),
+            new Tag("MixRubber17.PLC110-504.ScalesE_Status.IsClosed"),
+            new Tag("MixRubber17.PLC110-504.ScalesE_Status.Weighing"),
 
             new Tag("MixRubber17.PLC100_ScalesE.CurNeed"),
             new Tag("MixRubber17.PLC100_ScalesE.FullNeed"),
             new Tag("MixRubber17.PLC100_ScalesE.CurReal"),
             new Tag("MixRubber17.PLC100_ScalesE.FullReal"),
+            
+            new Tag("MixRubber17.PLC110-507.BatchersSh.BatcherSh1"),
+            new Tag("MixRubber17.PLC110-507.BatchersSh.BatcherSh2"),
+            new Tag("MixRubber17.PLC110-507.BatchersSh.BatcherSh3"),
 
-            new Tag("MixRubber17.PLC110-60-port507.BatchersSh.BatcherSh1"),
-            new Tag("MixRubber17.PLC110-60-port507.BatchersSh.BatcherSh2"),
-            new Tag("MixRubber17.PLC110-60-port507.BatchersSh.BatcherSh3"),
-
-            new Tag("MixRubber17.PLC110-60-port507.ScalesSh_Status.IsClosed"),
-            new Tag("MixRubber17.PLC110-60-port504.ScalesSh_Status.Weighing"),
+            new Tag("MixRubber17.PLC110-507.ScalesSh_Status.IsClosed"),
+            new Tag("MixRubber17.PLC110-504.ScalesSh_Status.Weighing"),
 
             new Tag("MixRubber17.PLC100_ScalesSh.CurNeed"),
             new Tag("MixRubber17.PLC100_ScalesSh.FullNeed"),
             new Tag("MixRubber17.PLC100_ScalesSh.CurReal"),
             new Tag("MixRubber17.PLC100_ScalesSh.FullReal"),
+            
+            new Tag("MixRubber17.PLC110-507.BatchersJu.BatcherJu1"),
+            new Tag("MixRubber17.PLC110-507.BatchersJu.BatcherJu2"),
+            new Tag("MixRubber17.PLC110-507.BatchersJu.BatcherJu3"),
 
-            new Tag("MixRubber17.PLC110-60-port507.BatchersJu.BatcherJu1"),
-            new Tag("MixRubber17.PLC110-60-port507.BatchersJu.BatcherJu2"),
-            new Tag("MixRubber17.PLC110-60-port507.BatchersJu.BatcherJu3"),
-
-            new Tag("MixRubber17.PLC110-60-port507.ScalesJu_Status.IsClosed"),
-            new Tag("MixRubber17.PLC110-60-port504.ScalesJu_Status.Weighing"),
+            new Tag("MixRubber17.PLC110-507.ScalesJu_Status.IsClosed"),
+            new Tag("MixRubber17.PLC110-504.ScalesJu_Status.Weighing"),
 
             new Tag("MixRubber17.PLC100_ScalesJu.CurNeed"),
             new Tag("MixRubber17.PLC100_ScalesJu.FullNeed"),
             new Tag("MixRubber17.PLC100_ScalesJu.CurReal"),
             new Tag("MixRubber17.PLC100_ScalesJu.FullReal"),
+            
+            new Tag("MixRubber17.PLC110-507.BatchersY.BatcherY1"),
+            new Tag("MixRubber17.PLC110-507.BatchersY.BatcherY2"),
+            new Tag("MixRubber17.PLC110-507.BatchersY.BatcherY3"),
+            new Tag("MixRubber17.PLC110-507.BatchersY.BatcherY4"),
 
-            new Tag("MixRubber17.PLC110-60-port507.BatchersU.BatcherU1"),
-            new Tag("MixRubber17.PLC110-60-port507.BatchersU.BatcherU2"),
-            new Tag("MixRubber17.PLC110-60-port507.BatchersU.BatcherU3"),
-            new Tag("MixRubber17.PLC110-60-port507.BatchersU.BatcherU4"),
+            new Tag("MixRubber17.PLC110-507.ScalesY_Status.IsClosed"),
+            new Tag("MixRubber17.PLC110-504.ScalesY_Status.Weighing"),
 
-            new Tag("MixRubber17.PLC110-60-port507.ScalesU_Status.IsClosed"),
-            new Tag("MixRubber17.PLC110-60-port504.ScalesU_Status.Weighing"),
-
-            new Tag("MixRubber17.PLC100_ScalesU.CurNeed"),
-            new Tag("MixRubber17.PLC100_ScalesU.FullNeed"),
-            new Tag("MixRubber17.PLC100_ScalesU.CurReal"),
-            new Tag("MixRubber17.PLC100_ScalesU.FullReal"),
+            new Tag("MixRubber17.PLC100_ScalesY.CurNeed"),
+            new Tag("MixRubber17.PLC100_ScalesY.FullNeed"),
+            new Tag("MixRubber17.PLC100_ScalesY.CurReal"),
+            new Tag("MixRubber17.PLC100_ScalesY.FullReal"),
         };
 
         static OPCDA()
         {
-            if (!File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.SystemX86) + "\\OPCDAAuto.dll"))
-                Process.Start(AppDomain.CurrentDomain.BaseDirectory + "RegOPCDAAuto\\InstallOPCDAAuto.exe");
+            //if (!File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.SystemX86) + "\\OPCDAAuto.dll"))
+            //    Process.Start(AppDomain.CurrentDomain.BaseDirectory + "RegOPCDAAuto\\InstallOPCDAAuto.exe");
         }
 
         public static void ConnectionOPC()

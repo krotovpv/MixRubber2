@@ -54,96 +54,96 @@ namespace MixRubber2
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersC.BatcherC1").First().ValueChanged += ScalesC_Batcher1_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersC.BatcherC2").First().ValueChanged += ScalesC_Batcher2_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersC.BatcherC3").First().ValueChanged += ScalesC_Batcher3_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersC.BatcherC4").First().ValueChanged += ScalesC_Batcher4_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersC.BatcherC5").First().ValueChanged += ScalesC_Batcher5_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.BatchersC.BatcherC1").First().ValueChanged += ScalesC_Batcher1_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.BatchersC.BatcherC2").First().ValueChanged += ScalesC_Batcher2_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.BatchersC.BatcherC3").First().ValueChanged += ScalesC_Batcher3_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.BatchersC.BatcherC4").First().ValueChanged += ScalesC_Batcher4_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.BatchersC.BatcherC5").First().ValueChanged += ScalesC_Batcher5_ValueChanged;
 
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesC_Status.IsClosed").First().ValueChanged += ScalesC_IsClosedChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesC_Status.IsOpened").First().ValueChanged += ScalesC_IsOpenedChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesC_Status.Weighing").First().ValueChanged += ScalesC_WeighingChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.ScalesC_Status.IsClosed").First().ValueChanged += ScalesC_IsClosedChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.ScalesC_Status.IsOpened").First().ValueChanged += ScalesC_IsOpenedChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.ScalesC_Status.Weighing").First().ValueChanged += ScalesC_WeighingChanged;
 
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesC.CurNeed").First().ValueChanged += ScalesC_CurNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesC.FullNeed").First().ValueChanged += ScalesC_FullNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesC.CurReal").First().ValueChanged += ScalesC_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesC.FullReal").First().ValueChanged += ScalesC_FullReal_ValueChanged;
+            
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.BatchersJ.BatcherJ1").First().ValueChanged += ScalesJ_Batcher1_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.BatchersJ.BatcherJ2").First().ValueChanged += ScalesJ_Batcher2_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.BatchersJ.BatcherJ3").First().ValueChanged += ScalesJ_Batcher3_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.BatchersJ.BatcherJ4").First().ValueChanged += ScalesJ_Batcher4_ValueChanged;
 
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersJ.BatcherJ1").First().ValueChanged += ScalesJ_Batcher1_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersJ.BatcherJ2").First().ValueChanged += ScalesJ_Batcher2_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersJ.BatcherJ3").First().ValueChanged += ScalesJ_Batcher3_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersJ.BatcherJ4").First().ValueChanged += ScalesJ_Batcher4_ValueChanged;
-
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesJ_Status.IsClosed").First().ValueChanged += ScalesJ_IsClosedChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesJ_Status.Weighing").First().ValueChanged += ScalesJ_WeighingChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.ScalesJ_Status.IsClosed").First().ValueChanged += ScalesJ_IsClosedChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.ScalesJ_Status.Weighing").First().ValueChanged += ScalesJ_WeighingChanged;
 
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesJ.CurNeed").First().ValueChanged += ScalesJ_CurNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesJ.FullNeed").First().ValueChanged += ScalesJ_FullNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesJ.CurReal").First().ValueChanged += ScalesJ_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesJ.FullReal").First().ValueChanged += ScalesJ_FullReal_ValueChanged;
+            
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.BatchersD.BatcherD1").First().ValueChanged += ScalesD_Batcher1_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.BatchersD.BatcherD2").First().ValueChanged += ScalesD_Batcher2_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.BatchersD.BatcherD3").First().ValueChanged += ScalesD_Batcher3_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.BatchersD.BatcherD4").First().ValueChanged += ScalesD_Batcher4_ValueChanged;
 
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersD.BatcherD1").First().ValueChanged += ScalesD_Batcher1_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersD.BatcherD2").First().ValueChanged += ScalesD_Batcher2_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersD.BatcherD3").First().ValueChanged += ScalesD_Batcher3_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersD.BatcherD4").First().ValueChanged += ScalesD_Batcher4_ValueChanged;
-
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesD_Status.IsClosed").First().ValueChanged += ScalesD_IsClosedChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesD_Status.Weighing").First().ValueChanged += ScalesD_WeighingChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.ScalesD_Status.IsClosed").First().ValueChanged += ScalesD_IsClosedChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.ScalesD_Status.Weighing").First().ValueChanged += ScalesD_WeighingChanged;
 
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesD.CurNeed").First().ValueChanged += ScalesD_CurNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesD.FullNeed").First().ValueChanged += ScalesD_FullNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesD.CurReal").First().ValueChanged += ScalesD_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesD.FullReal").First().ValueChanged += ScalesD_FullReal_ValueChanged;
+            
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.BatchersE.BatcherE1").First().ValueChanged += ScalesE_Batcher1_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.BatchersE.BatcherE2").First().ValueChanged += ScalesE_Batcher2_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.BatchersE.BatcherE3").First().ValueChanged += ScalesE_Batcher3_ValueChanged;
 
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersE.BatcherE1").First().ValueChanged += ScalesE_Batcher1_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersE.BatcherE2").First().ValueChanged += ScalesE_Batcher2_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.BatchersE.BatcherE3").First().ValueChanged += ScalesE_Batcher3_ValueChanged;
-
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesE_Status.IsClosed").First().ValueChanged += ScalesE_IsClosedChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesE_Status.Weighing").First().ValueChanged += ScalesE_WeighingChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.ScalesE_Status.IsClosed").First().ValueChanged += ScalesE_IsClosedChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.ScalesE_Status.Weighing").First().ValueChanged += ScalesE_WeighingChanged;
 
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesE.CurNeed").First().ValueChanged += ScalesE_CurNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesE.FullNeed").First().ValueChanged += ScalesE_FullNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesE.CurReal").First().ValueChanged += ScalesE_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesE.FullReal").First().ValueChanged += ScalesE_FullReal_ValueChanged;
+            
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-507.BatchersSh.BatcherSh1").First().ValueChanged += ScalesSh_Batcher1_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-507.BatchersSh.BatcherSh2").First().ValueChanged += ScalesSh_Batcher2_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-507.BatchersSh.BatcherSh3").First().ValueChanged += ScalesSh_Batcher3_ValueChanged;
 
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersSh.BatcherSh1").First().ValueChanged += ScalesSh_Batcher1_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersSh.BatcherSh2").First().ValueChanged += ScalesSh_Batcher2_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersSh.BatcherSh3").First().ValueChanged += ScalesSh_Batcher3_ValueChanged;
-
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.ScalesSh_Status.IsClosed").First().ValueChanged += ScalesSh_IsClosedChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesSh_Status.Weighing").First().ValueChanged += ScalesSh_WeighingChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-507.ScalesSh_Status.IsClosed").First().ValueChanged += ScalesSh_IsClosedChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.ScalesSh_Status.Weighing").First().ValueChanged += ScalesSh_WeighingChanged;
 
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesSh.CurNeed").First().ValueChanged += ScalesSh_CurNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesSh.FullNeed").First().ValueChanged += ScalesSh_FullNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesSh.CurReal").First().ValueChanged += ScalesSh_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesSh.FullReal").First().ValueChanged += ScalesSh_FullReal_ValueChanged;
+            
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-507.BatchersJu.BatcherJu1").First().ValueChanged += ScalesJu_Batcher1_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-507.BatchersJu.BatcherJu2").First().ValueChanged += ScalesJu_Batcher2_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-507.BatchersJu.BatcherJu3").First().ValueChanged += ScalesJu_Batcher3_ValueChanged;
 
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersJu.BatcherJu1").First().ValueChanged += ScalesJu_Batcher1_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersJu.BatcherJu2").First().ValueChanged += ScalesJu_Batcher2_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersJu.BatcherJu3").First().ValueChanged += ScalesJu_Batcher3_ValueChanged;
-
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.ScalesJu_Status.IsClosed").First().ValueChanged += ScalesJu_IsClosedChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesJu_Status.Weighing").First().ValueChanged += ScalesJu_WeighingChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-507.ScalesJu_Status.IsClosed").First().ValueChanged += ScalesJu_IsClosedChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.ScalesJu_Status.Weighing").First().ValueChanged += ScalesJu_WeighingChanged;
 
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesJu.CurNeed").First().ValueChanged += ScalesJu_CurNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesJu.FullNeed").First().ValueChanged += ScalesJu_FullNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesJu.CurReal").First().ValueChanged += ScalesJu_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesJu.FullReal").First().ValueChanged += ScalesJu_FullReal_ValueChanged;
+            
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-507.BatchersY.BatcherY1").First().ValueChanged += ScalesU_Batcher1_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-507.BatchersY.BatcherY2").First().ValueChanged += ScalesU_Batcher2_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-507.BatchersY.BatcherY3").First().ValueChanged += ScalesU_Batcher3_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-507.BatchersY.BatcherY4").First().ValueChanged += ScalesU_Batcher4_ValueChanged;
 
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersU.BatcherU1").First().ValueChanged += ScalesU_Batcher1_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersU.BatcherU2").First().ValueChanged += ScalesU_Batcher2_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersU.BatcherU3").First().ValueChanged += ScalesU_Batcher3_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.BatchersU.BatcherU4").First().ValueChanged += ScalesU_Batcher4_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-507.ScalesY_Status.IsClosed").First().ValueChanged += ScalesU_IsClosedChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-504.ScalesY_Status.Weighing").First().ValueChanged += ScalesU_WeighingChanged;
 
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port507.ScalesU_Status.IsClosed").First().ValueChanged += ScalesU_IsClosedChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC110-60-port504.ScalesU_Status.Weighing").First().ValueChanged += ScalesU_WeighingChanged;
-
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesU.CurNeed").First().ValueChanged += ScalesU_CurNeed_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesU.FullNeed").First().ValueChanged += ScalesU_FullNeed_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesU.CurReal").First().ValueChanged += ScalesU_CurReal_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesU.FullReal").First().ValueChanged += ScalesU_FullReal_ValueChanged;
-
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesY.CurNeed").First().ValueChanged += ScalesU_CurNeed_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesY.FullNeed").First().ValueChanged += ScalesU_FullNeed_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesY.CurReal").First().ValueChanged += ScalesU_CurReal_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Path == "MixRubber17.PLC100_ScalesY.FullReal").First().ValueChanged += ScalesU_FullReal_ValueChanged;
+            
             OPCDA.ConnectionOPC();
         }
 
