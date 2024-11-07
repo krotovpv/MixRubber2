@@ -18,7 +18,6 @@ namespace MixRubber2
 
         public static List<Tag> AllTags = new List<Tag>()
         {
-           //lkl;kl;k
             new Tag("BatcherC1", "MixRubber17.PLC110-504.BatchersC.BatcherC1"),
             new Tag("BatcherC2", "MixRubber17.PLC110-504.BatchersC.BatcherC2"),
             new Tag("BatcherC3", "MixRubber17.PLC110-504.BatchersC.BatcherC3"),
