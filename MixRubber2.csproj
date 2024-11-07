@@ -144,5 +144,8 @@
   <ItemGroup>
     <Resource Include="img\siloOil.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\mixer.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

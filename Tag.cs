@@ -10,12 +10,16 @@ namespace MixRubber2
     public class Tag
     {
         static int indexe = 0;
-        public Tag(string path)
+        public Tag(string name, string path, string alternativePath = "")
         {
+            Name = name;
             Path = path;
+            AlternativePath = alternativePath;
             ClientHandle = indexe++;
         }
         public string Path { get; }
+        public string AlternativePath { get; }
+        public string Name { get; }
         public int ClientHandle { get; }
         public int ServerHandle { get; set; }
         private object _value = null;

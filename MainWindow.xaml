@@ -8,17 +8,17 @@
         Title="MainWindow" Height="900" Width="1600" Loaded="Window_Loaded">
     <Grid ShowGridLines="True" Background="Gray">
         <Grid.RowDefinitions>
-            <RowDefinition Height="1080*"/>
-            <RowDefinition Height="100*"/>
+            <RowDefinition Height="1000*"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1920*"/>
         </Grid.ColumnDefinitions>
 
         <Viewbox Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left">
-            <Canvas Width="1940" Height="980">
+            <Canvas Width="1940" Height="1000">
                 
-                <Grid Name="Mixer" Canvas.Top="200" Canvas.Left="320">
+                <Grid Name="Mixer" Canvas.Top="150" Canvas.Left="320">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
@@ -30,7 +30,7 @@
                     </Canvas>
                 </Grid>
 
-                <Grid Name="Pump" Canvas.Top="360" Canvas.Left="530">
+                <Grid Name="Pump" Canvas.Top="310" Canvas.Left="530">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
@@ -43,7 +43,7 @@
                     </Canvas>
                 </Grid>
 
-                <Grid Name="Transporter1" Canvas.Top="360" Canvas.Left="770">
+                <Grid Name="Transporter1" Canvas.Top="310" Canvas.Left="770">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
@@ -55,7 +55,7 @@
                     </Canvas>
                 </Grid>
 
-                <Grid Name="Transporter2" Canvas.Top="720" Canvas.Left="480">
+                <Grid Name="Transporter2" Canvas.Top="670" Canvas.Left="480">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
@@ -67,7 +67,7 @@
                     </Canvas>
                 </Grid>
 
-                <Grid Name="ScalesC" Canvas.Top="50">
+                <Grid Name="ScalesC">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
@@ -108,7 +108,7 @@
                     </Canvas>
                 </Grid>
 
-                <Grid Name="ContainerC" Canvas.Top="360" Canvas.Left="50">
+                <Grid Name="ContainerC" Canvas.Top="310" Canvas.Left="50">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
@@ -121,7 +121,7 @@
                     </Canvas>
                 </Grid>
 
-                <Grid Name="ScalesJ" Canvas.Left="500" Canvas.Top="50">
+                <Grid Name="ScalesJ" Canvas.Left="500">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
@@ -160,7 +160,7 @@
                     </Canvas>
                 </Grid>
 
-                <Grid Name="ScalesD" Canvas.Left="790" Canvas.Top="50">
+                <Grid Name="ScalesD" Canvas.Left="790">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
@@ -199,7 +199,7 @@
                     </Canvas>
                 </Grid>
 
-                <Grid Name="ScalesE" Canvas.Left="1080" Canvas.Top="50">
+                <Grid Name="ScalesE" Canvas.Left="1080">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
@@ -238,7 +238,7 @@
                     </Canvas>
                 </Grid>
 
-                <Grid Name="ScalesSh" Canvas.Left="1370" Canvas.Top="50">
+                <Grid Name="ScalesSh" Canvas.Left="1370">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
@@ -277,7 +277,7 @@
                     </Canvas>
                 </Grid>
 
-                <Grid Name="ScalesJu" Canvas.Left="1660" Canvas.Top="50">
+                <Grid Name="ScalesJu" Canvas.Left="1660">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
@@ -292,8 +292,6 @@
                         <Label Content="2" Height="20" Canvas.Left="40" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
                         <Image Name="imgScalesJuBatcher3" Source="/img/SmallSilo.png" Width="40" Canvas.Left="80" Canvas.Top="36"/>
                         <Label Content="3" Height="20" Canvas.Left="80" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
-                        <Image Name="imgScalesJuBatcher4" Source="/img/SmallSiloGreen.png" Width="40" Canvas.Left="120" Canvas.Top="36"/>
-                        <Label Content="4" Height="20" Canvas.Left="120" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
                         <Rectangle Height="8" Canvas.Left="16" Stroke="Black" Canvas.Top="118" Width="128" Fill="Black"/>
                         <Rectangle Height="17" Canvas.Left="72" Stroke="Black" Canvas.Top="126" Width="16" Fill="Black"/>
                         <Image Name="imgScalesJuSilo" Source="/img/siloClose.png" Width="100" Canvas.Left="30" Canvas.Top="146"/>
@@ -316,7 +314,7 @@
                     </Canvas>
                 </Grid>
 
-                <Grid Name="ScalesU" Canvas.Left="1160" Canvas.Top="420">
+                <Grid Name="ScalesU" Canvas.Left="1160" Canvas.Top="370">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
@@ -355,7 +353,7 @@
                     </Canvas>
                 </Grid>
 
-                <Grid Name="ScalesK" Canvas.Left="1505" Canvas.Top="420">
+                <Grid Name="ScalesK" Canvas.Left="1505" Canvas.Top="370">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
