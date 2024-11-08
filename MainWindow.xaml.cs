@@ -22,9 +22,9 @@ namespace MixRubber2
     {
         BitmapImage BI_SmallSilo = new BitmapImage(new Uri("/img/SmallSilo.png", UriKind.Relative));
         BitmapImage BI_SmallSiloGreen = new BitmapImage(new Uri("/img/SmallSiloGreen.png", UriKind.Relative));
-        BitmapImage BI_SiloClosed = new BitmapImage(new Uri("/img/siloClose.png", UriKind.Relative));
-        BitmapImage BI_SiloClosedGreen = new BitmapImage(new Uri("/img/siloCloseGreen.png", UriKind.Relative));
-        BitmapImage BI_SiloOpend = new BitmapImage(new Uri("/img/siloOpen.png", UriKind.Relative));
+        BitmapImage BI_SiloClosed = new BitmapImage(new Uri("/img/ScalesClose.png", UriKind.Relative));
+        BitmapImage BI_SiloClosedGreen = new BitmapImage(new Uri("/img/ScalesCloseGreen.png", UriKind.Relative));
+        BitmapImage BI_SiloOpend = new BitmapImage(new Uri("/img/ScalesOpen.png", UriKind.Relative));
 
         bool scalesC_IsClosed = false;
         bool scalesC_Weighing = false;
@@ -134,7 +134,6 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "BatcherY1").First().ValueChanged += ScalesU_Batcher1_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherY2").First().ValueChanged += ScalesU_Batcher2_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherY3").First().ValueChanged += ScalesU_Batcher3_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Name == "BatcherY4").First().ValueChanged += ScalesU_Batcher4_ValueChanged;
 
             OPCDA.AllTags.Where(x => x.Name == "ScalesY_IsClosed").First().ValueChanged += ScalesU_IsClosedChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesY_Weighing").First().ValueChanged += ScalesU_WeighingChanged;
@@ -709,14 +708,6 @@ namespace MixRubber2
             scalesU_IsClosed = (bool)obj;
         }
 
-        private void ScalesU_Batcher4_ValueChanged(object obj)
-        {
-            if ((bool)obj)
-                imgScalesUBatcher4.Source = BI_SmallSiloGreen;
-            else
-                imgScalesUBatcher4.Source = BI_SmallSilo;
-        }
-
         private void ScalesU_Batcher3_ValueChanged(object obj)
         {
             if ((bool)obj)
@@ -742,5 +733,24 @@ namespace MixRubber2
         }
 
         #endregion
+
+        private void btnFullScreen_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.WindowStyle == WindowStyle.None)
+            {
+                // Exit fullscreen
+                this.ResizeMode = ResizeMode.CanResize;
+                this.WindowStyle = WindowStyle.SingleBorderWindow;
+                //this.WindowState = WindowState.Normal;
+            }
+            else
+            {
+                // Enter fullscreen
+                this.ResizeMode = ResizeMode.NoResize;
+                this.WindowStyle = WindowStyle.None;
+                this.WindowState = WindowState.Normal;
+                this.WindowState = WindowState.Maximized;
+            }
+        }
     }
 }

@@ -56,6 +56,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Tag.cs" />
+    <Compile Include="TagUnboxing.cs" />
+    <Compile Include="UCScales5.xaml.cs">
+      <DependentUpon>UCScales5.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -68,6 +72,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UCScales5.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OPCDA.cs" />
@@ -108,7 +116,7 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\siloClose.png" />
+    <Resource Include="img\ScalesClose.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\drop.png" />
@@ -127,25 +135,28 @@
     <Resource Include="img\transporterGreen.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\siloOpen.png" />
+    <Resource Include="img\ScalesOpen.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\siloCloseGreen.png" />
+    <Resource Include="img\ScalesCloseGreen.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\siloClose1.png" />
+    <Resource Include="img\SiloClose.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\screw.png" />
+    <Resource Include="img\Screw.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\pump.png" />
+    <Resource Include="img\Pump.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\siloOil.png" />
+    <Resource Include="img\SiloOil.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\mixer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\SiloOpen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
