@@ -159,7 +159,7 @@
     <Resource Include="img\SiloOpen.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\mixer — копия.png" />
+    <Resource Include="img\mixerMain.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\Rotor.png" />

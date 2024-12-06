@@ -50,16 +50,16 @@
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="    ПУРФ&#10;ВКЛЮЧЕН" Height="40" Canvas.Left="104" Canvas.Top="48" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ШНЕК ПОД-КИ&#10;    ВКЛЮЧЕН" Height="40" Canvas.Left="104" Canvas.Top="90" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
 
-                <Grid Name="Mixer" Canvas.Top="260" Canvas.Left="160" Panel.ZIndex="1">
+                <Grid Name="Mixer" Canvas.Top="200" Canvas.Left="80" Panel.ZIndex="1">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Canvas Grid.Column="0" Grid.Row="0" Width="200" Height="550">
+                    <Canvas Grid.Column="0" Grid.Row="0" Width="280" Height="840">
 
-                        <Image Source="/img/floatUp.png" Width="200"/>
+                        <Image Source="/img/mixerMain.png" Width="280"/>
                     </Canvas>
                 </Grid>
 
