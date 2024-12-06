@@ -50,16 +50,26 @@
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="    ПУРФ&#10;ВКЛЮЧЕН" Height="40" Canvas.Left="104" Canvas.Top="48" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ШНЕК ПОД-КИ&#10;    ВКЛЮЧЕН" Height="40" Canvas.Left="104" Canvas.Top="90" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
 
-                <Grid Name="Mixer" Canvas.Top="200" Canvas.Left="80" Panel.ZIndex="1">
+                <Grid Name="Mixer" Canvas.Top="256" Canvas.Left="80" Panel.ZIndex="1">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Canvas Grid.Column="0" Grid.Row="0" Width="280" Height="840">
-
+                    <Canvas Grid.Column="0" Grid.Row="0" Width="280" Height="780">
                         <Image Source="/img/mixerMain.png" Width="280"/>
+                        <Image Source="/img/rotor.png" Width="80" Canvas.Left="50" Canvas.Top="610"/>
+                        <Image Source="/img/rotor.png" Width="80" Canvas.Left="118" Canvas.Top="610" RenderTransformOrigin="0.5,0.5">
+                            <Image.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="42"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Image.RenderTransform>
+                        </Image>
                     </Canvas>
                 </Grid>
 
