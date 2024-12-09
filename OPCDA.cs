@@ -316,7 +316,7 @@ new Tag("ScalesY_FullReal","MixRubber17.PLC100_ScalesY.FullReal","plc110.VesiY.F
 // new Tag("TBatchersOn", "MixRubber17.PLC110-507.TestRegim.BatchersOn")// Навески включены
 // new Tag("Command_PressureOff", "MixRubber17.PLC110-507.TestRegim.Command_PressureOff")// Команда давление снять
 // new Tag("Command_UpPress_Down_UP", "MixRubber17.PLC110-507.TestRegim.Command_UpPress_Down_UP")// Поднять/опустить верхний пресс (B27-0)
-// new Tag("Command_ScalesSHOpen", "MixRubber17.PLC110-507.TestRegim.Command_ScalesSHOpen")// Открыть весы Ш
+// new Tag("Command_ScalesShOpen", "MixRubber17.PLC110-507.TestRegim.Command_ScalesShOpen")// Открыть весы Ш
 // new Tag("Command_ScalesSСOpen", "MixRubber17.PLC110-507.TestRegim.Command_ScalesСOpen")// Открыть весы С
 // new Tag("Command_ScrewTC_On", "MixRubber17.PLC110-507.TestRegim.Command_ScrewTC_On")// Включить шнек ТУ		
 // new Tag("Command_ContainerC_Open", "MixRubber17.PLC110-507.TestRegim.Command_ContainerC_Open")// Открыть сборную	ТУ		
