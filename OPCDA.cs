@@ -150,9 +150,9 @@ new Tag("BatcherSh3", "MixRubber17.PLC110-507.BatchersSh.BatcherSh3"),
 
 new Tag("ScalesSh_IsOpened", "MixRubber17.PLC110-507.ScalesSh_Status.IsOpened"),
 new Tag("ScalesSh_Weighing", "MixRubber17.PLC110-504.ScalesSh_Status.Weighing"),
-//new Tag("ScalesSH_Tare_IsBusy", "MixRubber17.PLC110-507.ScalesE_Status.Tare_IsBusy"),
+//new Tag("ScalesSH_Tare_IsBusy", "MixRubber17.PLC110-507.ScalesSH_Status.Tare_IsBusy"),
 //new Tag("ScalesSH_Weight_NotNormal", "MixRubber17.PLC110-507.ScalesSH_Status.Weight_NotNormal"),
-//new Tag("ScalesSH_Initial", "MixRubber17.PLC110-507.ScalesE_Status.Initial"),
+//new Tag("ScalesSH_Initial", "MixRubber17.PLC110-507.ScalesSH_Status.Initial"),
 //new Tag("ScalesSH_CommandOpen", "MixRubber17.PLC110-507.ScalesSH_Status.CommandOpen"), //Команда Открыть весы Ш
 
 // new Tag("ScalesSH_IsNotOpening", "MixRubber17.PLC110-507.ScalesSH_Fail.IsNotOpening"),
