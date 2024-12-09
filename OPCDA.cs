@@ -289,16 +289,16 @@ new Tag("ScalesY_FullReal", "MixRubber17.PLC100_ScalesY.FullReal"),
 // new Tag("Command_TransporterL2On", "MixRubber17.PLC110-507.TestRegim.Command_TransporterL2On"), // Команда.Включить транспортер Л2
 // new Tag("Command_TransporterL1On", "MixRubber17.PLC110-507.TestRegim.Command_TransporterL1On"), // Команда.Включить транспортер Л1
 // new Tag("TemperatureIsDanger", "MixRubber17.PLC110-507.TestRegim.TemperatureIsDanger")// Температура критическая
-// new Tag("TBatchersOn", "MixRubber17.PLC110-507.TestRegim.BatchersOn	")// Навески включены
+// new Tag("TBatchersOn", "MixRubber17.PLC110-507.TestRegim.BatchersOn")// Навески включены
 // new Tag("Command_PressureOff", "MixRubber17.PLC110-507.TestRegim.Command_PressureOff")// Команда давление снять
-// new Tag("Command_UpPressOn", "MixRubber17.PLC110-507.TestRegim.Command_UpPress_On")// Команда Включить.Верхний пресс
-// new Tag("Command_ScalesSHOpen", "MixRubber17.PLC110-507.TestRegim.Command_ScalesSH_Open")// Открыть весы Ш
-// new Tag("Command_ScalesSСOpen", "MixRubber17.PLC110-507.TestRegim.Command_ScalesС_Open")// Открыть весы С
+// new Tag("Command_UpPress_Down_UP", "MixRubber17.PLC110-507.TestRegim.Command_UpPress_Down_UP")// Поднять/опустить верхний пресс (B27-0)
+// new Tag("Command_ScalesSHOpen", "MixRubber17.PLC110-507.TestRegim.Command_ScalesSHOpen")// Открыть весы Ш
+// new Tag("Command_ScalesSСOpen", "MixRubber17.PLC110-507.TestRegim.Command_ScalesСOpen")// Открыть весы С
 // new Tag("Command_ScrewTC_On", "MixRubber17.PLC110-507.TestRegim.Command_ScrewTC_On")// Включить шнек ТУ		
-// new Tag("Command_ContainerC_Open", "MixRubber17.PLC110-507.TestRegim.Command_ContainerC_Open")// Открыть сборную			
+// new Tag("Command_ContainerC_Open", "MixRubber17.PLC110-507.TestRegim.Command_ContainerC_Open")// Открыть сборную	ТУ		
 // new Tag("Command_ScalesYOpen", "MixRubber17.PLC110-507.TestRegim.Command_ScalesYOpen")// Открыть весы У			
-// new Tag("Command_ScalesJUOpen", "MixRubber17.PLC110-507.TestRegim.Command_ScalesJUOpen")// Открыть весы Ю		
-		
+// new Tag("Command_ScalesJUOpen", "MixRubber17.PLC110-507.TestRegim.Command_ScalesJUOpen")// Открыть весы Ю	
+
 		
 
 
