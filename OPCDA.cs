@@ -36,8 +36,8 @@ namespace MixRubber2
             // new Tag("ScalesC_IsNotOpening", "MixRubber17.PLC110-504.ScalesC_Fail.IsNotOpening"),
             // new Tag("ScalesC_IsNotClosing", "MixRubber17.PLC110-504.ScalesC_Fail.IsNotClosing"),
             // new Tag("ScalesC_BatcherFail", "MixRubber17.PLC110-504.ScalesC_Fail.BatcherFail"),
-            // new Tag("ScalesC_ClosedAndOpened", "MixRubber17.PLC110-504.ScalesC_Fail.ClosedAndOpened"),
             // new Tag("ScalesC_BatcherNotWork", "MixRubber17.PLC110-504.ScalesC_Fail.Batcher_NotWork"),
+            // new Tag("ScalesC_ClosedAndOpened", "MixRubber17.PLC110-504.ScalesC_Fail.ClosedAndOpened"),
 
             new Tag("ScalesC_CurNeed","MixRubber17.PLC100_ScalesC.CurNeed","plc110.VesiC.CurNeed"),
             new Tag("ScalesC_FullNeed","MixRubber17.PLC100_ScalesC.FullNeed","plc110.VesiC.FullNeed"),
@@ -50,9 +50,9 @@ namespace MixRubber2
             #region Conteiner C
             // new Tag("ContainerC_IsClosed", "MixRubber17.PLC110-504.ContainerC_Status.IsClosed"),
             // new Tag("ContainerC_IsOpened", "MixRubber17.PLC110-504.ContainerC_Status.IsOpened"),
-            // new Tag("ContainerC_Weighting", "MixRubber17.PLC110-504.ContainerC_Status.Weighting"),
             // new Tag("ContainerC_BatcherNum", "MixRubber17.PLC110-504.ContainerC_Status.BatcherNum", "plc110.plc110_SCADA.CV0_na_C"),
             // new Tag("ContainerC_CommandOpen", "MixRubber17.PLC110-504.ContainerC_Status.CommandOpen"),
+            // new Tag("ContainerC_Weighting", "MixRubber17.PLC110-504.ContainerC_Status.Weighting"),
 
             // new Tag("ContainerC_IsNotClosing", "MixRubber17.PLC110-504.ContainerC_Fail.IsNotClosing"),
             // new Tag("ContainerC_IsNotOpening", "MixRubber17.PLC110-504.ContainerC_Fail.IsNotOpening"),
@@ -62,7 +62,7 @@ namespace MixRubber2
             // new Tag("ScrewTC_Working", "MixRubber17.PLC110-504.ScrewTC.Working"),
             // new Tag("ScrewTC_CommandOn", "MixRubber17.PLC110-504.ScrewTC.CommandOn"),
             // new Tag("ScrewTC_NotOn", "MixRubber17.PLC110-504.ScrewTC.NotOn"),
-            // new Tag("ScrewTC_NotStopped", "MixRubber17.PLC110-504.ScrewTC.NotStopped"),
+            // new Tag("ScrewTC_NotStoped", "MixRubber17.PLC110-504.ScrewTC.NotStoped"),
             #endregion
 
             #region Scales J
@@ -71,7 +71,7 @@ namespace MixRubber2
             new Tag("BatcherJ3", "MixRubber17.PLC110-504.BatchersJ.BatcherJ3"),
             new Tag("BatcherJ4", "MixRubber17.PLC110-504.BatchersJ.BatcherJ4"),
 
-            new Tag("ScalesJ_IsClosed", "MixRubber17.PLC110-504.ScalesJ_Status.IsClosed_IsOpened"),
+            new Tag("ScalesJ_IsOpened", "MixRubber17.PLC110-504.ScalesJ_Status.IsOpened"),
             new Tag("ScalesJ_Weighing", "MixRubber17.PLC110-504.ScalesJ_Status.Weighing"),
             //new Tag("ScalesJ_Tare_IsBusy", "MixRubber17.PLC110-504.ScalesJ_Status.Tare_IsBusy"),
             //new Tag("ScalesJ_TWeight_NotNormal", "MixRubber17.PLC110-504.ScalesJ_Status.Weight_NotNormal"),
@@ -88,21 +88,19 @@ namespace MixRubber2
             // new Tag("ScalesJ_Overweight","MixRubber17.PLC100_ScalesJ.Overweight","plc110.VesiJ.Pereves"), //Весы Ж.Вес не норма
             new Tag("ScalesJ_CurReal","MixRubber17.PLC100_ScalesJ.CurReal","plc110.VesiJ.FullReal"), //Бункер.Измеренный вес
             new Tag("ScalesJ_FullReal","MixRubber17.PLC100_ScalesJ.FullReal","plc110.VesiJ.FullReal"), //Весы Ж.Общий измеренный вес
-                                                                                                       // new Tag("ScalesJ_KRP","MixRubber17.PLC100_ScalesJ.KRP","plc110.VesiJ.KRP"), //Весы Ж.Обработка КРП
+            // new Tag("ScalesJ_KRP","MixRubber17.PLC100_ScalesJ.KRP","plc110.VesiJ.KRP"), //Весы Ж.Обработка КРП
             #endregion
 
-            #region Injector
             //new Tag("Injector_Weighting", "MixRubber17.PLC110-504.Injector.Weighting"),
             //new Tag("Injector_NotEmpty", "MixRubber17.PLC110-504.Injector.NotEmpty"),
             //new Tag("Injector_NotFull", "MixRubber17.PLC110-504.Injector.NotFull"),
-            #endregion
 
             new Tag("BatcherD1", "MixRubber17.PLC110-504.BatchersD.BatcherD1"),
 new Tag("BatcherD2", "MixRubber17.PLC110-504.BatchersD.BatcherD2"),
 new Tag("BatcherD3", "MixRubber17.PLC110-504.BatchersD.BatcherD3"),
 new Tag("BatcherD4", "MixRubber17.PLC110-504.BatchersD.BatcherD4"),
 
-new Tag("ScalesD_IsClosed", "MixRubber17.PLC110-504.ScalesD_Status.IsClosed_IsOpened"),
+new Tag("ScalesD_IsOpened", "MixRubber17.PLC110-504.ScalesD_Status.IsOpened"),
 new Tag("ScalesD_Weighing", "MixRubber17.PLC110-504.ScalesD_Status.Weighing"),
 //new Tag("ScalesD_Tare_IsBusy", "MixRubber17.PLC110-504.ScalesD_Status.Tare_IsBusy"),
 //new Tag("ScalesD_Weight_NotNormal", "MixRubber17.PLC110-504.ScalesD_Status.Weight_NotNormal"),
@@ -125,7 +123,7 @@ new Tag("BatcherE1", "MixRubber17.PLC110-504.BatchersE.BatcherE1"),
 new Tag("BatcherE2", "MixRubber17.PLC110-504.BatchersE.BatcherE2"),
 new Tag("BatcherE3", "MixRubber17.PLC110-504.BatchersE.BatcherE3"),
 
-new Tag("ScalesE_IsClosed", "MixRubber17.PLC110-504.ScalesE_Status.IsClosed_IsOpened"),
+new Tag("ScalesE_IsOpened", "MixRubber17.PLC110-504.ScalesE_Status.IsOpened"),
 new Tag("ScalesE_Weighing", "MixRubber17.PLC110-504.ScalesE_Status.Weighing"),
 //new Tag("ScalesE_Tare_IsBusy", "MixRubber17.PLC110-504.ScalesE_Status.Tare_IsBusy"),
 //new Tag("ScalesE_Weight_NotNormal", "MixRubber17.PLC110-504.ScalesE_Status.Weight_NotNormal"),
@@ -150,7 +148,7 @@ new Tag("BatcherSh1", "MixRubber17.PLC110-507.BatchersSh.BatcherSh1"),
 new Tag("BatcherSh2", "MixRubber17.PLC110-507.BatchersSh.BatcherSh2"),
 new Tag("BatcherSh3", "MixRubber17.PLC110-507.BatchersSh.BatcherSh3"),
 
-new Tag("ScalesSh_IsClosed", "MixRubber17.PLC110-507.ScalesSh_Status.IsClosed"),
+new Tag("ScalesSh_IsOpened", "MixRubber17.PLC110-507.ScalesSh_Status.IsOpened"),
 new Tag("ScalesSh_Weighing", "MixRubber17.PLC110-504.ScalesSh_Status.Weighing"),
 //new Tag("ScalesSH_Tare_IsBusy", "MixRubber17.PLC110-507.ScalesE_Status.Tare_IsBusy"),
 //new Tag("ScalesSH_Weight_NotNormal", "MixRubber17.PLC110-507.ScalesSH_Status.Weight_NotNormal"),
@@ -174,7 +172,7 @@ new Tag("BatcherJu1", "MixRubber17.PLC110-507.BatchersJu.BatcherJu1"),
 new Tag("BatcherJu2", "MixRubber17.PLC110-507.BatchersJu.BatcherJu2"),
 new Tag("BatcherJu3", "MixRubber17.PLC110-507.BatchersJu.BatcherJu3"),
 
-new Tag("ScalesJu_IsClosed", "MixRubber17.PLC110-507.ScalesJu_Status.IsClosed"),
+new Tag("ScalesJu_IsOpened", "MixRubber17.PLC110-507.ScalesJu_Status.IsOpened"),
 new Tag("ScalesJu_Weighing", "MixRubber17.PLC110-504.ScalesJu_Status.Weighing"),
 //new Tag("ScalesJU_Tare_IsBusy", "MixRubber17.PLC110-507.ScalesJU_Status.Tare_IsBusy"),  //Весы Ю.Предупреждения.Тара занята
 //new Tag("ScalesJU_Weight_NotNormal", "MixRubber17.PLC110-507.ScalesJU_Status.Weight_NotNormal"),  // Весы Ю.Вес не норма.Перевес
@@ -197,7 +195,7 @@ new Tag("BatcherY1", "MixRubber17.PLC110-507.BatchersY.BatcherY1"),
 new Tag("BatcherY2", "MixRubber17.PLC110-507.BatchersY.BatcherY2"),
 new Tag("BatcherY3", "MixRubber17.PLC110-507.BatchersY.BatcherY3"),
 
-new Tag("ScalesY_IsClosed", "MixRubber17.PLC110-507.ScalesY_Status.IsClosed"),
+new Tag("ScalesY_IsOpened", "MixRubber17.PLC110-507.ScalesY_Status.IsOpened"),
 new Tag("ScalesY_Weighing", "MixRubber17.PLC110-504.ScalesY_Status.Weighing"),
 //new Tag("ScalesY_Tare_IsBusy", "MixRubber17.PLC110-507.ScalesY_Status.Tare_IsBusy"),
 //new Tag("ScalesY_Weight_NotNormal", "MixRubber17.PLC110-507.ScalesY_Status.Weight_NotNormal"),
@@ -217,7 +215,7 @@ new Tag("ScalesY_FullReal","MixRubber17.PLC100_ScalesY.FullReal","plc110.VesiY.F
 // new Tag("ScalesY_KRP","MixRubber17.PLC100_ScalesY.KRP","plc110.VesiY.KRP"),//Весы У.Обработка КРП
 
 
-/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
 ///
 //new Tag("ScalesK_CurNeed","MixRubber17.PLC100_ScalesK.CurNeed","plc110.VesiK.CurNeed"), //Бункер.Заданный вес
 //new Tag("ScalesK_FullNeed","MixRubber17.PLC100_ScalesK.FullNeed","plc110.VesiK.FullNeed"), //Весы K.Общий заданный вес
