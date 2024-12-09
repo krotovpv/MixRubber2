@@ -39,10 +39,12 @@ namespace MixRubber2
             // new Tag("ScalesC_BatcherNotWork", "MixRubber17.PLC110-504.ScalesC_Fail.Batcher_NotWork"),
             // new Tag("ScalesC_ClosedAndOpened", "MixRubber17.PLC110-504.ScalesC_Fail.ClosedAndOpened"),
 
-            new Tag("ScalesC.CurNeed", "MixRubber17.PLC100_ScalesC.CurNeed"),
-            new Tag("ScalesC.FullNeed", "MixRubber17.PLC100_ScalesC.FullNeed"),
-            new Tag("ScalesC.CurReal", "MixRubber17.PLC100_ScalesC.CurReal"),
-            new Tag("ScalesC.FullReal", "MixRubber17.PLC100_ScalesC.FullReal"),
+            new Tag("ScalesC_CurNeed","MixRubber17.PLC100_ScalesC.CurNeed","plc110.VesiC.CurNeed"),
+            new Tag("ScalesC_FullNeed","MixRubber17.PLC100_ScalesC.FullNeed","plc110.VesiC.FullNeed"),
+            // new Tag("ScalesC_Overweight","MixRubber17.PLC100_ScalesC.Overweight","plc110.VesiC.Pereves"), //Весы С.Вес не норма
+            new Tag("ScalesC_CurReal","MixRubber17.PLC100_ScalesC.CurReal","plc110.VesiC.FullReal"), // Бункер.Измеренный вес
+            new Tag("ScalesC_FullReal","MixRubber17.PLC100_ScalesC.FullReal","plc110.VesiC.FullReal"), //Весы С.Данные.Общий измеренный вес
+            // new Tag("ScalesC_KRP","MixRubber17.PLC100_ScalesC.KRP","plc110.VesiC.KRP"), //Весы С.Обработка КРП
             #endregion
 
             #region Conteiner C
@@ -81,10 +83,12 @@ namespace MixRubber2
             // new Tag("ScalesJ_IsNotClosing", "MixRubber17.PLC110-504.ScalesJ_Fail.IsNotClosing"),
             // new Tag("ScalesJ_BatcherFail", "MixRubber17.PLC110-504.ScalesJ_Fail.BatcherFail"),
 
-            new Tag("ScalesJ_CurNeed", "MixRubber17.PLC100_ScalesJ.CurNeed"),
-            new Tag("ScalesJ_FullNeed", "MixRubber17.PLC100_ScalesJ.FullNeed"),
-            new Tag("ScalesJ_CurReal", "MixRubber17.PLC100_ScalesJ.CurReal"),
-            new Tag("ScalesJ_FullReal", "MixRubber17.PLC100_ScalesJ.FullReal"),
+            new Tag("ScalesJ_CurNeed","MixRubber17.PLC100_ScalesJ.CurNeed","plc110.VesiJ.CurNeed"), // Бункер.Заданный вес
+            new Tag("ScalesJ_FullNeed","MixRubber17.PLC100_ScalesJ.FullNeed","plc110.VesiJ.FullNeed"), //Весы Ж.Общий заданный вес
+            // new Tag("ScalesJ_Overweight","MixRubber17.PLC100_ScalesJ.Overweight","plc110.VesiJ.Pereves"), //Весы Ж.Вес не норма
+            new Tag("ScalesJ_CurReal","MixRubber17.PLC100_ScalesJ.CurReal","plc110.VesiJ.FullReal"), //Бункер.Измеренный вес
+            new Tag("ScalesJ_FullReal","MixRubber17.PLC100_ScalesJ.FullReal","plc110.VesiJ.FullReal"), //Весы Ж.Общий измеренный вес
+            // new Tag("ScalesJ_KRP","MixRubber17.PLC100_ScalesJ.KRP","plc110.VesiJ.KRP"), //Весы Ж.Обработка КРП
             #endregion
 
             //new Tag("Injector_Weighting", "MixRubber17.PLC110-504.Injector.Weighting"),
@@ -108,10 +112,12 @@ new Tag("ScalesD_Weighing", "MixRubber17.PLC110-504.ScalesD_Status.Weighing"),
 // new Tag("ScalesD_BatcherFail", "MixRubber17.PLC110-504.ScalesD_Fail.BatcherFail"),
 //new Tag("ScalesD_BatcherNotWork", "MixRubber17.PLC110-504.ScalesD_Fail.Batcher_NotWork"),
 
-new Tag("ScalesD_CurNeed", "MixRubber17.PLC100_ScalesD.CurNeed"),
-new Tag("ScalesD_FullNeed", "MixRubber17.PLC100_ScalesD.FullNeed"),
-new Tag("ScalesD_CurReal", "MixRubber17.PLC100_ScalesD.CurReal"),
-new Tag("ScalesD_FullReal", "MixRubber17.PLC100_ScalesD.FullReal"),
+new Tag("ScalesD_CurNeed","MixRubber17.PLC100_ScalesD.CurNeed","plc110.VesiD.CurNeed"), //Бункер.Заданный вес
+new Tag("ScalesD_FullNeed","MixRubber17.PLC100_ScalesD.FullNeed","plc110.VesiD.FullNeed"), //Весы Д.Общий заданный вес
+// new Tag("ScalesD_Overweight","MixRubber17.PLC100_ScalesD.Overweight","plc110.VesiD.Pereves"), //Весы Д.Вес не норма
+new Tag("ScalesD_CurReal","MixRubber17.PLC100_ScalesD.CurReal","plc110.VesiD.FullReal"), //Бункер.Измеренный вес
+new Tag("ScalesD_FullReal","MixRubber17.PLC100_ScalesD.FullReal","plc110.VesiD.FullReal"), //Весы Д.Общий измеренный вес
+// new Tag("ScalesD_KRP","MixRubber17.PLC100_ScalesD.KRP","plc110.VesiD.KRP"),//Весы Д.Обработка КРП
 
 new Tag("BatcherE1", "MixRubber17.PLC110-504.BatchersE.BatcherE1"),
 new Tag("BatcherE2", "MixRubber17.PLC110-504.BatchersE.BatcherE2"),
@@ -124,10 +130,13 @@ new Tag("ScalesE_Weighing", "MixRubber17.PLC110-504.ScalesE_Status.Weighing"),
 //new Tag("ScalesE_Initial", "MixRubber17.PLC110-504.ScalesE_Status.Initial"),
 //new Tag("ScalesE_CommandOpen", "MixRubber17.PLC110-504.ScalesE_Status.CommandOpen"),
 
-new Tag("ScalesE_CurNeed", "MixRubber17.PLC100_ScalesE.CurNeed"),
-new Tag("ScalesE_FullNeed", "MixRubber17.PLC100_ScalesE.FullNeed"),
-new Tag("ScalesE_CurReal", "MixRubber17.PLC100_ScalesE.CurReal"),
-new Tag("ScalesE_FullReal", "MixRubber17.PLC100_ScalesE.FullReal"),
+new Tag("ScalesE_CurNeed","MixRubber17.PLC100_ScalesE.CurNeed","plc110.VesiE.CurNeed"), //Бункер.Заданный вес
+new Tag("ScalesE_FullNeed","MixRubber17.PLC100_ScalesE.FullNeed","plc110.VesiE.FullNeed"), //Весы E.Общий заданный вес
+// new Tag("ScalesE_Overweight","MixRubber17.PLC100_ScalesE.Overweight","plc110.VesiE.Pereves"), //Весы E.Вес не норма
+new Tag("ScalesE_CurReal","MixRubber17.PLC100_ScalesE.CurReal","plc110.VesiE.FullReal"), //Бункер.Измеренный вес
+new Tag("ScalesE_FullReal","MixRubber17.PLC100_ScalesE.FullReal","plc110.VesiE.FullReal"), //Весы E.Общий измеренный вес
+// new Tag("ScalesE_KRP","MixRubber17.PLC100_ScalesE.KRP","plc110.VesiE.KRP"),//Весы E.Обработка КРП
+
 
 // new Tag("ScalesE_IsNotOpening", "MixRubber17.PLC110-504.ScalesE_Fail.IsNotOpening"),
 // new Tag("ScalesE_IsNotClosing", "MixRubber17.PLC110-504.ScalesE_Fail.IsNotClosing"),
@@ -151,10 +160,13 @@ new Tag("ScalesSh_Weighing", "MixRubber17.PLC110-504.ScalesSh_Status.Weighing"),
 // new Tag("ScalesSH_BatcherFail", "MixRubber17.PLC110-504.ScalesSH_Fail.BatcherFail"),
 // new Tag("ScalesSH_BatcherNotWork", "MixRubber17.PLC110-507.ScalesSH_Fail.Batcher_NotWork"), //Навеска по весам Ш не включилась
 
-new Tag("ScalesSh_CurNeed", "MixRubber17.PLC100_ScalesSh.CurNeed"),
-new Tag("ScalesSh_FullNeed", "MixRubber17.PLC100_ScalesSh.FullNeed"),
-new Tag("ScalesSh_CurReal", "MixRubber17.PLC100_ScalesSh.CurReal"),
-new Tag("ScalesSh_FullReal", "MixRubber17.PLC100_ScalesSh.FullReal"),
+new Tag("ScalesSH_CurNeed","MixRubber17.PLC100_ScalesSH.CurNeed","plc110.VesiSH.CurNeed"), //Бункер.Заданный вес
+new Tag("ScalesSH_FullNeed","MixRubber17.PLC100_ScalesSH.FullNeed","plc110.VesiSH.FullNeed"), //Весы Ш.Общий заданный вес
+// new Tag("ScalesSH_Overweight","MixRubber17.PLC100_ScalesSH.Overweight","plc110.VesiSH.Pereves"), //Весы Ш.Вес не норма
+new Tag("ScalesSH_CurReal","MixRubber17.PLC100_ScalesSH.CurReal","plc110.VesiSH.FullReal"), //Бункер.Измеренный вес
+new Tag("ScalesSH_FullReal","MixRubber17.PLC100_ScalesSH.FullReal","plc110.VesiSH.FullReal"), //Весы Ш.Общий измеренный вес
+// new Tag("ScalesSH_KRP","MixRubber17.PLC100_ScalesSH.KRP","plc110.VesiSH.KRP"),//Весы Ш.Обработка КРП
+
 
 new Tag("BatcherJu1", "MixRubber17.PLC110-507.BatchersJu.BatcherJu1"),
 new Tag("BatcherJu2", "MixRubber17.PLC110-507.BatchersJu.BatcherJu2"),
@@ -172,10 +184,12 @@ new Tag("ScalesJu_Weighing", "MixRubber17.PLC110-504.ScalesJu_Status.Weighing"),
 // new Tag("ScalesJU_BatcherFail", "MixRubber17.PLC110-504.ScalesJU_Fail.BatcherFail"), вария весов Ю сигнал с дозаторов 
 // new Tag("ScalesJU_BatcherNotWork", "MixRubber17.PLC110-507.ScalesJU_Fail.Batcher_NotWork"), //Навеска по весам Ю не включилась
 
-new Tag("ScalesJu_CurNeed", "MixRubber17.PLC100_ScalesJu.CurNeed"),
-new Tag("ScalesJu_FullNeed", "MixRubber17.PLC100_ScalesJu.FullNeed"),
-new Tag("ScalesJu_CurReal", "MixRubber17.PLC100_ScalesJu.CurReal"),
-new Tag("ScalesJu_FullReal", "MixRubber17.PLC100_ScalesJu.FullReal"),
+new Tag("ScalesJU_CurNeed","MixRubber17.PLC100_ScalesJU.CurNeed","plc110.VesiJU.CurNeed"), //Бункер.Заданный вес
+new Tag("ScalesJU_FullNeed","MixRubber17.PLC100_ScalesJU.FullNeed","plc110.VesiJU.FullNeed"), //Весы Ю.Общий заданный вес
+// new Tag("ScalesJU_Overweight","MixRubber17.PLC100_ScalesJU.Overweight","plc110.VesiJU.Pereves"), //Весы Ю.Вес не норма
+new Tag("ScalesJU_CurReal","MixRubber17.PLC100_ScalesJU.CurReal","plc110.VesiJU.FullReal"), //Бункер.Измеренный вес
+new Tag("ScalesJU_FullReal","MixRubber17.PLC100_ScalesJU.FullReal","plc110.VesiJU.FullReal"), //Весы Ю.Общий измеренный вес
+// new Tag("ScalesJU_KRP","MixRubber17.PLC100_ScalesJU.KRP","plc110.VesiJU.KRP"),//Весы Ю.Обработка КРП
 
 new Tag("BatcherY1", "MixRubber17.PLC110-507.BatchersY.BatcherY1"),
 new Tag("BatcherY2", "MixRubber17.PLC110-507.BatchersY.BatcherY2"),
@@ -193,12 +207,22 @@ new Tag("ScalesY_Weighing", "MixRubber17.PLC110-504.ScalesY_Status.Weighing"),
 // new Tag("ScalesY_BatcherFail", "MixRubber17.PLC110-504.ScalesY_Fail.BatcherFail"), Авария весов У сигнал с дозаторов 
 // new Tag("ScalesY_BatcherNotWork", "MixRubber17.PLC110-507.ScalesY_Fail.Batcher_NotWork"), //Навеска по весам У не включилась
 
-new Tag("ScalesY_CurNeed", "MixRubber17.PLC100_ScalesY.CurNeed"),
-new Tag("ScalesY_FullNeed", "MixRubber17.PLC100_ScalesY.FullNeed"),
-new Tag("ScalesY_CurReal", "MixRubber17.PLC100_ScalesY.CurReal"),
-new Tag("ScalesY_FullReal", "MixRubber17.PLC100_ScalesY.FullReal"),
+new Tag("ScalesY_CurNeed","MixRubber17.PLC100_ScalesY.CurNeed","plc110.VesiY.CurNeed"), //Бункер.Заданный вес
+new Tag("ScalesY_FullNeed","MixRubber17.PLC100_ScalesY.FullNeed","plc110.VesiY.FullNeed"), //Весы У.Общий заданный вес
+// new Tag("ScalesY_Overweight","MixRubber17.PLC100_ScalesY.Overweight","plc110.VesiY.Pereves"), //Весы У.Вес не норма
+new Tag("ScalesY_CurReal","MixRubber17.PLC100_ScalesY.CurReal","plc110.VesiY.FullReal"), //Бункер.Измеренный вес
+new Tag("ScalesY_FullReal","MixRubber17.PLC100_ScalesY.FullReal","plc110.VesiY.FullReal"), //Весы У.Общий измеренный вес
+// new Tag("ScalesY_KRP","MixRubber17.PLC100_ScalesY.KRP","plc110.VesiY.KRP"),//Весы У.Обработка КРП
+
 
 /////////////////////////////////////////////////////////////////////////////
+///
+//new Tag("ScalesK_CurNeed","MixRubber17.PLC100_ScalesK.CurNeed","plc110.VesiK.CurNeed"), //Бункер.Заданный вес
+//new Tag("ScalesK_FullNeed","MixRubber17.PLC100_ScalesK.FullNeed","plc110.VesiK.FullNeed"), //Весы K.Общий заданный вес
+// new Tag("ScalesK_Overweight","MixRubber17.PLC100_ScalesK.Overweight","plc110.VesiK.Pereves"), //Весы K.Вес не норма
+//new Tag("ScalesK_CurReal","MixRubber17.PLC100_ScalesK.CurReal","plc110.VesiK.FullReal"), //Бункер.Измеренный вес
+//new Tag("ScalesK_FullReal","MixRubber17.PLC100_ScalesK.FullReal","plc110.VesiK.FullReal"), //Весы K.Общий измеренный вес
+// new Tag("ScalesK_KRP","MixRubber17.PLC100_ScalesK.KRP","plc110.VesiK.KRP"),//Весы K.Обработка КРП
 
 // new Tag("ScalesK_TareIsBusy", "MixRubber17.PLC110-504.ScalesK_Status.Tare_IsBusy"),
 // new Tag("ScalesK_Weight_NotNormal", "MixRubber17.PLC110-504.ScalesK_Status.Weight_NotNormal"),
