@@ -36,8 +36,8 @@ namespace MixRubber2
             // new Tag("ScalesC_IsNotOpening", "MixRubber17.PLC110-504.ScalesC_Fail.IsNotOpening"),
             // new Tag("ScalesC_IsNotClosing", "MixRubber17.PLC110-504.ScalesC_Fail.IsNotClosing"),
             // new Tag("ScalesC_BatcherFail", "MixRubber17.PLC110-504.ScalesC_Fail.BatcherFail"),
-            // new Tag("ScalesC_BatcherNotWork", "MixRubber17.PLC110-504.ScalesC_Fail.Batcher_NotWork"),
             // new Tag("ScalesC_ClosedAndOpened", "MixRubber17.PLC110-504.ScalesC_Fail.ClosedAndOpened"),
+            // new Tag("ScalesC_BatcherNotWork", "MixRubber17.PLC110-504.ScalesC_Fail.Batcher_NotWork"),
 
             new Tag("ScalesC_CurNeed","MixRubber17.PLC100_ScalesC.CurNeed","plc110.VesiC.CurNeed"),
             new Tag("ScalesC_FullNeed","MixRubber17.PLC100_ScalesC.FullNeed","plc110.VesiC.FullNeed"),
@@ -50,9 +50,9 @@ namespace MixRubber2
             #region Conteiner C
             // new Tag("ContainerC_IsClosed", "MixRubber17.PLC110-504.ContainerC_Status.IsClosed"),
             // new Tag("ContainerC_IsOpened", "MixRubber17.PLC110-504.ContainerC_Status.IsOpened"),
+            // new Tag("ContainerC_Weighting", "MixRubber17.PLC110-504.ContainerC_Status.Weighting"),
             // new Tag("ContainerC_BatcherNum", "MixRubber17.PLC110-504.ContainerC_Status.BatcherNum", "plc110.plc110_SCADA.CV0_na_C"),
             // new Tag("ContainerC_CommandOpen", "MixRubber17.PLC110-504.ContainerC_Status.CommandOpen"),
-            // new Tag("ContainerC_Weighting", "MixRubber17.PLC110-504.ContainerC_Status.Weighting"),
 
             // new Tag("ContainerC_IsNotClosing", "MixRubber17.PLC110-504.ContainerC_Fail.IsNotClosing"),
             // new Tag("ContainerC_IsNotOpening", "MixRubber17.PLC110-504.ContainerC_Fail.IsNotOpening"),
@@ -62,7 +62,7 @@ namespace MixRubber2
             // new Tag("ScrewTC_Working", "MixRubber17.PLC110-504.ScrewTC.Working"),
             // new Tag("ScrewTC_CommandOn", "MixRubber17.PLC110-504.ScrewTC.CommandOn"),
             // new Tag("ScrewTC_NotOn", "MixRubber17.PLC110-504.ScrewTC.NotOn"),
-            // new Tag("ScrewTC_NotStoped", "MixRubber17.PLC110-504.ScrewTC.NotStoped"),
+            // new Tag("ScrewTC_NotStopped", "MixRubber17.PLC110-504.ScrewTC.NotStopped"),
             #endregion
 
             #region Scales J
@@ -88,12 +88,14 @@ namespace MixRubber2
             // new Tag("ScalesJ_Overweight","MixRubber17.PLC100_ScalesJ.Overweight","plc110.VesiJ.Pereves"), //Весы Ж.Вес не норма
             new Tag("ScalesJ_CurReal","MixRubber17.PLC100_ScalesJ.CurReal","plc110.VesiJ.FullReal"), //Бункер.Измеренный вес
             new Tag("ScalesJ_FullReal","MixRubber17.PLC100_ScalesJ.FullReal","plc110.VesiJ.FullReal"), //Весы Ж.Общий измеренный вес
-            // new Tag("ScalesJ_KRP","MixRubber17.PLC100_ScalesJ.KRP","plc110.VesiJ.KRP"), //Весы Ж.Обработка КРП
+                                                                                                       // new Tag("ScalesJ_KRP","MixRubber17.PLC100_ScalesJ.KRP","plc110.VesiJ.KRP"), //Весы Ж.Обработка КРП
             #endregion
 
+            #region Injector
             //new Tag("Injector_Weighting", "MixRubber17.PLC110-504.Injector.Weighting"),
             //new Tag("Injector_NotEmpty", "MixRubber17.PLC110-504.Injector.NotEmpty"),
             //new Tag("Injector_NotFull", "MixRubber17.PLC110-504.Injector.NotFull"),
+            #endregion
 
             new Tag("BatcherD1", "MixRubber17.PLC110-504.BatchersD.BatcherD1"),
 new Tag("BatcherD2", "MixRubber17.PLC110-504.BatchersD.BatcherD2"),
