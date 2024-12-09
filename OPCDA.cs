@@ -174,22 +174,22 @@ new Tag("BatcherJu3", "MixRubber17.PLC110-507.BatchersJu.BatcherJu3"),
 
 new Tag("ScalesJu_IsOpened", "MixRubber17.PLC110-507.ScalesJu_Status.IsOpened"),
 new Tag("ScalesJu_Weighing", "MixRubber17.PLC110-504.ScalesJu_Status.Weighing"),
-//new Tag("ScalesJU_Tare_IsBusy", "MixRubber17.PLC110-507.ScalesJU_Status.Tare_IsBusy"),  //Весы Ю.Предупреждения.Тара занята
-//new Tag("ScalesJU_Weight_NotNormal", "MixRubber17.PLC110-507.ScalesJU_Status.Weight_NotNormal"),  // Весы Ю.Вес не норма.Перевес
-//new Tag("ScalesJU_Initial", "MixRubber17.PLC110-507.ScalesJU_Status.Initial"),  //Весы Ю.Предупреждения.Исходное
-//new Tag("ScalesJU_CommandOpen", "MixRubber17.PLC110-507.ScalesJU_Status.CommandOpen"), //Команда Открыть весы Ю
+//new Tag("ScalesJu_Tare_IsBusy", "MixRubber17.PLC110-507.ScalesJu_Status.Tare_IsBusy"),  //Весы Ю.Предупреждения.Тара занята
+//new Tag("ScalesJu_Weight_NotNormal", "MixRubber17.PLC110-507.ScalesJu_Status.Weight_NotNormal"),  // Весы Ю.Вес не норма.Перевес
+//new Tag("ScalesJu_Initial", "MixRubber17.PLC110-507.ScalesJu_Status.Initial"),  //Весы Ю.Предупреждения.Исходное
+//new Tag("ScalesJu_CommandOpen", "MixRubber17.PLC110-507.ScalesJu_Status.CommandOpen"), //Команда Открыть весы Ю
 
-// new Tag("ScalesJU_IsNotOpening", "MixRubber17.PLC110-507.ScalesJU_Fail.IsNotOpening"),
-// new Tag("ScalesJU_IsNotClosing", "MixRubber17.PLC110-507.ScalesJU_Fail.IsNotClosing"),
-// new Tag("ScalesJU_BatcherFail", "MixRubber17.PLC110-504.ScalesJU_Fail.BatcherFail"), вария весов Ю сигнал с дозаторов 
-// new Tag("ScalesJU_BatcherNotWork", "MixRubber17.PLC110-507.ScalesJU_Fail.Batcher_NotWork"), //Навеска по весам Ю не включилась
+// new Tag("ScalesJu_IsNotOpening", "MixRubber17.PLC110-507.ScalesJu_Fail.IsNotOpening"),
+// new Tag("ScalesJu_IsNotClosing", "MixRubber17.PLC110-507.ScalesJu_Fail.IsNotClosing"),
+// new Tag("ScalesJu_BatcherFail", "MixRubber17.PLC110-504.ScalesJu_Fail.BatcherFail"), вария весов Ю сигнал с дозаторов 
+// new Tag("ScalesJu_BatcherNotWork", "MixRubber17.PLC110-507.ScalesJu_Fail.Batcher_NotWork"), //Навеска по весам Ю не включилась
 
-new Tag("ScalesJU_CurNeed","MixRubber17.PLC100_ScalesJU.CurNeed","plc110.VesiJU.CurNeed"), //Бункер.Заданный вес
-new Tag("ScalesJU_FullNeed","MixRubber17.PLC100_ScalesJU.FullNeed","plc110.VesiJU.FullNeed"), //Весы Ю.Общий заданный вес
-// new Tag("ScalesJU_Overweight","MixRubber17.PLC100_ScalesJU.Overweight","plc110.VesiJU.Pereves"), //Весы Ю.Вес не норма
-new Tag("ScalesJU_CurReal","MixRubber17.PLC100_ScalesJU.CurReal","plc110.VesiJU.FullReal"), //Бункер.Измеренный вес
-new Tag("ScalesJU_FullReal","MixRubber17.PLC100_ScalesJU.FullReal","plc110.VesiJU.FullReal"), //Весы Ю.Общий измеренный вес
-// new Tag("ScalesJU_KRP","MixRubber17.PLC100_ScalesJU.KRP","plc110.VesiJU.KRP"),//Весы Ю.Обработка КРП
+new Tag("ScalesJu_CurNeed","MixRubber17.PLC100_ScalesJu.CurNeed","plc110.VesiJu.CurNeed"), //Бункер.Заданный вес
+new Tag("ScalesJu_FullNeed","MixRubber17.PLC100_ScalesJu.FullNeed","plc110.VesiJu.FullNeed"), //Весы Ю.Общий заданный вес
+// new Tag("ScalesJu_Overweight","MixRubber17.PLC100_ScalesJu.Overweight","plc110.VesiJu.Pereves"), //Весы Ю.Вес не норма
+new Tag("ScalesJu_CurReal","MixRubber17.PLC100_ScalesJu.CurReal","plc110.VesiJu.FullReal"), //Бункер.Измеренный вес
+new Tag("ScalesJu_FullReal","MixRubber17.PLC100_ScalesJu.FullReal","plc110.VesiJu.FullReal"), //Весы Ю.Общий измеренный вес
+// new Tag("ScalesJu_KRP","MixRubber17.PLC100_ScalesJu.KRP","plc110.VesiJu.KRP"),//Весы Ю.Обработка КРП
 
 new Tag("BatcherY1", "MixRubber17.PLC110-507.BatchersY.BatcherY1"),
 new Tag("BatcherY2", "MixRubber17.PLC110-507.BatchersY.BatcherY2"),
@@ -242,7 +242,7 @@ new Tag("ScalesY_FullReal","MixRubber17.PLC100_ScalesY.FullReal","plc110.VesiY.F
 // new Tag("UpPress_NotUp", "MixRubber17.PLC110-504.MixRubber_Fail.UpPress_NotUp"),
 // new Tag("UpPress_NotDown", "MixRubber17.PLC110-504.MixRubber_Fail.UpPress_NotDown"),
 // new Tag("UpPress_UpAndDown", "MixRubber17.PLC110-504.MixRubber_Fail.UpPress_UpAndDown"),
-// new Tag("MR_Stoped", "MixRubber17.PLC110-504.MixRubber_Fail.MR_Stoped"),
+// new Tag("MR_Stoped", "MixRubber17.PLC110-504.MixRubber_Fail.MR_Stoped"), //
 // new Tag("Pin_NotClose", "MixRubber17.PLC110-504.MixRubber_Fail.Pin_NotClose"),
 // new Tag("Pin_NotOpen", "MixRubber17.PLC110-504.MixRubber_Fail.Pin_NotOpen"),
 // new Tag("FlapValve_NotOpened", "MixRubber17.PLC110-504.MixRubber_Fail.FlapValve_NotOpened"),
@@ -321,7 +321,7 @@ new Tag("ScalesY_FullReal","MixRubber17.PLC100_ScalesY.FullReal","plc110.VesiY.F
 // new Tag("Command_ScrewTC_On", "MixRubber17.PLC110-507.TestRegim.Command_ScrewTC_On")// Включить шнек ТУ		
 // new Tag("Command_ContainerC_Open", "MixRubber17.PLC110-507.TestRegim.Command_ContainerC_Open")// Открыть сборную	ТУ		
 // new Tag("Command_ScalesYOpen", "MixRubber17.PLC110-507.TestRegim.Command_ScalesYOpen")// Открыть весы У			
-// new Tag("Command_ScalesJUOpen", "MixRubber17.PLC110-507.TestRegim.Command_ScalesJUOpen")// Открыть весы Ю	
+// new Tag("Command_ScalesJuOpen", "MixRubber17.PLC110-507.TestRegim.Command_ScalesJuOpen")// Открыть весы Ю	
 
 		
 
