@@ -374,6 +374,10 @@ namespace MixRubber2
             // new Tag("RegMix_IsGoing","MixRubber17.PLC110-505.RegMix_IsGoing","plc110.plc110_ARMO.Zapret"),//Идет цикл смешения, запрет загрузки	
             // new Tag("RegMix_On","MixRubber17.PLC110-505.RegMix_On","plc110.plc110_ARMO.Zagl_100"),//Пуск режима смешения (1 -включен)
         };
+        public static List<Tag> AllUnboxingAlternativeTags = new List<Tag>() 
+        { 
+
+        };
 
         static OPCDA()
         {
@@ -408,7 +412,10 @@ namespace MixRubber2
             if (IsAlternativeOPC)
             {
                 foreach (Tag item in AllTags)
-                    _OPCGroup.OPCItems.AddItem(item.AlternativePath, item.ClientHandle);
+                {
+                    if (item.AlternativePath != "")
+                        _OPCGroup.OPCItems.AddItem(item.AlternativePath, item.ClientHandle);
+                }
             }
             else
             {
