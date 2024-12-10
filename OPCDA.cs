@@ -244,6 +244,11 @@ namespace MixRubber2
             // new Tag("MR_FlapValveClosed", "MixRubber17.MixRubber17.PLC110-504.MixRubber_Status.FlapValveClosed"),//1-закрыта
             // new Tag("MR_PinClosed", "MixRubber17.PLC110-504.MixRubber_Status.PinClosed"),
             // new Tag("MR_RegimWork", "MixRubber17.PLC110-504.MixRubber_Status.RegimWork", "plc110.plc110_SCADA.XX6"), //Режим работы резиносмесителя. 0,1 - холостой;  2,3,4 - смесь; 3 - выгрузка
+            // new Tag("Command_UpperPressUp", "MixRubber17.PLC110-504.MixRubber_Status.Command_UpperPressUp"),//Команда Поднять Верхний пресс.Сигнал.Вход
+            // new Tag("Command_PressureOff", "MixRubber17.PLC110-504.MixRubber_Status.Command_PressureOff"),//Команда Снять давление с ВП.Сигнал.Вход
+            // new Tag("Command_UpperPressDown", "MixRubber17.PLC110-504.MixRubber_Status.Command_UpperPressDown"),//Команда Опустить Верхний пресс.Сигнал.Вход
+            // new Tag("Command_KlinClose", "MixRubber17.PLC110-504.MixRubber_Status.Command_KlinClose"),//Команда Закрыть Клин
+            // new Tag("Command_FlapValveClose", "MixRubber17.PLC110-504.MixRubber_Status.FlapValve_CommandClose"),//Команда Закрыть Горбушу
 
             // new Tag("UpPress_PressureNotOff", "MixRubber17.PLC110-504.MixRubber_Fail.UpPress_PressureNotOff"),
             // new Tag("UpPress_NotUp", "MixRubber17.PLC110-504.MixRubber_Fail.UpPress_NotUp"),
