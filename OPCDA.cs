@@ -247,7 +247,7 @@ namespace MixRubber2
             // new Tag("Command_UpperPressUp", "MixRubber17.PLC110-504.MixRubber_Status.Command_UpperPressUp"),//Команда Поднять Верхний пресс.Сигнал.Вход
             // new Tag("Command_PressureOff", "MixRubber17.PLC110-504.MixRubber_Status.Command_PressureOff"),//Команда Снять давление с ВП.Сигнал.Вход
             // new Tag("Command_UpperPressDown", "MixRubber17.PLC110-504.MixRubber_Status.Command_UpperPressDown"),//Команда Опустить Верхний пресс.Сигнал.Вход
-            // new Tag("Command_KlinClose", "MixRubber17.PLC110-504.MixRubber_Status.Command_KlinClose"),//Команда Закрыть Клин
+            // new Tag("Command_PinClose", "MixRubber17.PLC110-504.MixRubber_Status.Command_PinClose"),//Команда Закрыть Клин
             // new Tag("Command_FlapValveClose", "MixRubber17.PLC110-504.MixRubber_Status.FlapValve_CommandClose"),//Команда Закрыть Горбушу
 
             // new Tag("UpPress_PressureNotOff", "MixRubber17.PLC110-504.MixRubber_Fail.UpPress_PressureNotOff"),
