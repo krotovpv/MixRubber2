@@ -59,7 +59,7 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "BatcherC3").First().ValueChanged += ScalesC_Batcher3_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherC4").First().ValueChanged += ScalesC_Batcher4_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherC5").First().ValueChanged += ScalesC_Batcher5_ValueChanged;
-
+            /*
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_IsClosed").First().ValueChanged += ScalesC_IsClosedChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_IsOpened").First().ValueChanged += ScalesC_IsOpenedChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_Weighing").First().ValueChanged += ScalesC_WeighingChanged;
@@ -142,7 +142,7 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "ScalesY_FullNeed").First().ValueChanged += ScalesU_FullNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesY_CurReal").First().ValueChanged += ScalesU_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesY_FullReal").First().ValueChanged += ScalesU_FullReal_ValueChanged;
-            
+            */
             OPCDA.ConnectionOPC();
         }
 

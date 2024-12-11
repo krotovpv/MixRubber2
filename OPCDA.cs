@@ -10,21 +10,21 @@ namespace MixRubber2
 {
     public static class OPCDA
     {
-        static bool IsAlternativeOPC = false;
+        static bool IsAlternativeOPC = true;
         static string ServerName = "Owen.OPCNet.DA.1";
-        static string AlernativeServerName = "";
+        static string AlernativeServerName = "Lectus.OPC.1";
         static OPCServer _OPCServer = new OPCServer();
         static OPCGroup _OPCGroup = null;
 
         public static List<Tag> AllTags = new List<Tag>()
         {
-            #region Scales C
-            new Tag("BatcherC1", "MixRubber17.PLC110-504.BatchersC.BatcherC1"),
-            new Tag("BatcherC2", "MixRubber17.PLC110-504.BatchersC.BatcherC2"),
-            new Tag("BatcherC3", "MixRubber17.PLC110-504.BatchersC.BatcherC3"),
-            new Tag("BatcherC4", "MixRubber17.PLC110-504.BatchersC.BatcherC4"),
-            new Tag("BatcherC5", "MixRubber17.PLC110-504.BatchersC.BatcherC5"),
-        
+            //#region Scales C
+            new Tag("BatcherC1", "MixRubber17.PLC110-504.BatchersC.BatcherC1", "Node.Item1", 0),
+            new Tag("BatcherC2", "MixRubber17.PLC110-504.BatchersC.BatcherC2", "Node.Item1", 1),
+            new Tag("BatcherC3", "MixRubber17.PLC110-504.BatchersC.BatcherC3", "Node.Item1", 2),
+            new Tag("BatcherC4", "MixRubber17.PLC110-504.BatchersC.BatcherC4", "Node.Item1", 3),
+            new Tag("BatcherC5", "MixRubber17.PLC110-504.BatchersC.BatcherC5", "Node.Item1", 4),
+        /*
             new Tag("ScalesC_IsClosed", "MixRubber17.PLC110-504.ScalesC_Status.IsClosed"),
             new Tag("ScalesC_IsOpened", "MixRubber17.PLC110-504.ScalesC_Status.IsOpened"),
             new Tag("ScalesC_Weighing", "MixRubber17.PLC110-504.ScalesC_Status.Weighing"),
@@ -378,10 +378,7 @@ namespace MixRubber2
             // new Tag("TDanger","MixRubber17.PLC110-505.TDanger","plc110.plc110_ARMO.R443_Tkri"),//Температура критическая  заданная
             // new Tag("RegMix_IsGoing","MixRubber17.PLC110-505.RegMix_IsGoing","plc110.plc110_ARMO.Zapret"),//Идет цикл смешения, запрет загрузки	
             // new Tag("RegMix_On","MixRubber17.PLC110-505.RegMix_On","plc110.plc110_ARMO.Zagl_100"),//Пуск режима смешения (1 -включен)
-        };
-        public static List<Tag> AllUnboxingAlternativeTags = new List<Tag>() 
-        { 
-
+        */
         };
 
         static OPCDA()
@@ -432,7 +429,9 @@ namespace MixRubber2
         public static void DisconnectOPC()
         {
             if (_OPCServer != null)
+            {
                 _OPCServer.Disconnect();
+            }
         }
 
         /// <summary>

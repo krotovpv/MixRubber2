@@ -10,12 +10,13 @@ namespace MixRubber2
     public class Tag
     {
         static int indexe = 0;
-        public Tag(string name, string path, string alternativePath = "")
+        public Tag(string name, string path, string alternativePath = "", int? bitNumber = null)
         {
             Name = name;
             Path = path;
             AlternativePath = alternativePath;
             ClientHandle = indexe++;
+            this.bitNumber = bitNumber;
         }
         public string Path { get; }
         public string AlternativePath { get; }
@@ -23,6 +24,7 @@ namespace MixRubber2
         public int ClientHandle { get; }
         public int ServerHandle { get; set; }
         private object _value = null;
+        private int? bitNumber = null;
         public object Value
         {
             get
@@ -31,10 +33,23 @@ namespace MixRubber2
             }
             set
             {
-                if (_value != value)
+                if (bitNumber != null)
                 {
-                    _value = value;
-                    ValueChanged?.Invoke(value);
+                    bool newValue = ((int)value & (1 << bitNumber)) != 0;
+                    bool? oldValue = Convert.ToBoolean(_value);
+                    if (oldValue != newValue)
+                    {
+                        _value = newValue;
+                        ValueChanged?.Invoke(_value);
+                    }
+                }
+                else
+                {
+                    if (_value != value)
+                    {
+                        _value = value;
+                        ValueChanged?.Invoke(_value);
+                    }
                 }
             }
         }
