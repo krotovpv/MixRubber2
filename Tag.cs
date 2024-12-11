@@ -23,8 +23,8 @@ namespace MixRubber2
         public string Name { get; }
         public int ClientHandle { get; }
         public int ServerHandle { get; set; }
-        private object _value = null;
         private int? bitNumber = null;
+        private object _value = null;
         public object Value
         {
             get
