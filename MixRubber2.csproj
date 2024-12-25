@@ -163,7 +163,7 @@
     <Resource Include="img\mixerMain.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="img\Rotor.png" />
+    <Resource Include="img\Rotor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

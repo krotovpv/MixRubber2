@@ -143,7 +143,7 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "ScalesY_CurReal").First().ValueChanged += ScalesU_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesY_FullReal").First().ValueChanged += ScalesU_FullReal_ValueChanged;
             */
-            OPCDA.ConnectionOPC();
+            //OPCDA.ConnectionOPC();
         }
 
 

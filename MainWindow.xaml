@@ -15,7 +15,7 @@
             <ColumnDefinition Width="1000*"/>
         </Grid.ColumnDefinitions>
 
-        <Viewbox Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left">
+        <Viewbox Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center">
             <Canvas Width="1920" Height="1040">
                 <!--<local:UCScales5 x:Name="ScalesC2" Titele="Весы Ы" Canvas.Left="240" Canvas.Top="700"/>-->
 
@@ -49,18 +49,23 @@
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="     НАЖАТ&#10;АВАРИЙНИК" Height="40" Canvas.Left="2" Canvas.Top="90" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="    ПУРФ&#10;ВКЛЮЧЕН" Height="40" Canvas.Left="104" Canvas.Top="48" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ШНЕК ПОД-КИ&#10;    ВКЛЮЧЕН" Height="40" Canvas.Left="104" Canvas.Top="90" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+                
+                <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ТЕМПЕРАТУРА&#10;КРИТИЧЕСКАЯ" Height="40" Canvas.Left="10" Canvas.Top="790" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+                <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ТЕМПЕРАТУРА&#10;    ВЫСОКАЯ" Height="40" Canvas.Left="10" Canvas.Top="832" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+                <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="НЕТ +24В" Height="40" Canvas.Left="10" Canvas.Top="874" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+                <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="НЕТ СВЯЗИ" Height="40" Canvas.Left="10" Canvas.Top="918" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
 
-                <Grid Name="Mixer" Canvas.Top="256" Canvas.Left="80" Panel.ZIndex="1">
+                <Grid Name="Mixer" Canvas.Top="210" Canvas.Left="130" Panel.ZIndex="1">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Canvas Grid.Column="0" Grid.Row="0" Width="280" Height="780">
+                    <Canvas Grid.Column="0" Grid.Row="0" Width="280" Height="720">
                         <Image Source="/img/mixerMain.png" Width="280"/>
-                        <Image Source="/img/rotor.png" Width="80" Canvas.Left="50" Canvas.Top="610"/>
-                        <Image Source="/img/rotor.png" Width="80" Canvas.Left="118" Canvas.Top="610" RenderTransformOrigin="0.5,0.5">
+                        <Image Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="52" Canvas.Top="550"/>
+                        <Image Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="120" Canvas.Top="550" RenderTransformOrigin="0.5,0.5">
                             <Image.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
@@ -86,14 +91,14 @@
                     </Canvas>
                 </Grid>
 
-                <Path Fill="#696969" StrokeThickness="2" Stroke="Black" Canvas.Left="320" Canvas.Top="570" Panel.ZIndex="0">
+                <Path Fill="#696969" StrokeThickness="2" Stroke="Black" Canvas.Left="320" Canvas.Top="465" Panel.ZIndex="0">
                     <Path.Data>
                         <CombinedGeometry GeometryCombineMode="Union">
                             <CombinedGeometry.Geometry1>
-                                <RectangleGeometry Rect="0,120 413,11"/>
+                                <RectangleGeometry Rect="50,122 363,8"/>
                             </CombinedGeometry.Geometry1>
                             <CombinedGeometry.Geometry2>
-                                <RectangleGeometry Rect="402, -77 11,200"/>
+                                <RectangleGeometry Rect="402, 28 11,100"/>
                             </CombinedGeometry.Geometry2>
                         </CombinedGeometry>
                     </Path.Data>
@@ -427,7 +432,83 @@
                 </Grid>
                 <Button Click="btnFullScreen_Click" Content="Button" Canvas.Left="1787" Canvas.Top="4" Height="34" Width="132" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
+                <Grid Name="Temperature" Canvas.Left="10" Canvas.Top="450">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Canvas Grid.Row="0" Grid.Column="0" Width="112" Height="207">
+                        <Label Background="#FFAAAAAA" Content="Температура" Height="25" Width="112" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="0"/>
+                        <Label Background="#FFAAAAAA" Content="T1-подача:" Height="25" Canvas.Top="26" Width="58" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Name="txtT1" Height="25" Canvas.Left="59" Text="100.0" Canvas.Top="26" Width="53" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="T2-в/лев:" Height="25" Canvas.Top="52" Width="58" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Name="txtT2" Height="25" Canvas.Left="59" Text="0" Canvas.Top="52" Width="53" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="T3-н/лев:" Height="25" Canvas.Top="78" Width="58" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Name="txtT3" Height="25" Canvas.Left="59" Text="0" Canvas.Top="78" Width="53" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="T4-в/прав:" Height="25" Canvas.Top="104" Width="58" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Name="txtT4" Height="25" Canvas.Left="59" Text="0" Canvas.Top="104" Width="53" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="T5-н/прав:" Height="25" Canvas.Top="130" Width="58" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Name="txtT5" Height="25" Canvas.Left="59" Text="0" Canvas.Top="130" Width="53" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="T1-ротор:" Height="25" Canvas.Top="156" Width="58" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Name="txtTRotor1" Height="25" Canvas.Left="59" Text="0" Canvas.Top="156" Width="53" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="T2-ротор:" Height="25" Canvas.Top="182" Width="58" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Name="txtTRotor2" Height="25" Canvas.Left="59" Text="0" Canvas.Top="182" Width="53" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                    </Canvas>
+                </Grid>
+
+                <Grid Name="Info" Canvas.Left="130" Canvas.Top="934">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Canvas Grid.Row="0" Grid.Column="0" Width="249" Height="103">
+                        <Label Background="#FFAAAAAA" Content="Выгрузка по термопаре:" Height="25" Width="130" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Name="txtUnloadSensor" Height="25" Canvas.Left="131" Text="верхняя" Width="118" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Тем-ра критическая:" Height="25" Canvas.Top="26" Width="130" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Name="txtTCritical" Height="25" Canvas.Left="131" Text="0" Canvas.Top="26" Width="118" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Т выгрузки заданная:" Height="25" Canvas.Top="52" Width="130" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Name="txtTUnloadFill" Height="25" Canvas.Left="131" Text="0" Canvas.Top="52" Width="118" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Т выгрузки по датчику:" Height="25" Canvas.Top="78" Width="130" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Name="txtTUnloadSensor" Height="25" Canvas.Left="131" Text="0" Canvas.Top="78" Width="118" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                    </Canvas>
+                </Grid>
+
             </Canvas>
         </Viewbox>
+
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1500*"/>
+                <ColumnDefinition Width="1000*"/>
+                <ColumnDefinition Width="1000*"/>
+                <ColumnDefinition Width="1000*"/>
+                <ColumnDefinition Width="1000*"/>
+                <ColumnDefinition Width="1000*"/>
+                <ColumnDefinition Width="1000*"/>
+                <ColumnDefinition Width="1000*"/>
+            </Grid.ColumnDefinitions>
+            <Viewbox Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center">
+                <Canvas Width="7200" Height="1040">
+                    <Label Content="Время смешения:" Width="4000" Height="500" FontSize="350" FontWeight="Bold" Foreground="White"/>
+                    <Label Content="0 сек." Canvas.Left="5000" Width="2000" Height="500" FontSize="350" FontWeight="Bold" Foreground="White"/>
+                    <Label Content="Время под давлением:" Canvas.Top="550" Width="4000" Height="500" FontSize="350" FontWeight="Bold" Foreground="White"/>
+                    <Label Content="0 сек." Canvas.Left="5000" Canvas.Top="550" Width="2000" Height="500" FontSize="350" FontWeight="Bold" Foreground="White"/>
+                </Canvas>
+            </Viewbox>
+            <Button Name="btnScheme" Content="МНЕМОСХЕМА" Grid.Column="1" FontSize="20" FontWeight="Bold" Background="Green" Foreground="White"/>
+            <Button Name="btnDoze" Content="ДОЗАТОР" Grid.Column="2" FontSize="20" FontWeight="Bold"/>
+            <Button Name="btnAlarm" Content="АВАРИИ" Grid.Column="3" FontSize="20" FontWeight="Bold"/>
+            <Button Name="btnTest" Content="ТЕСТ" Grid.Column="4" FontSize="20" FontWeight="Bold"/>
+            <Button Name="btnDiag" Content="ДИАГРАММА" Grid.Column="5" FontSize="20" FontWeight="Bold"/>
+            <Button Name="btnStatistic" Content="СТАТИСТИКА" Grid.Column="6" FontSize="20" FontWeight="Bold"/>
+            <Button Name="btnChart" Content="ТРЕНДЫ" Grid.Column="7" FontSize="20" FontWeight="Bold"/>
+        </Grid>
     </Grid>
 </Window>
