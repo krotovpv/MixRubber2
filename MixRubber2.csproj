@@ -130,7 +130,7 @@
     <Resource Include="img\SmallSiloGreen.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\floatUp.png" />
+    <Resource Include="img\floatUp2.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\transporter2Green.png" />
