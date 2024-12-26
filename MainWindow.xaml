@@ -3,6 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:dvc="clr-namespace:System.Windows.Forms.DataVisualization.Charting;assembly=System.Windows.Forms.DataVisualization"
         xmlns:local="clr-namespace:MixRubber2"
         mc:Ignorable="d"
         Title="MainWindow" Height="1080" Width="1920" Loaded="Window_Loaded" WindowState="Maximized" WindowStyle="None">
@@ -476,6 +479,22 @@
                         <TextBlock Name="txtTUnloadSensor" Height="25" Canvas.Left="131" Text="0" Canvas.Top="78" Width="118" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                     </Canvas>
                 </Grid>
+                <Grid Name="Chart" Canvas.Left="400" Canvas.Top="790">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Viewbox Grid.Row="0" Grid.Column="0">
+                        <Canvas Width="1510" Height="240">
+                            <WindowsFormsHost Width="1510" Height="240">
+                                <dvc:Chart x:Name="chart" />
+                            </WindowsFormsHost>
+                        </Canvas>
+                    </Viewbox>
+                </Grid>
 
             </Canvas>
         </Viewbox>
@@ -486,6 +505,7 @@
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1500*"/>
+                <ColumnDefinition Width="1000*"/>
                 <ColumnDefinition Width="1000*"/>
                 <ColumnDefinition Width="1000*"/>
                 <ColumnDefinition Width="1000*"/>
@@ -509,6 +529,7 @@
             <Button Name="btnDiag" Content="ДИАГРАММА" Grid.Column="5" FontSize="20" FontWeight="Bold"/>
             <Button Name="btnStatistic" Content="СТАТИСТИКА" Grid.Column="6" FontSize="20" FontWeight="Bold"/>
             <Button Name="btnChart" Content="ТРЕНДЫ" Grid.Column="7" FontSize="20" FontWeight="Bold"/>
+            <Button Name="btnExit" Content="ВЫХОД" Grid.Column="8" FontSize="20" FontWeight="Bold" Background="LightCoral" Click="btnExit_Click"/>
         </Grid>
     </Grid>
 </Window>

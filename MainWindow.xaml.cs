@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace MixRubber2
 {
@@ -751,6 +752,11 @@ namespace MixRubber2
                 this.WindowState = WindowState.Normal;
                 this.WindowState = WindowState.Maximized;
             }
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }
