@@ -67,6 +67,7 @@
                     </Grid.RowDefinitions>
                     <Canvas Grid.Column="0" Grid.Row="0" Width="280" Height="720">
                         <Image Source="/img/mixerMain.png" Width="280"/>
+                        <Image Source="/img/FloatMiddle.png" Width="65" Canvas.Left="92"/>
                         <Image Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="52" Canvas.Top="550"/>
                         <Image Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="120" Canvas.Top="550" RenderTransformOrigin="0.5,0.5">
                             <Image.RenderTransform>

@@ -171,5 +171,11 @@
   <ItemGroup>
     <Resource Include="img\FloatUp.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\FloatDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\FloatMiddle.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

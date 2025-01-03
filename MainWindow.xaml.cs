@@ -65,10 +65,10 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_IsOpened").First().ValueChanged += ScalesC_IsOpenedChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_Weighing").First().ValueChanged += ScalesC_WeighingChanged;
 
-            OPCDA.AllTags.Where(x => x.Name == "ScalesC.CurNeed").First().ValueChanged += ScalesC_CurNeed_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Name == "ScalesC.FullNeed").First().ValueChanged += ScalesC_FullNeed_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Name == "ScalesC.CurReal").First().ValueChanged += ScalesC_CurReal_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Name == "ScalesC.FullReal").First().ValueChanged += ScalesC_FullReal_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesC_CurNeed").First().ValueChanged += ScalesC_CurNeed_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesC_FullNeed").First().ValueChanged += ScalesC_FullNeed_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesC_CurReal").First().ValueChanged += ScalesC_CurReal_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesC_FullReal").First().ValueChanged += ScalesC_FullReal_ValueChanged;
             
             OPCDA.AllTags.Where(x => x.Name == "BatcherJ1").First().ValueChanged += ScalesJ_Batcher1_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherJ2").First().ValueChanged += ScalesJ_Batcher2_ValueChanged;
@@ -144,7 +144,7 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "ScalesY_CurReal").First().ValueChanged += ScalesU_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesY_FullReal").First().ValueChanged += ScalesU_FullReal_ValueChanged;
             
-            OPCDA.ConnectionOPC();
+            //OPCDA.ConnectionOPC();
         }
 
 
