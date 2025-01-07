@@ -157,9 +157,6 @@
     <Resource Include="img\SiloOil.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\mixer.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="img\SiloOpen.png" />
   </ItemGroup>
   <ItemGroup>
@@ -176,6 +173,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\FloatMiddle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\FlapValve.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\Zatvor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

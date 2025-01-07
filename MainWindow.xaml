@@ -68,6 +68,17 @@
                     <Canvas Grid.Column="0" Grid.Row="0" Width="280" Height="720">
                         <Image Source="/img/mixerMain.png" Width="280"/>
                         <Image Source="/img/FloatMiddle.png" Width="65" Canvas.Left="92"/>
+                        <Image Source="/img/FlapValve.png" Width="119" Canvas.Left="33" Canvas.Top="598" RenderTransformOrigin="0.5,0.5">
+                            <Image.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="0"/>
+                                    <TranslateTransform X="0"/>
+                                </TransformGroup>
+                            </Image.RenderTransform>
+                        </Image>
+                        <Image Source="/MixRubber2;component/img/Zatvor.png" Width="58" Canvas.Left="145" Canvas.Top="655"/>
                         <Image Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="52" Canvas.Top="550"/>
                         <Image Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="120" Canvas.Top="550" RenderTransformOrigin="0.5,0.5">
                             <Image.RenderTransform>
