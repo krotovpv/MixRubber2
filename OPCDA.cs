@@ -48,8 +48,8 @@ namespace MixRubber2
             #endregion
 
             #region Conteiner C
-            // new Tag("ContainerC_IsClosed", "MixRubber17.PLC110-504.ContainerC_Status.IsClosed", "plc110.plc110_SCADA.Inp_32", 7),
-            // new Tag("ContainerC_IsOpened", "MixRubber17.PLC110-504.ContainerC_Status.IsOpened", "plc110.plc110_SCADA.Inp_32", 15),
+            new Tag("ContainerC_IsClosed", "MixRubber17.PLC110-504.ContainerC_Status.IsClosed", "plc110.plc110_SCADA.Inp_32", 7), //!
+            new Tag("ContainerC_IsOpened", "MixRubber17.PLC110-504.ContainerC_Status.IsOpened", "plc110.plc110_SCADA.Inp_32", 15), //!
             // new Tag("ContainerC_BatcherNum", "MixRubber17.PLC110-504.ContainerC_Status.BatcherNum", "plc110.plc110_SCADA.CV0_na_C"),
             // new Tag("ContainerC_CommandOpen", "MixRubber17.PLC110-504.ContainerC_Status.CommandOpen", "plc110.plc110_SCADA.B7", 14),
             // new Tag("ContainerC_Weighing", "MixRubber17.PLC110-504.ContainerC_Status.Weighing", "plc110.plc110_SCADA.B7", 4),

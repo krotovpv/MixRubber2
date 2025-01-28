@@ -26,6 +26,8 @@ namespace MixRubber2
         BitmapImage BI_SiloClosed = new BitmapImage(new Uri("/img/ScalesClose.png", UriKind.Relative));
         BitmapImage BI_SiloClosedGreen = new BitmapImage(new Uri("/img/ScalesCloseGreen.png", UriKind.Relative));
         BitmapImage BI_SiloOpend = new BitmapImage(new Uri("/img/ScalesOpen.png", UriKind.Relative));
+        BitmapImage BI_ConteinerOpen = new BitmapImage(new Uri("/img/SiloOpen.png", UriKind.Relative));
+        BitmapImage BI_ConteinerClose = new BitmapImage(new Uri("/img/SiloClose.png", UriKind.Relative));
 
         bool scalesC_IsClosed = false;
         bool scalesC_Weighing = false;
@@ -70,6 +72,9 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_CurReal").First().ValueChanged += ScalesC_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_FullReal").First().ValueChanged += ScalesC_FullReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_KRP").First().ValueChanged += ScalesC_KRP_ValueChanged;
+
+            OPCDA.AllTags.Where(x => x.Name == "ContainerC_IsClosed").First().ValueChanged += ContainerC_IsClosedChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ContainerC_IsOpened").First().ValueChanged += ContainerC_IsOpenedChanged;
             
             OPCDA.AllTags.Where(x => x.Name == "BatcherJ1").First().ValueChanged += ScalesJ_Batcher1_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherJ2").First().ValueChanged += ScalesJ_Batcher2_ValueChanged;
@@ -260,6 +265,20 @@ namespace MixRubber2
                 imgScalesCBatcher1.Source = BI_SmallSilo;
         }
 
+        #endregion
+
+        #region ConteinerC
+        private void ContainerC_IsClosedChanged(object obj)
+        {
+            if ((bool)obj)
+                imgConteinerC.Source = BI_ConteinerClose;
+        }
+
+        private void ContainerC_IsOpenedChanged(object obj)
+        {
+            if ((bool)obj)
+                imgConteinerC.Source = BI_ConteinerOpen;
+        }
         #endregion
 
         #region Scales J

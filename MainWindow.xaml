@@ -194,7 +194,7 @@
                     </Grid.RowDefinitions>
                     <Canvas Grid.Column="0" Grid.Row="0" Width="80" Height="173">
                         <Image Source="/img/Screw.png" Width="80" Canvas.Top="0"/>
-                        <Image Source="/img/SiloOpen.png" Width="80" Canvas.Top="82"/>
+                        <Image Name="imgConteinerC" Source="/img/SiloOpen.png" Width="80" Canvas.Top="82"/>
                     </Canvas>
                 </Grid>
 
