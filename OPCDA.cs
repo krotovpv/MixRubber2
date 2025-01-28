@@ -44,7 +44,7 @@ namespace MixRubber2
             // new Tag("ScalesC_Overweight", "MixRubber17.PLC100_ScalesC.Overweight", "VesiC.Pereves"), //Весы С.Вес не норма
             new Tag("ScalesC_CurReal", "MixRubber17.PLC100_ScalesC.CurReal", "VesiC.FullReal"), // Бункер.Измеренный вес
             new Tag("ScalesC_FullReal", "MixRubber17.PLC100_ScalesC.FullReal", "VesiC.FullReal"), //Весы С.Данные.Общий измеренный вес
-            // new Tag("ScalesC_KRP", "MixRubber17.PLC100_ScalesC.KRP", "VesiC.KRP"), //Весы С.Обработка КРП
+            new Tag("ScalesC_KRP", "MixRubber17.PLC100_ScalesC.KRP", "VesiC.KRP"), //Весы С.Обработка КРП  //!
             #endregion
 
             #region Conteiner C

@@ -69,6 +69,7 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_FullNeed").First().ValueChanged += ScalesC_FullNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_CurReal").First().ValueChanged += ScalesC_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_FullReal").First().ValueChanged += ScalesC_FullReal_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesC_KRP").First().ValueChanged += ScalesC_KRP_ValueChanged;
             
             OPCDA.AllTags.Where(x => x.Name == "BatcherJ1").First().ValueChanged += ScalesJ_Batcher1_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherJ2").First().ValueChanged += ScalesJ_Batcher2_ValueChanged;
@@ -181,6 +182,22 @@ namespace MixRubber2
                     imgScalesCSilo.Source = BI_SiloClosed;
             }
             scalesC_IsClosed = (bool)obj;
+        }
+
+        private void ScalesC_KRP_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+            {
+                btnKRP.Content = "Выкл КРП";
+                btnKRP.Background = new SolidColorBrush(Colors.Red);
+                btnKRP.Foreground = new SolidColorBrush(Colors.White);
+            }
+            else
+            {
+                btnKRP.Content = "Вкл КРП";
+                btnKRP.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xDD, 0xDD, 0xDD));
+                btnKRP.Foreground = new SolidColorBrush(Colors.Black);
+            }
         }
 
         private void ScalesC_FullReal_ValueChanged(object obj)
