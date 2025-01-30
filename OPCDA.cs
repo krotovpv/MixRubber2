@@ -28,9 +28,9 @@ namespace MixRubber2
             new Tag("ScalesC_IsClosed", "MixRubber17.PLC110-504.ScalesC_Status.IsClosed","plc110.plc110_SCADA.Inp_32", 0),
             new Tag("ScalesC_IsOpened", "MixRubber17.PLC110-504.ScalesC_Status.IsOpened","plc110.plc110_SCADA.Inp_32",1),
             new Tag("ScalesC_Weighing", "MixRubber17.PLC110-504.ScalesC_Status.Weighing","plc110.plc110_SCADA.B19", 2),
-            // new Tag("ScalesC_Tare_IsBusy", "MixRubber17.PLC110-504.ScalesC_Status.Tare_IsBusy", "plc110.plc110_SCADA.Inp_32", 2),
-            // new Tag("ScalesC_Weight_NotNormal", "MixRubber17.PLC110-504.ScalesC_Status.Weight_NotNormal", "plc110.plc110_SCADA.Inp_32", 3),
-            // new Tag("ScalesC_Initial", "MixRubber17.PLC110-504.ScalesC_Status.Initial", "plc110.plc110_SCADA.Inp_32", 5),
+            new Tag("ScalesC_IsBusy", "MixRubber17.PLC110-504.ScalesC_Status.Tare_IsBusy", "plc110.plc110_SCADA.Inp_32", 2),//!
+            new Tag("ScalesC_WeightNotNormal", "MixRubber17.PLC110-504.ScalesC_Status.Weight_NotNormal", "plc110.plc110_SCADA.Inp_32", 3),//!
+            new Tag("ScalesC_Initial", "MixRubber17.PLC110-504.ScalesC_Status.Initial", "plc110.plc110_SCADA.Inp_32", 5), //!
             // new Tag("ScalesC_CommandOpen", "MixRubber17.PLC110-504.ScalesC_Status.CommandOpen","plc110.plc110_SCADA.B7", 10),
 
             // new Tag("ScalesC_IsNotOpening", "MixRubber17.PLC110-504.ScalesC_Fail.IsNotOpening", "plc110.plc110_SCADA.AV1", 0),
@@ -73,9 +73,9 @@ namespace MixRubber2
 
             new Tag("ScalesJ_IsClosed", "MixRubber17.PLC110-504.ScalesJ_Status.IsClosed", "plc110.plc110_SCADA.Inp_32", 8),
             new Tag("ScalesJ_Weighing", "MixRubber17.PLC110-504.ScalesJ_Status.Weighing", "plc110.plc110_SCADA.B19", 5),
-            //new Tag("ScalesJ_Tare_IsBusy", "MixRubber17.PLC110-504.ScalesJ_Status.Tare_IsBusy", "plc110.plc110_SCADA.Inp_32", 10),
-            //new Tag("ScalesJ_Weight_NotNormal", "MixRubber17.PLC110-504.ScalesJ_Status.Weight_NotNormal", "plc110.plc110_SCADA.Inp_32", 12),
-            //new Tag("ScalesJ_Initial", "MixRubber17.PLC110-504.ScalesJ_Status.Initial", "plc110.plc110_SCADA.Inp_32", 13),
+            new Tag("ScalesJ_IsBusy", "MixRubber17.PLC110-504.ScalesJ_Status.Tare_IsBusy", "plc110.plc110_SCADA.Inp_32", 10),//!
+            new Tag("ScalesJ_WeightNotNormal", "MixRubber17.PLC110-504.ScalesJ_Status.Weight_NotNormal", "plc110.plc110_SCADA.Inp_32", 12),//!
+            new Tag("ScalesJ_Initial", "MixRubber17.PLC110-504.ScalesJ_Status.Initial", "plc110.plc110_SCADA.Inp_32", 13),//!
             //new Tag("ScalesJ_CommandOpen", "MixRubber17.PLC110-504.ScalesJ_Status.CommandOpen", "plc110.plc110_SCADA.B7", 11),
 
             //new Tag("ScalesJ_BatcherNotWork", "MixRubber17.PLC110-504.ScalesJ_Fail.Batcher_NotWork", "plc110.plc110_SCADA.AV4", 13),
@@ -105,9 +105,9 @@ namespace MixRubber2
 
             new Tag("ScalesD_IsClosed", "MixRubber17.PLC110-504.ScalesD_Status.IsClosed", "plc110.plc110_SCADA.Inp_40", 0),
             new Tag("ScalesD_Weighing", "MixRubber17.PLC110-504.ScalesD_Status.Weighing", "plc110.plc110_SCADA.B19", 6),
-            //new Tag("ScalesD_Tare_IsBusy", "MixRubber17.PLC110-504.ScalesD_Status.Tare_IsBusy", "plc110.plc110_SCADA.Inp_40", 2),
-            //new Tag("ScalesD_Weight_NotNormal", "MixRubber17.PLC110-504.ScalesD_Status.Weight_NotNormal", "plc110.plc110_SCADA.Inp_40", 4),
-            //new Tag("ScalesD_Initial", "MixRubber17.PLC110-504.ScalesD_Status.Initial", "plc110.plc110_SCADA.Inp_40", 5),
+            new Tag("ScalesD_IsBusy", "MixRubber17.PLC110-504.ScalesD_Status.Tare_IsBusy", "plc110.plc110_SCADA.Inp_40", 2),//!
+            new Tag("ScalesD_WeightNotNormal", "MixRubber17.PLC110-504.ScalesD_Status.Weight_NotNormal", "plc110.plc110_SCADA.Inp_40", 4),//!
+            new Tag("ScalesD_Initial", "MixRubber17.PLC110-504.ScalesD_Status.Initial", "plc110.plc110_SCADA.Inp_40", 5),//!
             //new Tag("ScalesD_CommandOpen", "MixRubber17.PLC110-504.ScalesD_Status.CommandOpen", "plc110.plc110_SCADA.B7", 12),
 
             // new Tag("ScalesD_IsNotOpening","MixRubber17.PLC110-504.ScalesD_Fail.IsNotOpening", "plc110.plc110_SCADA.AV1", 8),
@@ -130,9 +130,9 @@ namespace MixRubber2
 
             new Tag("ScalesE_IsClosed", "MixRubber17.PLC110-504.ScalesE_Status.IsClosed", "plc110.plc110_SCADA.Inp_40", 8),
             new Tag("ScalesE_Weighing", "MixRubber17.PLC110-504.ScalesE_Status.Weighing", "plc110.plc110_SCADA.B19", 7),
-            //new Tag("ScalesE_Tare_IsBusy", "MixRubber17.PLC110-504.ScalesE_Status.Tare_IsBusy", "plc110.plc110_SCADA.Inp_40", 10),
-            //new Tag("ScalesE_Weight_NotNormal", "MixRubber17.PLC110-504.ScalesE_Status.Weight_NotNormal", "plc110.plc110_SCADA.Inp_40", 12),
-            //new Tag("ScalesE_Initial", "MixRubber17.PLC110-504.ScalesE_Status.Initial", "plc110.plc110_SCADA.Inp_40", 13),
+            new Tag("ScalesE_IsBusy", "MixRubber17.PLC110-504.ScalesE_Status.Tare_IsBusy", "plc110.plc110_SCADA.Inp_40", 10),//!
+            new Tag("ScalesE_WeightNotNormal", "MixRubber17.PLC110-504.ScalesE_Status.Weight_NotNormal", "plc110.plc110_SCADA.Inp_40", 12),//!
+            new Tag("ScalesE_Initial", "MixRubber17.PLC110-504.ScalesE_Status.Initial", "plc110.plc110_SCADA.Inp_40", 13),//!
             //new Tag("ScalesE_CommandOpen", "MixRubber17.PLC110-504.ScalesE_Status.CommandOpen", "plc110.plc110_SCADA.B7", 13),
 
             new Tag("ScalesE_CurNeed", "MixRubber17.PLC100_ScalesE.CurNeed", "VesiE.CurNeed"), //Бункер.Заданный вес
@@ -155,9 +155,9 @@ namespace MixRubber2
 
             new Tag("ScalesSh_IsClosed", "MixRubber17.PLC110-507.ScalesSh_Status.IsClosed", "plc110.plc110_RS17.Inp_56", 0),
             new Tag("ScalesSh_Weighing", "MixRubber17.PLC110-504.ScalesSh_Status.Weighing", "plc110.plc110_SCADA.B19", 4),
-            //new Tag("ScalesSh_Tare_IsBusy", "MixRubber17.PLC110-507.ScalesSh_Status.Tare_IsBusy", "plc110.plc110_RS17.Inp_56", 2),
-            //new Tag("ScalesSh_Weight_NotNormal", "MixRubber17.PLC110-507.ScalesSh_Status.Weight_NotNormal", "plc110.plc110_RS17.Inp_56", 4),
-            //new Tag("ScalesSh_Initial", "MixRubber17.PLC110-507.ScalesSh_Status.Initial", "plc110.plc110_RS17.Inp_56", 5),
+            new Tag("ScalesSh_IsBusy", "MixRubber17.PLC110-507.ScalesSh_Status.Tare_IsBusy", "plc110.plc110_RS17.Inp_56", 2),//!
+            new Tag("ScalesSh_WeightNotNormal", "MixRubber17.PLC110-507.ScalesSh_Status.Weight_NotNormal", "plc110.plc110_RS17.Inp_56", 4),//!
+            new Tag("ScalesSh_Initial", "MixRubber17.PLC110-507.ScalesSh_Status.Initial", "plc110.plc110_RS17.Inp_56", 5),//!
             //new Tag("ScalesSh_CommandOpen", "MixRubber17.PLC110-507.ScalesSh_Status.CommandOpen", "plc110.plc110_RS17.B77", 12), //Команда Открыть весы Ш
 
             // new Tag("ScalesSh_IsNotOpening", "MixRubber17.PLC110-507.ScalesSh_Fail.IsNotOpening", "plc110.plc110_RS17.AV5", 0),
@@ -180,9 +180,9 @@ namespace MixRubber2
 
             new Tag("ScalesJu_IsClosed", "MixRubber17.PLC110-507.ScalesJu_Status.IsClosed", "plc110.plc110_RS17.Inp_64", 0),
             new Tag("ScalesJu_Weighing", "MixRubber17.PLC110-504.ScalesJu_Status.Weighing", "plc110.plc110_SCADA.B8", 3),
-            //new Tag("ScalesJu_Tare_IsBusy", "MixRubber17.PLC110-507.ScalesJu_Status.Tare_IsBusy", "plc110.plc110_RS17.Inp_64", 3),  //Весы Ю.Предупреждения.Тара занята
-            //new Tag("ScalesJu_Weight_NotNormal", "MixRubber17.PLC110-507.ScalesJu_Status.Weight_NotNormal", "plc110.plc110_RS17.Inp_64", 4),  // Весы Ю.Вес не норма.Перевес
-            //new Tag("ScalesJu_Initial", "MixRubber17.PLC110-507.ScalesJu_Status.Initial", "plc110.plc110_RS17.Inp_64", 5), //Весы Ю.Предупреждения.Исходное
+            new Tag("ScalesJu_IsBusy", "MixRubber17.PLC110-507.ScalesJu_Status.Tare_IsBusy", "plc110.plc110_RS17.Inp_64", 3),  //Весы Ю.Предупреждения.Тара занята //!
+            new Tag("ScalesJu_WeightNotNormal", "MixRubber17.PLC110-507.ScalesJu_Status.Weight_NotNormal", "plc110.plc110_RS17.Inp_64", 4),  // Весы Ю.Вес не норма.Перевес //!
+            new Tag("ScalesJu_Initial", "MixRubber17.PLC110-507.ScalesJu_Status.Initial", "plc110.plc110_RS17.Inp_64", 5), //Весы Ю.Предупреждения.Исходное //!
             //new Tag("ScalesJu_CommandOpen", "MixRubber17.PLC110-507.ScalesJu_Status.CommandOpen", "plc110.plc110_RS17.B77", 14), //Команда Открыть весы Ю
 
             // new Tag("ScalesJu_IsNotOpening", "MixRubber17.PLC110-507.ScalesJu_Fail.IsNotOpening", "plc110.plc110_RS17.AV5", 6),
@@ -206,9 +206,9 @@ namespace MixRubber2
 
             new Tag("ScalesY_IsClosed", "MixRubber17.PLC110-507.ScalesY_Status.IsClosed", "plc110.plc110_RS17.Inp_56", 8),
             new Tag("ScalesY_Weighing", "MixRubber17.PLC110-504.ScalesY_Status.Weighing", "plc110.plc110_SCADA.B19", 3),
-            //new Tag("ScalesY_Tare_IsBusy", "MixRubber17.PLC110-507.ScalesY_Status.Tare_IsBusy", "plc110.plc110_RS17.Inp_56", 10),
-            //new Tag("ScalesY_Weight_NotNormal", "MixRubber17.PLC110-507.ScalesY_Status.Weight_NotNormal", "plc110.plc110_RS17.Inp_56", 12),
-            //new Tag("ScalesY_Initial", "MixRubber17.PLC110-507.ScalesY_Status.Initial", "plc110.plc110_RS17.Inp_56", 13),
+            new Tag("ScalesY_IsBusy", "MixRubber17.PLC110-507.ScalesY_Status.Tare_IsBusy", "plc110.plc110_RS17.Inp_56", 10),//!
+            new Tag("ScalesY_WeightNotNormal", "MixRubber17.PLC110-507.ScalesY_Status.Weight_NotNormal", "plc110.plc110_RS17.Inp_56", 12),//!
+            new Tag("ScalesY_Initial", "MixRubber17.PLC110-507.ScalesY_Status.Initial", "plc110.plc110_RS17.Inp_56", 13),//!
             //new Tag("ScalesY_CommandOpen", "MixRubber17.PLC110-507.ScalesY_Status.CommandOpen", "plc110.plc110_RS17.B77", 13), //Команда Открыть весы У
 
             // new Tag("ScalesY_IsNotOpening", "MixRubber17.PLC110-507.ScalesY_Fail.IsNotOpening", "plc110.plc110_RS17.AV5", 3),
@@ -229,7 +229,7 @@ namespace MixRubber2
             //new Tag("ScalesK_CurReal", "MixRubber17.PLC100_ScalesK.CurReal", "VesiK.FullReal"), //Бункер.Измеренный вес
 
             // new Tag("ScalesK_TareIsBusy", "MixRubber17.PLC110-504.ScalesK_Status.Tare_IsBusy", "plc110.plc110_SCADA.Inp_01", 12),
-            // new Tag("ScalesK_Weight_NotNormal", "MixRubber17.PLC110-504.ScalesK_Status.Weight_NotNormal", "plc110.plc110_SCADA.Inp_01", 14),
+            // new Tag("ScalesK_WeightNotNormal", "MixRubber17.PLC110-504.ScalesK_Status.Weight_NotNormal", "plc110.plc110_SCADA.Inp_01", 14),
             // new Tag("ScalesK_Weighing", "MixRubber17.PLC110-504.ScalesK_Status.Weighing", "plc110.plc110_SCADA.B19", 10),
 
             // new Tag("ScalesK_Fail", "MixRubber17.PLC110-504.ScalesK_Fail.Fail", "plc110.plc110_SCADA.Inp_01", 15),

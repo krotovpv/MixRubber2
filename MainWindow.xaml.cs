@@ -28,6 +28,7 @@ namespace MixRubber2
         BitmapImage BI_SiloOpend = new BitmapImage(new Uri("/img/ScalesOpen.png", UriKind.Relative));
         BitmapImage BI_ConteinerOpen = new BitmapImage(new Uri("/img/SiloOpen.png", UriKind.Relative));
         BitmapImage BI_ConteinerClose = new BitmapImage(new Uri("/img/SiloClose.png", UriKind.Relative));
+        
 
         bool scalesC_IsClosed = false;
         bool scalesC_Weighing = false;
@@ -47,8 +48,8 @@ namespace MixRubber2
         bool scalesJu_IsClosed = false;
         bool scalesJu_Weighing = false;
 
-        bool scalesU_IsClosed = false;
-        bool scalesU_Weighing = false;
+        bool scalesY_IsClosed = false;
+        bool scalesY_Weighing = false;
 
         public MainWindow()
         {
@@ -71,7 +72,11 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_FullNeed").First().ValueChanged += ScalesC_FullNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_CurReal").First().ValueChanged += ScalesC_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_FullReal").First().ValueChanged += ScalesC_FullReal_ValueChanged;
+
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_KRP").First().ValueChanged += ScalesC_KRP_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesC_Initial").First().ValueChanged += ScalesC_Initial_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesC_IsBusy").First().ValueChanged += ScalesC_IsBusy_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesC_WeightNotNormal").First().ValueChanged += ScalesC_WeightNotNotmal_ValueChanged;
 
             OPCDA.AllTags.Where(x => x.Name == "ContainerC_IsClosed").First().ValueChanged += ContainerC_IsClosedChanged;
             OPCDA.AllTags.Where(x => x.Name == "ContainerC_IsOpened").First().ValueChanged += ContainerC_IsOpenedChanged;
@@ -88,7 +93,10 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "ScalesJ_FullNeed").First().ValueChanged += ScalesJ_FullNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesJ_CurReal").First().ValueChanged += ScalesJ_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesJ_FullReal").First().ValueChanged += ScalesJ_FullReal_ValueChanged;
-            
+
+            OPCDA.AllTags.Where(x => x.Name == "ScalesJ_Initial").First().ValueChanged += ScalesJ_Initial_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesJ_IsBusy").First().ValueChanged += ScalesJ_IsBusy_ValueChanged;
+
             OPCDA.AllTags.Where(x => x.Name == "BatcherD1").First().ValueChanged += ScalesD_Batcher1_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherD2").First().ValueChanged += ScalesD_Batcher2_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherD3").First().ValueChanged += ScalesD_Batcher3_ValueChanged;
@@ -101,7 +109,10 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "ScalesD_FullNeed").First().ValueChanged += ScalesD_FullNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesD_CurReal").First().ValueChanged += ScalesD_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesD_FullReal").First().ValueChanged += ScalesD_FullReal_ValueChanged;
-            
+
+            OPCDA.AllTags.Where(x => x.Name == "ScalesD_Initial").First().ValueChanged += ScalesD_Initial_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesD_IsBusy").First().ValueChanged += ScalesD_IsBusy_ValueChanged;
+
             OPCDA.AllTags.Where(x => x.Name == "BatcherE1").First().ValueChanged += ScalesE_Batcher1_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherE2").First().ValueChanged += ScalesE_Batcher2_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherE3").First().ValueChanged += ScalesE_Batcher3_ValueChanged;
@@ -113,7 +124,10 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "ScalesE_FullNeed").First().ValueChanged += ScalesE_FullNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesE_CurReal").First().ValueChanged += ScalesE_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesE_FullReal").First().ValueChanged += ScalesE_FullReal_ValueChanged;
-            
+
+            OPCDA.AllTags.Where(x => x.Name == "ScalesE_Initial").First().ValueChanged += ScalesE_Initial_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesE_IsBusy").First().ValueChanged += ScalesE_IsBusy_ValueChanged;
+
             OPCDA.AllTags.Where(x => x.Name == "BatcherSh1").First().ValueChanged += ScalesSh_Batcher1_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherSh2").First().ValueChanged += ScalesSh_Batcher2_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherSh3").First().ValueChanged += ScalesSh_Batcher3_ValueChanged;
@@ -125,7 +139,10 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "ScalesSh_FullNeed").First().ValueChanged += ScalesSh_FullNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesSh_CurReal").First().ValueChanged += ScalesSh_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesSh_FullReal").First().ValueChanged += ScalesSh_FullReal_ValueChanged;
-            
+
+            OPCDA.AllTags.Where(x => x.Name == "ScalesSh_Initial").First().ValueChanged += ScalesSh_Initial_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesSh_IsBusy").First().ValueChanged += ScalesSh_IsBusy_ValueChanged;
+
             OPCDA.AllTags.Where(x => x.Name == "BatcherJu1").First().ValueChanged += ScalesJu_Batcher1_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherJu2").First().ValueChanged += ScalesJu_Batcher2_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherJu3").First().ValueChanged += ScalesJu_Batcher3_ValueChanged;
@@ -137,24 +154,46 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "ScalesJu_FullNeed").First().ValueChanged += ScalesJu_FullNeed_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesJu_CurReal").First().ValueChanged += ScalesJu_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesJu_FullReal").First().ValueChanged += ScalesJu_FullReal_ValueChanged;
-            
-            OPCDA.AllTags.Where(x => x.Name == "BatcherY1").First().ValueChanged += ScalesU_Batcher1_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Name == "BatcherY2").First().ValueChanged += ScalesU_Batcher2_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Name == "BatcherY3").First().ValueChanged += ScalesU_Batcher3_ValueChanged;
 
-            OPCDA.AllTags.Where(x => x.Name == "ScalesY_IsClosed").First().ValueChanged += ScalesU_IsClosedChanged;
-            OPCDA.AllTags.Where(x => x.Name == "ScalesY_Weighing").First().ValueChanged += ScalesU_WeighingChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesJu_Initial").First().ValueChanged += ScalesJu_Initial_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesJu_IsBusy").First().ValueChanged += ScalesJu_IsBusy_ValueChanged;
 
-            OPCDA.AllTags.Where(x => x.Name == "ScalesY_CurNeed").First().ValueChanged += ScalesU_CurNeed_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Name == "ScalesY_FullNeed").First().ValueChanged += ScalesU_FullNeed_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Name == "ScalesY_CurReal").First().ValueChanged += ScalesU_CurReal_ValueChanged;
-            OPCDA.AllTags.Where(x => x.Name == "ScalesY_FullReal").First().ValueChanged += ScalesU_FullReal_ValueChanged;
-            
+            OPCDA.AllTags.Where(x => x.Name == "BatcherY1").First().ValueChanged += ScalesY_Batcher1_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "BatcherY2").First().ValueChanged += ScalesY_Batcher2_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "BatcherY3").First().ValueChanged += ScalesY_Batcher3_ValueChanged;
+
+            OPCDA.AllTags.Where(x => x.Name == "ScalesY_IsClosed").First().ValueChanged += ScalesY_IsClosedChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesY_Weighing").First().ValueChanged += ScalesY_WeighingChanged;
+
+            OPCDA.AllTags.Where(x => x.Name == "ScalesY_CurNeed").First().ValueChanged += ScalesY_CurNeed_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesY_FullNeed").First().ValueChanged += ScalesY_FullNeed_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesY_CurReal").First().ValueChanged += ScalesY_CurReal_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesY_FullReal").First().ValueChanged += ScalesY_FullReal_ValueChanged;
+
+            OPCDA.AllTags.Where(x => x.Name == "ScalesY_Initial").First().ValueChanged += ScalesY_Initial_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesY_IsBusy").First().ValueChanged += ScalesY_IsBusy_ValueChanged;
+
             //OPCDA.ConnectionOPC();
         }
 
 
         #region ScalesC
+
+        private void ScalesC_WeightNotNotmal_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesCOverWeight.Visibility = Visibility.Visible;
+            else
+                imgScalesCOverWeight.Visibility = Visibility.Hidden;
+        }
+
+        private void ScalesC_IsBusy_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesCBusy.Visibility = Visibility.Visible;
+            else
+                imgScalesCBusy.Visibility = Visibility.Hidden;
+        }
 
         private void ScalesC_WeighingChanged(object obj)
         {
@@ -187,6 +226,14 @@ namespace MixRubber2
                     imgScalesCSilo.Source = BI_SiloClosed;
             }
             scalesC_IsClosed = (bool)obj;
+        }
+
+        private void ScalesC_Initial_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesCInitial.Visibility = Visibility.Visible;
+            else
+                imgScalesCInitial.Visibility = Visibility.Hidden;
         }
 
         private void ScalesC_KRP_ValueChanged(object obj)
@@ -283,6 +330,30 @@ namespace MixRubber2
 
         #region Scales J
 
+        private void ScalesJ_WeightNotNotmal_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesJOverWeight.Visibility = Visibility.Visible;
+            else
+                imgScalesJOverWeight.Visibility = Visibility.Hidden;
+        }
+
+        private void ScalesJ_IsBusy_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesJBusy.Visibility = Visibility.Visible;
+            else
+                imgScalesJBusy.Visibility = Visibility.Hidden;
+        }
+
+        private void ScalesJ_Initial_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesJInitial.Visibility = Visibility.Visible;
+            else
+                imgScalesJInitial.Visibility = Visibility.Hidden;
+        }
+
         private void ScalesJ_FullReal_ValueChanged(object obj)
         {
             txtScalesJFullReal.Text = ((float)obj).ToString();
@@ -369,6 +440,30 @@ namespace MixRubber2
         #endregion
 
         #region Scales D
+
+        private void ScalesD_WeightNotNotmal_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesDOverWeight.Visibility = Visibility.Visible;
+            else
+                imgScalesDOverWeight.Visibility = Visibility.Hidden;
+        }
+
+        private void ScalesD_IsBusy_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesDBusy.Visibility = Visibility.Visible;
+            else
+                imgScalesDBusy.Visibility = Visibility.Hidden;
+        }
+
+        private void ScalesD_Initial_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesDInitial.Visibility = Visibility.Visible;
+            else
+                imgScalesDInitial.Visibility = Visibility.Hidden;
+        }
 
         private void ScalesD_FullReal_ValueChanged(object obj)
         {
@@ -457,6 +552,30 @@ namespace MixRubber2
 
         #region Scales E
 
+        private void ScalesE_WeightNotNotmal_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesEOverWeight.Visibility = Visibility.Visible;
+            else
+                imgScalesEOverWeight.Visibility = Visibility.Hidden;
+        }
+
+        private void ScalesE_IsBusy_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesEBusy.Visibility = Visibility.Visible;
+            else
+                imgScalesEBusy.Visibility = Visibility.Hidden;
+        }
+
+        private void ScalesE_Initial_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesEInitial.Visibility = Visibility.Visible;
+            else
+                imgScalesEInitial.Visibility = Visibility.Hidden;
+        }
+
         private void ScalesE_FullReal_ValueChanged(object obj)
         {
             txtScalesEFullReal.Text = ((float)obj).ToString();
@@ -535,6 +654,30 @@ namespace MixRubber2
         #endregion
 
         #region Scales Sh
+
+        private void ScalesSh_WeightNotNotmal_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesShOverWeight.Visibility = Visibility.Visible;
+            else
+                imgScalesShOverWeight.Visibility = Visibility.Hidden;
+        }
+
+        private void ScalesSh_IsBusy_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesShBusy.Visibility = Visibility.Visible;
+            else
+                imgScalesShBusy.Visibility = Visibility.Hidden;
+        }
+
+        private void ScalesSh_Initial_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesShInitial.Visibility = Visibility.Visible;
+            else
+                imgScalesShInitial.Visibility = Visibility.Hidden;
+        }
 
         private void ScalesSh_FullReal_ValueChanged(object obj)
         {
@@ -615,6 +758,30 @@ namespace MixRubber2
 
         #region Scales Ju
 
+        private void ScalesJu_WeightNotNotmal_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesJuOverWeight.Visibility = Visibility.Visible;
+            else
+                imgScalesJuOverWeight.Visibility = Visibility.Hidden;
+        }
+
+        private void ScalesJu_IsBusy_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesJuBusy.Visibility = Visibility.Visible;
+            else
+                imgScalesJuBusy.Visibility = Visibility.Hidden;
+        }
+
+        private void ScalesJu_Initial_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesJuInitial.Visibility = Visibility.Visible;
+            else
+                imgScalesJuInitial.Visibility = Visibility.Hidden;
+        }
+
         private void ScalesJu_FullReal_ValueChanged(object obj)
         {
             txtScalesJuFullReal.Text = ((float)obj).ToString();
@@ -692,81 +859,105 @@ namespace MixRubber2
 
         #endregion
 
-        #region Scales U
+        #region Scales Y
 
-        private void ScalesU_FullReal_ValueChanged(object obj)
+        private void ScalesY_WeightNotNotmal_ValueChanged(object obj)
         {
-            txtScalesUFullReal.Text = ((float)obj).ToString();
+            if ((bool)obj)
+                imgScalesYOverWeight.Visibility = Visibility.Visible;
+            else
+                imgScalesYOverWeight.Visibility = Visibility.Hidden;
         }
 
-        private void ScalesU_CurReal_ValueChanged(object obj)
+        private void ScalesY_IsBusy_ValueChanged(object obj)
         {
-            txtScalesUCurReal.Text = ((float)obj).ToString();
+            if ((bool)obj)
+                imgScalesYBusy.Visibility = Visibility.Visible;
+            else
+                imgScalesYBusy.Visibility = Visibility.Hidden;
         }
 
-        private void ScalesU_FullNeed_ValueChanged(object obj)
+        private void ScalesY_Initial_ValueChanged(object obj)
         {
-            txtScalesUFullNeed.Text = ((float)obj).ToString();
+            if ((bool)obj)
+                imgScalesYInitial.Visibility = Visibility.Visible;
+            else
+                imgScalesYInitial.Visibility = Visibility.Hidden;
         }
 
-        private void ScalesU_CurNeed_ValueChanged(object obj)
+        private void ScalesY_FullReal_ValueChanged(object obj)
         {
-            txtScalesUCurNeed.Text = ((float)obj).ToString();
+            txtScalesYFullReal.Text = ((float)obj).ToString();
         }
 
-        private void ScalesU_WeighingChanged(object obj)
+        private void ScalesY_CurReal_ValueChanged(object obj)
+        {
+            txtScalesYCurReal.Text = ((float)obj).ToString();
+        }
+
+        private void ScalesY_FullNeed_ValueChanged(object obj)
+        {
+            txtScalesYFullNeed.Text = ((float)obj).ToString();
+        }
+
+        private void ScalesY_CurNeed_ValueChanged(object obj)
+        {
+            txtScalesYCurNeed.Text = ((float)obj).ToString();
+        }
+
+        private void ScalesY_WeighingChanged(object obj)
         {
             if ((bool)obj)
             {
-                if (scalesU_IsClosed)
-                    imgScalesUSilo.Source = BI_SiloClosedGreen;
+                if (scalesY_IsClosed)
+                    imgScalesYSilo.Source = BI_SiloClosedGreen;
             }
             else
             {
-                if (scalesU_IsClosed)
-                    imgScalesUSilo.Source = BI_SiloClosed;
+                if (scalesY_IsClosed)
+                    imgScalesYSilo.Source = BI_SiloClosed;
             }
-            scalesU_Weighing = (bool)obj;
+            scalesY_Weighing = (bool)obj;
         }
 
-        private void ScalesU_IsClosedChanged(object obj)
+        private void ScalesY_IsClosedChanged(object obj)
         {
             if ((bool)obj)
             {
-                if (scalesU_Weighing)
-                    imgScalesUSilo.Source = BI_SiloClosedGreen;
+                if (scalesY_Weighing)
+                    imgScalesYSilo.Source = BI_SiloClosedGreen;
                 else
-                    imgScalesUSilo.Source = BI_SiloClosed;
+                    imgScalesYSilo.Source = BI_SiloClosed;
             }
             else
             {
-                imgScalesUSilo.Source = BI_SiloOpend;
+                imgScalesYSilo.Source = BI_SiloOpend;
             }
-            scalesU_IsClosed = (bool)obj;
+            scalesY_IsClosed = (bool)obj;
         }
 
-        private void ScalesU_Batcher3_ValueChanged(object obj)
+        private void ScalesY_Batcher3_ValueChanged(object obj)
         {
             if ((bool)obj)
-                imgScalesUBatcher3.Source = BI_SmallSiloGreen;
+                imgScalesYBatcher3.Source = BI_SmallSiloGreen;
             else
-                imgScalesUBatcher3.Source = BI_SmallSilo;
+                imgScalesYBatcher3.Source = BI_SmallSilo;
         }
 
-        private void ScalesU_Batcher2_ValueChanged(object obj)
+        private void ScalesY_Batcher2_ValueChanged(object obj)
         {
             if ((bool)obj)
-                imgScalesUBatcher2.Source = BI_SmallSiloGreen;
+                imgScalesYBatcher2.Source = BI_SmallSiloGreen;
             else
-                imgScalesUBatcher2.Source = BI_SmallSilo;
+                imgScalesYBatcher2.Source = BI_SmallSilo;
         }
 
-        private void ScalesU_Batcher1_ValueChanged(object obj)
+        private void ScalesY_Batcher1_ValueChanged(object obj)
         {
             if ((bool)obj)
-                imgScalesUBatcher1.Source = BI_SmallSiloGreen;
+                imgScalesYBatcher1.Source = BI_SmallSiloGreen;
             else
-                imgScalesUBatcher1.Source = BI_SmallSilo;
+                imgScalesYBatcher1.Source = BI_SmallSilo;
         }
 
         #endregion

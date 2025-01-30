@@ -166,6 +166,9 @@
                         <Rectangle Height="8" Canvas.Left="16" Stroke="Black" Canvas.Top="118" Width="168" Fill="Black"/>
                         <Rectangle Height="17" Canvas.Left="92" Stroke="Black" Canvas.Top="126" Width="16" Fill="Black"/>
                         <Image Name="imgScalesCSilo" Source="/img/ScalesOpen.png" Width="80" Canvas.Left="60" Canvas.Top="146"/>
+                        <Image Name="imgScalesCInitial" ToolTip="Инициализация" Source="/img/Initial.png" Width="20" Canvas.Left="158" Canvas.Top="132"/>
+                        <Image Name="imgScalesCBusy" ToolTip="Весы заняты" Source="/img/scales_busy.png" Width="20" Canvas.Left="180" Canvas.Top="132"/>
+                        <Image Name="imgScalesCOverWeight" ToolTip="Не верный вес" Source="/img/Weight.png" Width="20" Canvas.Left="180" Canvas.Top="154"/>
 
                         <Label Background="#FFAAAAAA" Content="Питатель" Height="25" Canvas.Left="210" Canvas.Top="36" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
                         <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="210" Canvas.Top="62" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
@@ -218,6 +221,9 @@
                         <Rectangle Height="8" Canvas.Left="16" Stroke="Black" Canvas.Top="118" Width="128" Fill="Black"/>
                         <Rectangle Height="17" Canvas.Left="72" Stroke="Black" Canvas.Top="126" Width="16" Fill="Black"/>
                         <Image Name="imgScalesJSilo" Source="/img/ScalesOpen.png" Width="80" Canvas.Left="40" Canvas.Top="146"/>
+                        <Image Name="imgScalesJInitial" ToolTip="Инициализация" Source="/img/Initial.png" Width="20" Canvas.Left="118" Canvas.Top="132"/>
+                        <Image Name="imgScalesJBusy" ToolTip="Весы заняты" Source="/img/scales_busy.png" Width="20" Canvas.Left="140" Canvas.Top="132"/>
+                        <Image Name="imgScalesJOverWeight" ToolTip="Не верный вес" Source="/img/Weight.png" Width="20" Canvas.Left="140" Canvas.Top="154"/>
 
                         <Label Background="#FFAAAAAA" Content="Питатель" Height="25" Canvas.Left="170" Canvas.Top="36" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
                         <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="170" Canvas.Top="62" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
@@ -257,6 +263,9 @@
                         <Rectangle Height="8" Canvas.Left="16" Stroke="Black" Canvas.Top="118" Width="128" Fill="Black"/>
                         <Rectangle Height="17" Canvas.Left="72" Stroke="Black" Canvas.Top="126" Width="16" Fill="Black"/>
                         <Image Name="imgScalesDSilo" Source="/img/ScalesOpen.png" Width="80" Canvas.Left="40" Canvas.Top="146"/>
+                        <Image Name="imgScalesDInitial" ToolTip="Инициализация" Source="/img/Initial.png" Width="20" Canvas.Left="118" Canvas.Top="132"/>
+                        <Image Name="imgScalesDBusy" ToolTip="Весы заняты" Source="/img/scales_busy.png" Width="20" Canvas.Left="140" Canvas.Top="132"/>
+                        <Image Name="imgScalesDOverWeight" ToolTip="Не верный вес" Source="/img/Weight.png" Width="20" Canvas.Left="140" Canvas.Top="154"/>
 
                         <Label Background="#FFAAAAAA" Content="Питатель" Height="25" Canvas.Left="170" Canvas.Top="36" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
                         <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="170" Canvas.Top="62" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
@@ -294,6 +303,9 @@
                         <Rectangle Height="8" Canvas.Left="16" Stroke="Black" Canvas.Top="118" Width="88" Fill="Black"/>
                         <Rectangle Height="17" Canvas.Left="52" Stroke="Black" Canvas.Top="126" Width="16" Fill="Black"/>
                         <Image Name="imgScalesESilo" Source="/img/ScalesOpen.png" Width="80" Canvas.Left="20" Canvas.Top="146"/>
+                        <Image Name="imgScalesEInitial" ToolTip="Инициализация" Source="/img/Initial.png" Width="20" Canvas.Left="78" Canvas.Top="132"/>
+                        <Image Name="imgScalesEBusy" ToolTip="Весы заняты" Source="/img/scales_busy.png" Width="20" Canvas.Left="100" Canvas.Top="132"/>
+                        <Image Name="imgScalesEOverWeight" ToolTip="Не верный вес" Source="/img/Weight.png" Width="20" Canvas.Left="100" Canvas.Top="154"/>
 
                         <Label Background="#FFAAAAAA" Content="Питатель" Height="25" Canvas.Left="130" Canvas.Top="36" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
                         <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="130" Canvas.Top="62" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
@@ -331,6 +343,9 @@
                         <Rectangle Height="8" Canvas.Left="16" Stroke="Black" Canvas.Top="118" Width="88" Fill="Black"/>
                         <Rectangle Height="17" Canvas.Left="52" Stroke="Black" Canvas.Top="126" Width="16" Fill="Black"/>
                         <Image Name="imgScalesShSilo" Source="/img/ScalesClose.png" Width="80" Canvas.Left="20" Canvas.Top="146"/>
+                        <Image Name="imgScalesShInitial" ToolTip="Инициализация" Source="/img/Initial.png" Width="20" Canvas.Left="78" Canvas.Top="132"/>
+                        <Image Name="imgScalesShBusy" ToolTip="Весы заняты" Source="/img/scales_busy.png" Width="20" Canvas.Left="100" Canvas.Top="132"/>
+                        <Image Name="imgScalesShOverWeight" ToolTip="Не верный вес" Source="/img/Weight.png" Width="20" Canvas.Left="100" Canvas.Top="154"/>
 
                         <Label Background="#FFAAAAAA" Content="Питатель" Height="25" Canvas.Left="130" Canvas.Top="36" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
                         <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="130" Canvas.Top="62" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
@@ -368,6 +383,9 @@
                         <Rectangle Height="8" Canvas.Left="16" Stroke="Black" Canvas.Top="118" Width="88" Fill="Black"/>
                         <Rectangle Height="17" Canvas.Left="52" Stroke="Black" Canvas.Top="126" Width="16" Fill="Black"/>
                         <Image Name="imgScalesJuSilo" Source="/img/ScalesClose.png" Width="80" Canvas.Left="20" Canvas.Top="146"/>
+                        <Image Name="imgScalesJuInitial" ToolTip="Инициализация" Source="/img/Initial.png" Width="20" Canvas.Left="78" Canvas.Top="132"/>
+                        <Image Name="imgScalesJuBusy" ToolTip="Весы заняты" Source="/img/scales_busy.png" Width="20" Canvas.Left="100" Canvas.Top="132"/>
+                        <Image Name="imgScalesJuOverWeight" ToolTip="Не верный вес" Source="/img/Weight.png" Width="20" Canvas.Left="100" Canvas.Top="154"/>
 
                         <Label Background="#FFAAAAAA" Content="Питатель" Height="25" Canvas.Left="130" Canvas.Top="36" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
                         <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="130" Canvas.Top="62" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
@@ -387,7 +405,7 @@
                     </Canvas>
                 </Grid>
 
-                <Grid Name="ScalesU" Canvas.Left="1200" Canvas.Top="440">
+                <Grid Name="ScalesY" Canvas.Left="1200" Canvas.Top="440">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
@@ -396,29 +414,32 @@
                     </Grid.RowDefinitions>
                     <Canvas Grid.Row="0" Grid.Column="0" Width="238" Height="270">
                         <Label Background="#FFAAAAAA" Content="ВЕСЫ У" Height="25" Width="238" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
-                        <Image Name="imgScalesUBatcher1" Source="/img/SmallSilo.png" Width="40" Canvas.Top="36"/>
+                        <Image Name="imgScalesYBatcher1" Source="/img/SmallSilo.png" Width="40" Canvas.Top="36"/>
                         <Label Content="1" Height="20" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
-                        <Image Name="imgScalesUBatcher2" Source="/img/SmallSilo.png" Width="40" Canvas.Left="40" Canvas.Top="36"/>
+                        <Image Name="imgScalesYBatcher2" Source="/img/SmallSilo.png" Width="40" Canvas.Left="40" Canvas.Top="36"/>
                         <Label Content="2" Height="20" Canvas.Left="40" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
-                        <Image Name="imgScalesUBatcher3" Source="/img/SmallSilo.png" Width="40" Canvas.Left="80" Canvas.Top="36"/>
+                        <Image Name="imgScalesYBatcher3" Source="/img/SmallSilo.png" Width="40" Canvas.Left="80" Canvas.Top="36"/>
                         <Label Content="3" Height="20" Canvas.Left="80" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
                         <Rectangle Height="8" Canvas.Left="16" Stroke="Black" Canvas.Top="118" Width="88" Fill="Black"/>
                         <Rectangle Height="17" Canvas.Left="52" Stroke="Black" Canvas.Top="126" Width="16" Fill="Black"/>
-                        <Image Name="imgScalesUSilo" Source="/img/ScalesOpen.png" Width="80" Canvas.Left="20" Canvas.Top="146"/>
+                        <Image Name="imgScalesYSilo" Source="/img/ScalesOpen.png" Width="80" Canvas.Left="20" Canvas.Top="146"/>
+                        <Image Name="imgScalesYInitial" ToolTip="Инициализация" Source="/img/Initial.png" Width="20" Canvas.Left="78" Canvas.Top="132"/>
+                        <Image Name="imgScalesYBusy" ToolTip="Весы заняты" Source="/img/scales_busy.png" Width="20" Canvas.Left="100" Canvas.Top="132"/>
+                        <Image Name="imgScalesYOverWeight" ToolTip="Не верный вес" Source="/img/Weight.png" Width="20" Canvas.Left="100" Canvas.Top="154"/>
 
                         <Label Background="#FFAAAAAA" Content="Питатель" Height="25" Canvas.Left="130" Canvas.Top="36" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
                         <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="130" Canvas.Top="62" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Name="txtScalesUCurNeed" Height="25" Canvas.Left="159" Text="0" Canvas.Top="62" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesYCurNeed" Height="25" Canvas.Left="159" Text="0" Canvas.Top="62" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="130" Canvas.Top="88" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Name="txtScalesUCurReal" Height="25" Canvas.Left="159" Text="0" Canvas.Top="88" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesYCurReal" Height="25" Canvas.Left="159" Text="0" Canvas.Top="88" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="130" Canvas.Top="114" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Height="25" Canvas.Left="159" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
 
                         <Label Background="#FFAAAAAA" Content="Весы" Height="25" Canvas.Left="130" Canvas.Top="150" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
                         <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="130" Canvas.Top="176" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Name="txtScalesUFullNeed" Height="25" Canvas.Left="159" Text="0" Canvas.Top="176" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesYFullNeed" Height="25" Canvas.Left="159" Text="0" Canvas.Top="176" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="130" Canvas.Top="202" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Name="txtScalesUFullReal" Height="25" Canvas.Left="159" Text="0" Canvas.Top="202" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesYFullReal" Height="25" Canvas.Left="159" Text="0" Canvas.Top="202" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="130" Canvas.Top="228" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Height="25" Canvas.Left="159" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                     </Canvas>

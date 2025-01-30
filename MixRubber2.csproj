@@ -180,5 +180,14 @@
   <ItemGroup>
     <Resource Include="img\Zatvor.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\scales_busy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\Weight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\Initial.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
