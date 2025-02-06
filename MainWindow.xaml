@@ -52,7 +52,6 @@
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="     НАЖАТ&#10;АВАРИЙНИК" Height="40" Canvas.Left="2" Canvas.Top="90" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="    ПУРФ&#10;ВКЛЮЧЕН" Height="40" Canvas.Left="104" Canvas.Top="48" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ШНЕК ПОД-КИ&#10;    ВКЛЮЧЕН" Height="40" Canvas.Left="104" Canvas.Top="90" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                <Button Name="btnKRP" Content="Вкл КРП" Height="40" Width="100" Canvas.Left="2" Canvas.Top="132" FontSize="14" FontWeight="Bold"/>
 
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ТЕМПЕРАТУРА&#10;КРИТИЧЕСКАЯ" Height="40" Canvas.Left="10" Canvas.Top="790" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ТЕМПЕРАТУРА&#10;    ВЫСОКАЯ" Height="40" Canvas.Left="10" Canvas.Top="832" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
@@ -176,7 +175,7 @@
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="210" Canvas.Top="88" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Name="txtScalesCCurReal" Height="25" Canvas.Left="239" Text="0" Canvas.Top="88" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="210" Canvas.Top="114" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Height="25" Canvas.Left="239" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesCCurDif" Height="25" Canvas.Left="239" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
 
                         <Label Background="#FFAAAAAA" Content="Весы" Height="25" Canvas.Left="210" Canvas.Top="150" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
                         <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="210" Canvas.Top="176" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
@@ -184,7 +183,7 @@
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="210" Canvas.Top="202" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Name="txtScalesCFullReal" Height="25" Canvas.Left="239" Text="0" Canvas.Top="202" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="210" Canvas.Top="228" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Height="25" Canvas.Left="239" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesCFullDif" Height="25" Canvas.Left="239" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                     </Canvas>
                 </Grid>
 
@@ -231,7 +230,7 @@
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="170" Canvas.Top="88" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Name="txtScalesJCurReal" Height="25" Canvas.Left="199" Text="0" Canvas.Top="88" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="170" Canvas.Top="114" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesJCurDif" Height="25" Canvas.Left="199" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
 
                         <Label Background="#FFAAAAAA" Content="Весы" Height="25" Canvas.Left="170" Canvas.Top="150" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
                         <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="170" Canvas.Top="176" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
@@ -239,7 +238,7 @@
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="170" Canvas.Top="202" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Name="txtScalesJFullReal" Height="25" Canvas.Left="199" Text="0" Canvas.Top="202" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="170" Canvas.Top="228" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesJFullDif" Height="25" Canvas.Left="199" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                     </Canvas>
                 </Grid>
 
@@ -273,7 +272,7 @@
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="170" Canvas.Top="88" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Name="txtScalesDCurReal" Height="25" Canvas.Left="199" Text="0" Canvas.Top="88" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="170" Canvas.Top="114" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesDCurDif" Height="25" Canvas.Left="199" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
 
                         <Label Background="#FFAAAAAA" Content="Весы" Height="25" Canvas.Left="170" Canvas.Top="150" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
                         <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="170" Canvas.Top="176" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
@@ -281,7 +280,7 @@
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="170" Canvas.Top="202" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Name="txtScalesDFullReal" Height="25" Canvas.Left="199" Text="0" Canvas.Top="202" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="170" Canvas.Top="228" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Height="25" Canvas.Left="199" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesDFullDif" Height="25" Canvas.Left="199" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                     </Canvas>
                 </Grid>
 
@@ -313,7 +312,7 @@
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="130" Canvas.Top="88" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Name="txtScalesECurReal" Height="25" Canvas.Left="159" Text="0" Canvas.Top="88" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="130" Canvas.Top="114" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Height="25" Canvas.Left="159" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesECurDif" Height="25" Canvas.Left="159" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
 
                         <Label Background="#FFAAAAAA" Content="Весы" Height="25" Canvas.Left="130" Canvas.Top="150" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
                         <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="130" Canvas.Top="176" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
@@ -321,7 +320,7 @@
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="130" Canvas.Top="202" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Name="txtScalesEFullReal" Height="25" Canvas.Left="159" Text="0" Canvas.Top="202" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="130" Canvas.Top="228" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Height="25" Canvas.Left="159" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesEFullDif" Height="25" Canvas.Left="159" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                     </Canvas>
                 </Grid>
 
@@ -353,7 +352,7 @@
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="130" Canvas.Top="88" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Name="txtScalesShCurReal" Height="25" Canvas.Left="159" Text="0" Canvas.Top="88" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="130" Canvas.Top="114" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Height="25" Canvas.Left="159" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesShCurDif" Height="25" Canvas.Left="159" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
 
                         <Label Background="#FFAAAAAA" Content="Весы" Height="25" Canvas.Left="130" Canvas.Top="150" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
                         <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="130" Canvas.Top="176" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
@@ -361,7 +360,7 @@
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="130" Canvas.Top="202" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Name="txtScalesShFullReal" Height="25" Canvas.Left="159" Text="0" Canvas.Top="202" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="130" Canvas.Top="228" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Height="25" Canvas.Left="159" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesShFullDif" Height="25" Canvas.Left="159" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                     </Canvas>
                 </Grid>
 
@@ -393,7 +392,7 @@
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="130" Canvas.Top="88" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Name="txtScalesJuCurReal" Height="25" Canvas.Left="159" Text="0" Canvas.Top="88" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="130" Canvas.Top="114" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Height="25" Canvas.Left="159" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesJuCurDif"  Height="25" Canvas.Left="159" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
 
                         <Label Background="#FFAAAAAA" Content="Весы" Height="25" Canvas.Left="130" Canvas.Top="150" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
                         <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="130" Canvas.Top="176" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
@@ -401,7 +400,7 @@
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="130" Canvas.Top="202" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Name="txtScalesJuFullReal" Height="25" Canvas.Left="159" Text="0" Canvas.Top="202" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="130" Canvas.Top="228" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Height="25" Canvas.Left="159" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesJuFullDif" Height="25" Canvas.Left="159" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                     </Canvas>
                 </Grid>
 
@@ -433,7 +432,7 @@
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="130" Canvas.Top="88" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Name="txtScalesYCurReal" Height="25" Canvas.Left="159" Text="0" Canvas.Top="88" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="130" Canvas.Top="114" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Height="25" Canvas.Left="159" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesYCurDif" Height="25" Canvas.Left="159" Text="0" Canvas.Top="114" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
 
                         <Label Background="#FFAAAAAA" Content="Весы" Height="25" Canvas.Left="130" Canvas.Top="150" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
                         <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="130" Canvas.Top="176" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
@@ -441,7 +440,7 @@
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="130" Canvas.Top="202" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Name="txtScalesYFullReal" Height="25" Canvas.Left="159" Text="0" Canvas.Top="202" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="130" Canvas.Top="228" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Height="25" Canvas.Left="159" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesYFullDif" Height="25" Canvas.Left="159" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                     </Canvas>
                 </Grid>
 
@@ -457,6 +456,8 @@
 
                         <Rectangle Fill="LightGreen" Width="110" Height="30" Canvas.Left="36" Canvas.Top="190"/>
                         <Image Source="/img/transporter2Green.png" Height="46" Canvas.Top="217"/>
+                        <Image Name="imgScalesKBusy" ToolTip="Весы заняты" Source="/img/scales_busy.png" Width="20" Canvas.Left="170" Canvas.Top="132"/>
+                        <Image Name="imgScalesKOverWeight" ToolTip="Не верный вес" Source="/img/Weight.png" Width="20" Canvas.Left="170" Canvas.Top="154"/>
 
                         <Label Background="#FFAAAAAA" Content="Весы" Height="25" Canvas.Left="200" Canvas.Top="150" Width="108" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
                         <Label Background="#FFAAAAAA" Content="Зад." Height="25" Canvas.Left="200" Canvas.Top="176" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
@@ -464,7 +465,7 @@
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="200" Canvas.Top="202" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Name="txtScalesKFullReal" Height="25" Canvas.Left="229" Text="0" Canvas.Top="202" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="200" Canvas.Top="228" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Height="25" Canvas.Left="229" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <TextBlock Name="txtScalesKFullDif" Height="25" Canvas.Left="229" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                     </Canvas>
                 </Grid>
                 <Button Click="btnFullScreen_Click" Content="Button" Canvas.Left="1787" Canvas.Top="4" Height="34" Width="132" HorizontalAlignment="Left" VerticalAlignment="Center"/>

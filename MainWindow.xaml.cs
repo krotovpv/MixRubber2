@@ -73,7 +73,6 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_CurReal").First().ValueChanged += ScalesC_CurReal_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_FullReal").First().ValueChanged += ScalesC_FullReal_ValueChanged;
 
-            OPCDA.AllTags.Where(x => x.Name == "ScalesC_KRP").First().ValueChanged += ScalesC_KRP_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_Initial").First().ValueChanged += ScalesC_Initial_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_IsBusy").First().ValueChanged += ScalesC_IsBusy_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesC_WeightNotNormal").First().ValueChanged += ScalesC_WeightNotNotmal_ValueChanged;
@@ -96,6 +95,7 @@ namespace MixRubber2
 
             OPCDA.AllTags.Where(x => x.Name == "ScalesJ_Initial").First().ValueChanged += ScalesJ_Initial_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesJ_IsBusy").First().ValueChanged += ScalesJ_IsBusy_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesJ_WeightNotNormal").First().ValueChanged += ScalesJ_WeightNotNotmal_ValueChanged;
 
             OPCDA.AllTags.Where(x => x.Name == "BatcherD1").First().ValueChanged += ScalesD_Batcher1_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherD2").First().ValueChanged += ScalesD_Batcher2_ValueChanged;
@@ -112,6 +112,7 @@ namespace MixRubber2
 
             OPCDA.AllTags.Where(x => x.Name == "ScalesD_Initial").First().ValueChanged += ScalesD_Initial_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesD_IsBusy").First().ValueChanged += ScalesD_IsBusy_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesD_WeightNotNormal").First().ValueChanged += ScalesD_WeightNotNotmal_ValueChanged;
 
             OPCDA.AllTags.Where(x => x.Name == "BatcherE1").First().ValueChanged += ScalesE_Batcher1_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherE2").First().ValueChanged += ScalesE_Batcher2_ValueChanged;
@@ -127,6 +128,7 @@ namespace MixRubber2
 
             OPCDA.AllTags.Where(x => x.Name == "ScalesE_Initial").First().ValueChanged += ScalesE_Initial_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesE_IsBusy").First().ValueChanged += ScalesE_IsBusy_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesE_WeightNotNormal").First().ValueChanged += ScalesE_WeightNotNotmal_ValueChanged;
 
             OPCDA.AllTags.Where(x => x.Name == "BatcherSh1").First().ValueChanged += ScalesSh_Batcher1_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherSh2").First().ValueChanged += ScalesSh_Batcher2_ValueChanged;
@@ -142,6 +144,7 @@ namespace MixRubber2
 
             OPCDA.AllTags.Where(x => x.Name == "ScalesSh_Initial").First().ValueChanged += ScalesSh_Initial_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesSh_IsBusy").First().ValueChanged += ScalesSh_IsBusy_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesSh_WeightNotNormal").First().ValueChanged += ScalesSh_WeightNotNotmal_ValueChanged;
 
             OPCDA.AllTags.Where(x => x.Name == "BatcherJu1").First().ValueChanged += ScalesJu_Batcher1_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherJu2").First().ValueChanged += ScalesJu_Batcher2_ValueChanged;
@@ -157,6 +160,7 @@ namespace MixRubber2
 
             OPCDA.AllTags.Where(x => x.Name == "ScalesJu_Initial").First().ValueChanged += ScalesJu_Initial_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesJu_IsBusy").First().ValueChanged += ScalesJu_IsBusy_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesJu_WeightNotNormal").First().ValueChanged += ScalesJu_WeightNotNotmal_ValueChanged;
 
             OPCDA.AllTags.Where(x => x.Name == "BatcherY1").First().ValueChanged += ScalesY_Batcher1_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "BatcherY2").First().ValueChanged += ScalesY_Batcher2_ValueChanged;
@@ -172,7 +176,13 @@ namespace MixRubber2
 
             OPCDA.AllTags.Where(x => x.Name == "ScalesY_Initial").First().ValueChanged += ScalesY_Initial_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesY_IsBusy").First().ValueChanged += ScalesY_IsBusy_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesY_WeightNotNormal").First().ValueChanged += ScalesY_WeightNotNotmal_ValueChanged;
 
+            OPCDA.AllTags.Where(x => x.Name == "ScalesK_FullNeed").First().ValueChanged += ScalesK_FullNeed_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesK_FullReal").First().ValueChanged += ScalesK_FullReal_ValueChanged;
+
+            OPCDA.AllTags.Where(x => x.Name == "ScalesK_IsBusy").First().ValueChanged += ScalesK_IsBusy_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScalesK_WeightNotNormal").First().ValueChanged += ScalesK_WeightNotNotmal_ValueChanged;
             //OPCDA.ConnectionOPC();
         }
 
@@ -236,40 +246,28 @@ namespace MixRubber2
                 imgScalesCInitial.Visibility = Visibility.Hidden;
         }
 
-        private void ScalesC_KRP_ValueChanged(object obj)
-        {
-            if ((bool)obj)
-            {
-                btnKRP.Content = "Выкл КРП";
-                btnKRP.Background = new SolidColorBrush(Colors.Red);
-                btnKRP.Foreground = new SolidColorBrush(Colors.White);
-            }
-            else
-            {
-                btnKRP.Content = "Вкл КРП";
-                btnKRP.Background = new SolidColorBrush(Color.FromArgb(0xFF, 0xDD, 0xDD, 0xDD));
-                btnKRP.Foreground = new SolidColorBrush(Colors.Black);
-            }
-        }
-
         private void ScalesC_FullReal_ValueChanged(object obj)
         {
             txtScalesCFullReal.Text = ((float)obj).ToString();
+            txtScalesCFullDif.Text = Math.Round((float)OPCDA.AllTags.Where(x => x.Name == "ScalesC_FullNeed").First().Value - (float)obj, 1).ToString();
         }
 
         private void ScalesC_CurReal_ValueChanged(object obj)
         {
             txtScalesCCurReal.Text = ((float)obj).ToString();
+            txtScalesCCurDif.Text = Math.Round((float)OPCDA.AllTags.Where(x => x.Name == "ScalesC_CurNeed").First().Value - (float)obj, 1).ToString();
         }
 
         private void ScalesC_FullNeed_ValueChanged(object obj)
         {
             txtScalesCFullNeed.Text = ((float)obj).ToString();
+            txtScalesCFullDif.Text = Math.Round((float)obj - (float)OPCDA.AllTags.Where(x => x.Name == "ScalesC_FullReal").First().Value, 1).ToString();
         }
 
         private void ScalesC_CurNeed_ValueChanged(object obj)
         {
             txtScalesCCurNeed.Text = ((float)obj).ToString();
+            txtScalesCCurDif.Text = Math.Round((float)obj - (float)OPCDA.AllTags.Where(x => x.Name == "ScalesC_CurReal").First().Value, 1).ToString();
         }
 
         private void ScalesC_Batcher5_ValueChanged(object obj)
@@ -357,21 +355,25 @@ namespace MixRubber2
         private void ScalesJ_FullReal_ValueChanged(object obj)
         {
             txtScalesJFullReal.Text = ((float)obj).ToString();
+            txtScalesJFullDif.Text = Math.Round((float)OPCDA.AllTags.Where(x => x.Name == "ScalesJ_FullNeed").First().Value - (float)obj, 1).ToString();
         }
 
         private void ScalesJ_CurReal_ValueChanged(object obj)
         {
             txtScalesJCurReal.Text = ((float)obj).ToString();
+            txtScalesJCurDif.Text = Math.Round((float)OPCDA.AllTags.Where(x => x.Name == "ScalesJ_CurNeed").First().Value - (float)obj, 1).ToString();
         }
 
         private void ScalesJ_FullNeed_ValueChanged(object obj)
         {
             txtScalesJFullNeed.Text = ((float)obj).ToString();
+            txtScalesJFullDif.Text = Math.Round((float)obj - (float)OPCDA.AllTags.Where(x => x.Name == "ScalesJ_FullReal").First().Value, 1).ToString();
         }
 
         private void ScalesJ_CurNeed_ValueChanged(object obj)
         {
             txtScalesJCurNeed.Text = ((float)obj).ToString();
+            txtScalesJCurDif.Text = Math.Round((float)obj - (float)OPCDA.AllTags.Where(x => x.Name == "ScalesJ_CurReal").First().Value, 1).ToString();
         }
 
         private void ScalesJ_WeighingChanged(object obj)
@@ -468,21 +470,25 @@ namespace MixRubber2
         private void ScalesD_FullReal_ValueChanged(object obj)
         {
             txtScalesDFullReal.Text = ((float)obj).ToString();
+            txtScalesDFullDif.Text = Math.Round((float)OPCDA.AllTags.Where(x => x.Name == "ScalesD_FullNeed").First().Value - (float)obj, 1).ToString();
         }
 
         private void ScalesD_CurReal_ValueChanged(object obj)
         {
             txtScalesDCurReal.Text = ((float)obj).ToString();
+            txtScalesDCurDif.Text = Math.Round((float)OPCDA.AllTags.Where(x => x.Name == "ScalesD_CurNeed").First().Value - (float)obj, 1).ToString();
         }
 
         private void ScalesD_FullNeed_ValueChanged(object obj)
         {
             txtScalesDFullNeed.Text = ((float)obj).ToString();
+            txtScalesDFullDif.Text = Math.Round((float)obj - (float)OPCDA.AllTags.Where(x => x.Name == "ScalesD_FullReal").First().Value, 1).ToString();
         }
 
         private void ScalesD_CurNeed_ValueChanged(object obj)
         {
             txtScalesDCurNeed.Text = ((float)obj).ToString();
+            txtScalesDCurDif.Text = Math.Round((float)obj - (float)OPCDA.AllTags.Where(x => x.Name == "ScalesD_CurReal").First().Value, 1).ToString();
         }
 
         private void ScalesD_WeighingChanged(object obj)
@@ -579,21 +585,25 @@ namespace MixRubber2
         private void ScalesE_FullReal_ValueChanged(object obj)
         {
             txtScalesEFullReal.Text = ((float)obj).ToString();
+            txtScalesEFullDif.Text = Math.Round((float)OPCDA.AllTags.Where(x => x.Name == "ScalesE_FullNeed").First().Value - (float)obj, 1).ToString();
         }
 
         private void ScalesE_CurReal_ValueChanged(object obj)
         {
             txtScalesECurReal.Text = ((float)obj).ToString();
+            txtScalesECurDif.Text = Math.Round((float)OPCDA.AllTags.Where(x => x.Name == "ScalesE_CurNeed").First().Value - (float)obj, 1).ToString();
         }
 
         private void ScalesE_FullNeed_ValueChanged(object obj)
         {
             txtScalesEFullNeed.Text = ((float)obj).ToString();
+            txtScalesEFullDif.Text = Math.Round((float)obj - (float)OPCDA.AllTags.Where(x => x.Name == "ScalesE_FullReal").First().Value, 1).ToString();
         }
 
         private void ScalesE_CurNeed_ValueChanged(object obj)
         {
             txtScalesECurNeed.Text = ((float)obj).ToString();
+            txtScalesECurDif.Text = Math.Round((float)obj - (float)OPCDA.AllTags.Where(x => x.Name == "ScalesE_CurReal").First().Value, 1).ToString();
         }
 
         private void ScalesE_WeighingChanged(object obj)
@@ -682,21 +692,25 @@ namespace MixRubber2
         private void ScalesSh_FullReal_ValueChanged(object obj)
         {
             txtScalesShFullReal.Text = ((float)obj).ToString();
+            txtScalesShFullDif.Text = Math.Round((float)OPCDA.AllTags.Where(x => x.Name == "ScalesSh_FullNeed").First().Value - (float)obj, 1).ToString();
         }
 
         private void ScalesSh_CurReal_ValueChanged(object obj)
         {
             txtScalesShCurReal.Text = ((float)obj).ToString();
+            txtScalesShCurDif.Text = Math.Round((float)OPCDA.AllTags.Where(x => x.Name == "ScalesSh_CurNeed").First().Value - (float)obj, 1).ToString();
         }
 
         private void ScalesSh_FullNeed_ValueChanged(object obj)
         {
             txtScalesShFullNeed.Text = ((float)obj).ToString();
+            txtScalesShFullDif.Text = Math.Round((float)obj - (float)OPCDA.AllTags.Where(x => x.Name == "ScalesSh_FullReal").First().Value, 1).ToString();
         }
 
         private void ScalesSh_CurNeed_ValueChanged(object obj)
         {
             txtScalesShCurNeed.Text = ((float)obj).ToString();
+            txtScalesShCurDif.Text = Math.Round((float)obj - (float)OPCDA.AllTags.Where(x => x.Name == "ScalesSh_CurReal").First().Value, 1).ToString();
         }
 
         private void ScalesSh_WeighingChanged(object obj)
@@ -785,21 +799,25 @@ namespace MixRubber2
         private void ScalesJu_FullReal_ValueChanged(object obj)
         {
             txtScalesJuFullReal.Text = ((float)obj).ToString();
+            txtScalesJuFullDif.Text = Math.Round((float)OPCDA.AllTags.Where(x => x.Name == "ScalesJu_FullNeed").First().Value - (float)obj, 1).ToString();
         }
 
         private void ScalesJu_CurReal_ValueChanged(object obj)
         {
             txtScalesJuCurReal.Text = ((float)obj).ToString();
+            txtScalesJuCurDif.Text = Math.Round((float)OPCDA.AllTags.Where(x => x.Name == "ScalesJu_CurNeed").First().Value - (float)obj, 1).ToString();
         }
 
         private void ScalesJu_FullNeed_ValueChanged(object obj)
         {
             txtScalesJuFullNeed.Text = ((float)obj).ToString();
+            txtScalesJuFullDif.Text = Math.Round((float)obj - (float)OPCDA.AllTags.Where(x => x.Name == "ScalesJu_FullReal").First().Value, 1).ToString();
         }
 
         private void ScalesJu_CurNeed_ValueChanged(object obj)
         {
             txtScalesJuCurNeed.Text = ((float)obj).ToString();
+            txtScalesJuCurDif.Text = Math.Round((float)obj - (float)OPCDA.AllTags.Where(x => x.Name == "ScalesJu_CurReal").First().Value, 1).ToString();
         }
 
         private void ScalesJu_WeighingChanged(object obj)
@@ -888,21 +906,25 @@ namespace MixRubber2
         private void ScalesY_FullReal_ValueChanged(object obj)
         {
             txtScalesYFullReal.Text = ((float)obj).ToString();
+            txtScalesYFullDif.Text = Math.Round((float)OPCDA.AllTags.Where(x => x.Name == "ScalesY_FullNeed").First().Value - (float)obj, 1).ToString();
         }
 
         private void ScalesY_CurReal_ValueChanged(object obj)
         {
             txtScalesYCurReal.Text = ((float)obj).ToString();
+            txtScalesYCurDif.Text = Math.Round((float)OPCDA.AllTags.Where(x => x.Name == "ScalesY_CurNeed").First().Value - (float)obj, 1).ToString();
         }
 
         private void ScalesY_FullNeed_ValueChanged(object obj)
         {
             txtScalesYFullNeed.Text = ((float)obj).ToString();
+            txtScalesYFullDif.Text = Math.Round((float)obj - (float)OPCDA.AllTags.Where(x => x.Name == "ScalesY_FullReal").First().Value, 1).ToString();
         }
 
         private void ScalesY_CurNeed_ValueChanged(object obj)
         {
             txtScalesYCurNeed.Text = ((float)obj).ToString();
+            txtScalesYCurDif.Text = Math.Round((float)obj - (float)OPCDA.AllTags.Where(x => x.Name == "ScalesY_CurReal").First().Value, 1).ToString();
         }
 
         private void ScalesY_WeighingChanged(object obj)
@@ -961,6 +983,37 @@ namespace MixRubber2
         }
 
         #endregion
+
+        #region ScalesK
+        private void ScalesK_WeightNotNotmal_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesKOverWeight.Visibility = Visibility.Visible;
+            else
+                imgScalesKOverWeight.Visibility = Visibility.Hidden;
+        }
+
+        private void ScalesK_IsBusy_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgScalesKBusy.Visibility = Visibility.Visible;
+            else
+                imgScalesKBusy.Visibility = Visibility.Hidden;
+        }
+
+        private void ScalesK_FullReal_ValueChanged(object obj)
+        {
+            txtScalesKFullReal.Text = ((float)obj).ToString();
+            txtScalesKFullDif.Text = Math.Round((float)OPCDA.AllTags.Where(x => x.Name == "ScalesK_FullNeed").First().Value - (float)obj, 1).ToString();
+        }
+
+        private void ScalesK_FullNeed_ValueChanged(object obj)
+        {
+            txtScalesKFullNeed.Text = ((float)obj).ToString();
+            txtScalesKFullDif.Text = Math.Round((float)obj - (float)OPCDA.AllTags.Where(x => x.Name == "ScalesK_FullReal").First().Value, 1).ToString();
+        }
+        #endregion
+
 
         private void btnFullScreen_Click(object sender, RoutedEventArgs e)
         {
