@@ -27,7 +27,7 @@
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="НАЖАТ СТОП" Height="20" Canvas.Left="2" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ЗАПРЕТ РЖ" Height="20" Canvas.Left="104" Canvas.Top="2" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ЗАПРЕТ РГ" Height="20" Canvas.Left="104" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="РУЧНОЙ РЕЖИМ" Height="20" Canvas.Left="206" Canvas.Top="2" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+                <Label Name="lblManualMode" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="РУЧНОЙ РЕЖИМ" Height="20" Canvas.Left="206" Canvas.Top="2" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="НЕТ РЕЦЕПТА" Height="20" Canvas.Left="206" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" Content="Оператор:" Height="20" Canvas.Left="306" Canvas.Top="2" Width="100" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" Content="Смена:" Height="20" Canvas.Left="306" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
@@ -50,13 +50,13 @@
 
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="   ПУСК&#10;НАВЕСОК" Height="40" Canvas.Left="2" Canvas.Top="48" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="     НАЖАТ&#10;АВАРИЙНИК" Height="40" Canvas.Left="2" Canvas.Top="90" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="    ПУРФ&#10;ВКЛЮЧЕН" Height="40" Canvas.Left="104" Canvas.Top="48" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ШНЕК ПОД-КИ&#10;    ВКЛЮЧЕН" Height="40" Canvas.Left="104" Canvas.Top="90" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+                <Label Name="lblBagFilter" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="    ПУРФ&#10;ВКЛЮЧЕН" Height="40" Canvas.Left="104" Canvas.Top="48" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+                <Label Name="lblScrewPrepare" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ШНЕК ПОД-КИ&#10;    ВКЛЮЧЕН" Height="40" Canvas.Left="104" Canvas.Top="90" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
 
                 <Label Name="lblTemperatureCritical" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ТЕМПЕРАТУРА&#10;КРИТИЧЕСКАЯ" Height="40" Canvas.Left="10" Canvas.Top="790" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblTemperatureHigh" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ТЕМПЕРАТУРА&#10;    ВЫСОКАЯ" Height="40" Canvas.Left="10" Canvas.Top="832" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblPressureOff" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ДАВЛЕНИЕ&#10;    СНЯТО" Height="40" Canvas.Left="10" Canvas.Top="874" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="НЕТ +24В" Height="40" Canvas.Left="10" Canvas.Top="916" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+                <Label Name="lblNot24" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="НЕТ +24В" Height="40" Canvas.Left="10" Canvas.Top="916" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="НЕТ СВЯЗИ" Height="40" Canvas.Left="10" Canvas.Top="958" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
 
                 <Grid Name="Mixer" Canvas.Top="210" Canvas.Left="130" Panel.ZIndex="1">
@@ -103,7 +103,7 @@
                     </Grid.RowDefinitions>
                     <Canvas Grid.Column="0" Grid.Row="0" Width="106" Height="156">
                         <Image Source="/img/SiloOil.png" Width="80"/>
-                        <Image Source="/img/Pump.png" Width="80" Canvas.Left="24" Canvas.Top="74"/>
+                        <Image Name="imgOilPump" Source="/img/PumpGreen.png" Width="80" Canvas.Left="24" Canvas.Top="74"/>
                     </Canvas>
                 </Grid>
 

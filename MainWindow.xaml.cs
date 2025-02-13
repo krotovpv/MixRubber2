@@ -34,6 +34,8 @@ namespace MixRubber2
         BitmapImage BI_TransporterGreen = new BitmapImage(new Uri("/img/TransporterGreen.png", UriKind.Relative));
         BitmapImage BI_Transporter2 = new BitmapImage(new Uri("/img/Transporter2.png", UriKind.Relative));
         BitmapImage BI_Transporter2Green = new BitmapImage(new Uri("/img/Transporter2Green.png", UriKind.Relative));
+        BitmapImage BI_OilPump = new BitmapImage(new Uri("/img/Pump.png", UriKind.Relative));
+        BitmapImage BI_OilPumpGreen = new BitmapImage(new Uri("/img/PumpGreen.png", UriKind.Relative));
 
         bool scalesC_IsClosed = false;
         bool scalesC_Weighing = false;
@@ -201,6 +203,12 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "TL1_Working").First().ValueChanged += TL1_Working_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "TL2_Working").First().ValueChanged += TL2_Working_ValueChanged;
 
+            OPCDA.AllTags.Where(x => x.Name == "OilPump_Working").First().ValueChanged += OilPump_Working_ValueChanged;
+
+            OPCDA.AllTags.Where(x => x.Name == "ManualMode").First().ValueChanged += ManualMode_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "BagFilter_Blow").First().ValueChanged += BagFilter_Blow_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "ScrewPrepareOff").First().ValueChanged += ScrewPrepareOff_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "Not24V").First().ValueChanged += Not24V_ValueChanged;
 
             //OPCDA.ConnectionOPC();
         }
@@ -1110,6 +1118,50 @@ namespace MixRubber2
                 imgTransporterL2.Source = BI_TransporterGreen;
             else
                 imgTransporterL2.Source = BI_Transporter;
+        }
+        #endregion
+
+        #region OilPump
+        private void OilPump_Working_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgOilPump.Source = BI_OilPumpGreen;
+            else
+                imgOilPump.Source = BI_OilPump;
+        }
+        #endregion
+
+        #region Info
+        private void ManualMode_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                lblManualMode.Background = Brushes.Red;
+            else
+                lblManualMode.Background = Brushes.Gray;
+        }
+
+        private void BagFilter_Blow_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                lblBagFilter.Background = Brushes.Red;
+            else
+                lblBagFilter.Background = Brushes.Gray;
+        }
+
+        private void ScrewPrepareOff_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                lblScrewPrepare.Background = Brushes.Gray;
+            else
+                lblScrewPrepare.Background = Brushes.Red;
+        }
+
+        private void Not24V_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                lblNot24.Background = Brushes.Red;
+            else
+                lblNot24.Background = Brushes.Gray;
         }
         #endregion
 

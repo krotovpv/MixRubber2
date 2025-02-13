@@ -278,7 +278,7 @@ namespace MixRubber2
             #endregion
 
             #region OilPump
-            // new Tag("OilPump_Working", "MixRubber17.PLC110-504.OilPump.Working","plc110.plc110_SCADA.Inp_02", 7),
+            new Tag("OilPump_Working", "MixRubber17.PLC110-504.OilPump.Working","plc110.plc110_SCADA.Inp_02", 7),
             // new Tag("OilPump_CommandOn", "MixRubber17.PLC110-504.Oil_Pump.CommandOn","plc110.plc110_SCADA.B19", 8),
             // new Tag("OilPump_NotOn", "MixRubber17.PLC110-504.OilPump.NotOn", "plc110.plc110_SCADA.AV2", 14),
             // new Tag("OilPump_NotOff", "MixRubber17.PLC110-504.OilPump.NotOff", "plc110.plc110_SCADA.AV2", 15),
@@ -287,12 +287,12 @@ namespace MixRubber2
 
             #region Information
             // new Tag("Btn_StopProcess", "MixRubber17.PLC110-504.Information.StopProcess", "plc110.plc110_SCADA.Inp_01", 5),
-            // new Tag("Btn_ManualMode", "MixRubber17.PLC110-504.Information.ManualMode", "plc110.plc110_SCADA.Inp_01", 7),
+            new Tag("ManualMode", "MixRubber17.PLC110-504.Information.ManualMode", "plc110.plc110_SCADA.Inp_01", 7),
             // new Tag("Batchers_Start1", "MixRubber17.PLC110-504.Information.Batchers_Start1", "plc110.plc110_SCADA.Out_01", 14),
             // new Tag("Batchers_Start2", "MixRubber17.PLC110-504.Information.Batchers_Start2", "plc110.plc110_SCADA.Out_01", 15),
-            // new Tag("BagFilter_Blow", "MixRubber17.PLC110-504.Information.BagFilter_Blow", "plc110.plc110_SCADA.Inp_40", 7), //Предупреждения.ПУРФ включен
-            // new Tag("AddScrewOff", "MixRubber17.PLC110-504.Information.AddScrewOff", "plc110.plc110_SCADA.Inp_40", 9), //Предупреждения.Шнек подработкики не включен
-            // new Tag("Not24V", "MixRubber17.PLC110-504.Information.Not24V", "plc110.plc110_SCADA.Inp_40", 15), //
+            new Tag("BagFilter_Blow", "MixRubber17.PLC110-504.Information.BagFilter_Blow", "plc110.plc110_SCADA.Inp_40", 7), //Предупреждения.ПУРФ включен
+            new Tag("ScrewPrepareOff", "MixRubber17.PLC110-504.Information.AddScrewOff", "plc110.plc110_SCADA.Inp_40", 9), //Предупреждения.Шнек подработкики не включен
+            new Tag("Not24V", "MixRubber17.PLC110-504.Information.Not24V", "plc110.plc110_SCADA.Inp_40", 15), //
             // new Tag("RecipeNum", "MixRubber17.PLC110-504.Information.RecipeNum", "plc110.plc110_SCADA.R440_nomRZ"),
             // new Tag("Clock_MR_Load", "MixRubber17.PLC110-504.Information.Clock_MR_Load", "plc110.plc110_SCADA.R634_RG"),
             // new Tag("Clock_MR_Mix", "MixRubber17.PLC110-504.Information.Clock_MR_Mix", "plc110.plc110_SCADA.R664_RJ"),
