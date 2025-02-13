@@ -53,10 +53,11 @@
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="    ПУРФ&#10;ВКЛЮЧЕН" Height="40" Canvas.Left="104" Canvas.Top="48" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ШНЕК ПОД-КИ&#10;    ВКЛЮЧЕН" Height="40" Canvas.Left="104" Canvas.Top="90" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
 
-                <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ТЕМПЕРАТУРА&#10;КРИТИЧЕСКАЯ" Height="40" Canvas.Left="10" Canvas.Top="790" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ТЕМПЕРАТУРА&#10;    ВЫСОКАЯ" Height="40" Canvas.Left="10" Canvas.Top="832" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="НЕТ +24В" Height="40" Canvas.Left="10" Canvas.Top="874" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="НЕТ СВЯЗИ" Height="40" Canvas.Left="10" Canvas.Top="918" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+                <Label Name="lblTemperatureCritical" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ТЕМПЕРАТУРА&#10;КРИТИЧЕСКАЯ" Height="40" Canvas.Left="10" Canvas.Top="790" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+                <Label Name="lblTemperatureHigh" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ТЕМПЕРАТУРА&#10;    ВЫСОКАЯ" Height="40" Canvas.Left="10" Canvas.Top="832" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+                <Label Name="lblPressureOff" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ДАВЛЕНИЕ&#10;    СНЯТО" Height="40" Canvas.Left="10" Canvas.Top="874" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+                <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="НЕТ +24В" Height="40" Canvas.Left="10" Canvas.Top="916" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+                <Label Background="Gray" BorderThickness="1" BorderBrush="Black" Content="НЕТ СВЯЗИ" Height="40" Canvas.Left="10" Canvas.Top="958" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
 
                 <Grid Name="Mixer" Canvas.Top="210" Canvas.Left="130" Panel.ZIndex="1">
                     <Grid.ColumnDefinitions>
@@ -67,8 +68,8 @@
                     </Grid.RowDefinitions>
                     <Canvas Grid.Column="0" Grid.Row="0" Width="280" Height="720">
                         <Image Source="/img/mixerMain.png" Width="280"/>
-                        <Image Source="/img/FloatMiddle.png" Width="65" Canvas.Left="92"/>
-                        <Image Source="/img/FlapValve.png" Width="119" Canvas.Left="33" Canvas.Top="598" RenderTransformOrigin="0.5,0.5">
+                        <Image Name="imgFloat" Source="/img/FloatMiddle.png" Width="65" Canvas.Left="92"/>
+                        <Image Name="imgFlapValve"  Source="/img/FlapValve.png" Width="119" Canvas.Left="33" Canvas.Top="598" RenderTransformOrigin="0.5,0.5">
                             <Image.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
@@ -78,9 +79,9 @@
                                 </TransformGroup>
                             </Image.RenderTransform>
                         </Image>
-                        <Image Source="/MixRubber2;component/img/Zatvor.png" Width="58" Canvas.Left="145" Canvas.Top="655"/>
-                        <Image Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="52" Canvas.Top="550"/>
-                        <Image Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="120" Canvas.Top="550" RenderTransformOrigin="0.5,0.5">
+                        <Image Name="imgPin" Source="/MixRubber2;component/img/Pin.png" Width="58" Canvas.Left="156" Canvas.Top="655"/>
+                        <Image Name="imgLeftRotor" Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="52" Canvas.Top="550"/>
+                        <Image Name="imgRightRotor" Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="120" Canvas.Top="550" RenderTransformOrigin="0.5,0.5">
                             <Image.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
@@ -127,7 +128,7 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Canvas Grid.Column="0" Grid.Row="0" Width="1000" Height="46">
-                        <Image Source="/img/transporterGreen.png" Height="46"/>
+                        <Image Name="imgTransporterL2" Source="/img/transporterGreen.png" Height="46"/>
                     </Canvas>
                 </Grid>
 
@@ -139,7 +140,7 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Canvas Grid.Column="0" Grid.Row="0" Width="1000" Height="46">
-                        <Image Source="/img/transporterGreen.png" Height="46"/>
+                        <Image Name="imgTransporterL1" Source="/img/transporterGreen.png" Height="46"/>
                     </Canvas>
                 </Grid>
 
@@ -455,7 +456,7 @@
                         <Label Background="#FFAAAAAA" Content="ВЕСЫ К" Height="25" Width="308" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
 
                         <Rectangle Fill="LightGreen" Width="110" Height="30" Canvas.Left="36" Canvas.Top="190"/>
-                        <Image Source="/img/transporter2Green.png" Height="46" Canvas.Top="217"/>
+                        <Image Name="imgTransporterK" Source="/img/transporter2Green.png" Height="46" Canvas.Top="217"/>
                         <Image Name="imgScalesKBusy" ToolTip="Весы заняты" Source="/img/scales_busy.png" Width="20" Canvas.Left="170" Canvas.Top="132"/>
                         <Image Name="imgScalesKOverWeight" ToolTip="Не верный вес" Source="/img/Weight.png" Width="20" Canvas.Left="170" Canvas.Top="154"/>
 

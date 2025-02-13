@@ -230,11 +230,11 @@ namespace MixRubber2
 
             #region MixRubber
             // new Tag("DustCollectorOn", "MixRubber17.PLC110-504.MixRubber_Status.DustCollectorOn", "plc110.plc110_SCADA.Inp_02", 1),
-            // new Tag("MR_PressureOff", "MixRubber17.PLC110-504.MixRubber_Status.PressureOff", "plc110.plc110_SCADA.Inp_02", 9),
-            // new Tag("MR_UpperPressUp", "MixRubber17.PLC110-504.MixRubber_Status.UpperPressUp", "plc110.plc110_SCADA.Inp_02", 10),
-            // new Tag("MR_UpperPressDown", "MixRubber17.PLC110-504.MixRubber_Status.UpperPressDown", "plc110.plc110_SCADA.Inp_02", 11),
-            // new Tag("MR_FlapValveClosed", "MixRubber17.MixRubber17.PLC110-504.MixRubber_Status.FlapValveClosed", "plc110.plc110_SCADA.Inp_02", 13),//1-закрыта
-            // new Tag("MR_PinClosed", "MixRubber17.PLC110-504.MixRubber_Status.PinClosed", "plc110.plc110_SCADA.Inp_02", 15),
+            new Tag("MR_PressureOff", "MixRubber17.PLC110-504.MixRubber_Status.PressureOff", "plc110.plc110_SCADA.Inp_02", 9),//!
+            new Tag("MR_UpperPressUp", "MixRubber17.PLC110-504.MixRubber_Status.UpperPressUp", "plc110.plc110_SCADA.Inp_02", 10),//!
+            new Tag("MR_UpperPressDown", "MixRubber17.PLC110-504.MixRubber_Status.UpperPressDown", "plc110.plc110_SCADA.Inp_02", 11),//!
+            new Tag("MR_FlapValveClosed", "MixRubber17.MixRubber17.PLC110-504.MixRubber_Status.FlapValveClosed", "plc110.plc110_SCADA.Inp_02", 13),//1-закрыта //!
+            new Tag("MR_PinClosed", "MixRubber17.PLC110-504.MixRubber_Status.PinClosed", "plc110.plc110_SCADA.Inp_02", 15),//!
             // new Tag("MR_RegimWork", "MixRubber17.PLC110-504.MixRubber_Status.RegimWork", "plc110.plc110_SCADA.XX6"), //Режим работы резиносмесителя. 0,1 - холостой;  2,3,4 - смесь; 3 - выгрузка
             // new Tag("Command_UpperPressUp", "MixRubber17.PLC110-504.MixRubber_Status.Command_UpperPressUp", "plc110.plc110_SCADA.Out_01", 3),//Команда Поднять Верхний пресс.Сигнал.Вход
             // new Tag("Command_PressureOff", "MixRubber17.PLC110-504.MixRubber_Status.Command_PressureOff", "plc110.plc110_SCADA.Out_01", 10,),//Команда Снять давление с ВП.Сигнал.Вход
@@ -251,8 +251,8 @@ namespace MixRubber2
             // new Tag("Pin_NotOpen", "MixRubber17.PLC110-504.MixRubber_Fail.Pin_NotOpen", "plc110.plc110_SCADA.AV3", 13),
             // new Tag("FlapValve_NotOpened", "MixRubber17.PLC110-504.MixRubber_Fail.FlapValve_NotOpened", "plc110.plc110_SCADA.AV3", 14),
             // new Tag("FlapValve_NotClosed", "MixRubber17.PLC110-504.MixRubber_Fail.FlapValve_NotClosed", "plc110.plc110_SCADA.AV3", 15),
-            // new Tag("HighTemperature", "MixRubber17.PLC110-504.MixRubber_Fail.HighTemperature", "plc110.plc110_SCADA.AV4", 5),//Высокая температура в РС.Авария
-            // new Tag("CriticalTemperature", "MixRubber17.PLC110-504.MixRubber_Fail.CriticalTemperature", "plc110.plc110_SCADA.AV4", 6),//Критическая температура в РС.Авария
+            new Tag("HighTemperature", "MixRubber17.PLC110-504.MixRubber_Fail.HighTemperature", "plc110.plc110_SCADA.AV4", 5),//Высокая температура в РС.Авария
+            new Tag("CriticalTemperature", "MixRubber17.PLC110-504.MixRubber_Fail.CriticalTemperature", "plc110.plc110_SCADA.AV4", 6),//Критическая температура в РС.Авария
             // new Tag("RegMixing_Stoped", "MixRubber17.PLC110-504.MixRubber_Fail.RegMixing_Stoped", "plc110.plc110_SCADA.AV4", 7), // Останов РЖ ожидание подъема пресса.Авария
             // new Tag("SensorT1_Fail", "MixRubber17.PLC110-504.MixRubber_Fail.SensorT1_Fail", "plc110.plc110_SCADA.AV4", 8),//Авария верхней термопары Т1
             // new Tag("SensorT2_Fail", "MixRubber17.PLC110-504.MixRubber_Fail.SensorT2_Fail", "plc110.plc110_SCADA.AV4", 9),//Авария нижней термопары Т2
@@ -260,10 +260,10 @@ namespace MixRubber2
 
             #region Transporters
             // new Tag("K_CommandOn", "MixRubber17.PLC110-504.Transporters.K_CommandOn", "plc110.plc110_SCADA.B19", 13),
-            // new Tag("K_Working", "MixRubber17.PLC110-504.Transporters.K_Working", "plc110.plc110_SCADA.Inp_02", 5),
+            new Tag("TK_Working", "MixRubber17.PLC110-504.Transporters.K_Working", "plc110.plc110_SCADA.Inp_02", 5),
             // new Tag("K_NotOn_RegLoad", "MixRubber17.PLC110-504.Transporters.K_NotOn_RegLoad", "plc110.plc110_SCADA.AV2", 4), // Тр-р К не включился от РГ
             // new Tag("K_NotStoped", "MixRubber17.PLC110-504.Transporters.K_NotStoped", "plc110.plc110_SCADA.AV2", 6),//Тр-р К не остановился
-            // new Tag("L1_Working", "MixRubber17.PLC110-504.Transporters.L1_Working", "plc110.plc110_SCADA.B8", 10),
+            new Tag("TL1_Working", "MixRubber17.PLC110-504.Transporters.L1_Working", "plc110.plc110_SCADA.B8", 10),
             // new Tag("L1_CommandOn", "MixRubber17.PLC110-504.Transporters.L1_CommandOn", "plc110.plc110_SCADA.B19", 12),
             // new Tag("L1_NotOn_RegMix1", "MixRubber17.PLC110-504.Transporters.L1_NotOn_RegMix1", "plc110.plc110_SCADA.AV2", 7),  //Тр-р Л1 не включился от РЖ_открыт нижний затвор
             // new Tag("L1_NotOn_RegMix2", "MixRubber17.PLC110-504.Transporters.L1_NotOn_RegMix2", "plc110.plc110_SCADA.AV2", 8), //Тр-р Л1 не включился_нет верхнего положения поплавка
@@ -271,7 +271,7 @@ namespace MixRubber2
             // new Tag("L1_NotOn_RegLoad", "MixRubber17.PLC110-504.Transporters.L1_NotOn_RegLoad", "plc110.plc110_SCADA.AV2", 10), // Тр-р Л1 не включился от РГ
             // new Tag("L1_NotStoped", "MixRubber17.PLC110-504.Transporters.L1_NotStoped","plc110.plc110_SCADA.AV2", 11), // Тр-р Л1 не остановился
 
-            // new Tag("L2_Working", "MixRubber17.PLC110-504.Transporters.L2_Working","plc110.plc110_SCADA.B8", 11),
+            new Tag("TL2_Working", "MixRubber17.PLC110-504.Transporters.L2_Working","plc110.plc110_SCADA.B8", 11),
             // new Tag("L2_CommandOn", "MixRubber17.PLC110-504.Transporters.L2_CommandOn","plc110.plc110_SCADA.B19", 11),
             // new Tag("L2_NotOff", "MixRubber17.PLC110-504.Transporters.L2_NotOff","plc110.plc110_SCADA.AV3", 1),
             // new Tag("L2_NotStoped", "MixRubber17.PLC110-504.Transporters.L2_NotStoped", "plc110.plc110_SCADA.AV3", 2),

@@ -28,7 +28,12 @@ namespace MixRubber2
         BitmapImage BI_SiloOpend = new BitmapImage(new Uri("/img/ScalesOpen.png", UriKind.Relative));
         BitmapImage BI_ConteinerOpen = new BitmapImage(new Uri("/img/SiloOpen.png", UriKind.Relative));
         BitmapImage BI_ConteinerClose = new BitmapImage(new Uri("/img/SiloClose.png", UriKind.Relative));
-        
+        BitmapImage BI_FloatUp = new BitmapImage(new Uri("/img/FloatUp.png", UriKind.Relative));
+        BitmapImage BI_FloatDown = new BitmapImage(new Uri("/img/FloatDown.png", UriKind.Relative));
+        BitmapImage BI_Transporter = new BitmapImage(new Uri("/img/Transporter.png", UriKind.Relative));
+        BitmapImage BI_TransporterGreen = new BitmapImage(new Uri("/img/TransporterGreen.png", UriKind.Relative));
+        BitmapImage BI_Transporter2 = new BitmapImage(new Uri("/img/Transporter2.png", UriKind.Relative));
+        BitmapImage BI_Transporter2Green = new BitmapImage(new Uri("/img/Transporter2Green.png", UriKind.Relative));
 
         bool scalesC_IsClosed = false;
         bool scalesC_Weighing = false;
@@ -183,6 +188,20 @@ namespace MixRubber2
 
             OPCDA.AllTags.Where(x => x.Name == "ScalesK_IsBusy").First().ValueChanged += ScalesK_IsBusy_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScalesK_WeightNotNormal").First().ValueChanged += ScalesK_WeightNotNotmal_ValueChanged;
+
+            OPCDA.AllTags.Where(x => x.Name == "MR_PressureOff").First().ValueChanged += MR_PressureOff_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "MR_UpperPressUp").First().ValueChanged += MR_UpperPressUp_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "MR_UpperPressDown").First().ValueChanged += MR_UpperPressDown_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "MR_FlapValveClosed").First().ValueChanged += MR_FlapValveClosed_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "MR_Pin").First().ValueChanged += MR_Pin_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "HighTemperature").First().ValueChanged += MR_HighTemperature_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "CriticalTemperature").First().ValueChanged += MR_CriticalTemperature_ValueChanged;
+
+            OPCDA.AllTags.Where(x => x.Name == "TK_Working").First().ValueChanged += TK_Working_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "TL1_Working").First().ValueChanged += TL1_Working_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "TL2_Working").First().ValueChanged += TL2_Working_ValueChanged;
+
+
             //OPCDA.ConnectionOPC();
         }
 
@@ -1014,6 +1033,85 @@ namespace MixRubber2
         }
         #endregion
 
+        #region MixRubber
+        private void MR_PressureOff_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                lblPressureOff.Background = Brushes.Red;
+            else
+                lblPressureOff.Background = Brushes.Gray;
+        }
+
+        private void MR_UpperPressUp_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgFloat.Source = BI_FloatUp;
+        }
+
+        private void MR_UpperPressDown_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgFloat.Source = BI_FloatDown;
+        }
+
+        private void MR_FlapValveClosed_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgFlapValve.RenderTransform = new RotateTransform(90);
+            else
+                imgFlapValve.RenderTransform = new RotateTransform(0);
+        }
+
+        private void MR_Pin_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                Canvas.SetLeft(imgPin, 145);
+            else
+                Canvas.SetLeft(imgPin, 156);
+        }
+
+        private void MR_HighTemperature_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                lblTemperatureHigh.Background = Brushes.Red;
+            else
+                lblTemperatureHigh.Background = Brushes.Gray;
+        }
+
+        private void MR_CriticalTemperature_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                lblTemperatureHigh.Background = Brushes.Red;
+            else
+                lblTemperatureHigh.Background = Brushes.Gray;
+        }
+        #endregion
+
+        #region Transporters
+        private void TK_Working_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgTransporterK.Source = BI_Transporter2Green;
+            else
+                imgTransporterK.Source = BI_Transporter2;
+        }
+
+        private void TL1_Working_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgTransporterL1.Source = BI_TransporterGreen;
+            else
+                imgTransporterL1.Source = BI_Transporter;
+        }
+
+        private void TL2_Working_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                imgTransporterL2.Source = BI_TransporterGreen;
+            else
+                imgTransporterL2.Source = BI_Transporter;
+        }
+        #endregion
 
         private void btnFullScreen_Click(object sender, RoutedEventArgs e)
         {

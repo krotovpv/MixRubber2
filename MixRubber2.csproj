@@ -133,10 +133,10 @@
     <Resource Include="img\floatUp2.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\transporter2Green.png" />
+    <Resource Include="img\Transporter2Green.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\transporterGreen.png" />
+    <Resource Include="img\TransporterGreen.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\ScalesOpen.png" />
@@ -178,7 +178,7 @@
     <Resource Include="img\FlapValve.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\Zatvor.png" />
+    <Resource Include="img\Pin.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\scales_busy.png" />
@@ -188,6 +188,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\Initial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\Transporter2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\Transporter.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
