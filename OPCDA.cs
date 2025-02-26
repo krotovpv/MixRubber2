@@ -293,20 +293,20 @@ namespace MixRubber2
             new Tag("BagFilter_Blow", "MixRubber17.PLC110-504.Information.BagFilter_Blow", "plc110.plc110_SCADA.Inp_40", 7), //Предупреждения.ПУРФ включен
             new Tag("ScrewPrepareOff", "MixRubber17.PLC110-504.Information.AddScrewOff", "plc110.plc110_SCADA.Inp_40", 9), //Предупреждения.Шнек подработкики не включен
             new Tag("Not24V", "MixRubber17.PLC110-504.Information.Not24V", "plc110.plc110_SCADA.Inp_40", 15), //
-            // new Tag("RecipeNum", "MixRubber17.PLC110-504.Information.RecipeNum", "plc110.plc110_SCADA.R440_nomRZ"),
+            new Tag("RecipeNum", "MixRubber17.PLC110-504.Information.RecipeNum", "plc110.plc110_SCADA.R440_nomRZ"),
             // new Tag("Clock_MR_Load", "MixRubber17.PLC110-504.Information.Clock_MR_Load", "plc110.plc110_SCADA.R634_RG"),
             // new Tag("Clock_MR_Mix", "MixRubber17.PLC110-504.Information.Clock_MR_Mix", "plc110.plc110_SCADA.R664_RJ"),
             // new Tag("Timer_MR_Load", "MixRubber17.PLC110-504.Information.Timer_MR_Load", "plc110.plc110_SCADA.CV1_RG"),
             // new Tag("Timer_MR_Mix", "MixRubber17.PLC110-504.Information.Timer_MR_Mix", "plc110.plc110_SCADA.CV2_RJ"),
-            // new Tag("Batchers_Ready", "MixRubber17.PLC110-504.Information.Batchers_Ready", "plc110.plc110_SCADA.B8", 2),//Навески готовы.Сигнал.
+            new Tag("Batchers_Ready", "MixRubber17.PLC110-504.Information.Batchers_Ready", "plc110.plc110_SCADA.B8", 2),//Навески готовы.Сигнал.
             // new Tag("Filling_OnStart", "MixRubber17.PLC110-504.Information.Filling_OnStart", "plc110.plc110_SCADA.B8", 5),//
             // new Tag("LastFilling_ToPlan", "MixRubber17.PLC110-504.Information.LastFilling_ToPlan", "plc110.plc110_SCADA.B8", 8),//Последняя заправка по плану
             // new Tag("TestRegime_On", "MixRubber17.PLC110-504.Information.TestRegime_On", "plc110.plc110_SCADA.B19", 0),
-            // new Tag("Resipe_IsNot", "MixRubber17.PLC110-504.Information.Recipe_IsNot", "plc110.plc110_SCADA.B19", 1),
-            // new Tag("MR_Mix_IsFobiden", "MixRubber17.PLC110-504.Information.MR_Mix_IsForbiden", "plc110.plc110_SCADA.B19", 14),
-            // new Tag("MR_Load_IsFobiden", "MixRubber17.PLC110-504.Information.MR_Load_IsForbiden", "plc110.plc110_SCADA.B19", 15),
-            // new Tag("EmergencyButton_Pushed", "MixRubber17.PLC110-504.Information.EmergencyButton_Pushed", "plc110.plc110_SCADA.AV4", 0),//Предупреждения.Нажат аварийник
-            // new Tag("StopButton_Pushed", "MixRubber17.PLC110-504.Information.StopButton_Pushed", "plc110.plc110_SCADA.AV4", 1),//Кнопка _СТОП_ нажата.Авария
+            new Tag("Resipe_IsNot", "MixRubber17.PLC110-504.Information.Recipe_IsNot", "plc110.plc110_SCADA.B19", 1),
+            // new Tag("MR_Mix_IsFobidden", "MixRubber17.PLC110-504.Information.MR_Mix_IsForbidden", "plc110.plc110_SCADA.B19", 14),
+            // new Tag("MR_Load_IsFobidden", "MixRubber17.PLC110-504.Information.MR_Load_IsForbidden", "plc110.plc110_SCADA.B19", 15),
+            new Tag("EmergencyButton_Pushed", "MixRubber17.PLC110-504.Information.EmergencyButton_Pushed", "plc110.plc110_SCADA.AV4", 0),//Предупреждения.Нажат аварийник
+            new Tag("StopButton_Pushed", "MixRubber17.PLC110-504.Information.StopButton_Pushed", "plc110.plc110_SCADA.AV4", 1),//Кнопка _СТОП_ нажата.Авария
             // new Tag("UnloadTempr_NotSet", "MixRubber17.PLC110-504.Information.UnloadTempr_NotSet", "plc110.plc110_SCADA.AV4", 0),// Не задана температура выгрузки
             #endregion
 
@@ -333,13 +333,13 @@ namespace MixRubber2
             #endregion
 
             #region Temperature water
-            // new Tag("WaterT1_Supply", "MixRubber17.PLC110-504.TableTWater.T1_Supply", "plc110.plc110_analog.Tvodi1"), // Температура воды.Т1- подача	
-            // new Tag("WaterT2_UpLeft", "MixRubber17.PLC110-504.TableTWater.T2_UpLeft", "plc110.plc110_analog.Tvodi2"), // Температура воды.Т2
-            // new Tag("WaterT3_DownLeft", "MixRubber17.PLC110-504.TableTWater.T3_DownLeft", "plc110.plc110_analog.Tvodi3"), //Температура воды.Т3	
-            // new Tag("WateT4_UpRight", "MixRubber17.PLC110-504.TableTWater.T4_UpRight", "plc110.plc110_analog.Tvodi4"), //Температура воды.Т4					
-            // new Tag("WateT5_DownRight", "MixRubber17.PLC110-504.TableTWater.T5_DownRight", "plc110.plc110_analog.Tvodi5"), //Температура воды.Т5						
-            // new Tag("WateRotor1", "MixRubber17.PLC110-504.TableTWater.Rotor1", "plc110.plc110_analog.Tv_rot1_6_"), //Температура воды.ротор1			
-            // new Tag("WateRotor2", "MixRubber17.PLC110-504.TableTWater.Rotor2", "plc110.plc110_analog.Tv_rot2_7_"), //Температура воды.ротор2
+            new Tag("WaterT1", "MixRubber17.PLC110-504.TableTWater.T1", "plc110.plc110_analog.Tvodi1"), // Температура воды.Т1- подача	
+            new Tag("WaterT2", "MixRubber17.PLC110-504.TableTWater.T2", "plc110.plc110_analog.Tvodi2"), // Температура воды.Т2
+            new Tag("WaterT3", "MixRubber17.PLC110-504.TableTWater.T3", "plc110.plc110_analog.Tvodi3"), //Температура воды.Т3	
+            new Tag("WaterT4", "MixRubber17.PLC110-504.TableTWater.T4", "plc110.plc110_analog.Tvodi4"), //Температура воды.Т4					
+            new Tag("WaterT5", "MixRubber17.PLC110-504.TableTWater.T5", "plc110.plc110_analog.Tvodi5"), //Температура воды.Т5						
+            new Tag("WaterRotor1", "MixRubber17.PLC110-504.TableTWater.Rotor1", "plc110.plc110_analog.Tv_rot1_6_"), //Температура воды.ротор1			
+            new Tag("WaterRotor2", "MixRubber17.PLC110-504.TableTWater.Rotor2", "plc110.plc110_analog.Tv_rot2_7_"), //Температура воды.ротор2
             #endregion
 
             #region String value

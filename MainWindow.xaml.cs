@@ -209,7 +209,19 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "BagFilter_Blow").First().ValueChanged += BagFilter_Blow_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ScrewPrepareOff").First().ValueChanged += ScrewPrepareOff_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "Not24V").First().ValueChanged += Not24V_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "RecipeNum").First().ValueChanged += RecipeNum_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "Resipe_IsNot").First().ValueChanged += Resipe_IsNot_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "EmergencyButton_Pushed").First().ValueChanged += EmergencyButton_Pushed_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "StopButton_Pushed").First().ValueChanged += StopButton_Pushed_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "Batchers_Ready").First().ValueChanged += Batchers_Ready_ValueChanged;
 
+            OPCDA.AllTags.Where(x => x.Name == "WaterT1").First().ValueChanged += WaterT1_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "WaterT2").First().ValueChanged += WaterT2_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "WaterT3").First().ValueChanged += WaterT3_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "WaterT4").First().ValueChanged += WaterT4_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "WaterT5").First().ValueChanged += WaterT5_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "WaterRotor1").First().ValueChanged += WaterRotor1_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "WaterRotor2").First().ValueChanged += WaterRotor2_ValueChanged;
             //OPCDA.ConnectionOPC();
         }
 
@@ -1162,6 +1174,77 @@ namespace MixRubber2
                 lblNot24.Background = Brushes.Red;
             else
                 lblNot24.Background = Brushes.Gray;
+        }
+
+        private void RecipeNum_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                lblRecipe.Background = Brushes.Red;
+            else
+                lblRecipe.Background = Brushes.Gray;
+        }
+
+        private void Resipe_IsNot_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                lblResipeIsNot.Background = Brushes.Red;
+            else
+                lblResipeIsNot.Background = Brushes.Gray;
+        }
+
+        private void EmergencyButton_Pushed_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                lblEmergencyButtonPushed.Background = Brushes.Red;
+            else
+                lblEmergencyButtonPushed.Background = Brushes.Gray;
+        }
+
+        private void StopButton_Pushed_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                lblStopButtonPushed.Background = Brushes.Red;
+            else
+                lblStopButtonPushed.Background = Brushes.Gray;
+        }
+
+        private void Batchers_Ready_ValueChanged(object obj)
+        {
+            if ((bool)obj)
+                lblBatchersReady.Visibility = Visibility.Visible;
+            else
+                lblBatchersReady.Visibility = Visibility.Hidden;
+        }
+        #endregion
+
+        #region Temperature water
+        private void WaterT1_ValueChanged(object obj)
+        {
+            txtT1.Text = Math.Round(Convert.ToSingle(obj), 1).ToString();
+        }
+        private void WaterT2_ValueChanged(object obj)
+        {
+            txtT2.Text = Math.Round(Convert.ToSingle(obj), 1).ToString();
+        }
+        private void WaterT3_ValueChanged(object obj)
+        {
+            txtT3.Text = Math.Round(Convert.ToSingle(obj), 1).ToString();
+        }
+        private void WaterT4_ValueChanged(object obj)
+        {
+            txtT4.Text = Math.Round(Convert.ToSingle(obj), 1).ToString();
+        }
+        private void WaterT5_ValueChanged(object obj)
+        {
+            txtT5.Text = Math.Round(Convert.ToSingle(obj), 1).ToString();
+        }
+        private void WaterRotor1_ValueChanged(object obj)
+        {
+            txtTRotor1.Text = Math.Round(Convert.ToSingle(obj), 1).ToString();
+        }
+        private void WaterRotor2_ValueChanged(object obj)
+        {
+            txtTRotor2.Text = Math.Round(Convert.ToSingle(obj), 1).ToString();
         }
         #endregion
 
