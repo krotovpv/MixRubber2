@@ -51,7 +51,7 @@ namespace MixRubber2
             new Tag("ContainerC_IsOpened", "MixRubber17.PLC110-504.ContainerC_Status.IsOpened", "plc110.plc110_SCADA.Inp_32", 15), //!
             // new Tag("ContainerC_BatcherNum", "MixRubber17.PLC110-504.ContainerC_Status.BatcherNum", "plc110.plc110_SCADA.CV0_na_C"),
             // new Tag("ContainerC_CommandOpen", "MixRubber17.PLC110-504.ContainerC_Status.CommandOpen", "plc110.plc110_SCADA.B7", 14),
-            // new Tag("ContainerC_Weighing", "MixRubber17.PLC110-504.ContainerC_Status.Weighing", "plc110.plc110_SCADA.B7", 4),
+            new Tag("ContainerC_Weighing", "MixRubber17.PLC110-504.ContainerC_Status.Weighing", "plc110.plc110_SCADA.B7", 4),
 
             // new Tag("ContainerC_IsNotClosing", "MixRubber17.PLC110-504.ContainerC_Fail.IsNotClosing","plc110.plc110_SCADA.AV2", 0),
             // new Tag("ContainerC_IsNotOpening", "MixRubber17.PLC110-504.ContainerC_Fail.IsNotOpening","plc110.plc110_SCADA.AV1", 1),
@@ -221,9 +221,9 @@ namespace MixRubber2
             new Tag("ScalesK_FullNeed", "MixRubber17.PLC100_ScalesK.FullNeed", "VesiK.CurNeed"), //Бункер.Заданный вес
             new Tag("ScalesK_FullReal", "MixRubber17.PLC100_ScalesK.FullReal", "VesiK.FullReal"), //Бункер.Измеренный вес
 
-            new Tag("ScalesK_TareIsBusy", "MixRubber17.PLC110-504.ScalesK_Status.Tare_IsBusy", "plc110.plc110_SCADA.Inp_01", 12),//!
+            new Tag("ScalesK_IsBusy", "MixRubber17.PLC110-504.ScalesK_Status.Tare_IsBusy", "plc110.plc110_SCADA.Inp_01", 12),//!
             new Tag("ScalesK_WeightNotNormal", "MixRubber17.PLC110-504.ScalesK_Status.Weight_NotNormal", "plc110.plc110_SCADA.Inp_01", 14),//!
-            // new Tag("ScalesK_Weighing", "MixRubber17.PLC110-504.ScalesK_Status.Weighing", "plc110.plc110_SCADA.B19", 10),
+            new Tag("ScalesK_Weighing", "MixRubber17.PLC110-504.ScalesK_Status.Weighing", "plc110.plc110_SCADA.B19", 10),
 
             // new Tag("ScalesK_Fail", "MixRubber17.PLC110-504.ScalesK_Fail.Fail", "plc110.plc110_SCADA.Inp_01", 15),
             #endregion
@@ -236,6 +236,7 @@ namespace MixRubber2
             new Tag("MR_FlapValveClosed", "MixRubber17.MixRubber17.PLC110-504.MixRubber_Status.FlapValveClosed", "plc110.plc110_SCADA.Inp_02", 13),//1-закрыта //!
             new Tag("MR_PinClosed", "MixRubber17.PLC110-504.MixRubber_Status.PinClosed", "plc110.plc110_SCADA.Inp_02", 15),//!
             // new Tag("MR_RegimWork", "MixRubber17.PLC110-504.MixRubber_Status.RegimWork", "plc110.plc110_SCADA.XX6"), //Режим работы резиносмесителя. 0,1 - холостой;  2,3,4 - смесь; 3 - выгрузка
+
             // new Tag("Command_UpperPressUp", "MixRubber17.PLC110-504.MixRubber_Status.Command_UpperPressUp", "plc110.plc110_SCADA.Out_01", 3),//Команда Поднять Верхний пресс.Сигнал.Вход
             // new Tag("Command_PressureOff", "MixRubber17.PLC110-504.MixRubber_Status.Command_PressureOff", "plc110.plc110_SCADA.Out_01", 10,),//Команда Снять давление с ВП.Сигнал.Вход
             // new Tag("Command_UpperPressDown", "MixRubber17.PLC110-504.MixRubber_Status.Command_UpperPressDown", "plc110.plc110_SCADA.Out_01", 11),//Команда Опустить Верхний пресс.Сигнал.Вход
@@ -263,9 +264,10 @@ namespace MixRubber2
             new Tag("TK_Working", "MixRubber17.PLC110-504.Transporters.K_Working", "plc110.plc110_SCADA.Inp_02", 5),
             // new Tag("K_NotOn_RegLoad", "MixRubber17.PLC110-504.Transporters.K_NotOn_RegLoad", "plc110.plc110_SCADA.AV2", 4), // Тр-р К не включился от РГ
             // new Tag("K_NotStoped", "MixRubber17.PLC110-504.Transporters.K_NotStoped", "plc110.plc110_SCADA.AV2", 6),//Тр-р К не остановился
+
             new Tag("TL1_Working", "MixRubber17.PLC110-504.Transporters.L1_Working", "plc110.plc110_SCADA.B8", 10),
             // new Tag("L1_CommandOn", "MixRubber17.PLC110-504.Transporters.L1_CommandOn", "plc110.plc110_SCADA.B19", 12),
-            // new Tag("L1_NotOn_RegMix1", "MixRubber17.PLC110-504.Transporters.L1_NotOn_RegMix1", "plc110.plc110_SCADA.AV2", 7),  //Тр-р Л1 не включился от РЖ_открыт нижний затвор
+            // new Tag("L1_NotOn_RegMix1", "MixRubber17.PLC110-504.Transporters.L1_NotOn_RegMix1", "plc110.plc110_SCADA.AV2", 7), //Тр-р Л1 не включился от РЖ_открыт нижний затвор
             // new Tag("L1_NotOn_RegMix2", "MixRubber17.PLC110-504.Transporters.L1_NotOn_RegMix2", "plc110.plc110_SCADA.AV2", 8), //Тр-р Л1 не включился_нет верхнего положения поплавка
             // new Tag("L1_NotOff_RegMix", "MixRubber17.PLC110-504.Transporters.L1_NotOff_RegMix", "plc110.plc110_SCADA.AV2", 9), //	Тр-р Л1 не выключился от РЖ
             // new Tag("L1_NotOn_RegLoad", "MixRubber17.PLC110-504.Transporters.L1_NotOn_RegLoad", "plc110.plc110_SCADA.AV2", 10), // Тр-р Л1 не включился от РГ
@@ -286,25 +288,25 @@ namespace MixRubber2
             #endregion
 
             #region Information
-            // new Tag("Btn_StopProcess", "MixRubber17.PLC110-504.Information.StopProcess", "plc110.plc110_SCADA.Inp_01", 5),
-            new Tag("ManualMode", "MixRubber17.PLC110-504.Information.ManualMode", "plc110.plc110_SCADA.Inp_01", 7),
-            // new Tag("Batchers_Start1", "MixRubber17.PLC110-504.Information.Batchers_Start1", "plc110.plc110_SCADA.Out_01", 14),
-            // new Tag("Batchers_Start2", "MixRubber17.PLC110-504.Information.Batchers_Start2", "plc110.plc110_SCADA.Out_01", 15),
+            new Tag("Btn_StopProcess", "MixRubber17.PLC110-504.Information.StopProcess", "plc110.plc110_SCADA.Inp_01", 5), //КЗТ зажата
+            new Tag("ManualMode", "MixRubber17.PLC110-504.Information.ManualMode", "plc110.plc110_SCADA.Inp_01", 7), //ручной режим
+            new Tag("Batchers_Start1", "MixRubber17.PLC110-504.Information.Batchers_Start1", "plc110.plc110_SCADA.Out_01", 14), //  Пуск навесок1 = 1 или Пуск навесок2 = 1, тогда Пуск навесок = 1
+            new Tag("Batchers_Start2", "MixRubber17.PLC110-504.Information.Batchers_Start2", "plc110.plc110_SCADA.Out_01", 15), // Пуск навесок1 = 0 и Пуск навесок2 = 0, тогда Пуск навесок = 0
             new Tag("BagFilter_Blow", "MixRubber17.PLC110-504.Information.BagFilter_Blow", "plc110.plc110_SCADA.Inp_40", 7), //Предупреждения.ПУРФ включен
-            new Tag("ScrewPrepareOff", "MixRubber17.PLC110-504.Information.AddScrewOff", "plc110.plc110_SCADA.Inp_40", 9), //Предупреждения.Шнек подработкики не включен
-            new Tag("Not24V", "MixRubber17.PLC110-504.Information.Not24V", "plc110.plc110_SCADA.Inp_40", 15), //
-            new Tag("RecipeNum", "MixRubber17.PLC110-504.Information.RecipeNum", "plc110.plc110_SCADA.R440_nomRZ"),
-            // new Tag("Clock_MR_Load", "MixRubber17.PLC110-504.Information.Clock_MR_Load", "plc110.plc110_SCADA.R634_RG"),
-            // new Tag("Clock_MR_Mix", "MixRubber17.PLC110-504.Information.Clock_MR_Mix", "plc110.plc110_SCADA.R664_RJ"),
-            // new Tag("Timer_MR_Load", "MixRubber17.PLC110-504.Information.Timer_MR_Load", "plc110.plc110_SCADA.CV1_RG"),
-            // new Tag("Timer_MR_Mix", "MixRubber17.PLC110-504.Information.Timer_MR_Mix", "plc110.plc110_SCADA.CV2_RJ"),
+                //!!!не используется!!! new Tag("ScrewPrepareOff", "MixRubber17.PLC110-504.Information.AddScrewOff", "plc110.plc110_SCADA.Inp_40", 9), //Предупреждения.Шнек подработкики не включен
+            new Tag("Not24V", "MixRubber17.PLC110-504.Information.Not24V", "plc110.plc110_SCADA.Inp_40", 15), // Нет 24B
+            new Tag("RecipeNumber", "MixRubber17.PLC110-504.Information.RecipeNum", "plc110.plc110_SCADA.R440_nomRZ"), //Рецепт, шифр смеси
+                // new Tag("Clock_MR_Load", "MixRubber17.PLC110-504.Information.Clock_MR_Load", "plc110.plc110_SCADA.R634_RG"), // Время под давлением (!!! не нашли в скаде)
+                // new Tag("Clock_MR_Mix", "MixRubber17.PLC110-504.Information.Clock_MR_Mix", "plc110.plc110_SCADA.R664_RJ"), // Время смешения (!!! не нашли в скаде)
+            new Tag("MR_TimerRG", "MixRubber17.PLC110-504.Information.Timer_MR_Load", "plc110.plc110_SCADA.CV1_RG"),//Таймер РГ
+            new Tag("MR_TimerRJ", "MixRubber17.PLC110-504.Information.Timer_MR_Mix", "plc110.plc110_SCADA.CV2_RJ"),//Таймер РЖ
             new Tag("Batchers_Ready", "MixRubber17.PLC110-504.Information.Batchers_Ready", "plc110.plc110_SCADA.B8", 2),//Навески готовы.Сигнал.
-            // new Tag("Filling_OnStart", "MixRubber17.PLC110-504.Information.Filling_OnStart", "plc110.plc110_SCADA.B8", 5),//
-            // new Tag("LastFilling_ToPlan", "MixRubber17.PLC110-504.Information.LastFilling_ToPlan", "plc110.plc110_SCADA.B8", 8),//Последняя заправка по плану
-            // new Tag("TestRegime_On", "MixRubber17.PLC110-504.Information.TestRegime_On", "plc110.plc110_SCADA.B19", 0),
-            new Tag("Resipe_IsNot", "MixRubber17.PLC110-504.Information.Recipe_IsNot", "plc110.plc110_SCADA.B19", 1),
-            // new Tag("MR_Mix_IsFobidden", "MixRubber17.PLC110-504.Information.MR_Mix_IsForbidden", "plc110.plc110_SCADA.B19", 14),
-            // new Tag("MR_Load_IsFobidden", "MixRubber17.PLC110-504.Information.MR_Load_IsForbidden", "plc110.plc110_SCADA.B19", 15),
+            new Tag("Filling_OnStart", "MixRubber17.PLC110-504.Information.Filling_OnStart", "plc110.plc110_SCADA.B8", 5),// Заправка на старте
+            new Tag("LastFilling_ToPlan", "MixRubber17.PLC110-504.Information.LastFilling_ToPlan", "plc110.plc110_SCADA.B8", 8),//Последняя заправка по плану
+            new Tag("TestMode_On", "MixRubber17.PLC110-504.Information.TestRegime_On", "plc110.plc110_SCADA.B19", 0), //тестовый режим включен
+            new Tag("Resipe_IsNot", "MixRubber17.PLC110-504.Information.Recipe_IsNot", "plc110.plc110_SCADA.B19", 1), //Нет рецепта
+            new Tag("MR_Mix_IsFobidden", "MixRubber17.PLC110-504.Information.MR_Mix_IsForbidden", "plc110.plc110_SCADA.B19", 14), //Запрет РЖ
+            new Tag("MR_Load_IsFobidden", "MixRubber17.PLC110-504.Information.MR_Load_IsForbidden", "plc110.plc110_SCADA.B19", 15),//Запрет РГ
             new Tag("EmergencyButton_Pushed", "MixRubber17.PLC110-504.Information.EmergencyButton_Pushed", "plc110.plc110_SCADA.AV4", 0),//Предупреждения.Нажат аварийник
             new Tag("StopButton_Pushed", "MixRubber17.PLC110-504.Information.StopButton_Pushed", "plc110.plc110_SCADA.AV4", 1),//Кнопка _СТОП_ нажата.Авария
             // new Tag("UnloadTempr_NotSet", "MixRubber17.PLC110-504.Information.UnloadTempr_NotSet", "plc110.plc110_SCADA.AV4", 0),// Не задана температура выгрузки
@@ -343,33 +345,36 @@ namespace MixRubber2
             #endregion
 
             #region String value
-            //new Tag("OperatorFIO", "MixRubber17.PLC110-504.StringValues.FIO", "plc110.plc110_string.FIO"), //ФИО оператора					
-            // new Tag("RecipeName", "MixRubber17.PLC110-504.StringValues.RecipeName", "plc110.plc110_string.Name_rez"), //Имя рецепта					
-            // new Tag("RegimeName", "MixRubber17.PLC110-504.StringValues.RegimeName", "plc110.plc110_string.Name_rej"), //Режим.Имя		
-            // new Tag("ShiftName", "MixRubber17.PLC110-504.StringValues.ShiftName", "plc110.plc110_string.NameSmena"), //Смена.Имя
+            new Tag("OperatorFIO", "MixRubber17.PLC110-504.StringValues.FIO", "plc110.plc110_string.FIO"), //ФИО оператора					
+            new Tag("RecipeName", "MixRubber17.PLC110-504.StringValues.RecipeName", "plc110.plc110_string.Name_rez"), //Имя рецепта					
+            new Tag("ModeName", "MixRubber17.PLC110-504.StringValues.RegimeName", "plc110.plc110_string.Name_rej"), //Режим.Имя		
+            new Tag("ShiftName", "MixRubber17.PLC110-504.StringValues.ShiftName", "plc110.plc110_string.NameSmena"), //Смена.Имя
             #endregion
 
-            /////Группы тегов в Lectus: Монитор,ARMO порт 505
-            // new Tag("ShiftNum", "MixRubber17.PPLC110-505.ShiftNum", "plc110.plc110_Monitor.R436_bykva"), //Номер выбранной смены A-1, Б-2, В-3, Г-4	
-            // new Tag("NumReg", "MixRubber17.PLC110-505.NumReg", "plc110.plc110_Monitor.R438_nomRJ"),//Номер загруженного режима в ПЛК
-            // new Tag("Tfact", "MixRubber17.PLC110-505.TFact", "plc110.plc110_Monitor.R649_Tfakt"),//Температура с датчика в момент выгрузки
-            // new Tag("TUnloading_WithCorrect", "MixRubber17.PLC110-505.TUnloading_WithCorrect", "plc110.plc110_Monitor.R655_Tv_P"),//Температура выгрузки заданная минус поправка
-            // new Tag("TDanger_WithCorrect", "MixRubber17.PLC110-505.TDanger_WithCorrect", "plc110.plc110_Monitor.R656_Tk_P"),//Температура критическая  минус поправка
-            // new Tag("FullTimeMix", "MixRubber17.PLC110-505.FullTimeMix", "plc110.plc110_Monitor.CV5_RJ"),//Время смешения полное от пуска РЖ
-            // new Tag("TimeMixUnderPress", "MixRubber17.PLC110-505.TimeMixUnderPress", "plc110.plc110_Monitor.CV6_d"),//Время смешения под давлением
-            // new Tag("NumLoading_Shift", "MixRubber17.PLC110-505.NumLoading_Shift", "plc110.plc110_Monitor.CV8_sm"),//Номер заправки от начала смены
-            // new Tag("NumLoading_Recept", "MixRubber17.PLC110-505.NumLoading_Recept", "plc110.plc110_Monitor.CV7_rej"),//Номер заправки текущего рецепта
-            // new Tag("TSensor1_Up", "MixRubber17.PLC110-505.TSensor1_Up", "plc110.plc110_Monitor.Temp1"),//Температура смеси текущая с датчика 1 (верхняя термопара) 
-            // new Tag("TSensor2_Down", "MixRubber17.PLC110-505.TSensor2_Down", "plc110.plc110_MonitorTemp2"),//Температура смеси текущая с датчика 2 (нижняя термопара) 
-            // new Tag("Power", "MixRubber17.PLC110-505.Power", "plc110.plc110_Monitor.Power"),//Ток текущий с датчика (мощщность)	 
-            // new Tag("PressUp_Position", "MixRubber17.PLC110-505.PressUp_Position", "plc110.plc110_Monitor.Рмм"),//Положение верхнего пресса в мм
-            // new Tag("Plan_Loadings", "MixRubber17.PLC110-505.Plan_Loadings", "plc110.plc110_ARMO.R439_plan"),//План заправок
-            // new Tag("TUnloading", "MixRubber17.PLC110-505.TUnloading", "plc110.plc110_ARMO.R441_Tzad"),//Температура выгрузки заданная минус поправка
-            // new Tag("TCorrect", "MixRubber17.PLC110-505.TCorret", "plc110.plc110_ARMO.R442_Pop"),//Поправка температуры заданная
-            // new Tag("TDanger", "MixRubber17.PLC110-505.TDanger", "plc110.plc110_ARMO.R443_Tkri"),//Температура критическая  заданная
-            // new Tag("RegMix_IsGoing", "MixRubber17.PLC110-505.RegMix_IsGoing", "plc110.plc110_ARMO.Zapret"),//Идет цикл смешения, запрет загрузки	
-            // new Tag("RegMix_On", "MixRubber17.PLC110-505.RegMix_On", "plc110.plc110_ARMO.Zagl_100"),//Пуск режима смешения (1 -включен)
-        
+            #region Группы тегов в Lectus: Монитор,ARMO порт 505
+            new Tag("ShiftNumber", "MixRubber17.PPLC110-505.ShiftNum", "plc110_Monitor.R436_bykva"), //Номер выбранной смены A-1, Б-2, В-3, Г-4	
+            new Tag("ModeNumber", "MixRubber17.PLC110-505.NumReg", "plc110_Monitor.R438_nomRJ"),//Номер загруженного режима в ПЛК
+            new Tag("FullTimeMix", "MixRubber17.PLC110-505.FullTimeMix", "plc110_Monitor.CV5_RJ"),//Время смешения полное от пуска РЖ
+            new Tag("TimeMixUnderPress", "MixRubber17.PLC110-505.TimeMixUnderPress", "plc110_Monitor.CV6_d"),//Время смешения под давлением
+            new Tag("NumLoading_Shift", "MixRubber17.PLC110-505.NumLoading_Shift", "plc110_Monitor.CV8_sm"),//Номер заправки от начала смены
+            new Tag("NumLoading_Recept", "MixRubber17.PLC110-505.NumLoading_Recept", "plc110_Monitor.CV7_rej"),//Номер заправки текущего рецепта
+            // new Tag("PressUp_Position", "MixRubber17.PLC110-505.PressUp_Position", "plc110_Monitor.Рмм"),//Положение верхнего пресса в мм
+            new Tag("Plan_Loadings", "MixRubber17.PLC110-505.Plan_Loadings", "plc110_ARMO.R439_plan"),//План заправок
+            new Tag("MR_Mix_IsGoing", "MixRubber17.PLC110-505.RegMix_IsGoing", "plc110_ARMO.Zapret"),//Идет цикл смешения, запрет загрузки	
+            // new Tag("RegMix_On", "MixRubber17.PLC110-505.RegMix_On", "plc110_ARMO.Zagl_100"),//Пуск режима смешения (1 -включен)
+
+            new Tag("TUnloading", "MixRubber17.PLC110-505.TUnloading", "plc110_ARMO.R441_Tzad"),//Температура выгрузки заданная
+            new Tag("TCorrect", "MixRubber17.PLC110-505.TCorret", "plc110_ARMO.R442_Pop"),//Поправка температуры заданная
+            new Tag("TDanger", "MixRubber17.PLC110-505.TDanger", "plc110_ARMO.R443_Tkri"),//Температура критическая  заданная
+            new Tag("TUnloadSensor", "MixRubber17.PLC110-505.TFact", "plc110_Monitor.R649_Tfakt"),//Температура  выгрузки по датчику
+
+            new Tag("TUnloading_WithCorrect", "MixRubber17.PLC110-505.TUnloading_WithCorrect", "plc110_Monitor.R655_Tv_P"),//Температура выгрузки заданная минус поправка
+            new Tag("TDanger_WithCorrect", "MixRubber17.PLC110-505.TDanger_WithCorrect", "plc110_Monitor.R656_Tk_P"),//Температура критическая  минус поправка
+
+            new Tag("MR_Power", "MixRubber17.PLC110-505.Power", "plc110_Monitor.Power"),//Ток текущий с датчика (мощщность)	 
+            new Tag("MR_TSensorUp", "MixRubber17.PLC110-505.TSensor1_Up", "plc110_Monitor.Temp1"),//Температура смеси текущая с датчика 1 (верхняя термопара) 
+            new Tag("MR_TSensorDown", "MixRubber17.PLC110-505.TSensor2_Down", "plc110_Monitor.Temp2"),//Температура смеси текущая с датчика 2 (нижняя термопара) 
+            #endregion
         };
 
         static OPCDA()
@@ -382,7 +387,7 @@ namespace MixRubber2
         {
             try
             {
-                _OPCServer.Connect(IsAlternativeOPC ? AlernativeServerName : ServerName, "localhost");
+                _OPCServer.Connect(IsAlternativeOPC ? AlernativeServerName : ServerName, "");
                 _OPCGroup = _OPCServer.OPCGroups.Add("SCADAGroup");
                 _OPCGroup.IsActive = true;
                 _OPCGroup.IsSubscribed = true;
