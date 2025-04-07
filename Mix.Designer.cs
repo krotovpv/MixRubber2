@@ -38,39 +38,22 @@
             this.button2 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.label4 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button3 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
@@ -83,6 +66,7 @@
             this.comboBox11 = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
@@ -95,6 +79,7 @@
             this.comboBox15 = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.comboBox16 = new System.Windows.Forms.ComboBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown16 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
@@ -104,6 +89,7 @@
             this.comboBox19 = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.comboBox20 = new System.Windows.Forms.ComboBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown20 = new System.Windows.Forms.NumericUpDown();
@@ -113,6 +99,7 @@
             this.comboBox22 = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.comboBox23 = new System.Windows.Forms.ComboBox();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.numericUpDown21 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown22 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown23 = new System.Windows.Forms.NumericUpDown();
@@ -122,6 +109,7 @@
             this.comboBox25 = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
             this.comboBox26 = new System.Windows.Forms.ComboBox();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
             this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown24 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown25 = new System.Windows.Forms.NumericUpDown();
@@ -131,6 +119,7 @@
             this.comboBox27 = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
             this.comboBox28 = new System.Windows.Forms.ComboBox();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.numericUpDown26 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown27 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown28 = new System.Windows.Forms.NumericUpDown();
@@ -146,57 +135,65 @@
             this.comboBox32 = new System.Windows.Forms.ComboBox();
             this.label33 = new System.Windows.Forms.Label();
             this.comboBox33 = new System.Windows.Forms.ComboBox();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.button4 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.numericUpDown31 = new System.Windows.Forms.NumericUpDown();
             this.label34 = new System.Windows.Forms.Label();
             this.comboBox34 = new System.Windows.Forms.ComboBox();
             this.numericUpDown32 = new System.Windows.Forms.NumericUpDown();
-            this.button7 = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.tabPage5.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            this.tabPage7.SuspendLayout();
-            this.tabPage8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
+            this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
+            this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).BeginInit();
+            this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).BeginInit();
+            this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).BeginInit();
+            this.tabPage8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown31)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown32)).BeginInit();
@@ -332,238 +329,45 @@
             this.tabPage1.Text = "С";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // numericUpDown5
             // 
-            this.tabPage2.Controls.Add(this.numericUpDown6);
-            this.tabPage2.Controls.Add(this.numericUpDown7);
-            this.tabPage2.Controls.Add(this.numericUpDown8);
-            this.tabPage2.Controls.Add(this.numericUpDown9);
-            this.tabPage2.Controls.Add(this.label9);
-            this.tabPage2.Controls.Add(this.comboBox9);
-            this.tabPage2.Controls.Add(this.label10);
-            this.tabPage2.Controls.Add(this.comboBox10);
-            this.tabPage2.Controls.Add(this.label11);
-            this.tabPage2.Controls.Add(this.comboBox11);
-            this.tabPage2.Controls.Add(this.label12);
-            this.tabPage2.Controls.Add(this.comboBox12);
-            this.tabPage2.Location = new System.Drawing.Point(4, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(262, 685);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Ж";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.numericUpDown5.DecimalPlaces = 2;
+            this.numericUpDown5.Location = new System.Drawing.Point(6, 460);
+            this.numericUpDown5.Name = "numericUpDown5";
+            this.numericUpDown5.Size = new System.Drawing.Size(248, 26);
+            this.numericUpDown5.TabIndex = 18;
             // 
-            // tabPage3
+            // numericUpDown4
             // 
-            this.tabPage3.Controls.Add(this.numericUpDown10);
-            this.tabPage3.Controls.Add(this.numericUpDown11);
-            this.tabPage3.Controls.Add(this.numericUpDown12);
-            this.tabPage3.Controls.Add(this.numericUpDown13);
-            this.tabPage3.Controls.Add(this.label13);
-            this.tabPage3.Controls.Add(this.comboBox13);
-            this.tabPage3.Controls.Add(this.label14);
-            this.tabPage3.Controls.Add(this.comboBox14);
-            this.tabPage3.Controls.Add(this.label15);
-            this.tabPage3.Controls.Add(this.comboBox15);
-            this.tabPage3.Controls.Add(this.label16);
-            this.tabPage3.Controls.Add(this.comboBox16);
-            this.tabPage3.Location = new System.Drawing.Point(4, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(262, 685);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Д";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.numericUpDown4.DecimalPlaces = 2;
+            this.numericUpDown4.Location = new System.Drawing.Point(6, 359);
+            this.numericUpDown4.Name = "numericUpDown4";
+            this.numericUpDown4.Size = new System.Drawing.Size(248, 26);
+            this.numericUpDown4.TabIndex = 17;
             // 
-            // tabPage4
+            // numericUpDown3
             // 
-            this.tabPage4.Controls.Add(this.numericUpDown15);
-            this.tabPage4.Controls.Add(this.numericUpDown16);
-            this.tabPage4.Controls.Add(this.numericUpDown17);
-            this.tabPage4.Controls.Add(this.label18);
-            this.tabPage4.Controls.Add(this.comboBox18);
-            this.tabPage4.Controls.Add(this.label19);
-            this.tabPage4.Controls.Add(this.comboBox19);
-            this.tabPage4.Controls.Add(this.label20);
-            this.tabPage4.Controls.Add(this.comboBox20);
-            this.tabPage4.Location = new System.Drawing.Point(4, 4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(262, 685);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Е";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.numericUpDown3.DecimalPlaces = 2;
+            this.numericUpDown3.Location = new System.Drawing.Point(6, 259);
+            this.numericUpDown3.Name = "numericUpDown3";
+            this.numericUpDown3.Size = new System.Drawing.Size(248, 26);
+            this.numericUpDown3.TabIndex = 16;
             // 
-            // tabPage5
+            // numericUpDown2
             // 
-            this.tabPage5.Controls.Add(this.numericUpDown18);
-            this.tabPage5.Controls.Add(this.numericUpDown19);
-            this.tabPage5.Controls.Add(this.numericUpDown20);
-            this.tabPage5.Controls.Add(this.label21);
-            this.tabPage5.Controls.Add(this.comboBox21);
-            this.tabPage5.Controls.Add(this.label22);
-            this.tabPage5.Controls.Add(this.comboBox22);
-            this.tabPage5.Controls.Add(this.label23);
-            this.tabPage5.Controls.Add(this.comboBox23);
-            this.tabPage5.Location = new System.Drawing.Point(4, 4);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(262, 685);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Ш";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            this.numericUpDown2.DecimalPlaces = 2;
+            this.numericUpDown2.Location = new System.Drawing.Point(6, 161);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(248, 26);
+            this.numericUpDown2.TabIndex = 15;
             // 
-            // tabPage6
+            // numericUpDown1
             // 
-            this.tabPage6.Controls.Add(this.numericUpDown21);
-            this.tabPage6.Controls.Add(this.numericUpDown22);
-            this.tabPage6.Controls.Add(this.numericUpDown23);
-            this.tabPage6.Controls.Add(this.label24);
-            this.tabPage6.Controls.Add(this.comboBox24);
-            this.tabPage6.Controls.Add(this.label25);
-            this.tabPage6.Controls.Add(this.comboBox25);
-            this.tabPage6.Controls.Add(this.label26);
-            this.tabPage6.Controls.Add(this.comboBox26);
-            this.tabPage6.Location = new System.Drawing.Point(4, 4);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(262, 685);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Ю";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.numericUpDown14);
-            this.tabPage7.Controls.Add(this.numericUpDown24);
-            this.tabPage7.Controls.Add(this.numericUpDown25);
-            this.tabPage7.Controls.Add(this.label17);
-            this.tabPage7.Controls.Add(this.comboBox17);
-            this.tabPage7.Controls.Add(this.label27);
-            this.tabPage7.Controls.Add(this.comboBox27);
-            this.tabPage7.Controls.Add(this.label28);
-            this.tabPage7.Controls.Add(this.comboBox28);
-            this.tabPage7.Location = new System.Drawing.Point(4, 4);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(262, 685);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "У";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.numericUpDown26);
-            this.tabPage8.Controls.Add(this.numericUpDown27);
-            this.tabPage8.Controls.Add(this.numericUpDown28);
-            this.tabPage8.Controls.Add(this.numericUpDown29);
-            this.tabPage8.Controls.Add(this.numericUpDown30);
-            this.tabPage8.Controls.Add(this.label29);
-            this.tabPage8.Controls.Add(this.comboBox29);
-            this.tabPage8.Controls.Add(this.label30);
-            this.tabPage8.Controls.Add(this.comboBox30);
-            this.tabPage8.Controls.Add(this.label31);
-            this.tabPage8.Controls.Add(this.comboBox31);
-            this.tabPage8.Controls.Add(this.label32);
-            this.tabPage8.Controls.Add(this.comboBox32);
-            this.tabPage8.Controls.Add(this.label33);
-            this.tabPage8.Controls.Add(this.comboBox33);
-            this.tabPage8.Location = new System.Drawing.Point(4, 4);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(262, 685);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "К";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Location = new System.Drawing.Point(4, 4);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(419, 810);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "Масло";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.Color.LightGray;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(6, 3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(248, 23);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Питатель №1";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(6, 29);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(248, 28);
-            this.comboBox4.TabIndex = 4;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.LightGray;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(6, 101);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(248, 23);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Питатель №2";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(6, 127);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(248, 28);
-            this.comboBox5.TabIndex = 6;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.LightGray;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(6, 199);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(248, 23);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Питатель №3";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(6, 225);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(248, 28);
-            this.comboBox6.TabIndex = 8;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.LightGray;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(6, 297);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(248, 23);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Питатель №4";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(6, 323);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(248, 28);
-            this.comboBox7.TabIndex = 10;
+            this.numericUpDown1.DecimalPlaces = 2;
+            this.numericUpDown1.Location = new System.Drawing.Point(6, 63);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(248, 26);
+            this.numericUpDown1.TabIndex = 14;
             // 
             // label8
             // 
@@ -586,131 +390,111 @@
             this.comboBox8.Size = new System.Drawing.Size(248, 28);
             this.comboBox8.TabIndex = 12;
             // 
-            // numericUpDown1
+            // label7
             // 
-            this.numericUpDown1.DecimalPlaces = 2;
-            this.numericUpDown1.Location = new System.Drawing.Point(6, 63);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(248, 26);
-            this.numericUpDown1.TabIndex = 14;
+            this.label7.BackColor = System.Drawing.Color.LightGray;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(6, 297);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(248, 23);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Питатель №4";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // numericUpDown2
+            // comboBox7
             // 
-            this.numericUpDown2.DecimalPlaces = 2;
-            this.numericUpDown2.Location = new System.Drawing.Point(6, 161);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(248, 26);
-            this.numericUpDown2.TabIndex = 15;
+            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Location = new System.Drawing.Point(6, 323);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(248, 28);
+            this.comboBox7.TabIndex = 10;
             // 
-            // numericUpDown3
+            // label6
             // 
-            this.numericUpDown3.DecimalPlaces = 2;
-            this.numericUpDown3.Location = new System.Drawing.Point(6, 259);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(248, 26);
-            this.numericUpDown3.TabIndex = 16;
+            this.label6.BackColor = System.Drawing.Color.LightGray;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(6, 199);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(248, 23);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Питатель №3";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // numericUpDown4
+            // comboBox6
             // 
-            this.numericUpDown4.DecimalPlaces = 2;
-            this.numericUpDown4.Location = new System.Drawing.Point(6, 359);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(248, 26);
-            this.numericUpDown4.TabIndex = 17;
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Location = new System.Drawing.Point(6, 225);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(248, 28);
+            this.comboBox6.TabIndex = 8;
             // 
-            // numericUpDown5
+            // label5
             // 
-            this.numericUpDown5.DecimalPlaces = 2;
-            this.numericUpDown5.Location = new System.Drawing.Point(6, 460);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(248, 26);
-            this.numericUpDown5.TabIndex = 18;
+            this.label5.BackColor = System.Drawing.Color.LightGray;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(6, 101);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(248, 23);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Питатель №2";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // dataGridView1
+            // comboBox5
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8});
-            this.dataGridView1.Location = new System.Drawing.Point(312, 9);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(629, 889);
-            this.dataGridView1.TabIndex = 9;
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Location = new System.Drawing.Point(6, 127);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(248, 28);
+            this.comboBox5.TabIndex = 6;
             // 
-            // Column1
+            // label4
             // 
-            this.Column1.HeaderText = "№";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 30;
+            this.label4.BackColor = System.Drawing.Color.LightGray;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(6, 3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(248, 23);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Питатель №1";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Column2
+            // comboBox4
             // 
-            this.Column2.HeaderText = "Весы";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 50;
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(6, 29);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(248, 28);
+            this.comboBox4.TabIndex = 4;
             // 
-            // Column3
+            // tabPage2
             // 
-            this.Column3.HeaderText = "Пит";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 30;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Задан вес";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "1%";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 30;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "2%";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 30;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Допуск +/-";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Ингридиент";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Width = 200;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(7, 405);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(249, 41);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Добавить";
-            this.button3.UseVisualStyleBackColor = true;
+            this.tabPage2.Controls.Add(this.numericUpDown6);
+            this.tabPage2.Controls.Add(this.numericUpDown7);
+            this.tabPage2.Controls.Add(this.numericUpDown8);
+            this.tabPage2.Controls.Add(this.numericUpDown9);
+            this.tabPage2.Controls.Add(this.label9);
+            this.tabPage2.Controls.Add(this.comboBox9);
+            this.tabPage2.Controls.Add(this.label10);
+            this.tabPage2.Controls.Add(this.comboBox10);
+            this.tabPage2.Controls.Add(this.label11);
+            this.tabPage2.Controls.Add(this.comboBox11);
+            this.tabPage2.Controls.Add(this.label12);
+            this.tabPage2.Controls.Add(this.comboBox12);
+            this.tabPage2.Location = new System.Drawing.Point(4, 4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(262, 536);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Ж";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // numericUpDown6
             // 
@@ -828,6 +612,28 @@
             this.comboBox12.Size = new System.Drawing.Size(248, 28);
             this.comboBox12.TabIndex = 18;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.numericUpDown10);
+            this.tabPage3.Controls.Add(this.numericUpDown11);
+            this.tabPage3.Controls.Add(this.numericUpDown12);
+            this.tabPage3.Controls.Add(this.numericUpDown13);
+            this.tabPage3.Controls.Add(this.label13);
+            this.tabPage3.Controls.Add(this.comboBox13);
+            this.tabPage3.Controls.Add(this.label14);
+            this.tabPage3.Controls.Add(this.comboBox14);
+            this.tabPage3.Controls.Add(this.label15);
+            this.tabPage3.Controls.Add(this.comboBox15);
+            this.tabPage3.Controls.Add(this.label16);
+            this.tabPage3.Controls.Add(this.comboBox16);
+            this.tabPage3.Location = new System.Drawing.Point(4, 4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(262, 536);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Д";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // numericUpDown10
             // 
             this.numericUpDown10.DecimalPlaces = 2;
@@ -944,6 +750,24 @@
             this.comboBox16.Size = new System.Drawing.Size(248, 28);
             this.comboBox16.TabIndex = 18;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.numericUpDown15);
+            this.tabPage4.Controls.Add(this.numericUpDown16);
+            this.tabPage4.Controls.Add(this.numericUpDown17);
+            this.tabPage4.Controls.Add(this.label18);
+            this.tabPage4.Controls.Add(this.comboBox18);
+            this.tabPage4.Controls.Add(this.label19);
+            this.tabPage4.Controls.Add(this.comboBox19);
+            this.tabPage4.Controls.Add(this.label20);
+            this.tabPage4.Controls.Add(this.comboBox20);
+            this.tabPage4.Location = new System.Drawing.Point(4, 4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(262, 536);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Е";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
             // numericUpDown15
             // 
             this.numericUpDown15.DecimalPlaces = 2;
@@ -1030,6 +854,24 @@
             this.comboBox20.Name = "comboBox20";
             this.comboBox20.Size = new System.Drawing.Size(248, 28);
             this.comboBox20.TabIndex = 18;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.numericUpDown18);
+            this.tabPage5.Controls.Add(this.numericUpDown19);
+            this.tabPage5.Controls.Add(this.numericUpDown20);
+            this.tabPage5.Controls.Add(this.label21);
+            this.tabPage5.Controls.Add(this.comboBox21);
+            this.tabPage5.Controls.Add(this.label22);
+            this.tabPage5.Controls.Add(this.comboBox22);
+            this.tabPage5.Controls.Add(this.label23);
+            this.tabPage5.Controls.Add(this.comboBox23);
+            this.tabPage5.Location = new System.Drawing.Point(4, 4);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(262, 536);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Ш";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // numericUpDown18
             // 
@@ -1118,6 +960,24 @@
             this.comboBox23.Size = new System.Drawing.Size(248, 28);
             this.comboBox23.TabIndex = 18;
             // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.numericUpDown21);
+            this.tabPage6.Controls.Add(this.numericUpDown22);
+            this.tabPage6.Controls.Add(this.numericUpDown23);
+            this.tabPage6.Controls.Add(this.label24);
+            this.tabPage6.Controls.Add(this.comboBox24);
+            this.tabPage6.Controls.Add(this.label25);
+            this.tabPage6.Controls.Add(this.comboBox25);
+            this.tabPage6.Controls.Add(this.label26);
+            this.tabPage6.Controls.Add(this.comboBox26);
+            this.tabPage6.Location = new System.Drawing.Point(4, 4);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(262, 536);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Ю";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
             // numericUpDown21
             // 
             this.numericUpDown21.DecimalPlaces = 2;
@@ -1205,6 +1065,24 @@
             this.comboBox26.Size = new System.Drawing.Size(248, 28);
             this.comboBox26.TabIndex = 18;
             // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.numericUpDown14);
+            this.tabPage7.Controls.Add(this.numericUpDown24);
+            this.tabPage7.Controls.Add(this.numericUpDown25);
+            this.tabPage7.Controls.Add(this.label17);
+            this.tabPage7.Controls.Add(this.comboBox17);
+            this.tabPage7.Controls.Add(this.label27);
+            this.tabPage7.Controls.Add(this.comboBox27);
+            this.tabPage7.Controls.Add(this.label28);
+            this.tabPage7.Controls.Add(this.comboBox28);
+            this.tabPage7.Location = new System.Drawing.Point(4, 4);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(262, 536);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "У";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
             // numericUpDown14
             // 
             this.numericUpDown14.DecimalPlaces = 2;
@@ -1291,6 +1169,30 @@
             this.comboBox28.Name = "comboBox28";
             this.comboBox28.Size = new System.Drawing.Size(248, 28);
             this.comboBox28.TabIndex = 29;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.numericUpDown26);
+            this.tabPage8.Controls.Add(this.numericUpDown27);
+            this.tabPage8.Controls.Add(this.numericUpDown28);
+            this.tabPage8.Controls.Add(this.numericUpDown29);
+            this.tabPage8.Controls.Add(this.numericUpDown30);
+            this.tabPage8.Controls.Add(this.label29);
+            this.tabPage8.Controls.Add(this.comboBox29);
+            this.tabPage8.Controls.Add(this.label30);
+            this.tabPage8.Controls.Add(this.comboBox30);
+            this.tabPage8.Controls.Add(this.label31);
+            this.tabPage8.Controls.Add(this.comboBox31);
+            this.tabPage8.Controls.Add(this.label32);
+            this.tabPage8.Controls.Add(this.comboBox32);
+            this.tabPage8.Controls.Add(this.label33);
+            this.tabPage8.Controls.Add(this.comboBox33);
+            this.tabPage8.Location = new System.Drawing.Point(4, 4);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Size = new System.Drawing.Size(262, 536);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "К";
+            this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // numericUpDown26
             // 
@@ -1437,6 +1339,45 @@
             this.comboBox33.Size = new System.Drawing.Size(248, 28);
             this.comboBox33.TabIndex = 19;
             // 
+            // tabPage9
+            // 
+            this.tabPage9.Location = new System.Drawing.Point(4, 4);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Size = new System.Drawing.Size(262, 536);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "Масло";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column7,
+            this.Column8});
+            this.dataGridView1.Location = new System.Drawing.Point(266, 9);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(629, 889);
+            this.dataGridView1.TabIndex = 9;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Location = new System.Drawing.Point(7, 405);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(249, 41);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Добавить";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button6);
@@ -1453,30 +1394,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Передача рецепта";
             // 
-            // progressBar1
+            // button6
             // 
-            this.progressBar1.Location = new System.Drawing.Point(6, 26);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(569, 23);
-            this.progressBar1.TabIndex = 0;
-            this.progressBar1.Value = 30;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(6, 55);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(104, 34);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Старт";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(6, 95);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(569, 91);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
+            this.button6.Location = new System.Drawing.Point(361, 55);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(104, 34);
+            this.button6.TabIndex = 4;
+            this.button6.Text = "Стоп";
+            this.button6.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -1487,14 +1412,30 @@
             this.button5.Text = "Очистить";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // richTextBox1
             // 
-            this.button6.Location = new System.Drawing.Point(361, 55);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(104, 34);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "Стоп";
-            this.button6.UseVisualStyleBackColor = true;
+            this.richTextBox1.Location = new System.Drawing.Point(6, 95);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(569, 91);
+            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.Text = "";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(6, 55);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(104, 34);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "Старт";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(6, 26);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(569, 23);
+            this.progressBar1.TabIndex = 0;
+            this.progressBar1.Value = 30;
             // 
             // numericUpDown31
             // 
@@ -1533,22 +1474,51 @@
             this.numericUpDown32.Size = new System.Drawing.Size(69, 20);
             this.numericUpDown32.TabIndex = 18;
             // 
-            // button7
+            // Column1
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button7.Location = new System.Drawing.Point(312, 917);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(629, 41);
-            this.button7.TabIndex = 19;
-            this.button7.Text = "Сохранить";
-            this.button7.UseVisualStyleBackColor = true;
+            this.Column1.HeaderText = "№";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 30;
             // 
-            // Recipe2
+            // Column2
+            // 
+            this.Column2.HeaderText = "Весы";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 50;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Пит";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 30;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Задан вес";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Допуск +/-";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Ингридиент";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            this.Column8.Width = 200;
+            // 
+            // Mix
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1540, 983);
-            this.Controls.Add(this.button7);
             this.Controls.Add(this.numericUpDown32);
             this.Controls.Add(this.numericUpDown31);
             this.Controls.Add(this.label34);
@@ -1564,48 +1534,48 @@
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Name = "Recipe2";
+            this.Name = "Mix";
             this.Text = "Recipe2";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
+            this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
+            this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).EndInit();
+            this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown23)).EndInit();
+            this.tabPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown24)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown25)).EndInit();
+            this.tabPage8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown26)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown28)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown29)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown31)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown32)).EndInit();
@@ -1649,14 +1619,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.NumericUpDown numericUpDown6;
         private System.Windows.Forms.NumericUpDown numericUpDown7;
@@ -1743,6 +1705,11 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.ComboBox comboBox34;
         private System.Windows.Forms.NumericUpDown numericUpDown32;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
     }
 }
