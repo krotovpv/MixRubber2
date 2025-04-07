@@ -60,12 +60,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Recipe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Recipe.Designer.cs">
-      <DependentUpon>Recipe.cs</DependentUpon>
-    </Compile>
     <Compile Include="Mix.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +67,12 @@
       <DependentUpon>Mix.cs</DependentUpon>
     </Compile>
     <Compile Include="Tag.cs" />
+    <Compile Include="TransmitRecipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransmitRecipe.Designer.cs">
+      <DependentUpon>TransmitRecipe.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCScales5.xaml.cs">
       <DependentUpon>UCScales5.xaml</DependentUpon>
     </Compile>
@@ -112,11 +112,11 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Recipe.resx">
-      <DependentUpon>Recipe.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Mix.resx">
       <DependentUpon>Mix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransmitRecipe.resx">
+      <DependentUpon>TransmitRecipe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

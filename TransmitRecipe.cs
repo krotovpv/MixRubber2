@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MixRubber2
 {
-    public partial class Recipe: Form
+    public partial class TransmitRecipe : Form
     {
-        public Recipe()
+        public TransmitRecipe()
         {
             InitializeComponent();
         }
