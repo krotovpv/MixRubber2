@@ -66,11 +66,16 @@
     <Compile Include="Recipe.Designer.cs">
       <DependentUpon>Recipe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Recipe2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recipe2.Designer.cs">
+      <DependentUpon>Recipe2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tag.cs" />
     <Compile Include="UCScales5.xaml.cs">
       <DependentUpon>UCScales5.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UnboxingWord.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -109,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Recipe.resx">
       <DependentUpon>Recipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recipe2.resx">
+      <DependentUpon>Recipe2.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

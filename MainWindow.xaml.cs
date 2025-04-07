@@ -315,15 +315,15 @@ namespace MixRubber2
 
         private void ScalesC_WeighingChanged(object obj)
         {
-            bool isClose = (bool)OPCDA.AllTags.Where(x => x.Name == "ScalesC_IsClosed").First().Value;
+            bool? isClose = (bool?)OPCDA.AllTags.Where(x => x.Name == "ScalesC_IsClosed").First().Value;
             if ((bool)obj)
             {
-                if (isClose)
+                if (isClose == true)
                     imgScalesCSilo.Source = BI_SiloClosedGreen;
             }    
             else
             {
-                if (isClose)
+                if (isClose == true)
                     imgScalesCSilo.Source = BI_SiloClosed;
             }
         }
@@ -338,7 +338,7 @@ namespace MixRubber2
         {
             if ((bool)obj)
             {
-                if ((bool)OPCDA.AllTags.Where(x => x.Name == "ScalesC_Weighing").First().Value)
+                if ((bool?)OPCDA.AllTags.Where(x => x.Name == "ScalesC_Weighing").First().Value == true)
                     imgScalesCSilo.Source = BI_SiloClosedGreen;
                 else
                     imgScalesCSilo.Source = BI_SiloClosed;
@@ -432,7 +432,7 @@ namespace MixRubber2
         {
             if ((bool)obj)
             {
-                if ((bool)OPCDA.AllTags.Where(x => x.Name == "ContainerC_Weighing").First().Value)
+                if ((bool?)OPCDA.AllTags.Where(x => x.Name == "ContainerC_Weighing").First().Value == true)
                     imgConteinerC.Source = BI_ConteinerCloseGreen;
                 else
                     imgConteinerC.Source = BI_ConteinerClose;
@@ -447,15 +447,15 @@ namespace MixRubber2
 
         private void ContainerC_WeighingChanged(object obj)
         {
-            bool isClose = (bool)OPCDA.AllTags.Where(x => x.Name == "ContainerC_IsClosed").First().Value;
+            bool? isClose = (bool?)OPCDA.AllTags.Where(x => x.Name == "ContainerC_IsClosed").First().Value;
             if ((bool)obj)
             {
-                if (isClose)
+                if (isClose == true)
                     imgConteinerC.Source = BI_ConteinerCloseGreen;
             }
             else
             {
-                if (isClose)
+                if (isClose == true)
                     imgConteinerC.Source = BI_ConteinerClose;
             }
         }
@@ -491,7 +491,7 @@ namespace MixRubber2
         {
             txtScalesJFullReal.Text = ((float)obj).ToString();
             Tag fullNeed = OPCDA.AllTags.Where(x => x.Name == "ScalesJ_FullNeed").First();
-            if (fullNeed.Value != null)
+            if (OPCDA.AllTags.Where(x => x.Name == "ScalesJ_FullNeed").First().Value != null)
                 txtScalesJFullDif.Text = Math.Round((float)fullNeed.Value - (float)obj, 1).ToString();
         }
 
@@ -521,15 +521,15 @@ namespace MixRubber2
 
         private void ScalesJ_WeighingChanged(object obj)
         {
-            bool isClose = (bool)OPCDA.AllTags.Where(x => x.Name == "ScalesJ_IsClosed").First().Value;
+            bool? isClose = (bool?)OPCDA.AllTags.Where(x => x.Name == "ScalesJ_IsClosed").First().Value;
             if ((bool)obj)
             {
-                if (isClose)
+                if (isClose == true)
                     imgScalesJSilo.Source = BI_SiloClosedGreen;
             }
             else
             {
-                if (isClose)
+                if (isClose == true)
                     imgScalesJSilo.Source = BI_SiloClosed;
             }
         }
@@ -538,7 +538,7 @@ namespace MixRubber2
         {
             if ((bool)obj)
             {
-                if ((bool)OPCDA.AllTags.Where(x => x.Name == "ScalesJ_Weighing").First().Value)
+                if ((bool?)OPCDA.AllTags.Where(x => x.Name == "ScalesJ_Weighing").First().Value == true)
                     imgScalesJSilo.Source = BI_SiloClosedGreen;
                 else
                     imgScalesJSilo.Source = BI_SiloClosed;
@@ -643,15 +643,15 @@ namespace MixRubber2
 
         private void ScalesD_WeighingChanged(object obj)
         {
-            bool isClosed = (bool)OPCDA.AllTags.Where(x => x.Name == "ScalesD_IsClosed").First().Value;
+            bool? isClosed = (bool?)OPCDA.AllTags.Where(x => x.Name == "ScalesD_IsClosed").First().Value;
             if ((bool)obj)
             {
-                if (isClosed)
+                if (isClosed == true)
                     imgScalesDSilo.Source = BI_SiloClosedGreen;
             }
             else
             {
-                if (isClosed)
+                if (isClosed == true)
                     imgScalesDSilo.Source = BI_SiloClosed;
             }
         }
@@ -660,7 +660,7 @@ namespace MixRubber2
         {
             if ((bool)obj)
             {
-                if ((bool)OPCDA.AllTags.Where(x => x.Name == "ScalesD_Weighing").First().Value)
+                if ((bool?)OPCDA.AllTags.Where(x => x.Name == "ScalesD_Weighing").First().Value == true)
                     imgScalesDSilo.Source = BI_SiloClosedGreen;
                 else
                     imgScalesDSilo.Source = BI_SiloClosed;
@@ -765,15 +765,15 @@ namespace MixRubber2
 
         private void ScalesE_WeighingChanged(object obj)
         {
-            bool isClosed = (bool)OPCDA.AllTags.Where(x => x.Name == "ScalesE_IsClosed").First().Value;
+            bool? isClosed = (bool?)OPCDA.AllTags.Where(x => x.Name == "ScalesE_IsClosed").First().Value;
             if ((bool)obj)
             {
-                if (isClosed)
+                if (isClosed == true)
                     imgScalesESilo.Source = BI_SiloClosedGreen;
             }
             else
             {
-                if (isClosed)
+                if (isClosed == true)
                     imgScalesESilo.Source = BI_SiloClosed;
             }
         }
@@ -782,7 +782,7 @@ namespace MixRubber2
         {
             if ((bool)obj)
             {
-                if ((bool)OPCDA.AllTags.Where(x => x.Name == "ScalesE_Weighing").First().Value)
+                if ((bool?)OPCDA.AllTags.Where(x => x.Name == "ScalesE_Weighing").First().Value == true)
                     imgScalesESilo.Source = BI_SiloClosedGreen;
                 else
                     imgScalesESilo.Source = BI_SiloClosed;
@@ -879,15 +879,15 @@ namespace MixRubber2
 
         private void ScalesSh_WeighingChanged(object obj)
         {
-            bool isClosed = (bool)OPCDA.AllTags.Where(x => x.Name == "ScalesSh_IsClosed").First().Value;
+            bool? isClosed = (bool?)OPCDA.AllTags.Where(x => x.Name == "ScalesSh_IsClosed").First().Value;
             if ((bool)obj)
             {
-                if (isClosed)
+                if (isClosed == true)
                     imgScalesShSilo.Source = BI_SiloClosedGreen;
             }
             else
             {
-                if (isClosed)
+                if (isClosed == true)
                     imgScalesShSilo.Source = BI_SiloClosed;
             }
         }
@@ -896,7 +896,7 @@ namespace MixRubber2
         {
             if ((bool)obj)
             {
-                if ((bool)OPCDA.AllTags.Where(x => x.Name == "ScalesSh_Weighing").First().Value)
+                if ((bool?)OPCDA.AllTags.Where(x => x.Name == "ScalesSh_Weighing").First().Value == true)
                     imgScalesShSilo.Source = BI_SiloClosedGreen;
                 else
                     imgScalesShSilo.Source = BI_SiloClosed;
@@ -993,15 +993,15 @@ namespace MixRubber2
 
         private void ScalesJu_WeighingChanged(object obj)
         {
-            bool isClosed = (bool)OPCDA.AllTags.Where(x => x.Name == "ScalesJu_IsClosed").First().Value;
+            bool? isClosed = (bool?)OPCDA.AllTags.Where(x => x.Name == "ScalesJu_IsClosed").First().Value;
             if ((bool)obj)
             {
-                if (isClosed)
+                if (isClosed == true)
                     imgScalesJuSilo.Source = BI_SiloClosedGreen;
             }
             else
             {
-                if (isClosed)
+                if (isClosed == true)
                     imgScalesJuSilo.Source = BI_SiloClosed;
             }
         }
@@ -1010,7 +1010,7 @@ namespace MixRubber2
         {
             if ((bool)obj)
             {
-                if ((bool)OPCDA.AllTags.Where(x => x.Name == "ScalesJu_Weighing").First().Value)
+                if ((bool?)OPCDA.AllTags.Where(x => x.Name == "ScalesJu_Weighing").First().Value == true)
                     imgScalesJuSilo.Source = BI_SiloClosedGreen;
                 else
                     imgScalesJuSilo.Source = BI_SiloClosed;
@@ -1107,15 +1107,15 @@ namespace MixRubber2
 
         private void ScalesY_WeighingChanged(object obj)
         {
-            bool isClosed = (bool)OPCDA.AllTags.Where(x => x.Name == "ScalesY_IsClosed").First().Value;
+            bool? isClosed = (bool?)OPCDA.AllTags.Where(x => x.Name == "ScalesY_IsClosed").First().Value;
             if ((bool)obj)
             {
-                if (isClosed)
+                if (isClosed == true)
                     imgScalesYSilo.Source = BI_SiloClosedGreen;
             }
             else
             {
-                if (isClosed)
+                if (isClosed == true)
                     imgScalesYSilo.Source = BI_SiloClosed;
             }
         }
@@ -1124,7 +1124,7 @@ namespace MixRubber2
         {
             if ((bool)obj)
             {
-                if ((bool)OPCDA.AllTags.Where(x => x.Name == "ScalesY_Weighing").First().Value)
+                if ((bool?)OPCDA.AllTags.Where(x => x.Name == "ScalesY_Weighing").First().Value == true)
                     imgScalesYSilo.Source = BI_SiloClosedGreen;
                 else
                     imgScalesYSilo.Source = BI_SiloClosed;
