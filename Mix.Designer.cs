@@ -1,6 +1,6 @@
 ﻿namespace MixRubber2
 {
-    partial class Recipe2
+    partial class Mix
     {
         /// <summary>
         /// Required designer variable.

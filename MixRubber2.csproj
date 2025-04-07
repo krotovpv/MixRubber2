@@ -66,11 +66,11 @@
     <Compile Include="Recipe.Designer.cs">
       <DependentUpon>Recipe.cs</DependentUpon>
     </Compile>
-    <Compile Include="Recipe2.cs">
+    <Compile Include="Mix.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Recipe2.Designer.cs">
-      <DependentUpon>Recipe2.cs</DependentUpon>
+    <Compile Include="Mix.Designer.cs">
+      <DependentUpon>Mix.cs</DependentUpon>
     </Compile>
     <Compile Include="Tag.cs" />
     <Compile Include="UCScales5.xaml.cs">
@@ -115,8 +115,8 @@
     <EmbeddedResource Include="Recipe.resx">
       <DependentUpon>Recipe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Recipe2.resx">
-      <DependentUpon>Recipe2.cs</DependentUpon>
+    <EmbeddedResource Include="Mix.resx">
+      <DependentUpon>Mix.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
