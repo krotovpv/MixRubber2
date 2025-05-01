@@ -26,40 +26,39 @@
                 <Label Name="lblRJLock" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ЗАПРЕТ РЖ" Height="20" Canvas.Left="104" Canvas.Top="2" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblRGLock" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ЗАПРЕТ РГ" Height="20" Canvas.Left="104" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblManualMode" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="РУЧНОЙ РЕЖИМ" Height="20" Canvas.Left="206" Canvas.Top="2" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                <Label Name="lblResipeIsNot" Background="Red" BorderThickness="1" BorderBrush="Black" Content="НЕТ РЕЦЕПТА" Height="20" Canvas.Left="206" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                
+                <Label Name="lblResipeIsNot" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="НЕТ РЕЦЕПТА" Height="20" Canvas.Left="206" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+
                 <Label Background="Gray" Content="Оператор:" Height="20" Canvas.Left="306" Canvas.Top="2" Width="100" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                <Label Background="Gray" Content="Смена:" Height="20" Canvas.Left="306" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+                <Label Name="lblShift" Background="Gray" Content="Смена: -" Height="20" Canvas.Left="367" Canvas.Top="24" Width="140" FontSize="11" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblNameOperator" Background="Gray" Content="-" Height="20" Canvas.Left="408" Canvas.Top="2" Width="100" FontSize="11" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                <Label Name="lblShift" Background="Gray" Content="-" Height="20" Canvas.Left="408" Canvas.Top="24" Width="50" FontSize="11" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                <Label Name="lblShiftNumber" Background="Gray" Content="-" Height="20" Canvas.Left="458" Canvas.Top="24" Width="50" FontSize="11" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                
+
                 <Label Background="Gray" Content="Режим:" Height="20" Canvas.Left="510" Canvas.Top="2" Width="100" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" Content="Рецепт:" Height="20" Canvas.Left="510" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblMode" Background="Gray" Content="-" Height="20" Canvas.Left="612" Canvas.Top="2" Width="100" FontSize="11" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblRecipe" Background="Gray" Content="-" Height="20" Canvas.Left="612" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                
+
                 <Label Background="Gray" Content="Номер режима:" Height="20" Canvas.Left="710" Canvas.Top="2" Width="100" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" Content="Номер рецепта:" Height="20" Canvas.Left="710" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblModeNumber" Background="Gray" Content="-" Height="20" Canvas.Left="812" Canvas.Top="2" Width="100" FontSize="11" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblRecipeNumber" Background="Gray" Content="-" Height="20" Canvas.Left="812" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                
+
                 <Label Background="Gray" Content="№ заправки за смену:" Height="20" Canvas.Left="934" Canvas.Top="2" Width="120" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" Content="№ заправки рецепта:" Height="20" Canvas.Left="934" Canvas.Top="24" Width="120" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblNumLoadingShift" Background="Gray" Content="-" Height="20" Canvas.Left="1056" Canvas.Top="2" Width="100" FontSize="11" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblNumLoadingRecept"  Background="Gray" Content="-" Height="20" Canvas.Left="1056" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                
+
                 <Label Background="Gray" Content="План:" Height="20" Canvas.Left="1158" Canvas.Top="2" Width="100" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" Content="№ навески:" Height="20" Canvas.Left="1158" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblPlanLoadings" Background="Gray" Content="-" Height="20" Canvas.Left="1260" Canvas.Top="2" Width="100" FontSize="11" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" Content="-" Height="20" Canvas.Left="1260" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                
+
                 <Label Canvas.Top="2" Content="PC №: 17" Height="40" Canvas.Left="1640" Width="120" FontSize="24" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                 <Line X1="0" Y1="0" X2="1920" Y2="0" StrokeThickness="2" Stroke="Black" Height="2" Canvas.Top="46"/>
 
                 <Label Name="lblBatchersStart" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="   ПУСК&#10;НАВЕСОК" Height="40" Canvas.Left="2" Canvas.Top="48" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblEmergencyButtonPushed" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="     НАЖАТ&#10;АВАРИЙНИК" Height="40" Canvas.Left="2" Canvas.Top="90" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblBagFilter" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="    ПУРФ&#10;ВКЛЮЧЕН" Height="40" Canvas.Left="104" Canvas.Top="48" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+                <Label Name="lblDustCollector" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ПЫЛЕСБОРКА&#10;  ВКЛЮЧЕНА" Height="40" Canvas.Left="104" Canvas.Top="90" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Visibility="Hidden" Name="lblScrewPrepare" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ШНЕК ПОД-КИ&#10;    ВКЛЮЧЕН" Height="40" Canvas.Left="104" Canvas.Top="90" Width="100" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
 
                 <Label Name="lblTemperatureCritical" Background="Gray" BorderThickness="1" BorderBrush="Black" Content="ТЕМПЕРАТУРА&#10;КРИТИЧЕСКАЯ" Height="40" Canvas.Left="10" Canvas.Top="790" Width="112" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
@@ -71,7 +70,7 @@
                 <Label Name="lblBatchersReady" Background="LimeGreen" BorderThickness="1" BorderBrush="Black" Content="НАВЕСКИ ГОТОВЫ" Height="40" Canvas.Left="900" Canvas.Top="438" Width="200" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblLoadReady" Background="LimeGreen" BorderThickness="1" BorderBrush="Black" Content="ЗАПРАВКА НА СТАРТЕ" Height="40" Canvas.Left="900" Canvas.Top="483" Width="200" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblLastLoad" Background="LimeGreen" BorderThickness="1" BorderBrush="Black" Content="ПОСЛЕДНЯЯ ЗАПРАВКА ПО ПЛАНУ" Height="40" Canvas.Left="900" Canvas.Top="528" Width="200" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                <Label Name="lblTestMode" Background="Red" BorderThickness="1" BorderBrush="Black" Content="ТЕСТОВЫЙ РЕЖИМ" Height="40" Canvas.Left="900" Canvas.Top="573" Width="200" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+                <Label Name="lblTestMode" Background="Red" BorderThickness="1" BorderBrush="Black" Content="ТЕСТОВЫЙ РЕЖИМ" Height="40" Canvas.Left="900" Canvas.Top="574" Width="200" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
                 <Grid Name="Mixer" Canvas.Top="210" Canvas.Left="130" Panel.ZIndex="1">
                     <Grid.ColumnDefinitions>
@@ -82,7 +81,7 @@
                     </Grid.RowDefinitions>
                     <Canvas Grid.Column="0" Grid.Row="0" Width="280" Height="720">
                         <Image Source="/img/mixerMain.png" Width="280"/>
-                        <Image Name="imgFloat" Source="/img/FloatDown.png" Width="65" Canvas.Left="92"/>
+                        <Image Name="imgFloat" Source="/img/FloatMiddle.png" Width="65" Canvas.Left="92"/>
                         <Image Name="imgFlapValve"  Source="/img/FlapValve.png" Width="119" Canvas.Left="33" Canvas.Top="598" RenderTransformOrigin="0.5,0.5">
                             <Image.RenderTransform>
                                 <TransformGroup>
@@ -106,8 +105,7 @@
                             </Image.RenderTransform>
                         </Image>
                         <Label Name="lblTemperatureUp" Canvas.Left="12" Canvas.Top="510" Content="0.0°C" FontSize="16" FontWeight="Bold" Foreground="White"/>
-                        <Label Name="lblTemperatureDown" Canvas.Left="12" Canvas.Top="632" Content="0.0°C" FontSize="16" FontWeight="Bold" Foreground="White"/>
-                        <Label Name="lblPower" Canvas.Left="8" Canvas.Top="574" Content="0.0" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                        <Label Name="lblPower" Canvas.Left="7" Canvas.Top="574" Content="0.0" FontSize="16" FontWeight="Bold" Foreground="White"/>
                         <Label Name="lblMixIsGoing" Canvas.Left="190" Canvas.Top="676" Content="ЦИКЛ&#10;ИДЕТ" FontSize="12" FontWeight="Bold" Foreground="Red"/>
                     </Canvas>
                 </Grid>
@@ -120,7 +118,7 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Canvas Grid.Column="0" Grid.Row="0" Width="106" Height="156">
-                        <Image Source="/img/SiloOil.png" Width="80"/>
+                        <Image Name="imgInjector" Source="/img/SiloOil.png" Width="80"/>
                         <Image Name="imgOilPump" Source="/img/Pump.png" Width="80" Canvas.Left="24" Canvas.Top="74"/>
                     </Canvas>
                 </Grid>
@@ -172,7 +170,8 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Canvas Grid.Row="0" Grid.Column="0" Width="318" Height="270">
-                        <Label Background="#FFAAAAAA" Content="ВЕСЫ С" Height="25" Width="318" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="ВЕСЫ С" Canvas.Top="3" Height="25" Width="318" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Name="lblScalesCLink" Background="Gray" Height="3" Width="318" Padding="1"/>
                         <Image Name="imgScalesCBatcher1" Source="/img/SmallSilo.png" Width="40" Canvas.Top="36"/>
                         <Label Content="1" Height="20" Canvas.Top="56" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
                         <Image Name="imgScalesCBatcher2" Source="/img/SmallSilo.png" Width="40" Canvas.Left="40" Canvas.Top="36"/>
@@ -216,12 +215,12 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Canvas Grid.Column="0" Grid.Row="0" Width="80" Height="173">
-                        <Image Source="/img/Screw.png" Width="80" Canvas.Top="0"/>
+                        <Image Name="imgScrew" Source="/img/Screw.png" Width="80" Canvas.Top="0"/>
                         <Image Name="imgConteinerC" Source="/img/SiloOpen.png" Width="80" Canvas.Top="82"/>
                     </Canvas>
                 </Grid>
 
-                <Grid Name="ScalesJ" Canvas.Left="600" Canvas.Top="60">
+                <Grid x:Name="ScalesJ" Canvas.Left="600" Canvas.Top="60">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
@@ -229,7 +228,8 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Canvas Grid.Row="0" Grid.Column="0" Width="278" Height="270">
-                        <Label Background="#FFAAAAAA" Content="ВЕСЫ Ж" Height="25" Width="278" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Name="lblNameScalesJ" Background="#FFAAAAAA" Content="ВЕСЫ Ж" Canvas.Top="3" Height="25" Width="278" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Name="lblScalesJLink" Background="LightGreen" Height="3" Width="278" Padding="1"/>
                         <Image Name="imgScalesJBatcher1" Source="/img/SmallSilo.png" Width="40" Canvas.Top="36"/>
                         <Label Content="1" Height="20" Canvas.Top="56" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
                         <Image Name="imgScalesJBatcher2" Source="/img/SmallSilo.png" Width="40" Canvas.Left="40" Canvas.Top="36"/>
@@ -271,7 +271,8 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Canvas Grid.Row="0" Grid.Column="0" Width="278" Height="270">
-                        <Label Background="#FFAAAAAA" Content="ВЕСЫ Д" Height="25" Width="278" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="ВЕСЫ Д" Canvas.Top="3" Height="25" Width="278" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Name="lblScalesDLink" Background="LightGreen" Height="3" Width="278" Padding="1"/>
                         <Image Name="imgScalesDBatcher1" Source="/img/SmallSilo.png" Width="40" Canvas.Top="36"/>
                         <Label Content="1" Height="20" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
                         <Image Name="imgScalesDBatcher2" Source="/img/SmallSilo.png" Width="40" Canvas.Left="40" Canvas.Top="36"/>
@@ -313,7 +314,8 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Canvas Grid.Row="0" Grid.Column="0" Width="238" Height="270">
-                        <Label Background="#FFAAAAAA" Content="ВЕСЫ Е" Height="25" Width="238" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="ВЕСЫ Е" Canvas.Top="3" Height="25" Width="238" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Name="lblScalesELink" Background="LightGreen" Height="3" Width="238" Padding="1"/>
                         <Image Name="imgScalesEBatcher1" Source="/img/SmallSilo.png" Width="40" Canvas.Top="36"/>
                         <Label Content="1" Height="20" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
                         <Image Name="imgScalesEBatcher2" Source="/img/SmallSilo.png" Width="40" Canvas.Left="40" Canvas.Top="36"/>
@@ -353,7 +355,8 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Canvas Grid.Row="0" Grid.Column="0" Width="238" Height="270">
-                        <Label Background="#FFAAAAAA" Content="ВЕСЫ Ш" Height="25" Width="238" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="ВЕСЫ Ш" Canvas.Top="3" Height="25" Width="238" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Name="lblScalesShLink" Background="LightGreen" Height="3" Width="238" Padding="1"/>
                         <Image Name="imgScalesShBatcher1" Source="/img/SmallSilo.png" Width="40" Canvas.Top="36"/>
                         <Label Content="1" Height="20" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
                         <Image Name="imgScalesShBatcher2" Source="/img/SmallSilo.png" Width="40" Canvas.Left="40" Canvas.Top="36"/>
@@ -393,7 +396,8 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Canvas Grid.Row="0" Grid.Column="0" Width="238" Height="270">
-                        <Label Background="#FFAAAAAA" Content="ВЕСЫ Ю" Height="25" Width="238" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="ВЕСЫ Ю" Canvas.Top="3" Height="25" Width="238" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Name="lblScalesJuLink" Background="LightGreen" Height="3" Width="238" Padding="1"/>
                         <Image Name="imgScalesJuBatcher1" Source="/img/SmallSilo.png" Width="40" Canvas.Top="36"/>
                         <Label Content="1" Height="20" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
                         <Image Name="imgScalesJuBatcher2" Source="/img/SmallSilo.png" Width="40" Canvas.Left="40" Canvas.Top="36"/>
@@ -433,7 +437,8 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Canvas Grid.Row="0" Grid.Column="0" Width="238" Height="270">
-                        <Label Background="#FFAAAAAA" Content="ВЕСЫ У" Height="25" Width="238" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Background="#FFAAAAAA" Content="ВЕСЫ У" Canvas.Top="3" Height="25" Width="238" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Name="lblScalesYLink" Background="LightGreen" Height="3" Width="238" Padding="1"/>
                         <Image Name="imgScalesYBatcher1" Source="/img/SmallSilo.png" Width="40" Canvas.Top="36"/>
                         <Label Content="1" Height="20" Canvas.Top="58" Width="40" FontSize="15" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold"/>
                         <Image Name="imgScalesYBatcher2" Source="/img/SmallSilo.png" Width="40" Canvas.Left="40" Canvas.Top="36"/>
@@ -473,8 +478,8 @@
                         <RowDefinition/>
                     </Grid.RowDefinitions>
                     <Canvas Grid.Row="0" Grid.Column="0" Width="308" Height="270">
-                        <Label Background="#FFAAAAAA" Content="ВЕСЫ К" Height="25" Width="308" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
-
+                        <Label Background="#FFAAAAAA" Content="ВЕСЫ К" Canvas.Top="3" Height="25" Width="308" FontSize="18" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Padding="1"/>
+                        <Label Name="lblScalesKLink" Background="LightGreen" Height="3" Width="308" Padding="1"/>
                         <Rectangle Name="rectangleScalesK" Fill="Gray" Stroke="Black" Width="110" Height="30" Canvas.Left="36" Canvas.Top="190"/>
                         <Image Name="imgTransporterK" Source="/img/transporter2.png" Height="46" Canvas.Top="217"/>
                         <Image Name="imgScalesKBusy" ToolTip="Весы заняты" Source="/img/scales_busy.png" Width="20" Canvas.Left="170" Canvas.Top="132"/>
@@ -486,11 +491,11 @@
                         <TextBlock Name="txtScalesKFullNeed" Height="25" Canvas.Left="229" Text="0" Canvas.Top="176" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                         <Label Background="#FFAAAAAA" Content="Изм." Height="25" Canvas.Left="200" Canvas.Top="202" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
                         <TextBlock Name="txtScalesKFullReal" Height="25" Canvas.Left="229" Text="0" Canvas.Top="202" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
-                        <Label Background="#FFAAAAAA" Content="Откл." Height="25" Canvas.Left="200" Canvas.Top="228" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
-                        <TextBlock Name="txtScalesKFullDif" Height="25" Canvas.Left="229" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
+                        <Label Background="#FFAAAAAA" Content="Тек." Height="25" Canvas.Left="200" Canvas.Top="228" Width="28" FontSize="11" VerticalContentAlignment="Center" Padding="1"/>
+                        <TextBlock Name="txtScalesKCurReal" Height="25" Canvas.Left="229" Text="0" Canvas.Top="228" Width="79" TextAlignment="Center" FontSize="18" Background="LightGray"/>
                     </Canvas>
                 </Grid>
-                
+
                 <Button Click="btnFullScreen_Click" Content="Button" Canvas.Left="1787" Canvas.Top="4" Height="34" Width="132" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
                 <Grid Name="Temperature" Canvas.Left="10" Canvas.Top="449" HorizontalAlignment="Center" VerticalAlignment="Top">

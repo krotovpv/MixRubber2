@@ -58,7 +58,7 @@ namespace MixRubber2
             // new Tag("ContainerC_ClosedAndOpened", "MixRubber17.PLC110-504.ContainerC_Fail.ClosedAndOpened", "plc110.plc110_SCADA.AV1", 2),
             // new Tag("ContainerC_NotFull", "MixRubber17.PLC110-504.ContainerC_Fail.NotFull", "plc110.plc110_SCADA.AV1", 3),
 
-            // new Tag("ScrewTC_Working", "MixRubber17.PLC110-504.ScrewTC.Working", "plc110.plc110_SCADA.B8", 12),
+            new Tag("ScrewTC_Working", "MixRubber17.PLC110-504.ScrewTC.Working", "plc110.plc110_SCADA.B8", 12),
             // new Tag("ScrewTC_CommandOn", "MixRubber17.PLC110-504.ScrewTC.CommandOn", "plc110.plc110_SCADA.B19", 9),
             // new Tag("ScrewTC_NotOn", "MixRubber17.PLC110-504.ScrewTC.NotOn", plc110.plc110_SCADA.AV3", 3),
             // new Tag("ScrewTC_NotStoped", "MixRubber17.PLC110-504.ScrewTC.NotStoped", "plc110.plc110_SCADA.AV3", 4),
@@ -90,7 +90,7 @@ namespace MixRubber2
             #endregion
 
             #region Injector
-            //new Tag("Injector_Weighing", "MixRubber17.PLC110-504.Injector.Weighing", "plc110.plc110_SCADA.B8",6),
+            new Tag("Injector_Weighing", "MixRubber17.PLC110-504.Injector.Weighing", "plc110.plc110_SCADA.B8",6),//емкость для жидкости наполнена
             //new Tag("Injector_NotEmpty", "MixRubber17.PLC110-504.Injector.NotEmpty", "plc110.plc110_SCADA.AV2",12),
             //new Tag("Injector_NotFull", "MixRubber17.PLC110-504.Injector.NotFull", "plc110.plc110_SCADA.AV",13),
             #endregion
@@ -220,6 +220,7 @@ namespace MixRubber2
             #region Scales K
             new Tag("ScalesK_FullNeed", "MixRubber17.PLC100_ScalesK.FullNeed", "VesiK.CurNeed"), //Бункер.Заданный вес
             new Tag("ScalesK_FullReal", "MixRubber17.PLC100_ScalesK.FullReal", "VesiK.FullReal"), //Бункер.Измеренный вес
+            new Tag("ScalesK_CurReal", "MixRubber17.PLC100_ScalesK.CurReal", "VesiK.CurReal"), //Бункер.Текущий вес
 
             new Tag("ScalesK_IsBusy", "MixRubber17.PLC110-504.ScalesK_Status.Tare_IsBusy", "plc110.plc110_SCADA.Inp_01", 12),//!
             new Tag("ScalesK_WeightNotNormal", "MixRubber17.PLC110-504.ScalesK_Status.Weight_NotNormal", "plc110.plc110_SCADA.Inp_01", 14),//!
@@ -229,7 +230,7 @@ namespace MixRubber2
             #endregion
 
             #region MixRubber
-            // new Tag("DustCollectorOn", "MixRubber17.PLC110-504.MixRubber_Status.DustCollectorOn", "plc110.plc110_SCADA.Inp_02", 1),
+            new Tag("DustCollectorOn", "MixRubber17.PLC110-504.MixRubber_Status.DustCollectorOn", "plc110.plc110_SCADA.Inp_02", 1),//Пылесборка вкл.
             new Tag("MR_PressureOff", "MixRubber17.PLC110-504.MixRubber_Status.PressureOff", "plc110.plc110_SCADA.Inp_02", 9),//!
             new Tag("MR_UpperPressUp", "MixRubber17.PLC110-504.MixRubber_Status.UpperPressUp", "plc110.plc110_SCADA.Inp_02", 10),//!
             new Tag("MR_UpperPressDown", "MixRubber17.PLC110-504.MixRubber_Status.UpperPressDown", "plc110.plc110_SCADA.Inp_02", 11),//!
@@ -335,6 +336,7 @@ namespace MixRubber2
             #endregion
 
             #region Temperature water
+            /* Пока нет необходимости
             new Tag("WaterT1", "MixRubber17.PLC110-504.TableTWater.T1", "plc110.plc110_analog.Tvodi1"), // Температура воды.Т1- подача	
             new Tag("WaterT2", "MixRubber17.PLC110-504.TableTWater.T2", "plc110.plc110_analog.Tvodi2"), // Температура воды.Т2
             new Tag("WaterT3", "MixRubber17.PLC110-504.TableTWater.T3", "plc110.plc110_analog.Tvodi3"), //Температура воды.Т3	
@@ -342,6 +344,7 @@ namespace MixRubber2
             new Tag("WaterT5", "MixRubber17.PLC110-504.TableTWater.T5", "plc110.plc110_analog.Tvodi5"), //Температура воды.Т5						
             new Tag("WaterRotor1", "MixRubber17.PLC110-504.TableTWater.Rotor1", "plc110.plc110_analog.Tv_rot1_6_"), //Температура воды.ротор1			
             new Tag("WaterRotor2", "MixRubber17.PLC110-504.TableTWater.Rotor2", "plc110.plc110_analog.Tv_rot2_7_"), //Температура воды.ротор2
+            */
             #endregion
 
             #region String value
@@ -352,7 +355,7 @@ namespace MixRubber2
             #endregion
 
             #region Группы тегов в Lectus: Монитор,ARMO порт 505
-            new Tag("ShiftNumber", "MixRubber17.PPLC110-505.ShiftNum", "plc110_Monitor.R436_bykva"), //Номер выбранной смены A-1, Б-2, В-3, Г-4	
+            // new Tag("ShiftNumber", "MixRubber17.PPLC110-505.ShiftNum", "plc110_Monitor.R436_bykva"), //Номер выбранной смены A-1, Б-2, В-3, Г-4	//нет необходимости выводить на экран
             new Tag("ModeNumber", "MixRubber17.PLC110-505.NumReg", "plc110_Monitor.R438_nomRJ"),//Номер загруженного режима в ПЛК
             new Tag("FullTimeMix", "MixRubber17.PLC110-505.FullTimeMix", "plc110_Monitor.CV5_RJ"),//Время смешения полное от пуска РЖ
             new Tag("TimeMixUnderPress", "MixRubber17.PLC110-505.TimeMixUnderPress", "plc110_Monitor.CV6_d"),//Время смешения под давлением
@@ -373,7 +376,7 @@ namespace MixRubber2
 
             new Tag("MR_Power", "MixRubber17.PLC110-505.Power", "plc110_Monitor.Power"),//Ток текущий с датчика (мощщность)	 
             new Tag("MR_TSensorUp", "MixRubber17.PLC110-505.TSensor1_Up", "plc110_Monitor.Temp1"),//Температура смеси текущая с датчика 1 (верхняя термопара) 
-            new Tag("MR_TSensorDown", "MixRubber17.PLC110-505.TSensor2_Down", "plc110_Monitor.Temp2"),//Температура смеси текущая с датчика 2 (нижняя термопара) 
+            // new Tag("MR_TSensorDown", "MixRubber17.PLC110-505.TSensor2_Down", "plc110_Monitor.Temp2"),//Температура смеси текущая с датчика 2 (нижняя термопара)  //нет необходимости
             #endregion
         };
 

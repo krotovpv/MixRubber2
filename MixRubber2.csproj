@@ -60,6 +60,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Link.cs" />
+    <Compile Include="MixMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MixMode.Designer.cs">
+      <DependentUpon>MixMode.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mixture.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +83,7 @@
     <Compile Include="UCScales5.xaml.cs">
       <DependentUpon>UCScales5.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\ViewModelBase.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -108,6 +116,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="MixMode.resx">
+      <DependentUpon>MixMode.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -218,6 +229,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\SiloCloseGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\ScrewGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\SiloOilFull.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
