@@ -81,8 +81,8 @@
                     </Grid.RowDefinitions>
                     <Canvas Grid.Column="0" Grid.Row="0" Width="280" Height="749">
                         <Image Source="/img/mixerMain.png" Width="280"/>
-                        <Image Name="imgFloat" Source="/img/FloatUp.png" Width="65" Canvas.Left="92" Canvas.Top="0"/>
-                        <Image Name="imgFlapValve"  Source="/img/FlapValve.png" Width="123" Canvas.Left="30" Canvas.Top="605" RenderTransformOrigin="0.5,0.5">
+                        <Image Name="imgFloat" Source="/img/Float.png" Width="65" Canvas.Left="92" Canvas.Top="0"/>
+                        <Image Name="imgFlapValve"  Source="/img/FlapValve.png" Width="123" Canvas.Left="30" Canvas.Top="568" RenderTransformOrigin="0.5,0.5">
                             <Image.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
@@ -92,21 +92,21 @@
                                 </TransformGroup>
                             </Image.RenderTransform>
                         </Image>
-                        <Image Name="imgPin" Source="/MixRubber2;component/img/Pin.png" Width="54" Canvas.Left="145" Canvas.Top="663"/>
-                        <Image Name="imgLeftRotor" Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="52" Canvas.Top="579"/>
-                        <Image Name="imgRightRotor" Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="120" Canvas.Top="579" RenderTransformOrigin="0.5,0.5">
+                        <Image Name="imgPin" Source="/MixRubber2;component/img/Pin.png" Width="53" Canvas.Left="146" Canvas.Top="626"/>
+                        <Image Name="imgLeftRotor" Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="52" Canvas.Top="522"/>
+                        <Image Name="imgRightRotor" Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="120" Canvas.Top="522" RenderTransformOrigin="0.5,0.5">
                             <Image.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
                                     <SkewTransform/>
-                                    <RotateTransform Angle="42"/>
+                                    <RotateTransform Angle="45"/>
                                     <TranslateTransform/>
                                 </TransformGroup>
                             </Image.RenderTransform>
                         </Image>
-                        <Label Name="lblTemperatureUp" Canvas.Left="12" Canvas.Top="516" Content="0.0°C" FontSize="16" FontWeight="Bold" Foreground="White"/>
-                        <Label Name="lblPower" Canvas.Left="7" Canvas.Top="582" Content="0.0" FontSize="16" FontWeight="Bold" Foreground="White"/>
-                        <Label Name="lblMixIsGoing" Canvas.Left="190" Canvas.Top="682" Content="ЦИКЛ&#10;ИДЕТ" FontSize="12" FontWeight="Bold" Foreground="Red"/>
+                        <Label Name="lblTemperatureUp" Canvas.Left="7" Canvas.Top="482" Content="0.0°C" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                        <Label Name="lblPower" Canvas.Left="7" Canvas.Top="542" Content="0.0" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                        <Label Name="lblMixIsGoing" Canvas.Left="190" Canvas.Top="646" Content="ЦИКЛ&#10;ИДЕТ" FontSize="12" FontWeight="Bold" Foreground="Red"/>
                     </Canvas>
                 </Grid>
 

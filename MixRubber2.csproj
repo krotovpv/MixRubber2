@@ -184,13 +184,7 @@
     <Resource Include="img\Rotor.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\FloatUp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="img\FloatDown.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="img\FloatMiddle.png" />
+    <Resource Include="img\Float.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\FlapValve.png" />
@@ -235,6 +229,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="img\SiloOilFull.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\FloatRed.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

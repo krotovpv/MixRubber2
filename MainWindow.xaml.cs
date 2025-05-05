@@ -33,8 +33,8 @@ namespace MixRubber2
         BitmapImage BI_ConteinerOpen = new BitmapImage(new Uri("/img/SiloOpen.png", UriKind.Relative));
         BitmapImage BI_ConteinerClose = new BitmapImage(new Uri("/img/SiloClose.png", UriKind.Relative));
         BitmapImage BI_ConteinerCloseGreen = new BitmapImage(new Uri("/img/SiloCloseGreen.png", UriKind.Relative));
-        BitmapImage BI_FloatUp = new BitmapImage(new Uri("/img/FloatUp.png", UriKind.Relative));
-        BitmapImage BI_FloatDown = new BitmapImage(new Uri("/img/FloatDown.png", UriKind.Relative));
+        BitmapImage BI_Float = new BitmapImage(new Uri("/img/Float.png", UriKind.Relative));
+        BitmapImage BI_FloatRed = new BitmapImage(new Uri("/img/FloatRed.png", UriKind.Relative));
         BitmapImage BI_Transporter = new BitmapImage(new Uri("/img/Transporter.png", UriKind.Relative));
         BitmapImage BI_TransporterGreen = new BitmapImage(new Uri("/img/TransporterGreen.png", UriKind.Relative));
         BitmapImage BI_Transporter2 = new BitmapImage(new Uri("/img/Transporter2.png", UriKind.Relative));
@@ -1307,15 +1307,49 @@ namespace MixRubber2
             bool up = (bool)obj;
             bool down = (bool)OPCDA.AllTags.Where(x => x.Name == "MR_UpperPressDown").First().Value;
             if (up && !down)
-                imgFloat.Source = BI_FloatUp;
+            {
+                imgFloat.Source = BI_Float;
+                Canvas.SetLeft(imgFloat, 0);
+            }
+            else if (up && down)
+            {
+                imgFloat.Source = BI_FloatRed;
+            }
+            else if (!up && !down)
+            {
+                imgFloat.Source = BI_Float;
+                Canvas.SetLeft(imgFloat, 79);
+            }
+            else if (!up && down)
+            {
+                imgFloat.Source = BI_Float;
+                Canvas.SetLeft(imgFloat, 158);
+            }
         }
 
         private void MR_UpperPressDown_ValueChanged(object obj)
         {
             bool up = (bool)OPCDA.AllTags.Where(x => x.Name == "MR_UpperPressUp").First().Value;
             bool down = (bool)obj;
-            if (down && !up)
-                imgFloat.Source = BI_FloatDown;
+            if (!up && down)
+            {
+                imgFloat.Source = BI_Float;
+                Canvas.SetLeft(imgFloat, 158);
+            }
+            else if (up && down)
+            {
+                imgFloat.Source = BI_FloatRed;
+            }
+            else if (!up && !down)
+            {
+                imgFloat.Source = BI_Float;
+                Canvas.SetLeft(imgFloat, 79);
+            }
+            else if (up && !down)
+            {
+                imgFloat.Source = BI_Float;
+                Canvas.SetLeft(imgFloat, 0);
+            }
         }
 
         private void MR_FlapValveClosed_ValueChanged(object obj)
@@ -1329,9 +1363,9 @@ namespace MixRubber2
         private void MR_Pin_ValueChanged(object obj)
         {
             if ((bool)obj)
-                Canvas.SetLeft(imgPin, 145);
+                Canvas.SetLeft(imgPin, 146);
             else
-                Canvas.SetLeft(imgPin, 160);
+                Canvas.SetLeft(imgPin, 161);
         }
 
         private void MR_HighTemperature_ValueChanged(object obj)
