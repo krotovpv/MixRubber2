@@ -72,17 +72,17 @@
                 <Label Name="lblLastLoad" Background="LimeGreen" BorderThickness="1" BorderBrush="Black" Content="ПОСЛЕДНЯЯ ЗАПРАВКА ПО ПЛАНУ" Height="40" Canvas.Left="900" Canvas.Top="528" Width="200" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblTestMode" Background="Red" BorderThickness="1" BorderBrush="Black" Content="ТЕСТОВЫЙ РЕЖИМ" Height="40" Canvas.Left="900" Canvas.Top="574" Width="200" FontSize="11" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top"/>
 
-                <Grid Name="Mixer" Canvas.Top="210" Canvas.Left="130" Panel.ZIndex="1">
+                <Grid Name="Mixer" Canvas.Top="240" Canvas.Left="130" Panel.ZIndex="1">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Canvas Grid.Column="0" Grid.Row="0" Width="280" Height="720">
+                    <Canvas Grid.Column="0" Grid.Row="0" Width="280" Height="749">
                         <Image Source="/img/mixerMain.png" Width="280"/>
-                        <Image Name="imgFloat" Source="/img/FloatMiddle.png" Width="65" Canvas.Left="92"/>
-                        <Image Name="imgFlapValve"  Source="/img/FlapValve.png" Width="119" Canvas.Left="33" Canvas.Top="598" RenderTransformOrigin="0.5,0.5">
+                        <Image Name="imgFloat" Source="/img/FloatUp.png" Width="65" Canvas.Left="92" Canvas.Top="0"/>
+                        <Image Name="imgFlapValve"  Source="/img/FlapValve.png" Width="123" Canvas.Left="30" Canvas.Top="605" RenderTransformOrigin="0.5,0.5">
                             <Image.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
@@ -92,9 +92,9 @@
                                 </TransformGroup>
                             </Image.RenderTransform>
                         </Image>
-                        <Image Name="imgPin" Source="/MixRubber2;component/img/Pin.png" Width="58" Canvas.Left="156" Canvas.Top="655"/>
-                        <Image Name="imgLeftRotor" Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="52" Canvas.Top="550"/>
-                        <Image Name="imgRightRotor" Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="120" Canvas.Top="550" RenderTransformOrigin="0.5,0.5">
+                        <Image Name="imgPin" Source="/MixRubber2;component/img/Pin.png" Width="54" Canvas.Left="145" Canvas.Top="663"/>
+                        <Image Name="imgLeftRotor" Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="52" Canvas.Top="579"/>
+                        <Image Name="imgRightRotor" Source="/MixRubber2;component/img/Rotor.png" Width="80" Canvas.Left="120" Canvas.Top="579" RenderTransformOrigin="0.5,0.5">
                             <Image.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
@@ -104,9 +104,9 @@
                                 </TransformGroup>
                             </Image.RenderTransform>
                         </Image>
-                        <Label Name="lblTemperatureUp" Canvas.Left="12" Canvas.Top="510" Content="0.0°C" FontSize="16" FontWeight="Bold" Foreground="White"/>
-                        <Label Name="lblPower" Canvas.Left="7" Canvas.Top="574" Content="0.0" FontSize="16" FontWeight="Bold" Foreground="White"/>
-                        <Label Name="lblMixIsGoing" Canvas.Left="190" Canvas.Top="676" Content="ЦИКЛ&#10;ИДЕТ" FontSize="12" FontWeight="Bold" Foreground="Red"/>
+                        <Label Name="lblTemperatureUp" Canvas.Left="12" Canvas.Top="516" Content="0.0°C" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                        <Label Name="lblPower" Canvas.Left="7" Canvas.Top="582" Content="0.0" FontSize="16" FontWeight="Bold" Foreground="White"/>
+                        <Label Name="lblMixIsGoing" Canvas.Left="190" Canvas.Top="682" Content="ЦИКЛ&#10;ИДЕТ" FontSize="12" FontWeight="Bold" Foreground="Red"/>
                     </Canvas>
                 </Grid>
 

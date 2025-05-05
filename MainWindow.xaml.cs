@@ -231,6 +231,7 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "HighTemperature").First().ValueChanged += MR_HighTemperature_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "CriticalTemperature").First().ValueChanged += MR_CriticalTemperature_ValueChanged;
 
+            //Transports
             OPCDA.AllTags.Where(x => x.Name == "TK_Working").First().ValueChanged += TK_Working_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "TL1_Working").First().ValueChanged += TL1_Working_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "TL2_Working").First().ValueChanged += TL2_Working_ValueChanged;
@@ -1303,13 +1304,17 @@ namespace MixRubber2
 
         private void MR_UpperPressUp_ValueChanged(object obj)
         {
-            if ((bool)obj)
+            bool up = (bool)obj;
+            bool down = (bool)OPCDA.AllTags.Where(x => x.Name == "MR_UpperPressDown").First().Value;
+            if (up && !down)
                 imgFloat.Source = BI_FloatUp;
         }
 
         private void MR_UpperPressDown_ValueChanged(object obj)
         {
-            if ((bool)obj)
+            bool up = (bool)OPCDA.AllTags.Where(x => x.Name == "MR_UpperPressUp").First().Value;
+            bool down = (bool)obj;
+            if (down && !up)
                 imgFloat.Source = BI_FloatDown;
         }
 
@@ -1326,7 +1331,7 @@ namespace MixRubber2
             if ((bool)obj)
                 Canvas.SetLeft(imgPin, 145);
             else
-                Canvas.SetLeft(imgPin, 156);
+                Canvas.SetLeft(imgPin, 160);
         }
 
         private void MR_HighTemperature_ValueChanged(object obj)
@@ -1439,7 +1444,7 @@ namespace MixRubber2
         private void DustCollectorOn_ValueChanged(object obj)
         {
             if ((bool)obj)
-                lblDustCollector.Background = Brushes.LightGreen;
+                lblDustCollector.Background = Brushes.LimeGreen;
             else
                 lblDustCollector.Background = Brushes.Gray;
         }
@@ -1447,7 +1452,7 @@ namespace MixRubber2
         private void BagFilter_Blow_ValueChanged(object obj)
         {
             if ((bool)obj)
-                lblBagFilter.Background = Brushes.LightGreen;
+                lblBagFilter.Background = Brushes.LimeGreen;
             else
                 lblBagFilter.Background = Brushes.Gray;
         }
