@@ -50,7 +50,7 @@
                 <Label Background="Gray" Content="План:" Height="20" Canvas.Left="1158" Canvas.Top="2" Width="100" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Background="Gray" Content="№ навески:" Height="20" Canvas.Left="1158" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
                 <Label Name="lblPlanLoadings" Background="Gray" Content="-" Height="20" Canvas.Left="1260" Canvas.Top="2" Width="100" FontSize="11" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
-                <Label Background="Gray" Content="-" Height="20" Canvas.Left="1260" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
+                <Label Name="lblNumLoad" Background="Gray" Content="-" Height="20" Canvas.Left="1260" Canvas.Top="24" Width="100" FontSize="11" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="1" FontWeight="Bold" Foreground="White"/>
 
                 <Label Canvas.Top="2" Content="PC №: 17" Height="40" Canvas.Left="1640" Width="120" FontSize="24" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                 <Line X1="0" Y1="0" X2="1920" Y2="0" StrokeThickness="2" Stroke="Black" Height="2" Canvas.Top="46"/>

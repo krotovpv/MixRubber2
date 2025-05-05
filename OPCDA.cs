@@ -352,6 +352,7 @@ namespace MixRubber2
             new Tag("RecipeName", "MixRubber17.PLC110-504.StringValues.RecipeName", "plc110.plc110_string.Name_rez"), //Имя рецепта					
             new Tag("ModeName", "MixRubber17.PLC110-504.StringValues.RegimeName", "plc110.plc110_string.Name_rej"), //Режим.Имя		
             new Tag("ShiftName", "MixRubber17.PLC110-504.StringValues.ShiftName", "plc110.plc110_string.NameSmena"), //Смена.Имя
+            new Tag("NumberLoad", "MixRubber17.PLC110-504.StringValues.NomN_110", "plc110.plc110_RS17.NomN_110"), //Номер навески из ПЛК 110
             #endregion
 
             #region Группы тегов в Lectus: Монитор,ARMO порт 505
@@ -374,7 +375,7 @@ namespace MixRubber2
             new Tag("TUnloading_WithCorrect", "MixRubber17.PLC110-505.TUnloading_WithCorrect", "plc110_Monitor.R655_Tv_P"),//Температура выгрузки заданная минус поправка
             new Tag("TDanger_WithCorrect", "MixRubber17.PLC110-505.TDanger_WithCorrect", "plc110_Monitor.R656_Tk_P"),//Температура критическая  минус поправка
 
-            new Tag("MR_Power", "MixRubber17.PLC110-505.Power", "plc110_Monitor.Power"),//Ток текущий с датчика (мощщность)	 
+            new Tag("MR_Power", "MixRubber17.PLC110-505.Power", "plc110_Monitor.Power"),//Ток с датчика (мощщность)	 
             new Tag("MR_TSensorUp", "MixRubber17.PLC110-505.TSensor1_Up", "plc110_Monitor.Temp1"),//Температура смеси текущая с датчика 1 (верхняя термопара) 
             // new Tag("MR_TSensorDown", "MixRubber17.PLC110-505.TSensor2_Down", "plc110_Monitor.Temp2"),//Температура смеси текущая с датчика 2 (нижняя термопара)  //нет необходимости
             #endregion

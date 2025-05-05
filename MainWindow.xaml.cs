@@ -277,6 +277,7 @@ namespace MixRubber2
             OPCDA.AllTags.Where(x => x.Name == "RecipeName").First().ValueChanged += RecipeName_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ModeName").First().ValueChanged += ModeName_ValueChanged;
             OPCDA.AllTags.Where(x => x.Name == "ShiftName").First().ValueChanged += ShiftName_ValueChanged;
+            OPCDA.AllTags.Where(x => x.Name == "NumberLoad").First().ValueChanged += NumberLoad_ValueChanged;
 
             //Info
             OPCDA.AllTags.Where(x => x.Name == "ModeNumber").First().ValueChanged += ModeNumber_ValueChanged;
@@ -1626,6 +1627,11 @@ namespace MixRubber2
         private void ShiftName_ValueChanged(object obj)
         {
             lblShift.Content = obj.ToString();
+        }
+
+        private void NumberLoad_ValueChanged(object obj)
+        {
+            lblNumLoad.Content = obj.ToString();
         }
 
         #endregion
