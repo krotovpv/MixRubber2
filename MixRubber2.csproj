@@ -60,6 +60,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MixRubberDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MixRubberDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PurposeMixture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurposeMixture.Designer.cs">
+      <DependentUpon>PurposeMixture.cs</DependentUpon>
+    </Compile>
     <Compile Include="Link.cs" />
     <Compile Include="MixMode.cs">
       <SubType>Form</SubType>
@@ -126,9 +137,23 @@
     <EmbeddedResource Include="Mixture.resx">
       <DependentUpon>Mixture.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PurposeMixture.resx">
+      <DependentUpon>PurposeMixture.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TransmitRecipe.resx">
       <DependentUpon>TransmitRecipe.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="MixRubberDataSet.xsc">
+      <DependentUpon>MixRubberDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MixRubberDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MixRubberDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MixRubberDataSet.xss">
+      <DependentUpon>MixRubberDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

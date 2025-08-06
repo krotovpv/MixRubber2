@@ -79,7 +79,8 @@ namespace MixRubber2
             chart.Series["SecondSeries"].LegendText = "Температура";
             chart.Series["SecondSeries"].Points.Add(0);
 
-            Timer chartTimer = new Timer(Chart_TimerCallback, null, 1000, 1000);
+            //не получается обратится из другого потока
+            //Timer chartTimer = new Timer(Chart_TimerCallback, null, 1000, 1000);
 
             #region Add Tag
 
@@ -1707,7 +1708,8 @@ namespace MixRubber2
 
         private void btnFullScreen_Click(object sender, RoutedEventArgs e)
         {
-            cts.Cancel();
+            new PurposeMixture().Show();
+            //cts.Cancel();
             /*
             if (this.WindowStyle == WindowStyle.None)
             {
