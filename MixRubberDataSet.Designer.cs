@@ -10372,31 +10372,6 @@ SELECT shot_name_type, long_name_type FROM tOperationTypes WHERE (shot_name_type
             tableMapping.ColumnMappings.Add("id_purpose", "id_purpose");
             tableMapping.ColumnMappings.Add("name_purpose", "name_purpose");
             this._adapter.TableMappings.Add(tableMapping);
-            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[tPurposeMixture] WHERE (([id_purpose] = @Original_id_purpose) " +
-                "AND ([name_purpose] = @Original_name_purpose))";
-            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_purpose", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_purpose", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_name_purpose", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name_purpose", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[tPurposeMixture] ([name_purpose]) VALUES (@name_purpose);\r\nSEL" +
-                "ECT id_purpose, name_purpose FROM tPurposeMixture WHERE (id_purpose = SCOPE_IDEN" +
-                "TITY())";
-            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name_purpose", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name_purpose", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
-            this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[tPurposeMixture] SET [name_purpose] = @name_purpose WHERE (([id_pur" +
-                "pose] = @Original_id_purpose) AND ([name_purpose] = @Original_name_purpose));\r\nS" +
-                "ELECT id_purpose, name_purpose FROM tPurposeMixture WHERE (id_purpose = @id_purp" +
-                "ose)";
-            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name_purpose", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name_purpose", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_purpose", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_purpose", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_name_purpose", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "name_purpose", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_purpose", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_purpose", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10409,7 +10384,7 @@ SELECT shot_name_type, long_name_type FROM tOperationTypes WHERE (shot_name_type
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT id_purpose, name_purpose FROM dbo.tPurposeMixture";
@@ -10419,6 +10394,12 @@ SELECT shot_name_type, long_name_type FROM tOperationTypes WHERE (shot_name_type
             this._commandCollection[1].CommandText = "DELETE FROM tPurposeMixture\r\nWHERE        (id_purpose = @Original_id_purpose)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_purpose", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id_purpose", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "INSERT INTO tPurposeMixture\r\n                         (name_purpose)\r\nVALUES     " +
+                "   (@name_purpose)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@name_purpose", global::System.Data.SqlDbType.NVarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, "name_purpose", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10448,137 +10429,39 @@ SELECT shot_name_type, long_name_type FROM tOperationTypes WHERE (shot_name_type
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(MixRubberDataSet.tPurposeMixtureDataTable dataTable) {
-            return this.Adapter.Update(dataTable);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(MixRubberDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "tPurposeMixture");
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow dataRow) {
-            return this.Adapter.Update(new global::System.Data.DataRow[] {
-                        dataRow});
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(global::System.Data.DataRow[] dataRows) {
-            return this.Adapter.Update(dataRows);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_id_purpose, string Original_name_purpose) {
-            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_id_purpose));
-            if ((Original_name_purpose == null)) {
-                throw new global::System.ArgumentNullException("Original_name_purpose");
-            }
-            else {
-                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_name_purpose));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
-            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.DeleteCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.DeleteCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string name_purpose) {
-            if ((name_purpose == null)) {
-                throw new global::System.ArgumentNullException("name_purpose");
-            }
-            else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(name_purpose));
-            }
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
-            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.InsertCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.InsertCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string name_purpose, int Original_id_purpose, string Original_name_purpose, int id_purpose) {
-            if ((name_purpose == null)) {
-                throw new global::System.ArgumentNullException("name_purpose");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(name_purpose));
-            }
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(Original_id_purpose));
-            if ((Original_name_purpose == null)) {
-                throw new global::System.ArgumentNullException("Original_name_purpose");
-            }
-            else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Original_name_purpose));
-            }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(id_purpose));
-            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
-            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                this.Adapter.UpdateCommand.Connection.Open();
-            }
-            try {
-                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
-                return returnValue;
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    this.Adapter.UpdateCommand.Connection.Close();
-                }
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string name_purpose, int Original_id_purpose, string Original_name_purpose) {
-            return this.Update(name_purpose, Original_id_purpose, Original_name_purpose, Original_id_purpose);
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, false)]
-        public virtual int DeleteQuery(int Original_id_purpose) {
+        public virtual int Delete1(int Original_id_purpose) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
             command.Parameters[0].Value = ((int)(Original_id_purpose));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
+        public virtual int Insert1(string name_purpose) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
+            if ((name_purpose == null)) {
+                throw new global::System.ArgumentNullException("name_purpose");
+            }
+            else {
+                command.Parameters[0].Value = ((string)(name_purpose));
+            }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -12596,8 +12479,6 @@ SELECT id_user, FIO, password, access_level FROM tUsers WHERE (id_user = @id_use
         
         private tOperationTypesTableAdapter _tOperationTypesTableAdapter;
         
-        private tPurposeMixtureTableAdapter _tPurposeMixtureTableAdapter;
-        
         private tScalesTableAdapter _tScalesTableAdapter;
         
         private tScalesOperationTableAdapter _tScalesOperationTableAdapter;
@@ -12742,20 +12623,6 @@ SELECT id_user, FIO, password, access_level FROM tUsers WHERE (id_user = @id_use
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public tPurposeMixtureTableAdapter tPurposeMixtureTableAdapter {
-            get {
-                return this._tPurposeMixtureTableAdapter;
-            }
-            set {
-                this._tPurposeMixtureTableAdapter = value;
-            }
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
-            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
-            "a", "System.Drawing.Design.UITypeEditor")]
         public tScalesTableAdapter tScalesTableAdapter {
             get {
                 return this._tScalesTableAdapter;
@@ -12886,10 +12753,6 @@ SELECT id_user, FIO, password, access_level FROM tUsers WHERE (id_user = @id_use
                             && (this._tOperationTypesTableAdapter.Connection != null))) {
                     return this._tOperationTypesTableAdapter.Connection;
                 }
-                if (((this._tPurposeMixtureTableAdapter != null) 
-                            && (this._tPurposeMixtureTableAdapter.Connection != null))) {
-                    return this._tPurposeMixtureTableAdapter.Connection;
-                }
                 if (((this._tScalesTableAdapter != null) 
                             && (this._tScalesTableAdapter.Connection != null))) {
                     return this._tScalesTableAdapter.Connection;
@@ -12951,9 +12814,6 @@ SELECT id_user, FIO, password, access_level FROM tUsers WHERE (id_user = @id_use
                 if ((this._tOperationTypesTableAdapter != null)) {
                     count = (count + 1);
                 }
-                if ((this._tPurposeMixtureTableAdapter != null)) {
-                    count = (count + 1);
-                }
                 if ((this._tScalesTableAdapter != null)) {
                     count = (count + 1);
                 }
@@ -13007,15 +12867,6 @@ SELECT id_user, FIO, password, access_level FROM tUsers WHERE (id_user = @id_use
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._tMixModesTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._tPurposeMixtureTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.tPurposeMixture.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._tPurposeMixtureTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -13149,14 +13000,6 @@ SELECT id_user, FIO, password, access_level FROM tUsers WHERE (id_user = @id_use
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._tMixModesTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._tPurposeMixtureTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.tPurposeMixture.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._tPurposeMixtureTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -13346,14 +13189,6 @@ SELECT id_user, FIO, password, access_level FROM tUsers WHERE (id_user = @id_use
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._tPurposeMixtureTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.tPurposeMixture.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._tPurposeMixtureTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._tMixModesTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.tMixModes.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -13454,11 +13289,6 @@ SELECT id_user, FIO, password, access_level FROM tUsers WHERE (id_user = @id_use
             }
             if (((this._tOperationTypesTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._tOperationTypesTableAdapter.Connection) == false))) {
-                throw new global::System.ArgumentException("Все адаптеры таблицы, управляемые диспетчером адаптера таблицы TableAdapterManage" +
-                        "r, должны использовать одинаковую строку подключения.");
-            }
-            if (((this._tPurposeMixtureTableAdapter != null) 
-                        && (this.MatchTableAdapterConnection(this._tPurposeMixtureTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("Все адаптеры таблицы, управляемые диспетчером адаптера таблицы TableAdapterManage" +
                         "r, должны использовать одинаковую строку подключения.");
             }
@@ -13594,15 +13424,6 @@ SELECT id_user, FIO, password, access_level FROM tUsers WHERE (id_user = @id_use
                     if (this._tOperationTypesTableAdapter.Adapter.AcceptChangesDuringUpdate) {
                         this._tOperationTypesTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
                         adaptersWithAcceptChangesDuringUpdate.Add(this._tOperationTypesTableAdapter.Adapter);
-                    }
-                }
-                if ((this._tPurposeMixtureTableAdapter != null)) {
-                    revertConnections.Add(this._tPurposeMixtureTableAdapter, this._tPurposeMixtureTableAdapter.Connection);
-                    this._tPurposeMixtureTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._tPurposeMixtureTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._tPurposeMixtureTableAdapter.Adapter.AcceptChangesDuringUpdate) {
-                        this._tPurposeMixtureTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._tPurposeMixtureTableAdapter.Adapter);
                     }
                 }
                 if ((this._tScalesTableAdapter != null)) {
@@ -13748,10 +13569,6 @@ SELECT id_user, FIO, password, access_level FROM tUsers WHERE (id_user = @id_use
                 if ((this._tOperationTypesTableAdapter != null)) {
                     this._tOperationTypesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tOperationTypesTableAdapter]));
                     this._tOperationTypesTableAdapter.Transaction = null;
-                }
-                if ((this._tPurposeMixtureTableAdapter != null)) {
-                    this._tPurposeMixtureTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tPurposeMixtureTableAdapter]));
-                    this._tPurposeMixtureTableAdapter.Transaction = null;
                 }
                 if ((this._tScalesTableAdapter != null)) {
                     this._tScalesTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tScalesTableAdapter]));
