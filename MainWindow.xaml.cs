@@ -1708,8 +1708,8 @@ namespace MixRubber2
 
         private void btnFullScreen_Click(object sender, RoutedEventArgs e)
         {
-            new PurposeMixture().ShowDialog();
-
+            //new PurposeMixture().ShowDialog();
+            new MixMode2().ShowDialog();
 
             //cts.Cancel();
             /*
