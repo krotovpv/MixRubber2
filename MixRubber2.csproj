@@ -91,6 +91,12 @@
     <Compile Include="TransmitRecipe.Designer.cs">
       <DependentUpon>TransmitRecipe.cs</DependentUpon>
     </Compile>
+    <Compile Include="TypeOfScales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TypeOfScales.Designer.cs">
+      <DependentUpon>TypeOfScales.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCScales5.xaml.cs">
       <DependentUpon>UCScales5.xaml</DependentUpon>
     </Compile>
@@ -142,6 +148,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TransmitRecipe.resx">
       <DependentUpon>TransmitRecipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TypeOfScales.resx">
+      <DependentUpon>TypeOfScales.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="MixRubberDataSet.xsc">
       <DependentUpon>MixRubberDataSet.xsd</DependentUpon>

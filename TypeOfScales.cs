@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace MixRubber2
 {
-    public partial class MixMode : Form
+    public partial class TypeOfScales : Form
     {
-        public MixMode()
+        public TypeOfScales()
         {
             InitializeComponent();
-        }
-
-        private void MixMode_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
