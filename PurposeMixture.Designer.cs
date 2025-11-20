@@ -34,7 +34,6 @@
             this.namepurposeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tPurposeMixtureBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mixRubberDataSet = new MixRubber2.MixRubberDataSet();
-            this.tPurposeMixtureTableAdapter = new MixRubber2.MixRubberDataSetTableAdapters.tPurposeMixtureTableAdapter();
             this.txtPurposeMixtureName = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -87,10 +86,6 @@
             // 
             this.mixRubberDataSet.DataSetName = "MixRubberDataSet";
             this.mixRubberDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tPurposeMixtureTableAdapter
-            // 
-            this.tPurposeMixtureTableAdapter.ClearBeforeFill = true;
             // 
             // txtPurposeMixtureName
             // 
@@ -152,7 +147,6 @@
         private System.Windows.Forms.DataGridView dgvPorposeMixture;
         private MixRubberDataSet mixRubberDataSet;
         private System.Windows.Forms.BindingSource tPurposeMixtureBindingSource;
-        private MixRubberDataSetTableAdapters.tPurposeMixtureTableAdapter tPurposeMixtureTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idpurposeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn namepurposeDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox txtPurposeMixtureName;

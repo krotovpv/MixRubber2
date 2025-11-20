@@ -1,5 +1,4 @@
-﻿using MixRubber2.MixRubberDataSetTableAdapters;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,24 +20,19 @@ namespace MixRubber2
 
         private void PurposeMixture_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "mixRubberDataSet.tPurposeMixture". При необходимости она может быть перемещена или удалена.
-            this.tPurposeMixtureTableAdapter.Fill(this.mixRubberDataSet.tPurposeMixture);
 
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            this.tPurposeMixtureTableAdapter.Insert1(txtPurposeMixtureName.Text.Trim());
-            txtPurposeMixtureName.Clear();
-            this.tPurposeMixtureTableAdapter.Fill(this.mixRubberDataSet.tPurposeMixture);
+
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Удалить элемент?", "Удаление", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                this.tPurposeMixtureTableAdapter.Delete1(Convert.ToInt32(dgvPorposeMixture.Rows[dgvPorposeMixture.SelectedCells[0].RowIndex].Cells[0].Value));
-                this.tPurposeMixtureTableAdapter.Fill(this.mixRubberDataSet.tPurposeMixture);
+
             }
         }
 
@@ -46,10 +40,10 @@ namespace MixRubber2
         {
             if (e.KeyChar == (char)Keys.Enter)
             {
-                this.tPurposeMixtureTableAdapter.Insert1(txtPurposeMixtureName.Text.Trim());
-                txtPurposeMixtureName.Clear();
-                this.tPurposeMixtureTableAdapter.Fill(this.mixRubberDataSet.tPurposeMixture);
-                e.Handled = true;
+                //this.tPurposeMixtureTableAdapter.Insert1(txtPurposeMixtureName.Text.Trim());
+                //txtPurposeMixtureName.Clear();
+                //this.tPurposeMixtureTableAdapter.Fill(this.mixRubberDataSet.tPurposeMixture);
+                //e.Handled = true;
             }
         }
     }
