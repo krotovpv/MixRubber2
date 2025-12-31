@@ -33,12 +33,12 @@
             this.button4 = new System.Windows.Forms.Button();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbMixMode = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbMixtureRecipe = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.cbPurposeMixture = new System.Windows.Forms.ComboBox();
+            this.listBoxMessage = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // button6
@@ -91,17 +91,17 @@
             this.label3.Text = "Режим смешения";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox3
+            // cbMixMode
             // 
-            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cbMixMode.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(266, 46);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(318, 28);
-            this.comboBox3.TabIndex = 20;
+            this.cbMixMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMixMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.cbMixMode.FormattingEnabled = true;
+            this.cbMixMode.Location = new System.Drawing.Point(266, 46);
+            this.cbMixMode.Name = "cbMixMode";
+            this.cbMixMode.Size = new System.Drawing.Size(318, 28);
+            this.cbMixMode.TabIndex = 20;
             // 
             // label2
             // 
@@ -114,17 +114,17 @@
             this.label2.Text = "Шифр смеси";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox2
+            // cbMixtureRecipe
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cbMixtureRecipe.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(266, 80);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(318, 28);
-            this.comboBox2.TabIndex = 16;
+            this.cbMixtureRecipe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMixtureRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.cbMixtureRecipe.FormattingEnabled = true;
+            this.cbMixtureRecipe.Location = new System.Drawing.Point(266, 80);
+            this.cbMixtureRecipe.Name = "cbMixtureRecipe";
+            this.cbMixtureRecipe.Size = new System.Drawing.Size(318, 28);
+            this.cbMixtureRecipe.TabIndex = 16;
             // 
             // label1
             // 
@@ -137,44 +137,45 @@
             this.label1.Text = "Назначение смеси";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // comboBox4
+            // cbPurposeMixture
             // 
-            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.cbPurposeMixture.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(266, 12);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(318, 28);
-            this.comboBox4.TabIndex = 12;
+            this.cbPurposeMixture.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPurposeMixture.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.cbPurposeMixture.FormattingEnabled = true;
+            this.cbPurposeMixture.Location = new System.Drawing.Point(266, 12);
+            this.cbPurposeMixture.Name = "cbPurposeMixture";
+            this.cbPurposeMixture.Size = new System.Drawing.Size(318, 28);
+            this.cbPurposeMixture.TabIndex = 12;
             // 
-            // listBox1
+            // listBoxMessage
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 215);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(572, 485);
-            this.listBox1.TabIndex = 22;
+            this.listBoxMessage.FormattingEnabled = true;
+            this.listBoxMessage.Location = new System.Drawing.Point(12, 215);
+            this.listBoxMessage.Name = "listBoxMessage";
+            this.listBoxMessage.Size = new System.Drawing.Size(572, 485);
+            this.listBoxMessage.TabIndex = 22;
             // 
             // TransmitRecipe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(596, 708);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listBoxMessage);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cbMixMode);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cbMixtureRecipe);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.cbPurposeMixture);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.progressBar1);
             this.Name = "TransmitRecipe";
             this.Text = "Загрузка рецепта";
+            this.Load += new System.EventHandler(this.TransmitRecipe_Load);
             this.ResumeLayout(false);
 
         }
@@ -186,11 +187,11 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbMixMode;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbMixtureRecipe;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ComboBox cbPurposeMixture;
+        private System.Windows.Forms.ListBox listBoxMessage;
     }
 }

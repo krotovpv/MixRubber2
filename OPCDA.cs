@@ -10,7 +10,7 @@ namespace MixRubber2
 {
     public static class OPCDA
     {
-        static bool IsAlternativeOPC = true;
+        static bool IsAlternativeOPC = false;
         static string ServerName = "Owen.OPCNet.DA.1";
         static string AlernativeServerName = "Lectus.OPC.1";
         static OPCServer _OPCServer = new OPCServer();

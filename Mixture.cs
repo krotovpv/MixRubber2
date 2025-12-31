@@ -19,15 +19,15 @@ namespace MixRubber2
 
         private void Mixture_Load(object sender, EventArgs e)
         {
-            dataGridView2.Rows.Add("sdf1");
-            dataGridView2.Rows.Add("sdf2");
-            dataGridView2.Rows.Add("sdf3");
-            dataGridView2.Rows.Add("sdf4");
-            dataGridView2.Rows.Add("sdf5");
-            dataGridView2.Rows.Add("sdf6");
-            dataGridView2.Rows.Add("sdf7");
-            dataGridView2.Rows.Add("sdf8");
-            dataGridView2.Rows.Add("sdf9");
+            cbPurposeMixture.DisplayMember = "name_purpose";
+            cbPurposeMixture.ValueMember = "id_purpose";
+            cbPurposeMixture.DataSource = DBHelper.GetData("SELECT [id_purpose],[name_purpose] FROM [dbo].[tPurposeMixture]");
+
+            cbMixMode.DisplayMember = "mode_name";
+            cbMixMode.ValueMember = "id_mode";
+            cbMixMode.DataSource = DBHelper.GetData("SELECT [id_mode],[mode_name] FROM [dbo].[tMixModes]");
+
+            //listView2.Be
         }
     }
 }
