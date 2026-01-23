@@ -1709,9 +1709,7 @@ namespace MixRubber2
         private void btnFullScreen_Click(object sender, RoutedEventArgs e)
         {
             //new PurposeMixture().ShowDialog();
-            //new MixMode2().ShowDialog();
-            //new TransmitRecipe().ShowDialog();
-            new Mixture().ShowDialog();
+            
 
             //cts.Cancel();
             /*
@@ -1732,6 +1730,26 @@ namespace MixRubber2
             }
             //new Mixture().Show();
             */
+        }
+
+        private void btnModes_Click(object sender, RoutedEventArgs e)
+        {
+            new MixMode2().ShowDialog();
+        }
+
+        private void btnConnect_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void btnMix_Click(object sender, RoutedEventArgs e)
+        {
+            new Mixture().ShowDialog();
+        }
+
+        private void btnUpload_Click(object sender, RoutedEventArgs e)
+        {
+            new TransmitRecipe().ShowDialog();
         }
 
         private void btnExit_Click(object sender, RoutedEventArgs e)

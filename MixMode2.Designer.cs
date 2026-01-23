@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label133 = new System.Windows.Forms.Label();
             this.txtParam5 = new System.Windows.Forms.TextBox();
@@ -55,10 +50,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dgvRecipe = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.dgvMixMode = new System.Windows.Forms.DataGridView();
             this.ColumnIdMixMode = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -359,10 +350,7 @@
             this.btnSaveMixMode = new System.Windows.Forms.Button();
             this.mixRubberDataSet = new MixRubber2.MixRubberDataSet();
             this.tOperationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRecipe)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMixMode)).BeginInit();
             this.tabControlOptionsTimer.SuspendLayout();
             this.tabPageRG.SuspendLayout();
@@ -371,52 +359,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.tOperationsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tabControl1.Location = new System.Drawing.Point(403, 6);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(388, 218);
-            this.tabControl1.TabIndex = 29;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.txtName);
-            this.tabPage1.Controls.Add(this.label133);
-            this.tabPage1.Controls.Add(this.txtParam5);
-            this.tabPage1.Controls.Add(this.txtParam4);
-            this.tabPage1.Controls.Add(this.txtParam3);
-            this.tabPage1.Controls.Add(this.txtParam2);
-            this.tabPage1.Controls.Add(this.txtParam1);
-            this.tabPage1.Controls.Add(this.txtToleranceTemperature);
-            this.tabPage1.Controls.Add(this.txtCriticalTemperature);
-            this.tabPage1.Controls.Add(this.txtUnloadTemperature);
-            this.tabPage1.Controls.Add(this.label14);
-            this.tabPage1.Controls.Add(this.label13);
-            this.tabPage1.Controls.Add(this.label12);
-            this.tabPage1.Controls.Add(this.label11);
-            this.tabPage1.Controls.Add(this.label10);
-            this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Location = new System.Drawing.Point(4, 29);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(380, 185);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Параметры режима";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
             // txtName
             // 
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtName.Location = new System.Drawing.Point(104, 5);
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtName.Location = new System.Drawing.Point(501, 37);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(270, 26);
             this.txtName.TabIndex = 55;
@@ -425,7 +372,7 @@
             // 
             this.label133.BackColor = System.Drawing.Color.LightGray;
             this.label133.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label133.Location = new System.Drawing.Point(6, 5);
+            this.label133.Location = new System.Drawing.Point(403, 37);
             this.label133.Name = "label133";
             this.label133.Size = new System.Drawing.Size(92, 26);
             this.label133.TabIndex = 54;
@@ -435,7 +382,8 @@
             // txtParam5
             // 
             this.txtParam5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtParam5.Location = new System.Drawing.Point(302, 153);
+            this.txtParam5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtParam5.Location = new System.Drawing.Point(699, 180);
             this.txtParam5.Name = "txtParam5";
             this.txtParam5.Size = new System.Drawing.Size(72, 26);
             this.txtParam5.TabIndex = 53;
@@ -444,7 +392,8 @@
             // txtParam4
             // 
             this.txtParam4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtParam4.Location = new System.Drawing.Point(228, 153);
+            this.txtParam4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtParam4.Location = new System.Drawing.Point(625, 180);
             this.txtParam4.Name = "txtParam4";
             this.txtParam4.Size = new System.Drawing.Size(72, 26);
             this.txtParam4.TabIndex = 52;
@@ -453,7 +402,8 @@
             // txtParam3
             // 
             this.txtParam3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtParam3.Location = new System.Drawing.Point(154, 153);
+            this.txtParam3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtParam3.Location = new System.Drawing.Point(551, 180);
             this.txtParam3.Name = "txtParam3";
             this.txtParam3.Size = new System.Drawing.Size(72, 26);
             this.txtParam3.TabIndex = 51;
@@ -462,7 +412,8 @@
             // txtParam2
             // 
             this.txtParam2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtParam2.Location = new System.Drawing.Point(80, 153);
+            this.txtParam2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtParam2.Location = new System.Drawing.Point(477, 180);
             this.txtParam2.Name = "txtParam2";
             this.txtParam2.Size = new System.Drawing.Size(72, 26);
             this.txtParam2.TabIndex = 50;
@@ -471,7 +422,8 @@
             // txtParam1
             // 
             this.txtParam1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtParam1.Location = new System.Drawing.Point(6, 153);
+            this.txtParam1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtParam1.Location = new System.Drawing.Point(403, 180);
             this.txtParam1.Name = "txtParam1";
             this.txtParam1.Size = new System.Drawing.Size(72, 26);
             this.txtParam1.TabIndex = 49;
@@ -480,7 +432,8 @@
             // txtToleranceTemperature
             // 
             this.txtToleranceTemperature.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtToleranceTemperature.Location = new System.Drawing.Point(294, 94);
+            this.txtToleranceTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtToleranceTemperature.Location = new System.Drawing.Point(691, 121);
             this.txtToleranceTemperature.Name = "txtToleranceTemperature";
             this.txtToleranceTemperature.Size = new System.Drawing.Size(45, 26);
             this.txtToleranceTemperature.TabIndex = 48;
@@ -489,7 +442,8 @@
             // txtCriticalTemperature
             // 
             this.txtCriticalTemperature.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtCriticalTemperature.Location = new System.Drawing.Point(294, 66);
+            this.txtCriticalTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtCriticalTemperature.Location = new System.Drawing.Point(691, 93);
             this.txtCriticalTemperature.Name = "txtCriticalTemperature";
             this.txtCriticalTemperature.Size = new System.Drawing.Size(45, 26);
             this.txtCriticalTemperature.TabIndex = 47;
@@ -498,7 +452,8 @@
             // txtUnloadTemperature
             // 
             this.txtUnloadTemperature.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUnloadTemperature.Location = new System.Drawing.Point(294, 38);
+            this.txtUnloadTemperature.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtUnloadTemperature.Location = new System.Drawing.Point(691, 65);
             this.txtUnloadTemperature.Name = "txtUnloadTemperature";
             this.txtUnloadTemperature.Size = new System.Drawing.Size(45, 26);
             this.txtUnloadTemperature.TabIndex = 46;
@@ -508,7 +463,7 @@
             // 
             this.label14.BackColor = System.Drawing.Color.LightGray;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.Location = new System.Drawing.Point(302, 122);
+            this.label14.Location = new System.Drawing.Point(699, 149);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(72, 28);
             this.label14.TabIndex = 45;
@@ -519,7 +474,7 @@
             // 
             this.label13.BackColor = System.Drawing.Color.LightGray;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(228, 122);
+            this.label13.Location = new System.Drawing.Point(625, 149);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(72, 28);
             this.label13.TabIndex = 44;
@@ -530,7 +485,7 @@
             // 
             this.label12.BackColor = System.Drawing.Color.LightGray;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(154, 122);
+            this.label12.Location = new System.Drawing.Point(551, 149);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(72, 28);
             this.label12.TabIndex = 43;
@@ -541,7 +496,7 @@
             // 
             this.label11.BackColor = System.Drawing.Color.LightGray;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(80, 122);
+            this.label11.Location = new System.Drawing.Point(477, 149);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(72, 28);
             this.label11.TabIndex = 42;
@@ -552,7 +507,7 @@
             // 
             this.label10.BackColor = System.Drawing.Color.LightGray;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(6, 122);
+            this.label10.Location = new System.Drawing.Point(403, 149);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(72, 28);
             this.label10.TabIndex = 41;
@@ -563,7 +518,7 @@
             // 
             this.label9.BackColor = System.Drawing.Color.LightGray;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(345, 94);
+            this.label9.Location = new System.Drawing.Point(742, 121);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(29, 26);
             this.label9.TabIndex = 35;
@@ -574,7 +529,7 @@
             // 
             this.label8.BackColor = System.Drawing.Color.LightGray;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(6, 94);
+            this.label8.Location = new System.Drawing.Point(403, 121);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(282, 26);
             this.label8.TabIndex = 33;
@@ -585,7 +540,7 @@
             // 
             this.label7.BackColor = System.Drawing.Color.LightGray;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(345, 66);
+            this.label7.Location = new System.Drawing.Point(742, 93);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(29, 26);
             this.label7.TabIndex = 32;
@@ -596,7 +551,7 @@
             // 
             this.label6.BackColor = System.Drawing.Color.LightGray;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(6, 66);
+            this.label6.Location = new System.Drawing.Point(403, 93);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(282, 26);
             this.label6.TabIndex = 30;
@@ -607,7 +562,7 @@
             // 
             this.label5.BackColor = System.Drawing.Color.LightGray;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(345, 38);
+            this.label5.Location = new System.Drawing.Point(742, 65);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(29, 26);
             this.label5.TabIndex = 29;
@@ -618,76 +573,12 @@
             // 
             this.label4.BackColor = System.Drawing.Color.LightGray;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(6, 38);
+            this.label4.Location = new System.Drawing.Point(403, 65);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(282, 26);
             this.label4.TabIndex = 27;
             this.label4.Text = "Температура выгрузки смеси";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.dgvRecipe);
-            this.tabPage2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(380, 185);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Рецепты";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // dgvRecipe
-            // 
-            this.dgvRecipe.AllowUserToAddRows = false;
-            this.dgvRecipe.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRecipe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.dgvRecipe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRecipe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column5});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvRecipe.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvRecipe.Location = new System.Drawing.Point(3, 3);
-            this.dgvRecipe.Name = "dgvRecipe";
-            this.dgvRecipe.ReadOnly = true;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRecipe.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.dgvRecipe.Size = new System.Drawing.Size(374, 179);
-            this.dgvRecipe.TabIndex = 0;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Назначение";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 160;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Шифр смеси";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 160;
             // 
             // label3
             // 
@@ -3890,26 +3781,53 @@
             this.tOperationsBindingSource.DataMember = "tOperations";
             this.tOperationsBindingSource.DataSource = this.mixRubberDataSet;
             // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.LightGray;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(403, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(368, 28);
+            this.label1.TabIndex = 56;
+            this.label1.Text = "Параметры смешения";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MixMode2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1497, 1404);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.btnSaveMixMode);
+            this.Controls.Add(this.label133);
+            this.Controls.Add(this.txtParam5);
             this.Controls.Add(this.btnDeleteMixMode);
+            this.Controls.Add(this.txtParam4);
             this.Controls.Add(this.btnCreateMixMode);
+            this.Controls.Add(this.txtParam3);
             this.Controls.Add(this.tabControlOptionsTimer);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.txtParam2);
+            this.Controls.Add(this.txtParam1);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtToleranceTemperature);
             this.Controls.Add(this.dgvMixMode);
+            this.Controls.Add(this.txtCriticalTemperature);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtUnloadTemperature);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label10);
             this.Name = "MixMode2";
-            this.Text = "MixMode2";
+            this.Text = "Режим смешения";
             this.Load += new System.EventHandler(this.MixMode2_Load);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRecipe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMixMode)).EndInit();
             this.tabControlOptionsTimer.ResumeLayout(false);
             this.tabPageRG.ResumeLayout(false);
@@ -3919,13 +3837,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.mixRubberDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tOperationsBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
@@ -3937,10 +3853,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.DataGridView dgvRecipe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgvMixMode;
         private System.Windows.Forms.TabControl tabControlOptionsTimer;
@@ -4251,5 +4163,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMixModeName;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label133;
+        private System.Windows.Forms.Label label1;
     }
 }

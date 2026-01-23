@@ -496,7 +496,18 @@
                     </Canvas>
                 </Grid>
 
-                <Button Click="btnFullScreen_Click" Content="Button" Canvas.Left="1787" Canvas.Top="4" Height="34" Width="132" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                <Button Click="btnConnect_Click"  Canvas.Left="1760" Canvas.Top="4" Height="38" Width="38" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Image Source="/img/connected.png"/>
+                </Button>
+                <Button Click="btnModes_Click"  Canvas.Left="1800" Canvas.Top="4" Height="38" Width="38" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Image Source="/img/mixing.png"/>
+                </Button>
+                <Button Click="btnMix_Click" Canvas.Left="1840" Canvas.Top="4" Height="38" Width="38" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Image Source="/img/mixture.png"/>
+                </Button>
+                <Button Click="btnUpload_Click" Canvas.Left="1880" Canvas.Top="4" Height="38" Width="38" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Image Source="/img/upload.png"/>
+                </Button>
 
                 <Grid Name="Temperature" Canvas.Left="10" Canvas.Top="449" HorizontalAlignment="Center" VerticalAlignment="Top">
                     <Grid.ColumnDefinitions>

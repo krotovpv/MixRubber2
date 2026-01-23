@@ -270,5 +270,23 @@
   <ItemGroup>
     <Resource Include="img\FloatRed.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\mixture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\mixing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\disconnected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\upload.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
