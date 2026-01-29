@@ -34,7 +34,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cbMixMode = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
@@ -74,16 +73,7 @@
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
             this.comboBox13 = new System.Windows.Forms.ComboBox();
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.textBox26 = new System.Windows.Forms.TextBox();
@@ -109,10 +99,6 @@
             this.textBox40 = new System.Windows.Forms.TextBox();
             this.comboBox20 = new System.Windows.Forms.ComboBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
             this.comboBox11 = new System.Windows.Forms.ComboBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
@@ -138,9 +124,6 @@
             this.textBox52 = new System.Windows.Forms.TextBox();
             this.comboBox26 = new System.Windows.Forms.ComboBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
             this.comboBox29 = new System.Windows.Forms.ComboBox();
             this.textBox57 = new System.Windows.Forms.TextBox();
             this.textBox58 = new System.Windows.Forms.TextBox();
@@ -160,9 +143,6 @@
             this.textBox68 = new System.Windows.Forms.TextBox();
             this.comboBox35 = new System.Windows.Forms.ComboBox();
             this.label38 = new System.Windows.Forms.Label();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
             this.comboBox27 = new System.Windows.Forms.ComboBox();
             this.textBox53 = new System.Windows.Forms.TextBox();
             this.textBox54 = new System.Windows.Forms.TextBox();
@@ -182,9 +162,6 @@
             this.textBox76 = new System.Windows.Forms.TextBox();
             this.comboBox39 = new System.Windows.Forms.ComboBox();
             this.label46 = new System.Windows.Forms.Label();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
             this.comboBox40 = new System.Windows.Forms.ComboBox();
             this.textBox77 = new System.Windows.Forms.TextBox();
             this.textBox78 = new System.Windows.Forms.TextBox();
@@ -204,9 +181,6 @@
             this.textBox88 = new System.Windows.Forms.TextBox();
             this.comboBox45 = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
             this.comboBox46 = new System.Windows.Forms.ComboBox();
             this.textBox89 = new System.Windows.Forms.TextBox();
             this.textBox90 = new System.Windows.Forms.TextBox();
@@ -226,6 +200,33 @@
             this.textBox100 = new System.Windows.Forms.TextBox();
             this.comboBox51 = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.button26 = new System.Windows.Forms.Button();
+            this.button27 = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button23 = new System.Windows.Forms.Button();
+            this.button24 = new System.Windows.Forms.Button();
+            this.button25 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -286,24 +287,12 @@
             // 
             this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(12, 1013);
+            this.button1.Location = new System.Drawing.Point(12, 1072);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(167, 28);
             this.button1.TabIndex = 6;
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button2.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(185, 1013);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 28);
-            this.button2.TabIndex = 7;
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // dataGridView2
             // 
@@ -319,7 +308,7 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowHeadersWidth = 21;
-            this.dataGridView2.Size = new System.Drawing.Size(248, 827);
+            this.dataGridView2.Size = new System.Drawing.Size(248, 886);
             this.dataGridView2.TabIndex = 21;
             // 
             // Column5
@@ -778,18 +767,6 @@
             this.comboBox10.Size = new System.Drawing.Size(57, 26);
             this.comboBox10.TabIndex = 56;
             // 
-            // button4
-            // 
-            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(999, 58);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(26, 26);
-            this.button4.TabIndex = 62;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
             // label13
             // 
             this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -800,102 +777,6 @@
             this.label13.Size = new System.Drawing.Size(26, 15);
             this.label13.TabIndex = 63;
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button5
-            // 
-            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button5.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(999, 90);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(26, 26);
-            this.button5.TabIndex = 64;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(999, 122);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(26, 26);
-            this.button6.TabIndex = 65;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button7.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(999, 154);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(26, 26);
-            this.button7.TabIndex = 66;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button8.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(999, 186);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(26, 26);
-            this.button8.TabIndex = 67;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button10.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Location = new System.Drawing.Point(999, 346);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(26, 26);
-            this.button10.TabIndex = 109;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button11.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Location = new System.Drawing.Point(999, 314);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(26, 26);
-            this.button11.TabIndex = 108;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button12.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Location = new System.Drawing.Point(999, 282);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(26, 26);
-            this.button12.TabIndex = 107;
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button13.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button13.Location = new System.Drawing.Point(999, 250);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(26, 26);
-            this.button13.TabIndex = 105;
-            this.button13.UseVisualStyleBackColor = true;
             // 
             // comboBox13
             // 
@@ -1204,54 +1085,6 @@
             this.label21.Text = "Весы Ж";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button9
-            // 
-            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button9.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Location = new System.Drawing.Point(1000, 506);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(26, 26);
-            this.button9.TabIndex = 145;
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button14.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button14.Location = new System.Drawing.Point(1000, 474);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(26, 26);
-            this.button14.TabIndex = 144;
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button15
-            // 
-            this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button15.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button15.Location = new System.Drawing.Point(1000, 442);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(26, 26);
-            this.button15.TabIndex = 143;
-            this.button15.UseVisualStyleBackColor = true;
-            // 
-            // button16
-            // 
-            this.button16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button16.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Location = new System.Drawing.Point(1000, 410);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(26, 26);
-            this.button16.TabIndex = 141;
-            this.button16.UseVisualStyleBackColor = true;
-            // 
             // comboBox11
             // 
             this.comboBox11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1559,42 +1392,6 @@
             this.label29.Text = "Весы Д";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button18
-            // 
-            this.button18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button18.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Location = new System.Drawing.Point(999, 634);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(26, 26);
-            this.button18.TabIndex = 180;
-            this.button18.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            this.button19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button19.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Location = new System.Drawing.Point(999, 602);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(26, 26);
-            this.button19.TabIndex = 179;
-            this.button19.UseVisualStyleBackColor = true;
-            // 
-            // button20
-            // 
-            this.button20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button20.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Location = new System.Drawing.Point(999, 570);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(26, 26);
-            this.button20.TabIndex = 177;
-            this.button20.UseVisualStyleBackColor = true;
-            // 
             // comboBox29
             // 
             this.comboBox29.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1827,42 +1624,6 @@
             this.label38.TabIndex = 146;
             this.label38.Text = "Весы Е";
             this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button17
-            // 
-            this.button17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button17.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button17.Location = new System.Drawing.Point(999, 762);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(26, 26);
-            this.button17.TabIndex = 209;
-            this.button17.UseVisualStyleBackColor = true;
-            // 
-            // button21
-            // 
-            this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button21.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Location = new System.Drawing.Point(999, 730);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(26, 26);
-            this.button21.TabIndex = 208;
-            this.button21.UseVisualStyleBackColor = true;
-            // 
-            // button22
-            // 
-            this.button22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button22.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button22.Location = new System.Drawing.Point(999, 698);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(26, 26);
-            this.button22.TabIndex = 206;
-            this.button22.UseVisualStyleBackColor = true;
             // 
             // comboBox27
             // 
@@ -2097,42 +1858,6 @@
             this.label46.Text = "Весы Ш";
             this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button23
-            // 
-            this.button23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button23.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button23.Location = new System.Drawing.Point(999, 890);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(26, 26);
-            this.button23.TabIndex = 231;
-            this.button23.UseVisualStyleBackColor = true;
-            // 
-            // button24
-            // 
-            this.button24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button24.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button24.Location = new System.Drawing.Point(999, 858);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(26, 26);
-            this.button24.TabIndex = 230;
-            this.button24.UseVisualStyleBackColor = true;
-            // 
-            // button25
-            // 
-            this.button25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button25.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button25.Location = new System.Drawing.Point(999, 826);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(26, 26);
-            this.button25.TabIndex = 229;
-            this.button25.UseVisualStyleBackColor = true;
-            // 
             // comboBox40
             // 
             this.comboBox40.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -2365,42 +2090,6 @@
             this.label14.TabIndex = 210;
             this.label14.Text = "Весы Ю";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button26
-            // 
-            this.button26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button26.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.Location = new System.Drawing.Point(999, 1018);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(26, 26);
-            this.button26.TabIndex = 253;
-            this.button26.UseVisualStyleBackColor = true;
-            // 
-            // button27
-            // 
-            this.button27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button27.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button27.Location = new System.Drawing.Point(999, 986);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(26, 26);
-            this.button27.TabIndex = 252;
-            this.button27.UseVisualStyleBackColor = true;
-            // 
-            // button28
-            // 
-            this.button28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button28.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
-            this.button28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button28.Location = new System.Drawing.Point(999, 954);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(26, 26);
-            this.button28.TabIndex = 251;
-            this.button28.UseVisualStyleBackColor = true;
             // 
             // comboBox46
             // 
@@ -2635,11 +2324,334 @@
             this.label15.Text = "Весы У";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnSave
+            // 
+            this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnSave.Location = new System.Drawing.Point(830, 1055);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(195, 45);
+            this.btnSave.TabIndex = 254;
+            this.btnSave.Text = "Сохранить";
+            this.btnSave.UseVisualStyleBackColor = true;
+            // 
+            // button26
+            // 
+            this.button26.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button26.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button26.Location = new System.Drawing.Point(999, 1018);
+            this.button26.Name = "button26";
+            this.button26.Size = new System.Drawing.Size(26, 26);
+            this.button26.TabIndex = 253;
+            this.button26.UseVisualStyleBackColor = true;
+            // 
+            // button27
+            // 
+            this.button27.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button27.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button27.Location = new System.Drawing.Point(999, 986);
+            this.button27.Name = "button27";
+            this.button27.Size = new System.Drawing.Size(26, 26);
+            this.button27.TabIndex = 252;
+            this.button27.UseVisualStyleBackColor = true;
+            // 
+            // button28
+            // 
+            this.button28.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button28.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button28.Location = new System.Drawing.Point(999, 954);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(26, 26);
+            this.button28.TabIndex = 251;
+            this.button28.UseVisualStyleBackColor = true;
+            // 
+            // button23
+            // 
+            this.button23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button23.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button23.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button23.Location = new System.Drawing.Point(999, 890);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(26, 26);
+            this.button23.TabIndex = 231;
+            this.button23.UseVisualStyleBackColor = true;
+            // 
+            // button24
+            // 
+            this.button24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button24.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Location = new System.Drawing.Point(999, 858);
+            this.button24.Name = "button24";
+            this.button24.Size = new System.Drawing.Size(26, 26);
+            this.button24.TabIndex = 230;
+            this.button24.UseVisualStyleBackColor = true;
+            // 
+            // button25
+            // 
+            this.button25.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button25.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button25.Location = new System.Drawing.Point(999, 826);
+            this.button25.Name = "button25";
+            this.button25.Size = new System.Drawing.Size(26, 26);
+            this.button25.TabIndex = 229;
+            this.button25.UseVisualStyleBackColor = true;
+            // 
+            // button17
+            // 
+            this.button17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button17.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Location = new System.Drawing.Point(999, 762);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(26, 26);
+            this.button17.TabIndex = 209;
+            this.button17.UseVisualStyleBackColor = true;
+            // 
+            // button21
+            // 
+            this.button21.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button21.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Location = new System.Drawing.Point(999, 730);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(26, 26);
+            this.button21.TabIndex = 208;
+            this.button21.UseVisualStyleBackColor = true;
+            // 
+            // button22
+            // 
+            this.button22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button22.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button22.Location = new System.Drawing.Point(999, 698);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(26, 26);
+            this.button22.TabIndex = 206;
+            this.button22.UseVisualStyleBackColor = true;
+            // 
+            // button18
+            // 
+            this.button18.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button18.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button18.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button18.Location = new System.Drawing.Point(999, 634);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(26, 26);
+            this.button18.TabIndex = 180;
+            this.button18.UseVisualStyleBackColor = true;
+            // 
+            // button19
+            // 
+            this.button19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button19.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button19.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Location = new System.Drawing.Point(999, 602);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(26, 26);
+            this.button19.TabIndex = 179;
+            this.button19.UseVisualStyleBackColor = true;
+            // 
+            // button20
+            // 
+            this.button20.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button20.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button20.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button20.Location = new System.Drawing.Point(999, 570);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(26, 26);
+            this.button20.TabIndex = 177;
+            this.button20.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button9.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Location = new System.Drawing.Point(1000, 506);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(26, 26);
+            this.button9.TabIndex = 145;
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            this.button14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button14.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Location = new System.Drawing.Point(1000, 474);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(26, 26);
+            this.button14.TabIndex = 144;
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            this.button15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button15.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Location = new System.Drawing.Point(1000, 442);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(26, 26);
+            this.button15.TabIndex = 143;
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // button16
+            // 
+            this.button16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button16.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Location = new System.Drawing.Point(1000, 410);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(26, 26);
+            this.button16.TabIndex = 141;
+            this.button16.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button10.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Location = new System.Drawing.Point(999, 346);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(26, 26);
+            this.button10.TabIndex = 109;
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button11.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Location = new System.Drawing.Point(999, 314);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(26, 26);
+            this.button11.TabIndex = 108;
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button12.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Location = new System.Drawing.Point(999, 282);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(26, 26);
+            this.button12.TabIndex = 107;
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button13.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Location = new System.Drawing.Point(999, 250);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(26, 26);
+            this.button13.TabIndex = 105;
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button8.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(999, 186);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(26, 26);
+            this.button8.TabIndex = 67;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button7.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(999, 154);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(26, 26);
+            this.button7.TabIndex = 66;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button6.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(999, 122);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(26, 26);
+            this.button6.TabIndex = 65;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button5.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(999, 90);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(26, 26);
+            this.button5.TabIndex = 64;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(999, 58);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(26, 26);
+            this.button4.TabIndex = 62;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button2.BackgroundImage = global::MixRubber2.Properties.Resources.delete;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Location = new System.Drawing.Point(185, 1072);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 28);
+            this.button2.TabIndex = 7;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // Mixture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1037, 1053);
+            this.ClientSize = new System.Drawing.Size(1037, 1112);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.button26);
             this.Controls.Add(this.button27);
             this.Controls.Add(this.button28);
@@ -3046,5 +3058,6 @@
         private System.Windows.Forms.TextBox textBox100;
         private System.Windows.Forms.ComboBox comboBox51;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button btnSave;
     }
 }

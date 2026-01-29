@@ -139,10 +139,14 @@
             // 
             // listBoxMessage
             // 
+            this.listBoxMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listBoxMessage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listBoxMessage.FormattingEnabled = true;
             this.listBoxMessage.Location = new System.Drawing.Point(12, 215);
             this.listBoxMessage.Name = "listBoxMessage";
-            this.listBoxMessage.Size = new System.Drawing.Size(572, 485);
+            this.listBoxMessage.Size = new System.Drawing.Size(572, 483);
             this.listBoxMessage.TabIndex = 22;
             // 
             // label4

@@ -1744,7 +1744,7 @@ namespace MixRubber2
 
         private void btnMix_Click(object sender, RoutedEventArgs e)
         {
-            new Mixture().ShowDialog();
+            new Mixture2().ShowDialog();
         }
 
         private void btnUpload_Click(object sender, RoutedEventArgs e)

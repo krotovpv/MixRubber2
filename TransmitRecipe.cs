@@ -30,8 +30,8 @@ namespace MixRubber2
 
         private void CbPurposeMixture_SelectedValueChanged(object sender, EventArgs e)
         {
-            //DataTable dtMixtureRecipe = DBHelper.GetData("SELECT [id_mixture_recipe],[number] FROM [dbo].[tMixtureRecipes] WHERE [id_purpose] ='" + cbPurposeMixture.SelectedValue + "' AND [id_mode] = '" + cbMixMode.SelectedValue + "'");
-            //cbMixtureRecipe.DataSource = dtMixtureRecipe;
+            DataTable dtMixtureRecipe = DBHelper.GetData("SELECT [id_mixture_recipe],[number] FROM [dbo].[tMixtureRecipes] WHERE [id_purpose] ='" + cbPurposeMixture.SelectedValue + "'");
+            cbMixtureRecipe.DataSource = dtMixtureRecipe;
         }
     }
 }

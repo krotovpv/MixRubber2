@@ -351,12 +351,17 @@
             this.mixRubberDataSet = new MixRubber2.MixRubberDataSet();
             this.tOperationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ColumnPorpouseMixture = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnMixture = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMixMode)).BeginInit();
             this.tabControlOptionsTimer.SuspendLayout();
             this.tabPageRG.SuspendLayout();
             this.tabPageRJ.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mixRubberDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tOperationsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtName
@@ -605,7 +610,7 @@
             this.dgvMixMode.Name = "dgvMixMode";
             this.dgvMixMode.ReadOnly = true;
             this.dgvMixMode.RowHeadersWidth = 21;
-            this.dgvMixMode.Size = new System.Drawing.Size(388, 183);
+            this.dgvMixMode.Size = new System.Drawing.Size(388, 169);
             this.dgvMixMode.TabIndex = 27;
             // 
             // ColumnIdMixMode
@@ -630,10 +635,10 @@
             this.tabControlOptionsTimer.Controls.Add(this.tabPageRG);
             this.tabControlOptionsTimer.Controls.Add(this.tabPageRJ);
             this.tabControlOptionsTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tabControlOptionsTimer.Location = new System.Drawing.Point(9, 226);
+            this.tabControlOptionsTimer.Location = new System.Drawing.Point(9, 212);
             this.tabControlOptionsTimer.Name = "tabControlOptionsTimer";
             this.tabControlOptionsTimer.SelectedIndex = 0;
-            this.tabControlOptionsTimer.Size = new System.Drawing.Size(1479, 1166);
+            this.tabControlOptionsTimer.Size = new System.Drawing.Size(1479, 1154);
             this.tabControlOptionsTimer.TabIndex = 30;
             // 
             // tabPageRG
@@ -767,7 +772,7 @@
             this.tabPageRG.Location = new System.Drawing.Point(4, 29);
             this.tabPageRG.Name = "tabPageRG";
             this.tabPageRG.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageRG.Size = new System.Drawing.Size(1471, 1133);
+            this.tabPageRG.Size = new System.Drawing.Size(1471, 1118);
             this.tabPageRG.TabIndex = 0;
             this.tabPageRG.Text = "Параметры загрузочного таймера";
             // 
@@ -2144,7 +2149,7 @@
             this.tabPageRJ.Location = new System.Drawing.Point(4, 29);
             this.tabPageRJ.Name = "tabPageRJ";
             this.tabPageRJ.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageRJ.Size = new System.Drawing.Size(1471, 1133);
+            this.tabPageRJ.Size = new System.Drawing.Size(1471, 1121);
             this.tabPageRJ.TabIndex = 1;
             this.tabPageRJ.Text = "Параметры режимного таймера";
             // 
@@ -3750,7 +3755,7 @@
             this.btnDeleteMixMode.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDeleteMixMode.BackColor = System.Drawing.Color.SeaShell;
             this.btnDeleteMixMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnDeleteMixMode.Location = new System.Drawing.Point(1249, 183);
+            this.btnDeleteMixMode.Location = new System.Drawing.Point(1252, 165);
             this.btnDeleteMixMode.Name = "btnDeleteMixMode";
             this.btnDeleteMixMode.Size = new System.Drawing.Size(236, 41);
             this.btnDeleteMixMode.TabIndex = 32;
@@ -3792,11 +3797,52 @@
             this.label1.Text = "Параметры смешения";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label19
+            // 
+            this.label19.BackColor = System.Drawing.Color.LightGray;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label19.Location = new System.Drawing.Point(777, 6);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(368, 28);
+            this.label19.TabIndex = 58;
+            this.label19.Text = "Смеси текущего режима";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnPorpouseMixture,
+            this.ColumnMixture});
+            this.dataGridView1.Location = new System.Drawing.Point(777, 37);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(368, 169);
+            this.dataGridView1.TabIndex = 59;
+            // 
+            // ColumnPorpouseMixture
+            // 
+            this.ColumnPorpouseMixture.HeaderText = "Назначение";
+            this.ColumnPorpouseMixture.Name = "ColumnPorpouseMixture";
+            this.ColumnPorpouseMixture.ReadOnly = true;
+            this.ColumnPorpouseMixture.Width = 150;
+            // 
+            // ColumnMixture
+            // 
+            this.ColumnMixture.HeaderText = "Смесь";
+            this.ColumnMixture.Name = "ColumnMixture";
+            this.ColumnMixture.ReadOnly = true;
+            this.ColumnMixture.Width = 170;
+            // 
             // MixMode2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1497, 1404);
+            this.ClientSize = new System.Drawing.Size(1497, 1374);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label19);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.btnSaveMixMode);
@@ -3836,6 +3882,7 @@
             this.tabPageRJ.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mixRubberDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tOperationsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4164,5 +4211,9 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label133;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnPorpouseMixture;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMixture;
     }
 }
