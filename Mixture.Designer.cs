@@ -233,6 +233,7 @@
             // cbPurposeMixture
             // 
             this.cbPurposeMixture.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPurposeMixture.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbPurposeMixture.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cbPurposeMixture.FormattingEnabled = true;
             this.cbPurposeMixture.Location = new System.Drawing.Point(12, 118);
@@ -276,6 +277,7 @@
             // cbMixMode
             // 
             this.cbMixMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMixMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbMixMode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cbMixMode.FormattingEnabled = true;
             this.cbMixMode.Location = new System.Drawing.Point(12, 40);

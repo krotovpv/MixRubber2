@@ -107,6 +107,7 @@
             this.cbMixtureRecipe.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbMixtureRecipe.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMixtureRecipe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbMixtureRecipe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cbMixtureRecipe.FormattingEnabled = true;
             this.cbMixtureRecipe.Location = new System.Drawing.Point(266, 46);
@@ -130,6 +131,7 @@
             this.cbPurposeMixture.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbPurposeMixture.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbPurposeMixture.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbPurposeMixture.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.cbPurposeMixture.FormattingEnabled = true;
             this.cbPurposeMixture.Location = new System.Drawing.Point(266, 12);

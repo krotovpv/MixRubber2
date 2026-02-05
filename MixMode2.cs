@@ -24,13 +24,13 @@ namespace MixRubber2
 
         private void FillingData()
         {
-            DataTable dtOperations = DBHelper.GetData("SELECT [kod_operation],[name_operation],[color] FROM [dbo].[tOperations]");
+            DataTable dtOperations = DBHelper.GetData("SELECT [id],[name] FROM [dbo].[tOperations]");
             foreach (var item in tabPageRG.Controls)
             {
                 if (item is ComboBox cb)
                 {
-                    cb.DisplayMember = "name_operation";
-                    cb.ValueMember = "kod_operation";
+                    cb.DisplayMember = "name";
+                    cb.ValueMember = "id";
                     cb.DataSource = dtOperations.Copy();
                     cb.SelectedIndexChanged += Cb_SelectedIndexChanged;
                 }
@@ -43,8 +43,8 @@ namespace MixRubber2
             {
                 if (item is ComboBox cb)
                 {
-                    cb.DisplayMember = "name_operation";
-                    cb.ValueMember = "kod_operation";
+                    cb.DisplayMember = "name";
+                    cb.ValueMember = "id";
                     cb.DataSource = dtOperations.Copy();
                     cb.SelectedIndexChanged += Cb_SelectedIndexChanged;
                 }
@@ -199,7 +199,7 @@ namespace MixRubber2
             ClearUI();
             int rowIndex = dgvMixMode.SelectedCells[0].RowIndex;
             int idMode = Convert.ToInt32(dgvMixMode.Rows[rowIndex].Cells["ColumnIdMixMode"].Value);
-            DataTable dtMixMode = DBHelper.GetData("SELECT [mode_name],[temp_unload],[temp_critical],[temp_tolerance],[parametr1],[parametr2],[parametr3],[parametr4],[parametr5] FROM [dbo].[tMixModes] WHERE [id_mode] = '" + idMode + "'");
+            DataTable dtMixMode = DBHelper.GetData("SELECT [name],[temp_unload],[temp_critical],[temp_tolerance],[parametr1],[parametr2],[parametr3],[parametr4],[parametr5] FROM [dbo].[tModes] WHERE [id] = '" + idMode + "'");
             txtName.Text = dtMixMode.Rows[0].ItemArray[0].ToString();
             txtUnloadTemperature.Text = dtMixMode.Rows[0].ItemArray[1].ToString();
             txtCriticalTemperature.Text = dtMixMode.Rows[0].ItemArray[2].ToString();

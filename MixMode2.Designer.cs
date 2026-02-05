@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label133 = new System.Windows.Forms.Label();
             this.txtParam5 = new System.Windows.Forms.TextBox();
@@ -348,8 +347,6 @@
             this.btnCreateMixMode = new System.Windows.Forms.Button();
             this.btnDeleteMixMode = new System.Windows.Forms.Button();
             this.btnSaveMixMode = new System.Windows.Forms.Button();
-            this.mixRubberDataSet = new MixRubber2.MixRubberDataSet();
-            this.tOperationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -359,8 +356,6 @@
             this.tabControlOptionsTimer.SuspendLayout();
             this.tabPageRG.SuspendLayout();
             this.tabPageRJ.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mixRubberDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tOperationsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -772,7 +767,7 @@
             this.tabPageRG.Location = new System.Drawing.Point(4, 29);
             this.tabPageRG.Name = "tabPageRG";
             this.tabPageRG.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageRG.Size = new System.Drawing.Size(1471, 1118);
+            this.tabPageRG.Size = new System.Drawing.Size(1471, 1121);
             this.tabPageRG.TabIndex = 0;
             this.tabPageRG.Text = "Параметры загрузочного таймера";
             // 
@@ -827,6 +822,7 @@
             // cbOperationRG24
             // 
             this.cbOperationRG24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG24.FormattingEnabled = true;
             this.cbOperationRG24.Location = new System.Drawing.Point(3, 816);
             this.cbOperationRG24.Name = "cbOperationRG24";
@@ -875,6 +871,7 @@
             // cbOperationRG23
             // 
             this.cbOperationRG23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG23.FormattingEnabled = true;
             this.cbOperationRG23.Location = new System.Drawing.Point(3, 782);
             this.cbOperationRG23.Name = "cbOperationRG23";
@@ -923,6 +920,7 @@
             // cbOperationRG22
             // 
             this.cbOperationRG22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG22.FormattingEnabled = true;
             this.cbOperationRG22.Location = new System.Drawing.Point(3, 748);
             this.cbOperationRG22.Name = "cbOperationRG22";
@@ -971,6 +969,7 @@
             // cbOperationRG21
             // 
             this.cbOperationRG21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG21.FormattingEnabled = true;
             this.cbOperationRG21.Location = new System.Drawing.Point(3, 714);
             this.cbOperationRG21.Name = "cbOperationRG21";
@@ -1019,6 +1018,7 @@
             // cbOperationRG20
             // 
             this.cbOperationRG20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG20.FormattingEnabled = true;
             this.cbOperationRG20.Location = new System.Drawing.Point(3, 680);
             this.cbOperationRG20.Name = "cbOperationRG20";
@@ -1067,6 +1067,7 @@
             // cbOperationRG19
             // 
             this.cbOperationRG19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG19.FormattingEnabled = true;
             this.cbOperationRG19.Location = new System.Drawing.Point(3, 646);
             this.cbOperationRG19.Name = "cbOperationRG19";
@@ -1115,6 +1116,7 @@
             // cbOperationRG18
             // 
             this.cbOperationRG18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG18.FormattingEnabled = true;
             this.cbOperationRG18.Location = new System.Drawing.Point(3, 612);
             this.cbOperationRG18.Name = "cbOperationRG18";
@@ -1163,6 +1165,7 @@
             // cbOperationRG17
             // 
             this.cbOperationRG17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG17.FormattingEnabled = true;
             this.cbOperationRG17.Location = new System.Drawing.Point(3, 578);
             this.cbOperationRG17.Name = "cbOperationRG17";
@@ -1211,6 +1214,7 @@
             // cbOperationRG16
             // 
             this.cbOperationRG16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG16.FormattingEnabled = true;
             this.cbOperationRG16.Location = new System.Drawing.Point(3, 544);
             this.cbOperationRG16.Name = "cbOperationRG16";
@@ -1259,6 +1263,7 @@
             // cbOperationRG15
             // 
             this.cbOperationRG15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG15.FormattingEnabled = true;
             this.cbOperationRG15.Location = new System.Drawing.Point(3, 510);
             this.cbOperationRG15.Name = "cbOperationRG15";
@@ -1307,6 +1312,7 @@
             // cbOperationRG14
             // 
             this.cbOperationRG14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG14.FormattingEnabled = true;
             this.cbOperationRG14.Location = new System.Drawing.Point(3, 476);
             this.cbOperationRG14.Name = "cbOperationRG14";
@@ -1355,6 +1361,7 @@
             // cbOperationRG13
             // 
             this.cbOperationRG13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG13.FormattingEnabled = true;
             this.cbOperationRG13.Location = new System.Drawing.Point(3, 442);
             this.cbOperationRG13.Name = "cbOperationRG13";
@@ -1403,6 +1410,7 @@
             // cbOperationRG12
             // 
             this.cbOperationRG12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG12.FormattingEnabled = true;
             this.cbOperationRG12.Location = new System.Drawing.Point(3, 408);
             this.cbOperationRG12.Name = "cbOperationRG12";
@@ -1451,6 +1459,7 @@
             // cbOperationRG11
             // 
             this.cbOperationRG11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG11.FormattingEnabled = true;
             this.cbOperationRG11.Location = new System.Drawing.Point(3, 374);
             this.cbOperationRG11.Name = "cbOperationRG11";
@@ -1499,6 +1508,7 @@
             // cbOperationRG10
             // 
             this.cbOperationRG10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG10.FormattingEnabled = true;
             this.cbOperationRG10.Location = new System.Drawing.Point(3, 340);
             this.cbOperationRG10.Name = "cbOperationRG10";
@@ -1547,6 +1557,7 @@
             // cbOperationRG9
             // 
             this.cbOperationRG9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG9.FormattingEnabled = true;
             this.cbOperationRG9.Location = new System.Drawing.Point(3, 306);
             this.cbOperationRG9.Name = "cbOperationRG9";
@@ -1595,6 +1606,7 @@
             // cbOperationRG8
             // 
             this.cbOperationRG8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG8.FormattingEnabled = true;
             this.cbOperationRG8.Location = new System.Drawing.Point(3, 272);
             this.cbOperationRG8.Name = "cbOperationRG8";
@@ -1643,6 +1655,7 @@
             // cbOperationRG7
             // 
             this.cbOperationRG7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG7.FormattingEnabled = true;
             this.cbOperationRG7.Location = new System.Drawing.Point(3, 238);
             this.cbOperationRG7.Name = "cbOperationRG7";
@@ -1691,6 +1704,7 @@
             // cbOperationRG6
             // 
             this.cbOperationRG6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG6.FormattingEnabled = true;
             this.cbOperationRG6.Location = new System.Drawing.Point(3, 204);
             this.cbOperationRG6.Name = "cbOperationRG6";
@@ -1739,6 +1753,7 @@
             // cbOperationRG5
             // 
             this.cbOperationRG5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG5.FormattingEnabled = true;
             this.cbOperationRG5.Location = new System.Drawing.Point(3, 170);
             this.cbOperationRG5.Name = "cbOperationRG5";
@@ -1787,6 +1802,7 @@
             // cbOperationRG4
             // 
             this.cbOperationRG4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG4.FormattingEnabled = true;
             this.cbOperationRG4.Location = new System.Drawing.Point(3, 136);
             this.cbOperationRG4.Name = "cbOperationRG4";
@@ -1835,6 +1851,7 @@
             // cbOperationRG3
             // 
             this.cbOperationRG3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG3.FormattingEnabled = true;
             this.cbOperationRG3.Location = new System.Drawing.Point(3, 102);
             this.cbOperationRG3.Name = "cbOperationRG3";
@@ -1883,6 +1900,7 @@
             // cbOperationRG2
             // 
             this.cbOperationRG2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG2.FormattingEnabled = true;
             this.cbOperationRG2.Location = new System.Drawing.Point(3, 68);
             this.cbOperationRG2.Name = "cbOperationRG2";
@@ -1961,6 +1979,7 @@
             // 
             this.cbOperationRG1.BackColor = System.Drawing.Color.White;
             this.cbOperationRG1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRG1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRG1.FormattingEnabled = true;
             this.cbOperationRG1.Location = new System.Drawing.Point(3, 34);
             this.cbOperationRG1.Name = "cbOperationRG1";
@@ -2195,6 +2214,7 @@
             // cbOperationRJ32
             // 
             this.cbOperationRJ32.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ32.FormattingEnabled = true;
             this.cbOperationRJ32.Location = new System.Drawing.Point(3, 1088);
             this.cbOperationRJ32.Name = "cbOperationRJ32";
@@ -2243,6 +2263,7 @@
             // cbOperationRJ31
             // 
             this.cbOperationRJ31.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ31.FormattingEnabled = true;
             this.cbOperationRJ31.Location = new System.Drawing.Point(3, 1054);
             this.cbOperationRJ31.Name = "cbOperationRJ31";
@@ -2291,6 +2312,7 @@
             // cbOperationRJ30
             // 
             this.cbOperationRJ30.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ30.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ30.FormattingEnabled = true;
             this.cbOperationRJ30.Location = new System.Drawing.Point(3, 1020);
             this.cbOperationRJ30.Name = "cbOperationRJ30";
@@ -2339,6 +2361,7 @@
             // cbOperationRJ29
             // 
             this.cbOperationRJ29.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ29.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ29.FormattingEnabled = true;
             this.cbOperationRJ29.Location = new System.Drawing.Point(3, 986);
             this.cbOperationRJ29.Name = "cbOperationRJ29";
@@ -2387,6 +2410,7 @@
             // cbOperationRJ28
             // 
             this.cbOperationRJ28.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ28.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ28.FormattingEnabled = true;
             this.cbOperationRJ28.Location = new System.Drawing.Point(3, 952);
             this.cbOperationRJ28.Name = "cbOperationRJ28";
@@ -2474,6 +2498,7 @@
             // cbOperationRJ27
             // 
             this.cbOperationRJ27.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ27.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ27.FormattingEnabled = true;
             this.cbOperationRJ27.Location = new System.Drawing.Point(3, 918);
             this.cbOperationRJ27.Name = "cbOperationRJ27";
@@ -2483,6 +2508,7 @@
             // cbOperationRJ26
             // 
             this.cbOperationRJ26.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ26.FormattingEnabled = true;
             this.cbOperationRJ26.Location = new System.Drawing.Point(3, 884);
             this.cbOperationRJ26.Name = "cbOperationRJ26";
@@ -2531,6 +2557,7 @@
             // cbOperationRJ25
             // 
             this.cbOperationRJ25.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ25.FormattingEnabled = true;
             this.cbOperationRJ25.Location = new System.Drawing.Point(3, 850);
             this.cbOperationRJ25.Name = "cbOperationRJ25";
@@ -2579,6 +2606,7 @@
             // cbOperationRJ24
             // 
             this.cbOperationRJ24.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ24.FormattingEnabled = true;
             this.cbOperationRJ24.Location = new System.Drawing.Point(3, 816);
             this.cbOperationRJ24.Name = "cbOperationRJ24";
@@ -2627,6 +2655,7 @@
             // cbOperationRJ23
             // 
             this.cbOperationRJ23.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ23.FormattingEnabled = true;
             this.cbOperationRJ23.Location = new System.Drawing.Point(3, 782);
             this.cbOperationRJ23.Name = "cbOperationRJ23";
@@ -2675,6 +2704,7 @@
             // cbOperationRJ22
             // 
             this.cbOperationRJ22.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ22.FormattingEnabled = true;
             this.cbOperationRJ22.Location = new System.Drawing.Point(3, 748);
             this.cbOperationRJ22.Name = "cbOperationRJ22";
@@ -2723,6 +2753,7 @@
             // cbOperationRJ21
             // 
             this.cbOperationRJ21.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ21.FormattingEnabled = true;
             this.cbOperationRJ21.Location = new System.Drawing.Point(3, 714);
             this.cbOperationRJ21.Name = "cbOperationRJ21";
@@ -2771,6 +2802,7 @@
             // cbOperationRJ20
             // 
             this.cbOperationRJ20.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ20.FormattingEnabled = true;
             this.cbOperationRJ20.Location = new System.Drawing.Point(3, 680);
             this.cbOperationRJ20.Name = "cbOperationRJ20";
@@ -2819,6 +2851,7 @@
             // cbOperationRJ19
             // 
             this.cbOperationRJ19.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ19.FormattingEnabled = true;
             this.cbOperationRJ19.Location = new System.Drawing.Point(3, 646);
             this.cbOperationRJ19.Name = "cbOperationRJ19";
@@ -2867,6 +2900,7 @@
             // cbOperationRJ18
             // 
             this.cbOperationRJ18.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ18.FormattingEnabled = true;
             this.cbOperationRJ18.Location = new System.Drawing.Point(3, 612);
             this.cbOperationRJ18.Name = "cbOperationRJ18";
@@ -2915,6 +2949,7 @@
             // cbOperationRJ17
             // 
             this.cbOperationRJ17.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ17.FormattingEnabled = true;
             this.cbOperationRJ17.Location = new System.Drawing.Point(3, 578);
             this.cbOperationRJ17.Name = "cbOperationRJ17";
@@ -2963,6 +2998,7 @@
             // cbOperationRJ16
             // 
             this.cbOperationRJ16.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ16.FormattingEnabled = true;
             this.cbOperationRJ16.Location = new System.Drawing.Point(3, 544);
             this.cbOperationRJ16.Name = "cbOperationRJ16";
@@ -3011,6 +3047,7 @@
             // cbOperationRJ15
             // 
             this.cbOperationRJ15.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ15.FormattingEnabled = true;
             this.cbOperationRJ15.Location = new System.Drawing.Point(3, 510);
             this.cbOperationRJ15.Name = "cbOperationRJ15";
@@ -3059,6 +3096,7 @@
             // cbOperationRJ14
             // 
             this.cbOperationRJ14.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ14.FormattingEnabled = true;
             this.cbOperationRJ14.Location = new System.Drawing.Point(3, 476);
             this.cbOperationRJ14.Name = "cbOperationRJ14";
@@ -3107,6 +3145,7 @@
             // cbOperationRJ13
             // 
             this.cbOperationRJ13.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ13.FormattingEnabled = true;
             this.cbOperationRJ13.Location = new System.Drawing.Point(3, 442);
             this.cbOperationRJ13.Name = "cbOperationRJ13";
@@ -3155,6 +3194,7 @@
             // cbOperationRJ12
             // 
             this.cbOperationRJ12.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ12.FormattingEnabled = true;
             this.cbOperationRJ12.Location = new System.Drawing.Point(3, 408);
             this.cbOperationRJ12.Name = "cbOperationRJ12";
@@ -3203,6 +3243,7 @@
             // cbOperationRJ11
             // 
             this.cbOperationRJ11.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ11.FormattingEnabled = true;
             this.cbOperationRJ11.Location = new System.Drawing.Point(3, 374);
             this.cbOperationRJ11.Name = "cbOperationRJ11";
@@ -3251,6 +3292,7 @@
             // cbOperationRJ10
             // 
             this.cbOperationRJ10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ10.FormattingEnabled = true;
             this.cbOperationRJ10.Location = new System.Drawing.Point(3, 340);
             this.cbOperationRJ10.Name = "cbOperationRJ10";
@@ -3299,6 +3341,7 @@
             // cbOperationRJ9
             // 
             this.cbOperationRJ9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ9.FormattingEnabled = true;
             this.cbOperationRJ9.Location = new System.Drawing.Point(3, 306);
             this.cbOperationRJ9.Name = "cbOperationRJ9";
@@ -3347,6 +3390,7 @@
             // cbOperationRJ8
             // 
             this.cbOperationRJ8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ8.FormattingEnabled = true;
             this.cbOperationRJ8.Location = new System.Drawing.Point(3, 272);
             this.cbOperationRJ8.Name = "cbOperationRJ8";
@@ -3395,6 +3439,7 @@
             // cbOperationRJ7
             // 
             this.cbOperationRJ7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ7.FormattingEnabled = true;
             this.cbOperationRJ7.Location = new System.Drawing.Point(3, 238);
             this.cbOperationRJ7.Name = "cbOperationRJ7";
@@ -3443,6 +3488,7 @@
             // cbOperationRJ6
             // 
             this.cbOperationRJ6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ6.FormattingEnabled = true;
             this.cbOperationRJ6.Location = new System.Drawing.Point(3, 204);
             this.cbOperationRJ6.Name = "cbOperationRJ6";
@@ -3491,6 +3537,7 @@
             // cbOperationRJ5
             // 
             this.cbOperationRJ5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ5.FormattingEnabled = true;
             this.cbOperationRJ5.Location = new System.Drawing.Point(3, 170);
             this.cbOperationRJ5.Name = "cbOperationRJ5";
@@ -3539,6 +3586,7 @@
             // cbOperationRJ4
             // 
             this.cbOperationRJ4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ4.FormattingEnabled = true;
             this.cbOperationRJ4.Location = new System.Drawing.Point(3, 136);
             this.cbOperationRJ4.Name = "cbOperationRJ4";
@@ -3587,6 +3635,7 @@
             // cbOperationRJ3
             // 
             this.cbOperationRJ3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ3.FormattingEnabled = true;
             this.cbOperationRJ3.Location = new System.Drawing.Point(3, 102);
             this.cbOperationRJ3.Name = "cbOperationRJ3";
@@ -3635,6 +3684,7 @@
             // cbOperationRJ2
             // 
             this.cbOperationRJ2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ2.FormattingEnabled = true;
             this.cbOperationRJ2.Location = new System.Drawing.Point(3, 68);
             this.cbOperationRJ2.Name = "cbOperationRJ2";
@@ -3732,6 +3782,7 @@
             // cbOperationRJ1
             // 
             this.cbOperationRJ1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOperationRJ1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbOperationRJ1.FormattingEnabled = true;
             this.cbOperationRJ1.Location = new System.Drawing.Point(3, 34);
             this.cbOperationRJ1.Name = "cbOperationRJ1";
@@ -3775,16 +3826,6 @@
             this.btnSaveMixMode.Text = "Сохранить режим";
             this.btnSaveMixMode.UseVisualStyleBackColor = false;
             this.btnSaveMixMode.Click += new System.EventHandler(this.btnSaveMixMode_Click);
-            // 
-            // mixRubberDataSet
-            // 
-            this.mixRubberDataSet.DataSetName = "MixRubberDataSet";
-            this.mixRubberDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tOperationsBindingSource
-            // 
-            this.tOperationsBindingSource.DataMember = "tOperations";
-            this.tOperationsBindingSource.DataSource = this.mixRubberDataSet;
             // 
             // label1
             // 
@@ -3880,8 +3921,6 @@
             this.tabPageRG.PerformLayout();
             this.tabPageRJ.ResumeLayout(false);
             this.tabPageRJ.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mixRubberDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tOperationsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -4204,8 +4243,6 @@
         private System.Windows.Forms.Button btnCreateMixMode;
         private System.Windows.Forms.Button btnDeleteMixMode;
         private System.Windows.Forms.Button btnSaveMixMode;
-        private MixRubberDataSet mixRubberDataSet;
-        private System.Windows.Forms.BindingSource tOperationsBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnIdMixMode;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnMixModeName;
         private System.Windows.Forms.TextBox txtName;

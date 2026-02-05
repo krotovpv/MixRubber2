@@ -21,7 +21,14 @@ namespace MixRubber2
 
         private void Mixture2_Load(object sender, EventArgs e)
         {
+            LoadData();
+        }
 
+        private void LoadData()
+        {
+            cbPurpose.DisplayMember = "name";
+            cbPurpose.ValueMember = "id";
+            cbPurpose.DataSource = DBHelper.GetData("SELECT [id],[name] FROM [dbo].[tPurposeMixture]");
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

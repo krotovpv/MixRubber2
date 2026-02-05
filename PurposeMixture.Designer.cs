@@ -32,14 +32,9 @@
             this.dgvPorposeMixture = new System.Windows.Forms.DataGridView();
             this.idpurposeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namepurposeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tPurposeMixtureBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mixRubberDataSet = new MixRubber2.MixRubberDataSet();
             this.txtPurposeMixtureName = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPorposeMixture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tPurposeMixtureBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mixRubberDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvPorposeMixture
@@ -54,7 +49,6 @@
             this.dgvPorposeMixture.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idpurposeDataGridViewTextBoxColumn,
             this.namepurposeDataGridViewTextBoxColumn});
-            this.dgvPorposeMixture.DataSource = this.tPurposeMixtureBindingSource;
             this.dgvPorposeMixture.Location = new System.Drawing.Point(0, 0);
             this.dgvPorposeMixture.MultiSelect = false;
             this.dgvPorposeMixture.Name = "dgvPorposeMixture";
@@ -76,16 +70,6 @@
             this.namepurposeDataGridViewTextBoxColumn.DataPropertyName = "name_purpose";
             this.namepurposeDataGridViewTextBoxColumn.HeaderText = "Назначение смеси";
             this.namepurposeDataGridViewTextBoxColumn.Name = "namepurposeDataGridViewTextBoxColumn";
-            // 
-            // tPurposeMixtureBindingSource
-            // 
-            this.tPurposeMixtureBindingSource.DataMember = "tPurposeMixture";
-            this.tPurposeMixtureBindingSource.DataSource = this.mixRubberDataSet;
-            // 
-            // mixRubberDataSet
-            // 
-            this.mixRubberDataSet.DataSetName = "MixRubberDataSet";
-            this.mixRubberDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtPurposeMixtureName
             // 
@@ -134,9 +118,6 @@
             this.Name = "PurposeMixture";
             this.Text = "Назначение смеси";
             this.Load += new System.EventHandler(this.PurposeMixture_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPorposeMixture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tPurposeMixtureBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mixRubberDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,8 +126,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvPorposeMixture;
-        private MixRubberDataSet mixRubberDataSet;
-        private System.Windows.Forms.BindingSource tPurposeMixtureBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn idpurposeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn namepurposeDataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox txtPurposeMixtureName;

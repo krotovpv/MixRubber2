@@ -65,11 +65,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DBHelper.cs" />
-    <Compile Include="MixRubberDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>MixRubberDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="MixMode2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,17 +170,6 @@
     <EmbeddedResource Include="TypeOfScales.resx">
       <DependentUpon>TypeOfScales.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="MixRubberDataSet.xsc">
-      <DependentUpon>MixRubberDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="MixRubberDataSet.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>MixRubberDataSet.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="MixRubberDataSet.xss">
-      <DependentUpon>MixRubberDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
